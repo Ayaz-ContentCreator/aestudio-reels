@@ -1,0 +1,581 @@
+{
+ "id": "2026-10-09-spain-rent",
+ "duration": 36.7,
+ "voice": {
+  "url": "https://storage.googleapis.com/xi-backend/database/workspace/cc3ca8aac80743e2b16fb409abf71273/content_generation/gkR27bp38E3TWFdW0TmS/ZvHrzgkWfG4DjL0YOBud/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261008%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261008T233530Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=a21c4567d7f09ce9ced15670fafa609627f4524ea7a0a75042667da58f1f975dfcdd10b5c864851d6950f27c10b265a17df3569e95eb595d6247cb933b3fea531ee64f05e82455ea9b39386a2114f8eb1f17f489df884931788bca22604000a2d7006afa1820c1744c625b75ce2675f725f3fb6e0a23568db0dcc8304b1784f42c778e0ce164dbe496cb7c65ca87e39032e1b8bf546c14a569198a2514f442b84e9949f8db2f0b5deb68ff7f9a040fb9f372cdead131ec84c6514a9af837a58add9ab063eb0ec85b14b1b46484f54034c4704c9b5733c45a79f650d5efde784b381a44ddb4fc1a5a1e06ec914bfad5207ee44d9c1e9c60e93066369906274c2a"
+ },
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "words": [
+  {
+   "text": "Rent",
+   "start": 0,
+   "end": 0.32
+  },
+  {
+   "text": "in",
+   "start": 0.4,
+   "end": 0.48
+  },
+  {
+   "text": "Spain",
+   "start": 0.56,
+   "end": 0.96
+  },
+  {
+   "text": "has",
+   "start": 1.04,
+   "end": 1.2
+  },
+  {
+   "text": "almost",
+   "start": 1.4,
+   "end": 1.6
+  },
+  {
+   "text": "doubled",
+   "start": 1.76,
+   "end": 2.16
+  },
+  {
+   "text": "in",
+   "start": 2.24,
+   "end": 2.4
+  },
+  {
+   "text": "ten",
+   "start": 2.56,
+   "end": 2.72
+  },
+  {
+   "text": "years.",
+   "start": 2.8,
+   "end": 3.52
+  },
+  {
+   "text": "Now",
+   "start": 3.76,
+   "end": 4.08
+  },
+  {
+   "text": "it",
+   "start": 4.16,
+   "end": 4.2
+  },
+  {
+   "text": "has",
+   "start": 4.24,
+   "end": 4.4
+  },
+  {
+   "text": "triggered",
+   "start": 4.52,
+   "end": 4.72
+  },
+  {
+   "text": "a",
+   "start": 4.76,
+   "end": 4.8
+  },
+  {
+   "text": "snap",
+   "start": 4.96,
+   "end": 5.28
+  },
+  {
+   "text": "election.",
+   "start": 5.56,
+   "end": 6.16
+  },
+  {
+   "text": "On",
+   "start": 6.48,
+   "end": 6.56
+  },
+  {
+   "text": "Monday,",
+   "start": 6.64,
+   "end": 7.36
+  },
+  {
+   "text": "Prime",
+   "start": 7.44,
+   "end": 7.6
+  },
+  {
+   "text": "Minister",
+   "start": 7.68,
+   "end": 8
+  },
+  {
+   "text": "Pedro",
+   "start": 8.08,
+   "end": 8.4
+  },
+  {
+   "text": "Sánchez",
+   "start": 8.48,
+   "end": 9.04
+  },
+  {
+   "text": "called",
+   "start": 9.12,
+   "end": 9.28
+  },
+  {
+   "text": "a",
+   "start": 9.36,
+   "end": 9.44
+  },
+  {
+   "text": "national",
+   "start": 9.52,
+   "end": 9.92
+  },
+  {
+   "text": "vote",
+   "start": 10,
+   "end": 10.24
+  },
+  {
+   "text": "for",
+   "start": 10.32,
+   "end": 10.4
+  },
+  {
+   "text": "November",
+   "start": 10.48,
+   "end": 10.8
+  },
+  {
+   "text": "twenty-ninth,",
+   "start": 10.96,
+   "end": 11.92
+  },
+  {
+   "text": "after",
+   "start": 12.04,
+   "end": 12.16
+  },
+  {
+   "text": "parliament",
+   "start": 12.24,
+   "end": 12.72
+  },
+  {
+   "text": "threw",
+   "start": 12.8,
+   "end": 13.04
+  },
+  {
+   "text": "out",
+   "start": 13.12,
+   "end": 13.2
+  },
+  {
+   "text": "his",
+   "start": 13.28,
+   "end": 13.44
+  },
+  {
+   "text": "housing",
+   "start": 13.64,
+   "end": 13.84
+  },
+  {
+   "text": "rules,",
+   "start": 13.92,
+   "end": 14.56
+  },
+  {
+   "text": "including",
+   "start": 14.8,
+   "end": 15.04
+  },
+  {
+   "text": "eviction",
+   "start": 15.12,
+   "end": 15.52
+  },
+  {
+   "text": "protections",
+   "start": 15.6,
+   "end": 16.24
+  },
+  {
+   "text": "until",
+   "start": 16.4,
+   "end": 16.56
+  },
+  {
+   "text": "twenty-thirty.",
+   "start": 16.64,
+   "end": 17.92
+  },
+  {
+   "text": "More",
+   "start": 18,
+   "end": 18.16
+  },
+  {
+   "text": "than",
+   "start": 18.28,
+   "end": 18.4
+  },
+  {
+   "text": "seventy",
+   "start": 18.48,
+   "end": 18.88
+  },
+  {
+   "text": "thousand",
+   "start": 19.04,
+   "end": 19.44
+  },
+  {
+   "text": "people",
+   "start": 19.52,
+   "end": 19.92
+  },
+  {
+   "text": "marched",
+   "start": 20,
+   "end": 20.32
+  },
+  {
+   "text": "in",
+   "start": 20.4,
+   "end": 20.44
+  },
+  {
+   "text": "Madrid.",
+   "start": 20.48,
+   "end": 21.36
+  },
+  {
+   "text": "And",
+   "start": 21.4,
+   "end": 21.44
+  },
+  {
+   "text": "the",
+   "start": 21.52,
+   "end": 21.6
+  },
+  {
+   "text": "televised",
+   "start": 21.72,
+   "end": 22.16
+  },
+  {
+   "text": "eviction",
+   "start": 22.24,
+   "end": 22.72
+  },
+  {
+   "text": "of",
+   "start": 22.76,
+   "end": 22.8
+  },
+  {
+   "text": "an",
+   "start": 22.88,
+   "end": 22.96
+  },
+  {
+   "text": "eighty-seven-year-old",
+   "start": 23.04,
+   "end": 23.92
+  },
+  {
+   "text": "woman",
+   "start": 24,
+   "end": 24.32
+  },
+  {
+   "text": "became",
+   "start": 24.64,
+   "end": 24.96
+  },
+  {
+   "text": "the",
+   "start": 25.04,
+   "end": 25.12
+  },
+  {
+   "text": "face",
+   "start": 25.2,
+   "end": 25.52
+  },
+  {
+   "text": "of",
+   "start": 25.56,
+   "end": 25.6
+  },
+  {
+   "text": "the",
+   "start": 25.68,
+   "end": 25.76
+  },
+  {
+   "text": "crisis.",
+   "start": 25.84,
+   "end": 26.88
+  },
+  {
+   "text": "She",
+   "start": 27,
+   "end": 27.12
+  },
+  {
+   "text": "died",
+   "start": 27.2,
+   "end": 27.36
+  },
+  {
+   "text": "this",
+   "start": 27.44,
+   "end": 27.6
+  },
+  {
+   "text": "week.",
+   "start": 27.68,
+   "end": 28.48
+  },
+  {
+   "text": "Housing",
+   "start": 28.52,
+   "end": 28.88
+  },
+  {
+   "text": "costs",
+   "start": 28.96,
+   "end": 29.36
+  },
+  {
+   "text": "are",
+   "start": 29.44,
+   "end": 29.6
+  },
+  {
+   "text": "climbing",
+   "start": 29.64,
+   "end": 30
+  },
+  {
+   "text": "across",
+   "start": 30.08,
+   "end": 30.48
+  },
+  {
+   "text": "Europe",
+   "start": 30.56,
+   "end": 30.88
+  },
+  {
+   "text": "and",
+   "start": 30.96,
+   "end": 31.12
+  },
+  {
+   "text": "the",
+   "start": 31.2,
+   "end": 31.28
+  },
+  {
+   "text": "US",
+   "start": 31.36,
+   "end": 31.68
+  },
+  {
+   "text": "too.",
+   "start": 31.84,
+   "end": 32.64
+  },
+  {
+   "text": "Could",
+   "start": 32.72,
+   "end": 32.8
+  },
+  {
+   "text": "rent",
+   "start": 32.88,
+   "end": 33.12
+  },
+  {
+   "text": "decide",
+   "start": 33.24,
+   "end": 33.52
+  },
+  {
+   "text": "your",
+   "start": 33.6,
+   "end": 33.68
+  },
+  {
+   "text": "next",
+   "start": 33.76,
+   "end": 33.92
+  },
+  {
+   "text": "election?",
+   "start": 34,
+   "end": 34.88
+  },
+  {
+   "text": "Tell",
+   "start": 34.96,
+   "end": 35.04
+  },
+  {
+   "text": "us",
+   "start": 35.12,
+   "end": 35.2
+  },
+  {
+   "text": "below.",
+   "start": 35.28,
+   "end": 35.92
+  }
+ ],
+ "display": [
+  {
+   "i": 7,
+   "text": "10"
+  },
+  {
+   "i": 28,
+   "text": "29",
+   "em": true
+  },
+  {
+   "i": 40,
+   "text": "2030",
+   "em": true
+  },
+  {
+   "i": 43,
+   "n": 2,
+   "text": "70,000",
+   "em": true
+  },
+  {
+   "i": 55,
+   "text": "87-year-old",
+   "em": true
+  }
+ ],
+ "emphasis": [
+  5,
+  14,
+  15,
+  27,
+  72,
+  75
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/39417079/16783393_1440_2560_60fps.mp4",
+   "in": 1.0,
+   "start": 0.0,
+   "end": 3.7
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "start": 3.7,
+   "end": 6.4,
+   "kicker": "The fallout",
+   "text": "*Snap election* called",
+   "sub": "after a fight over housing"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/34653197/14687788_1080_1920_30fps.mp4",
+   "in": 3.0,
+   "start": 6.4,
+   "end": 12.0
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/34641787/14682617_1080_1920_60fps.mp4",
+   "in": 2.0,
+   "start": 12.0,
+   "end": 17.95
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "start": 17.95,
+   "end": 21.4,
+   "kicker": "Madrid",
+   "value": 70000,
+   "suffix": "+",
+   "sub": "people marched for housing"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/39351140/16749806_1440_2560_30fps.mp4",
+   "in": 1.0,
+   "start": 21.4,
+   "end": 28.5
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/28962717/12529296_1080_1920_60fps.mp4",
+   "in": 0.5,
+   "start": 28.5,
+   "end": 32.7
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "start": 32.7,
+   "end": 36.7,
+   "kicker": "Your take",
+   "text": "Could rent decide your next *election?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "start": 0.0,
+   "end": 3.62,
+   "kicker": "Spain · Housing",
+   "text": "Rent has almost *doubled* in 10 years"
+  },
+  {
+   "style": "label",
+   "start": 6.45,
+   "end": 10.2,
+   "kicker": "The vote",
+   "text": "Spain votes on *Nov 29*"
+  },
+  {
+   "style": "label",
+   "start": 12.05,
+   "end": 15.6,
+   "kicker": "Why now",
+   "text": "Housing rules *rejected*"
+  },
+  {
+   "style": "label",
+   "start": 21.45,
+   "end": 24.8,
+   "kicker": "The human cost",
+   "text": "Evicted at *87*"
+  },
+  {
+   "style": "label",
+   "start": 28.55,
+   "end": 31.9,
+   "kicker": "Not just Spain",
+   "text": "Costs are climbing in *Europe & the US*"
+  }
+ ]
+}
