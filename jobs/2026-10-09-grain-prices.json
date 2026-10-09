@@ -1,0 +1,698 @@
+{
+ "id": "2026-10-09-grain-prices",
+ "duration": 43.3,
+ "voice": {
+  "url": "https://storage.googleapis.com/xi-backend/database/workspace/cc3ca8aac80743e2b16fb409abf71273/content_generation/content_asset/0ARjxnDWejcdtabTRjct/asset_preview.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261009%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261009T003100Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=76785530587474012c09b226252c43328bc2b634d5887bc1f7d0ace8c1ab301b150d28239e41c18f1fff64214229e43d63dd584a6661b0b77cbd6bf806525c0850b94062e2bd7addeaf89943fe8536bc468013159f77fee840ccbd4e4a82288a04d06d40de68ca8e01573c97e982207eecc065441ecf52de2a97369c4fa93bd6b644ee77b994dfaaadd7f87a4f77ffd32745f6174515b74378d4ffacc466c2f9c02305584aa4be3dfdda975ce9646ed609ebe1179b2e0cd5682862b5f485ca8a9e6de931d5d1d0444fe38cf1abca494b0f8d530d0c3ad925d18932c7af0db5954d2961f5e523c6e73627e79e8d6401827cc7a671b4dba33ad4d99fb8d8e36f70"
+ },
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "words": [
+  {
+   "text": "Grain",
+   "start": 0.1,
+   "end": 0.38
+  },
+  {
+   "text": "prices",
+   "start": 0.5,
+   "end": 0.96
+  },
+  {
+   "text": "could",
+   "start": 1.14,
+   "end": 1.28
+  },
+  {
+   "text": "jump",
+   "start": 1.34,
+   "end": 1.56
+  },
+  {
+   "text": "as",
+   "start": 1.6,
+   "end": 1.72
+  },
+  {
+   "text": "much",
+   "start": 1.78,
+   "end": 1.94
+  },
+  {
+   "text": "as",
+   "start": 1.98,
+   "end": 2.2
+  },
+  {
+   "text": "eighty",
+   "start": 2.26,
+   "end": 2.44
+  },
+  {
+   "text": "percent,",
+   "start": 2.56,
+   "end": 2.98
+  },
+  {
+   "text": "and",
+   "start": 3.58,
+   "end": 3.66
+  },
+  {
+   "text": "it",
+   "start": 3.7,
+   "end": 3.82
+  },
+  {
+   "text": "comes",
+   "start": 3.88,
+   "end": 4.14
+  },
+  {
+   "text": "down",
+   "start": 4.18,
+   "end": 4.4
+  },
+  {
+   "text": "to",
+   "start": 4.44,
+   "end": 4.62
+  },
+  {
+   "text": "one",
+   "start": 4.74,
+   "end": 4.88
+  },
+  {
+   "text": "strip",
+   "start": 5.04,
+   "end": 5.26
+  },
+  {
+   "text": "of",
+   "start": 5.32,
+   "end": 5.42
+  },
+  {
+   "text": "water.",
+   "start": 5.48,
+   "end": 5.78
+  },
+  {
+   "text": "The",
+   "start": 6.56,
+   "end": 6.66
+  },
+  {
+   "text": "Strait",
+   "start": 6.76,
+   "end": 7
+  },
+  {
+   "text": "of",
+   "start": 7.04,
+   "end": 7.1
+  },
+  {
+   "text": "Hormuz",
+   "start": 7.16,
+   "end": 7.7
+  },
+  {
+   "text": "has",
+   "start": 7.74,
+   "end": 7.88
+  },
+  {
+   "text": "been",
+   "start": 7.9,
+   "end": 8.08
+  },
+  {
+   "text": "choked",
+   "start": 8.119,
+   "end": 8.44
+  },
+  {
+   "text": "by",
+   "start": 8.48,
+   "end": 8.58
+  },
+  {
+   "text": "the",
+   "start": 8.62,
+   "end": 8.7
+  },
+  {
+   "text": "Iran",
+   "start": 8.74,
+   "end": 9.06
+  },
+  {
+   "text": "war",
+   "start": 9.16,
+   "end": 9.4
+  },
+  {
+   "text": "for",
+   "start": 9.44,
+   "end": 9.54
+  },
+  {
+   "text": "months.",
+   "start": 9.66,
+   "end": 10
+  },
+  {
+   "text": "About",
+   "start": 10.68,
+   "end": 10.9
+  },
+  {
+   "text": "a",
+   "start": 10.96,
+   "end": 11.04
+  },
+  {
+   "text": "third",
+   "start": 11.12,
+   "end": 11.32
+  },
+  {
+   "text": "of",
+   "start": 11.36,
+   "end": 11.42
+  },
+  {
+   "text": "the",
+   "start": 11.46,
+   "end": 11.56
+  },
+  {
+   "text": "world's",
+   "start": 11.6,
+   "end": 11.92
+  },
+  {
+   "text": "fertilizer",
+   "start": 11.96,
+   "end": 12.46
+  },
+  {
+   "text": "trade",
+   "start": 12.56,
+   "end": 12.8
+  },
+  {
+   "text": "moves",
+   "start": 12.88,
+   "end": 13.08
+  },
+  {
+   "text": "through",
+   "start": 13.12,
+   "end": 13.3
+  },
+  {
+   "text": "it.",
+   "start": 13.34,
+   "end": 13.46
+  },
+  {
+   "text": "Now",
+   "start": 14.3,
+   "end": 14.46
+  },
+  {
+   "text": "the",
+   "start": 14.5,
+   "end": 14.6
+  },
+  {
+   "text": "International",
+   "start": 14.66,
+   "end": 15.28
+  },
+  {
+   "text": "Chamber",
+   "start": 15.4,
+   "end": 15.68
+  },
+  {
+   "text": "of",
+   "start": 15.74,
+   "end": 15.8
+  },
+  {
+   "text": "Commerce",
+   "start": 15.92,
+   "end": 16.32
+  },
+  {
+   "text": "warns",
+   "start": 16.46,
+   "end": 16.76
+  },
+  {
+   "text": "that",
+   "start": 16.8,
+   "end": 16.9
+  },
+  {
+   "text": "available",
+   "start": 16.96,
+   "end": 17.38
+  },
+  {
+   "text": "fertilizer",
+   "start": 17.5,
+   "end": 18.1
+  },
+  {
+   "text": "is",
+   "start": 18.16,
+   "end": 18.28
+  },
+  {
+   "text": "down",
+   "start": 18.32,
+   "end": 18.58
+  },
+  {
+   "text": "nearly",
+   "start": 18.62,
+   "end": 18.96
+  },
+  {
+   "text": "forty",
+   "start": 19,
+   "end": 19.2
+  },
+  {
+   "text": "percent.",
+   "start": 19.28,
+   "end": 19.74
+  },
+  {
+   "text": "Two",
+   "start": 20.48,
+   "end": 20.58
+  },
+  {
+   "text": "point",
+   "start": 20.72,
+   "end": 20.94
+  },
+  {
+   "text": "seven",
+   "start": 21.12,
+   "end": 21.42
+  },
+  {
+   "text": "million",
+   "start": 21.7,
+   "end": 22.06
+  },
+  {
+   "text": "tons",
+   "start": 22.12,
+   "end": 22.52
+  },
+  {
+   "text": "gone.",
+   "start": 23.2,
+   "end": 23.6
+  },
+  {
+   "text": "Less",
+   "start": 24.26,
+   "end": 24.46
+  },
+  {
+   "text": "fertilizer",
+   "start": 24.6,
+   "end": 25.14
+  },
+  {
+   "text": "means",
+   "start": 25.24,
+   "end": 25.46
+  },
+  {
+   "text": "smaller",
+   "start": 25.7,
+   "end": 26.02
+  },
+  {
+   "text": "harvests.",
+   "start": 26.1,
+   "end": 26.56
+  },
+  {
+   "text": "Smaller",
+   "start": 27.18,
+   "end": 27.54
+  },
+  {
+   "text": "harvests",
+   "start": 27.64,
+   "end": 28.08
+  },
+  {
+   "text": "mean",
+   "start": 28.14,
+   "end": 28.32
+  },
+  {
+   "text": "pricier",
+   "start": 28.56,
+   "end": 29
+  },
+  {
+   "text": "wheat,",
+   "start": 29.12,
+   "end": 29.34
+  },
+  {
+   "text": "corn,",
+   "start": 29.78,
+   "end": 30.14
+  },
+  {
+   "text": "and",
+   "start": 30.4,
+   "end": 30.5
+  },
+  {
+   "text": "rice.",
+   "start": 30.58,
+   "end": 30.94
+  },
+  {
+   "text": "Poorer",
+   "start": 31.66,
+   "end": 32
+  },
+  {
+   "text": "countries",
+   "start": 32.14,
+   "end": 32.58
+  },
+  {
+   "text": "get",
+   "start": 32.68,
+   "end": 32.82
+  },
+  {
+   "text": "hit",
+   "start": 32.86,
+   "end": 33.06
+  },
+  {
+   "text": "first,",
+   "start": 33.12,
+   "end": 33.48
+  },
+  {
+   "text": "but",
+   "start": 34.12,
+   "end": 34.32
+  },
+  {
+   "text": "grain",
+   "start": 34.38,
+   "end": 34.9
+  },
+  {
+   "text": "is",
+   "start": 34.94,
+   "end": 35.06
+  },
+  {
+   "text": "traded",
+   "start": 35.12,
+   "end": 35.38
+  },
+  {
+   "text": "worldwide,",
+   "start": 35.46,
+   "end": 36.08
+  },
+  {
+   "text": "so",
+   "start": 36.58,
+   "end": 36.74
+  },
+  {
+   "text": "prices",
+   "start": 36.78,
+   "end": 37.28
+  },
+  {
+   "text": "travel.",
+   "start": 37.34,
+   "end": 37.74
+  },
+  {
+   "text": "Would",
+   "start": 38.44,
+   "end": 38.56
+  },
+  {
+   "text": "you",
+   "start": 38.6,
+   "end": 38.72
+  },
+  {
+   "text": "cut",
+   "start": 38.78,
+   "end": 39
+  },
+  {
+   "text": "back",
+   "start": 39.04,
+   "end": 39.36
+  },
+  {
+   "text": "if",
+   "start": 39.64,
+   "end": 39.76
+  },
+  {
+   "text": "bread",
+   "start": 39.78,
+   "end": 40
+  },
+  {
+   "text": "got",
+   "start": 40.04,
+   "end": 40.18
+  },
+  {
+   "text": "this",
+   "start": 40.22,
+   "end": 40.36
+  },
+  {
+   "text": "expensive?",
+   "start": 40.42,
+   "end": 41
+  },
+  {
+   "text": "Tell",
+   "start": 41.7,
+   "end": 41.84
+  },
+  {
+   "text": "us",
+   "start": 41.88,
+   "end": 42.04
+  },
+  {
+   "text": "below",
+   "start": 42.08,
+   "end": 42.4
+  }
+ ],
+ "display": [
+  {
+   "match": "eighty percent",
+   "text": "80%",
+   "em": true
+  },
+  {
+   "match": "forty percent",
+   "text": "40%",
+   "em": true
+  },
+  {
+   "match": "two point seven",
+   "text": "2.7",
+   "em": true
+  },
+  {
+   "match": "Iran war",
+   "text": "Iran war"
+  }
+ ],
+ "emphasis": [
+  "Hormuz",
+  "third",
+  "pricier",
+  "travel"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/38478200/16341387_1080_1920_60fps.mp4",
+   "in": 2.0,
+   "start": 0.0,
+   "end": 3.4
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/QeshmIsland_NASA.jpg",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "start": 3.4,
+   "end": 6.4
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/25875725/11916965_1080_1920_60fps.mp4",
+   "in": 1.0,
+   "start": 6.4,
+   "end": 10.4
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/15739058/15739058-hd_1080_1920_60fps.mp4",
+   "in": 2.0,
+   "start": 10.4,
+   "end": 14.1
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/32569762/13888169_1080_1920_30fps.mp4",
+   "in": 1.0,
+   "start": 14.1,
+   "end": 16.95
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "start": 16.95,
+   "end": 20.2,
+   "kicker": "ICC warning",
+   "value": 40,
+   "prefix": "−",
+   "suffix": "%",
+   "sub": "available fertilizer"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/26274877/11944472_1440_2560_60fps.mp4",
+   "in": 2.0,
+   "start": 20.2,
+   "end": 23.95
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/38550506/16374379_1080_1920_50fps.mp4",
+   "in": 1.0,
+   "start": 23.95,
+   "end": 27.0
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/5757795/5757795-hd_1080_1920_30fps.mp4",
+   "in": 0.5,
+   "start": 27.0,
+   "end": 31.4
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/12438823/12438823-hd_1080_1920_30fps.mp4",
+   "in": 0.0,
+   "start": 31.4,
+   "end": 38.2
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "start": 38.2,
+   "end": 43.3,
+   "kicker": "Your take",
+   "text": "Would you cut back if *bread* got this expensive?",
+   "size": 100,
+   "bg": {
+    "src": "https://videos.pexels.com/video-files/5757798/5757798-hd_1080_1920_30fps.mp4",
+    "in": 1.0
+   },
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "start": 0.0,
+   "end": 3.35,
+   "kicker": "Food · Prices",
+   "text": "Grain prices could jump *80%*"
+  },
+  {
+   "style": "label",
+   "start": 3.45,
+   "end": 6.35,
+   "kicker": "Strait of Hormuz",
+   "text": "One strip of *water*"
+  },
+  {
+   "style": "label",
+   "start": 6.45,
+   "end": 9.9,
+   "kicker": "Iran war",
+   "text": "The strait is *choked*"
+  },
+  {
+   "style": "label",
+   "start": 10.45,
+   "end": 13.9,
+   "kicker": "Fertilizer",
+   "text": "*A third* of world trade"
+  },
+  {
+   "style": "label",
+   "start": 14.15,
+   "end": 16.9,
+   "kicker": "The warning",
+   "text": "*Fertilizer* supply is falling"
+  },
+  {
+   "style": "label",
+   "start": 20.25,
+   "end": 23.8,
+   "kicker": "Gone from the market",
+   "text": "*2.7 million* tons"
+  },
+  {
+   "style": "label",
+   "start": 27.05,
+   "end": 30.9,
+   "kicker": "At the checkout",
+   "text": "*Pricier* wheat, corn & rice"
+  },
+  {
+   "style": "label",
+   "start": 34.15,
+   "end": 37.9,
+   "kicker": "Worldwide",
+   "text": "Prices *travel*"
+  }
+ ],
+ "note": "Re-render of the Oct 9 grain-prices Reel in the new style (original narration)"
+}

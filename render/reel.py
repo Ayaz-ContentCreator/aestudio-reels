@@ -669,29 +669,51 @@ def kenburns(path, n, z0=1.0, z1=1.08, pan=(0.0, -0.015), blur=False):
 
 
 # ------------------------------------------------------------------ job
+def _norm(w):
+    return re.sub(r"[^\w'%-]", "", w.lower()).strip("-")
+
+
 def build_tokens(job):
+    """Words -> caption tokens. "display" edits rewrite words, by index {"i", "n"} or by text {"match"};
+    "emphasis" lists word indexes or display texts shown in the accent colour."""
     words = [dict(w) for w in job["words"] if w.get("type", "word") == "word"]
     for i, w in enumerate(words):
         w["raw"] = w["text"]
         w["i"] = i
-    edits = sorted(job.get("display", []), key=lambda e: e["i"])
+    normed = [_norm(w["text"]) for w in words]
+    edits = []
+    for e in job.get("display", []):
+        e = dict(e)
+        if "match" in e:
+            target = [_norm(x) for x in e["match"].split()]
+            hit = next((i for i in range(len(words) - len(target) + 1)
+                        if normed[i:i + len(target)] == target), None)
+            if hit is None:
+                print(f"warning: display match not found: {e['match']!r}", file=sys.stderr)
+                continue
+            e["i"], e["n"] = hit, len(target)
+        edits.append(e)
+    edits.sort(key=lambda e: e["i"])
+    em_idx = {x for x in job.get("emphasis", []) if isinstance(x, int)}
+    em_txt = {_norm(x) for x in job.get("emphasis", []) if isinstance(x, str)}
     out, i = [], 0
-    em = set(job.get("emphasis", []))
     while i < len(words):
         e = next((e for e in edits if e["i"] == i), None)
         if e:
             n = int(e.get("n", 1))
             grp = words[i:i + n]
             out.append({"text": e["text"], "raw": grp[-1]["raw"], "start": grp[0]["start"], "end": grp[-1]["end"],
-                        "em": bool(e.get("em")) or any(g["i"] in em for g in grp)})
+                        "em": bool(e.get("em")) or any(g["i"] in em_idx for g in grp)})
             i += n
         else:
             w = words[i]
             out.append({"text": w["text"], "raw": w["raw"], "start": w["start"], "end": w["end"],
-                        "em": w["i"] in em})
+                        "em": w["i"] in em_idx})
             i += 1
     for t in out:
         t["text"] = re.sub(r"[.,;:]+$", "", t["text"]).strip() or t["text"]
+        if _norm(t["text"]) in em_txt:
+            t["em"] = True
     return out
 
 
