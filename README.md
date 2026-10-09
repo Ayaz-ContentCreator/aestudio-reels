@@ -23,36 +23,41 @@ the job right after generating the voice.
 - Safe zones: titles start at y=300, captions sit at y≈1262, max caption width 820 px.
 
 ## Job format
+Recommended (no ElevenLabs transcription needed: word timings come from Whisper on the runner, free):
 ```json
 {
-  "id": "2026-10-09-spain-rent",            // release tag + file name (a-z, 0-9, -)
-  "duration": 36.7,                          // seconds; = last scene end (voice length + ~0.8 s)
-  "voice": {"url": "https://…content.mp3"},  // ElevenLabs media url
+  "id": "2026-10-10-us-egg-prices",          // release tag + file name (a-z, 0-9, -)
+  "voice": {"url": "https://…content.mp3"},  // ElevenLabs media url (expires ~2 h after generation)
+  "script": "Egg prices just hit a record. …", // EXACT text sent to ElevenLabs
   "music": {"url": "https://…wav", "gain_db": -13},   // optional bed, auto-ducked under the voice
-  "words": [{"text": "Rent", "start": 0.0, "end": 0.32}, …],   // ElevenLabs Scribe words
-  "display": [{"i": 7, "text": "10"}, {"i": 43, "n": 2, "text": "70,000", "em": true}],
-                                             // caption rewrites: word index i (n words merged)
-  "emphasis": [5, 27],                       // word indexes shown in the accent colour
-  "scenes": [                                // must cover 0 → duration without gaps
-    {"type": "video", "src": "https://videos.pexels.com/…mp4", "in": 1.0, "start": 0.0, "end": 3.7},
-    {"type": "photo", "src": "https://…jpg", "start": 3.7, "end": 6.0, "zoom": [1.0, 1.08]},
-    {"type": "card", "card": "headline", "start": 6.0, "end": 8.7,
+  "display": [{"match": "seventy thousand", "text": "70,000", "em": true},
+              {"match": "twenty-thirty", "text": "2030"}],  // caption rewrites (spoken words -> digits)
+  "emphasis": ["record", "Europe"],          // caption words shown in the accent colour
+  "scenes": [                                // in order; "at" = first words of the sentence where the cut happens
+    {"type": "video", "src": "https://videos.pexels.com/…mp4", "in": 1.0},
+    {"type": "photo", "src": "https://upload.wikimedia.org/…jpg", "zoom": [1.0, 1.1], "at": "And it comes down"},
+    {"type": "card", "card": "headline", "at": "Now it has",
      "kicker": "The fallout", "text": "*Snap election* called", "sub": "after a fight over housing"},
-    {"type": "card", "card": "stat", "start": 8.7, "end": 12.0, "kicker": "Madrid",
+    {"type": "card", "card": "stat", "at": "More than seventy", "kicker": "Madrid",
      "value": 70000, "suffix": "+", "sub": "people marched for housing", "source": "Reuters"},
-    {"type": "card", "card": "end", "start": 32.7, "end": 36.7, "kicker": "Your take",
+    {"type": "card", "card": "end", "at": "Could rent decide", "kicker": "Your take",
      "text": "Could rent decide your next *election?*", "cta": "Tell us below ↓",
      "follow": "Follow for daily US & Europe news"}
   ],
   "titles": [                                // text over footage; *word* = accent colour
-    {"style": "hook", "start": 0.0, "end": 3.6, "kicker": "Spain · Housing",
-     "text": "Rent has almost *doubled* in 10 years"},   // hook hides captions while shown
-    {"style": "label", "start": 6.45, "end": 10.2, "kicker": "The vote", "text": "Spain votes on *Nov 29*"}
+    {"style": "hook", "until": "ten years", "kicker": "Spain · Housing",
+     "text": "Rent has almost *doubled* in 10 years"},   // hook = from 0 s until those words; hides captions
+    {"style": "label", "at": "On Monday", "dur": 3.3, "kicker": "The vote", "text": "Spain votes on *Nov 29*"}
   ]
 }
 ```
-Cards blur and darken the previous footage (`"bg": "prev"`, default) or use `"bg": {"src": …, "in": 2}`.
-Captions are hidden automatically during hook titles and cards.
+- Scene/title timing: either word anchors (`"at"`, `"until"`, `"dur"`) or explicit seconds (`"start"`, `"end"`).
+  Anchors must be words that appear in the script, in order; cuts land in the pause just before them.
+- `duration` is optional (voice length + 0.8 s). `words` (ElevenLabs Scribe `[{text,start,end}]`) can be
+  given instead of `script`; then `display` may also use word indexes `{"i": 7, "n": 2, "text": "70,000"}`.
+- Cards blur and darken the previous footage (`"bg": "prev"`, default) or use `"bg": {"src": …, "in": 2}`.
+- Captions are hidden automatically during hook titles and cards. `words.json` (timings used) is attached
+  to each release.
 
 Local test: `python3 render/reel.py job.json out/test.mp4` or `--stills 0.5,4,9` for PNG frames.
 

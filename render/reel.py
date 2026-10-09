@@ -800,7 +800,10 @@ def ensure_words(job, cache, outdir):
     name = os.environ.get("WHISPER_MODEL", "small.en")
     model = WhisperModel(name, device="cpu", compute_type="int8")
     script = job.get("script", "")
-    segs, _ = model.transcribe(voice, language="en", word_timestamps=True, beam_size=5,
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", voice, "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
+                         capture_output=True, check=True).stdout
+    audio = np.frombuffer(pcm, dtype=np.float32).copy()
+    segs, _ = model.transcribe(audio, language="en", word_timestamps=True, beam_size=5,
                                initial_prompt=script[:220] or None, condition_on_previous_text=False)
     ww = [{"text": w.word.strip(), "start": float(w.start), "end": float(w.end)}
           for seg in segs for w in (seg.words or []) if w.word.strip()]
