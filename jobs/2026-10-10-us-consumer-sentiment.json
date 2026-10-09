@@ -1,0 +1,626 @@
+{
+ "id": "2026-10-10-us-consumer-sentiment",
+ "duration": 37.76,
+ "voice": {
+  "url": "https://storage.googleapis.com/xi-backend/database/workspace/cc3ca8aac80743e2b16fb409abf71273/content_generation/UlNLYIHE15JunkGDCLYo/6hz4y3LZ7mjmhxcJL8Zr/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261009%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261009T155229Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=a4fa0510cc945f948e77a60e9eb3fb06296d20977d30949da4fa796e537a449c8597a656902328dacb11c8cbc6f5a8d50b7ba11dfc328990eda9022cd6bcb30c08308bb6820747c65163b0e11737c134d66d6001792f7496e88aca534e6231588fea84947030198cb38d9ba507407b23284db7863a6ad55dfc40943227c93761a9a732cfe5696d6fb36a63229f6083ec59d2f78797a1eddaeb03a37bdac20ba10c96343f47e981699a21b3f1e5f2293e2a0df4aa46ad4eb189ac823b385bb2ecd7c2c1e14f7fd6e3f619419252a8d3bd01fb34c468683d2d5ce2f17194740d184accb4844ef35b3d9010fcb6e0c139c46a4f02eba2021d76713a30cc11e92975"
+ },
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "i": 20,
+   "n": 3,
+   "text": "46.3",
+   "em": true
+  },
+  {
+   "i": 37,
+   "n": 2,
+   "text": "1952."
+  },
+  {
+   "i": 73,
+   "n": 4,
+   "text": "4.7%",
+   "em": true
+  }
+ ],
+ "emphasis": [
+  2,
+  30,
+  48,
+  55,
+  85
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/8799885/8799885-hd_1080_1920_30fps.mp4",
+   "in": 2.0,
+   "start": 0,
+   "end": 4.2
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/6700011/6700011-hd_1080_1920_25fps.mp4",
+   "in": 2.0,
+   "start": 4.2,
+   "end": 7.4
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "start": 7.4,
+   "end": 10.4,
+   "kicker": "Consumer sentiment",
+   "value": 46.3,
+   "decimals": 1,
+   "sub": "University of Michigan index, October"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/4251604/4251604-hd_1080_1920_30fps.mp4",
+   "in": 8.0,
+   "start": 10.4,
+   "end": 16.52
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/9811588/9811588-uhd_1440_2732_25fps.mp4",
+   "in": 2.0,
+   "start": 16.52,
+   "end": 20.7
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/28501095/12400963_1440_2560_60fps.mp4",
+   "in": 0.5,
+   "start": 20.7,
+   "end": 23.62
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/7735913/7735913-hd_1080_1920_25fps.mp4",
+   "in": 2.0,
+   "start": 23.62,
+   "end": 28.5
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/8799885/8799885-hd_1080_1920_30fps.mp4",
+   "in": 16.0,
+   "start": 28.5,
+   "end": 33.4
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "start": 33.4,
+   "end": 37.76,
+   "kicker": "Your take",
+   "text": "Is your budget *tighter* than a year ago?",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "start": 0.0,
+   "end": 4.12,
+   "kicker": "USA · Economy",
+   "text": "Americans feel *worse* than in the Great Recession"
+  },
+  {
+   "style": "label",
+   "start": 4.25,
+   "end": 7.35,
+   "kicker": "The survey",
+   "text": "University of Michigan *sentiment index*"
+  },
+  {
+   "style": "label",
+   "start": 10.450000000000001,
+   "end": 13.75,
+   "kicker": "If that holds",
+   "text": "*Second-lowest* since 1952"
+  },
+  {
+   "style": "label",
+   "start": 18.75,
+   "end": 20.6,
+   "kicker": "The reason",
+   "text": "*Prices*"
+  },
+  {
+   "style": "label",
+   "start": 20.75,
+   "end": 23.55,
+   "kicker": "Gas",
+   "text": "Iran war pushed up *gas prices*"
+  },
+  {
+   "style": "label",
+   "start": 23.67,
+   "end": 26.97,
+   "kicker": "Borrowing",
+   "text": "Fed *raised rates* in September"
+  },
+  {
+   "style": "label",
+   "start": 28.55,
+   "end": 31.85,
+   "kicker": "Next year",
+   "text": "Consumers expect *4.7%* inflation"
+  }
+ ],
+ "words": [
+  {
+   "text": "Americans",
+   "start": 0.0,
+   "end": 0.64
+  },
+  {
+   "text": "feel",
+   "start": 0.76,
+   "end": 0.88
+  },
+  {
+   "text": "worse",
+   "start": 0.96,
+   "end": 1.28
+  },
+  {
+   "text": "about",
+   "start": 1.4,
+   "end": 1.52
+  },
+  {
+   "text": "the",
+   "start": 1.56,
+   "end": 1.6
+  },
+  {
+   "text": "economy",
+   "start": 1.68,
+   "end": 2.24
+  },
+  {
+   "text": "than",
+   "start": 2.32,
+   "end": 2.4
+  },
+  {
+   "text": "during",
+   "start": 2.48,
+   "end": 2.72
+  },
+  {
+   "text": "the",
+   "start": 2.76,
+   "end": 2.8
+  },
+  {
+   "text": "Great",
+   "start": 2.88,
+   "end": 3.12
+  },
+  {
+   "text": "Recession.",
+   "start": 3.2,
+   "end": 4.04
+  },
+  {
+   "text": "The",
+   "start": 4.32,
+   "end": 4.4
+  },
+  {
+   "text": "University",
+   "start": 4.48,
+   "end": 4.96
+  },
+  {
+   "text": "of",
+   "start": 5.04,
+   "end": 5.12
+  },
+  {
+   "text": "Michigan's",
+   "start": 5.32,
+   "end": 5.68
+  },
+  {
+   "text": "consumer",
+   "start": 5.92,
+   "end": 6.16
+  },
+  {
+   "text": "sentiment",
+   "start": 6.32,
+   "end": 6.72
+  },
+  {
+   "text": "index",
+   "start": 6.8,
+   "end": 7.2
+  },
+  {
+   "text": "fell",
+   "start": 7.52,
+   "end": 7.76
+  },
+  {
+   "text": "to",
+   "start": 7.88,
+   "end": 8.0
+  },
+  {
+   "text": "forty-six",
+   "start": 8.12,
+   "end": 8.56
+  },
+  {
+   "text": "point",
+   "start": 8.72,
+   "end": 8.96
+  },
+  {
+   "text": "three",
+   "start": 9.04,
+   "end": 9.28
+  },
+  {
+   "text": "in",
+   "start": 9.44,
+   "end": 9.52
+  },
+  {
+   "text": "October.",
+   "start": 9.8,
+   "end": 10.16
+  },
+  {
+   "text": "If",
+   "start": 10.64,
+   "end": 10.72
+  },
+  {
+   "text": "that",
+   "start": 10.8,
+   "end": 10.96
+  },
+  {
+   "text": "holds,",
+   "start": 11.04,
+   "end": 11.68
+  },
+  {
+   "text": "it's",
+   "start": 11.76,
+   "end": 11.92
+  },
+  {
+   "text": "the",
+   "start": 12.04,
+   "end": 12.16
+  },
+  {
+   "text": "second-lowest",
+   "start": 12.32,
+   "end": 12.88
+  },
+  {
+   "text": "reading",
+   "start": 12.96,
+   "end": 13.28
+  },
+  {
+   "text": "since",
+   "start": 13.36,
+   "end": 13.6
+  },
+  {
+   "text": "the",
+   "start": 13.64,
+   "end": 13.68
+  },
+  {
+   "text": "survey",
+   "start": 13.76,
+   "end": 14.08
+  },
+  {
+   "text": "began",
+   "start": 14.16,
+   "end": 14.56
+  },
+  {
+   "text": "in",
+   "start": 14.64,
+   "end": 14.72
+  },
+  {
+   "text": "nineteen",
+   "start": 14.8,
+   "end": 15.2
+  },
+  {
+   "text": "fifty-two.",
+   "start": 15.36,
+   "end": 16.48
+  },
+  {
+   "text": "The",
+   "start": 16.56,
+   "end": 16.6
+  },
+  {
+   "text": "record",
+   "start": 16.64,
+   "end": 16.96
+  },
+  {
+   "text": "low",
+   "start": 17.04,
+   "end": 17.28
+  },
+  {
+   "text": "was",
+   "start": 17.36,
+   "end": 17.44
+  },
+  {
+   "text": "set",
+   "start": 17.52,
+   "end": 17.68
+  },
+  {
+   "text": "in",
+   "start": 17.72,
+   "end": 17.76
+  },
+  {
+   "text": "May.",
+   "start": 17.84,
+   "end": 18.24
+  },
+  {
+   "text": "The",
+   "start": 18.8,
+   "end": 18.84
+  },
+  {
+   "text": "reason?",
+   "start": 18.88,
+   "end": 19.56
+  },
+  {
+   "text": "Prices.",
+   "start": 19.84,
+   "end": 20.48
+  },
+  {
+   "text": "The",
+   "start": 20.96,
+   "end": 21.04
+  },
+  {
+   "text": "war",
+   "start": 21.12,
+   "end": 21.28
+  },
+  {
+   "text": "in",
+   "start": 21.36,
+   "end": 21.44
+  },
+  {
+   "text": "Iran",
+   "start": 21.68,
+   "end": 21.92
+  },
+  {
+   "text": "pushed",
+   "start": 22.0,
+   "end": 22.24
+  },
+  {
+   "text": "up",
+   "start": 22.32,
+   "end": 22.4
+  },
+  {
+   "text": "gas",
+   "start": 22.48,
+   "end": 22.72
+  },
+  {
+   "text": "prices,",
+   "start": 22.8,
+   "end": 23.6
+  },
+  {
+   "text": "and",
+   "start": 23.64,
+   "end": 23.68
+  },
+  {
+   "text": "the",
+   "start": 23.76,
+   "end": 23.84
+  },
+  {
+   "text": "Fed",
+   "start": 23.92,
+   "end": 24.16
+  },
+  {
+   "text": "raised",
+   "start": 24.24,
+   "end": 24.56
+  },
+  {
+   "text": "interest",
+   "start": 24.76,
+   "end": 24.96
+  },
+  {
+   "text": "rates",
+   "start": 25.08,
+   "end": 25.2
+  },
+  {
+   "text": "in",
+   "start": 25.28,
+   "end": 25.32
+  },
+  {
+   "text": "September,",
+   "start": 25.36,
+   "end": 26.32
+  },
+  {
+   "text": "so",
+   "start": 26.4,
+   "end": 26.48
+  },
+  {
+   "text": "borrowing",
+   "start": 26.56,
+   "end": 26.96
+  },
+  {
+   "text": "costs",
+   "start": 27.04,
+   "end": 27.52
+  },
+  {
+   "text": "more",
+   "start": 27.6,
+   "end": 27.76
+  },
+  {
+   "text": "too.",
+   "start": 27.84,
+   "end": 28.24
+  },
+  {
+   "text": "Consumers",
+   "start": 28.8,
+   "end": 29.28
+  },
+  {
+   "text": "now",
+   "start": 29.36,
+   "end": 29.52
+  },
+  {
+   "text": "expect",
+   "start": 29.76,
+   "end": 30.0
+  },
+  {
+   "text": "four",
+   "start": 30.08,
+   "end": 30.24
+  },
+  {
+   "text": "point",
+   "start": 30.4,
+   "end": 30.72
+  },
+  {
+   "text": "seven",
+   "start": 30.84,
+   "end": 30.96
+  },
+  {
+   "text": "percent",
+   "start": 31.04,
+   "end": 31.36
+  },
+  {
+   "text": "inflation",
+   "start": 31.44,
+   "end": 32.08
+  },
+  {
+   "text": "over",
+   "start": 32.16,
+   "end": 32.32
+  },
+  {
+   "text": "the",
+   "start": 32.36,
+   "end": 32.4
+  },
+  {
+   "text": "next",
+   "start": 32.48,
+   "end": 32.72
+  },
+  {
+   "text": "year.",
+   "start": 32.8,
+   "end": 33.12
+  },
+  {
+   "text": "Is",
+   "start": 33.68,
+   "end": 33.76
+  },
+  {
+   "text": "your",
+   "start": 33.84,
+   "end": 33.92
+  },
+  {
+   "text": "budget",
+   "start": 34.0,
+   "end": 34.32
+  },
+  {
+   "text": "tighter",
+   "start": 34.4,
+   "end": 34.72
+  },
+  {
+   "text": "than",
+   "start": 34.8,
+   "end": 34.88
+  },
+  {
+   "text": "a",
+   "start": 34.92,
+   "end": 34.96
+  },
+  {
+   "text": "year",
+   "start": 35.04,
+   "end": 35.2
+  },
+  {
+   "text": "ago?",
+   "start": 35.36,
+   "end": 35.76
+  },
+  {
+   "text": "Tell",
+   "start": 36.0,
+   "end": 36.16
+  },
+  {
+   "text": "us",
+   "start": 36.24,
+   "end": 36.32
+  },
+  {
+   "text": "below.",
+   "start": 36.4,
+   "end": 37.04
+  }
+ ]
+}
