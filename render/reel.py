@@ -739,6 +739,129 @@ def mix_audio(job, cache, total, out):
     subprocess.run(cmd, check=True)
 
 
+def probe_duration(path):
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
+                         capture_output=True, text=True, check=True).stdout.strip()
+    return float(out)
+
+
+def align_script(script, ww):
+    """Give each script word the timing of the matching recognised word (spelling comes from the script)."""
+    import difflib
+    st = script.split()
+    a = [_norm(x) for x in st]
+    b = [_norm(x["text"]) for x in ww]
+    times = [None] * len(st)
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(a=a, b=b, autojunk=False).get_opcodes():
+        if tag == "equal":
+            for k in range(i2 - i1):
+                times[i1 + k] = (ww[j1 + k]["start"], ww[j1 + k]["end"])
+        elif tag == "replace" and j2 > j1:
+            s0, e0, n = ww[j1]["start"], ww[j2 - 1]["end"], i2 - i1
+            for k in range(n):
+                times[i1 + k] = (s0 + (e0 - s0) * k / n, s0 + (e0 - s0) * (k + 1) / n)
+    i = 0
+    while i < len(st):                       # fill runs of unmatched words
+        if times[i] is not None:
+            i += 1
+            continue
+        j = i
+        while j < len(st) and times[j] is None:
+            j += 1
+        prev_end = times[i - 1][1] if i > 0 else 0.0
+        next_start = times[j][0] if j < len(st) else prev_end + 0.35 * (j - i)
+        # words after a sentence end inside the run belong to the next sentence (after the pause)
+        m = next((k for k in range(j - 1, i - 1, -1) if k == 0 or re.search(r"[.?!]$", st[k - 1])), None)
+        m = j if m is None else m
+        est = {k: 0.07 * max(len(_norm(st[k])), 2) for k in range(i, j)}
+        room = max(next_start - prev_end, 0.05 * (j - i))
+        scale = min(1.0, room / sum(est.values()))
+        t = prev_end
+        for k in range(i, m):                                    # continue after the previous word
+            times[k] = (t, t + est[k] * scale)
+            t += est[k] * scale
+        t = next_start - sum(est[k] * scale for k in range(m, j))
+        for k in range(m, j):                                    # lead into the next recognised word
+            times[k] = (t, t + est[k] * scale)
+            t += est[k] * scale
+        i = j
+    matched = sum(1 for tag, i1, i2, *_ in difflib.SequenceMatcher(a=a, b=b, autojunk=False).get_opcodes()
+                  if tag == "equal" for _ in range(i2 - i1))
+    print(f"aligned {matched}/{len(st)} script words to the recognised words")
+    return [{"text": t, "start": round(s0, 3), "end": round(e0, 3)} for t, (s0, e0) in zip(st, times)]
+
+
+def ensure_words(job, cache, outdir):
+    """Use job["words"] if given; otherwise time the script with Whisper (free, runs on the GitHub runner)."""
+    if job.get("words"):
+        return
+    from faster_whisper import WhisperModel
+    voice = fetch(job["voice"]["url"], cache)
+    name = os.environ.get("WHISPER_MODEL", "small.en")
+    model = WhisperModel(name, device="cpu", compute_type="int8")
+    script = job.get("script", "")
+    segs, _ = model.transcribe(voice, language="en", word_timestamps=True, beam_size=5,
+                               initial_prompt=script[:220] or None, condition_on_previous_text=False)
+    ww = [{"text": w.word.strip(), "start": float(w.start), "end": float(w.end)}
+          for seg in segs for w in (seg.words or []) if w.word.strip()]
+    print(f"whisper {name}: {len(ww)} words")
+    job["words"] = align_script(script, ww) if script else ww
+    with open(os.path.join(outdir, "words.json"), "w") as fh:
+        json.dump(job["words"], fh, ensure_ascii=False)
+
+
+def _find(normed, anchor, start_idx=0):
+    target = [_norm(x) for x in anchor.split()]
+    for i in range(start_idx, len(normed) - len(target) + 1):
+        if normed[i:i + len(target)] == target:
+            return i, i + len(target) - 1
+    for i in range(0, len(normed) - len(target) + 1):          # fall back to any occurrence
+        if normed[i:i + len(target)] == target:
+            return i, i + len(target) - 1
+    raise SystemExit(f"anchor not found in the voiceover: {anchor!r}")
+
+
+def resolve_times(job, cache):
+    """Turn word anchors ("at"/"until") into seconds so scenes cut exactly between sentences."""
+    words = [w for w in job["words"] if w.get("type", "word") == "word"]
+    normed = [_norm(w["text"]) for w in words]
+    if not job.get("duration"):
+        job["duration"] = round(probe_duration(fetch(job["voice"]["url"], cache)) + float(job.get("tail", 0.8)), 2)
+
+    def cut(i):
+        if i == 0:
+            return 0.0
+        gap = words[i]["start"] - words[i - 1]["end"]
+        return max(0.0, words[i]["start"] - min(0.15, max(gap, 0.0) * 0.5))
+
+    scenes, idx = job["scenes"], 0
+    for k, s in enumerate(scenes):
+        if "at" in s:
+            i, _ = _find(normed, s["at"], idx)
+            idx = i + 1
+            s["start"] = 0.0 if k == 0 else round(cut(i), 3)
+        elif k == 0:
+            s["start"] = 0.0
+    for k, s in enumerate(scenes):
+        s["end"] = scenes[k + 1]["start"] if k + 1 < len(scenes) else job["duration"]
+    idx = 0
+    for t in job.get("titles", []):
+        if "at" in t:
+            i, _ = _find(normed, t["at"], idx)
+            idx = i + 1
+            t["start"] = round(cut(i) + 0.05, 3)
+        elif "start" not in t:
+            t["start"] = 0.0
+        if "until" in t:
+            _, j = _find(normed, t["until"], 0)
+            t["end"] = round(words[j]["end"] + 0.25, 3)
+        elif "end" not in t:
+            t["end"] = t["start"] + float(t.get("dur", 3.3))
+        host = next((s for s in scenes if s["start"] <= t["start"] < s["end"]), None)
+        if host:
+            t["end"] = round(min(t["end"], host["end"] - 0.05), 3)
+
+
 def plan(job, cache):
     scenes = sorted(job["scenes"], key=lambda s: s["start"])
     total = float(job.get("duration") or scenes[-1]["end"])
@@ -806,6 +929,8 @@ def render(job_path, out, stills=None):
     outdir = out if stills else os.path.dirname(os.path.abspath(out))
     os.makedirs(outdir, exist_ok=True)
     cache = os.path.join(outdir, ".cache")
+    ensure_words(job, cache, outdir)
+    resolve_times(job, cache)
     scenes, total = plan(job, cache)
     titles = [Title(t) for t in job.get("titles", [])]
     hide = [(t.t0, t.t1) for t in titles if t.hook]

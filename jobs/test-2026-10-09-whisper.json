@@ -1,0 +1,171 @@
+{
+ "id": "test-2026-10-09-whisper",
+ "voice": {
+  "url": "https://storage.googleapis.com/xi-backend/database/workspace/cc3ca8aac80743e2b16fb409abf71273/content_generation/content_asset/0ARjxnDWejcdtabTRjct/asset_preview.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261009%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261009T003100Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=76785530587474012c09b226252c43328bc2b634d5887bc1f7d0ace8c1ab301b150d28239e41c18f1fff64214229e43d63dd584a6661b0b77cbd6bf806525c0850b94062e2bd7addeaf89943fe8536bc468013159f77fee840ccbd4e4a82288a04d06d40de68ca8e01573c97e982207eecc065441ecf52de2a97369c4fa93bd6b644ee77b994dfaaadd7f87a4f77ffd32745f6174515b74378d4ffacc466c2f9c02305584aa4be3dfdda975ce9646ed609ebe1179b2e0cd5682862b5f485ca8a9e6de931d5d1d0444fe38cf1abca494b0f8d530d0c3ad925d18932c7af0db5954d2961f5e523c6e73627e79e8d6401827cc7a671b4dba33ad4d99fb8d8e36f70"
+ },
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "eighty percent",
+   "text": "80%",
+   "em": true
+  },
+  {
+   "match": "forty percent",
+   "text": "40%",
+   "em": true
+  },
+  {
+   "match": "two point seven",
+   "text": "2.7",
+   "em": true
+  },
+  {
+   "match": "Iran war",
+   "text": "Iran war"
+  }
+ ],
+ "emphasis": [
+  "Hormuz",
+  "third",
+  "pricier",
+  "travel"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/38478200/16341387_1080_1920_60fps.mp4",
+   "in": 2.0
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/QeshmIsland_NASA.jpg",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "at": "And it comes down"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/25875725/11916965_1080_1920_60fps.mp4",
+   "in": 1.0,
+   "at": "The Strait of Hormuz"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/15739058/15739058-hd_1080_1920_60fps.mp4",
+   "in": 2.0,
+   "at": "About a third"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/32569762/13888169_1080_1920_30fps.mp4",
+   "in": 1.0,
+   "at": "Now the International"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "kicker": "ICC warning",
+   "value": 40,
+   "prefix": "−",
+   "suffix": "%",
+   "sub": "available fertilizer",
+   "at": "available fertilizer"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/26274877/11944472_1440_2560_60fps.mp4",
+   "in": 2.0,
+   "at": "Two point seven"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/38550506/16374379_1080_1920_50fps.mp4",
+   "in": 1.0,
+   "at": "Less fertilizer"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/5757795/5757795-hd_1080_1920_30fps.mp4",
+   "in": 0.5,
+   "at": "Smaller harvests mean"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/12438823/12438823-hd_1080_1920_30fps.mp4",
+   "in": 0.0,
+   "at": "Poorer countries"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "kicker": "Your take",
+   "text": "Would you cut back if *bread* got this expensive?",
+   "size": 100,
+   "bg": {
+    "src": "https://videos.pexels.com/video-files/5757798/5757798-hd_1080_1920_30fps.mp4",
+    "in": 1.0
+   },
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news",
+   "at": "Would you cut back"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "kicker": "Food · Prices",
+   "text": "Grain prices could jump *80%*",
+   "until": "eighty percent"
+  },
+  {
+   "style": "label",
+   "kicker": "Strait of Hormuz",
+   "text": "One strip of *water*",
+   "at": "And it comes down"
+  },
+  {
+   "style": "label",
+   "kicker": "Iran war",
+   "text": "The strait is *choked*",
+   "at": "The Strait of Hormuz"
+  },
+  {
+   "style": "label",
+   "kicker": "Fertilizer",
+   "text": "*A third* of world trade",
+   "at": "About a third"
+  },
+  {
+   "style": "label",
+   "kicker": "The warning",
+   "text": "*Fertilizer* supply is falling",
+   "at": "Now the International"
+  },
+  {
+   "style": "label",
+   "kicker": "Gone from the market",
+   "text": "*2.7 million* tons",
+   "at": "Two point seven"
+  },
+  {
+   "style": "label",
+   "kicker": "At the checkout",
+   "text": "*Pricier* wheat, corn & rice",
+   "at": "Smaller harvests mean"
+  },
+  {
+   "style": "label",
+   "kicker": "Worldwide",
+   "text": "Prices *travel*",
+   "at": "But grain is traded"
+  }
+ ],
+ "note": "Test: free Whisper word timing + word anchors (no ElevenLabs transcription)",
+ "script": "Grain prices could jump as much as eighty percent. And it comes down to one strip of water. The Strait of Hormuz has been choked by the Iran war for months. About a third of the world's fertilizer trade moves through it. Now the International Chamber of Commerce warns that available fertilizer is down nearly forty percent. Two point seven million tons... gone. Less fertilizer means smaller harvests. Smaller harvests mean pricier wheat, corn and rice. Poorer countries get hit first. But grain is traded worldwide, so prices travel. Would you cut back if bread got this expensive? Tell us below."
+}

@@ -27,7 +27,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg libraqm0 > /dev/null
-          pip install --quiet pillow numpy
+          pip install --quiet pillow numpy faster-whisper
           ffmpeg -version | head -1
           python3 -c "from PIL import features; print('raqm:', features.check('raqm'))"
       - name: Pick jobs
@@ -54,7 +54,8 @@ jobs:
             if [ "$status" = ok ]; then
               ffprobe -v error -show_entries format=duration,size:stream=codec_name,width,height,r_frame_rate \
                 -of json "$dir/$id.mp4" > "$dir/probe.json"
-              ffmpeg -v error -y -i "$dir/$id.mp4" -vf "fps=1/3,scale=270:-1,tile=6x2:padding=6:color=0x202020" \
+              dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$dir/$id.mp4")
+              ffmpeg -v error -y -i "$dir/$id.mp4" -vf "fps=12/$dur,scale=270:-1,tile=6x2:padding=6:color=0x202020" \
                 -frames:v 1 "$dir/$id-sheet.jpg"
               ffmpeg -v error -y -ss 0.5 -i "$dir/$id.mp4" -frames:v 1 -q:v 2 "$dir/$id-cover.jpg"
               ffmpeg -hide_banner -nostats -i "$dir/$id.mp4" -af ebur128=peak=true -f null - 2>&1 \
