@@ -437,7 +437,7 @@ class Captions:
             return (bx - 13, sp["base"] - self.cap - 16, bx + wd + 13, sp["base"] + 18)
 
         b1 = box(ai)
-        q = ease_out_cubic((t - (words[ai]["start"] - 0.04)) / 0.11)
+        q = ease_out_cubic((t - (words[ai]["start"] - 0.04)) / 0.08)
         if ai > 0:
             b0 = box(ai - 1)
             b = tuple(lerp(b0[j], b1[j], q) for j in range(4))
