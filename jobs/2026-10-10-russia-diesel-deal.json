@@ -1,0 +1,616 @@
+{
+ "id": "2026-10-10-russia-diesel-deal",
+ "duration": 37.44,
+ "voice": {
+  "url": "https://storage.googleapis.com/xi-backend/database/workspace/cc3ca8aac80743e2b16fb409abf71273/content_generation/bSKV2YVHHrKsZ1gpUtjc/CMV7ByxOSEJVPEMwMXLf/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261010%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261010T155740Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=3e5553e5510555d678b1803385640570da2e6f03f8558823514aafa6ed472a9236e244cb03ff5590239d3c9f167785589ee41a0d1a1a8c093d339dd680f3ddab272b1b0bdc6b47a7337ed844fdad53f51e7fffa807be33b6bc6711a70d27d66228c3eb1f3a3b117de5bbfc5639eaf4ac36aceed1aff918b0987519c5a81cfc11a2c40c683c0e3f598bb635271b1b4c89435559685ac500c53eed78bc1c9593c255ef9d1470b066532f5b191c081c274102c3323ca8bd0b1cdedb745256c29ee2c9dff30d4c935dc6e270bad5dbf0a52c4c1afd328e3753a572bb7e08deac8c7eced96a2ed4d38f9c213bc3a72c4d547da7897664cd038c56159df0dd82318dd2"
+ },
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "i": 18,
+   "n": 3,
+   "text": "300,000",
+   "em": true
+  },
+  {
+   "i": 38,
+   "n": 2,
+   "text": "$6",
+   "em": true
+  },
+  {
+   "i": 59,
+   "n": 2,
+   "text": "2022,"
+  }
+ ],
+ "emphasis": [
+  6,
+  31,
+  44,
+  55,
+  78
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/30583752/13097021_1080_1920_30fps.mp4",
+   "in": 1.0,
+   "start": 0,
+   "end": 3.04
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/34433104/14589360_1080_1920_24fps.mp4",
+   "in": 2.0,
+   "start": 3.04,
+   "end": 6.2
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "start": 6.2,
+   "end": 11.0,
+   "kicker": "Right away",
+   "value": 300000,
+   "suffix": "+",
+   "sub": "tons of Russian diesel, Trump says"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/34479229/14610578_1080_1920_24fps.mp4",
+   "in": 1.0,
+   "start": 11.0,
+   "end": 16.92
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/35560146/15067422_1080_1920_30fps.mp4",
+   "in": 3.0,
+   "start": 16.92,
+   "end": 20.0
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/16448242/16448242-hd_1080_1920_30fps.mp4",
+   "in": 1.0,
+   "start": 20.0,
+   "end": 27.05
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/26329253/11948323_1080_1920_60fps.mp4",
+   "in": 1.0,
+   "start": 27.05,
+   "end": 32.08
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "start": 32.08,
+   "end": 37.44,
+   "kicker": "Your take",
+   "text": "Cheaper fuel, or a line that *shouldn't* be crossed?",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "start": 0.0,
+   "end": 2.95,
+   "kicker": "USA · Russia",
+   "text": "America opens the door to *Russian diesel*"
+  },
+  {
+   "style": "label",
+   "start": 3.09,
+   "end": 6.15,
+   "kicker": "The deal",
+   "text": "Trump says *Putin agreed*"
+  },
+  {
+   "style": "label",
+   "start": 11.05,
+   "end": 13.0,
+   "kicker": "The reason",
+   "text": "*Price*"
+  },
+  {
+   "style": "label",
+   "start": 13.15,
+   "end": 16.85,
+   "kicker": "At the pump",
+   "text": "Diesel tops *$6* a gallon"
+  },
+  {
+   "style": "label",
+   "start": 16.97,
+   "end": 19.95,
+   "kicker": "Why",
+   "text": "Near a *record high* amid Iran war"
+  },
+  {
+   "style": "label",
+   "start": 20.05,
+   "end": 23.35,
+   "kicker": "Since 2022",
+   "text": "Russian oil *banned* in the US"
+  },
+  {
+   "style": "label",
+   "start": 24.25,
+   "end": 26.95,
+   "kicker": "The workaround",
+   "text": "A *temporary* Treasury license"
+  },
+  {
+   "style": "label",
+   "start": 27.1,
+   "end": 30.4,
+   "kicker": "Zelenskyy",
+   "text": "*Gifts to Putin* “will not bring peace”"
+  }
+ ],
+ "words": [
+  {
+   "text": "America",
+   "start": 0.0,
+   "end": 0.56
+  },
+  {
+   "text": "just",
+   "start": 0.72,
+   "end": 0.96
+  },
+  {
+   "text": "opened",
+   "start": 1.04,
+   "end": 1.28
+  },
+  {
+   "text": "the",
+   "start": 1.32,
+   "end": 1.36
+  },
+  {
+   "text": "door",
+   "start": 1.44,
+   "end": 1.68
+  },
+  {
+   "text": "to",
+   "start": 1.76,
+   "end": 1.84
+  },
+  {
+   "text": "Russian",
+   "start": 1.92,
+   "end": 2.24
+  },
+  {
+   "text": "diesel.",
+   "start": 2.32,
+   "end": 2.8
+  },
+  {
+   "text": "President",
+   "start": 3.28,
+   "end": 3.68
+  },
+  {
+   "text": "Trump",
+   "start": 3.76,
+   "end": 4.0
+  },
+  {
+   "text": "says",
+   "start": 4.08,
+   "end": 4.32
+  },
+  {
+   "text": "Vladimir",
+   "start": 4.4,
+   "end": 4.8
+  },
+  {
+   "text": "Putin",
+   "start": 4.88,
+   "end": 5.2
+  },
+  {
+   "text": "agreed",
+   "start": 5.28,
+   "end": 5.6
+  },
+  {
+   "text": "to",
+   "start": 5.68,
+   "end": 5.72
+  },
+  {
+   "text": "supply",
+   "start": 5.76,
+   "end": 6.16
+  },
+  {
+   "text": "more",
+   "start": 6.24,
+   "end": 6.32
+  },
+  {
+   "text": "than",
+   "start": 6.4,
+   "end": 6.64
+  },
+  {
+   "text": "three",
+   "start": 6.76,
+   "end": 6.88
+  },
+  {
+   "text": "hundred",
+   "start": 7.04,
+   "end": 7.28
+  },
+  {
+   "text": "thousand",
+   "start": 7.52,
+   "end": 7.84
+  },
+  {
+   "text": "tons",
+   "start": 8.0,
+   "end": 8.4
+  },
+  {
+   "text": "right",
+   "start": 8.48,
+   "end": 8.64
+  },
+  {
+   "text": "away,",
+   "start": 8.72,
+   "end": 9.44
+  },
+  {
+   "text": "and",
+   "start": 9.52,
+   "end": 9.6
+  },
+  {
+   "text": "more",
+   "start": 9.68,
+   "end": 10.0
+  },
+  {
+   "text": "in",
+   "start": 10.04,
+   "end": 10.08
+  },
+  {
+   "text": "November.",
+   "start": 10.16,
+   "end": 10.72
+  },
+  {
+   "text": "The",
+   "start": 11.28,
+   "end": 11.36
+  },
+  {
+   "text": "reason",
+   "start": 11.44,
+   "end": 11.84
+  },
+  {
+   "text": "is",
+   "start": 12.0,
+   "end": 12.08
+  },
+  {
+   "text": "price.",
+   "start": 12.16,
+   "end": 12.72
+  },
+  {
+   "text": "American",
+   "start": 13.2,
+   "end": 13.68
+  },
+  {
+   "text": "diesel",
+   "start": 13.76,
+   "end": 14.08
+  },
+  {
+   "text": "now",
+   "start": 14.16,
+   "end": 14.32
+  },
+  {
+   "text": "averages",
+   "start": 14.4,
+   "end": 14.88
+  },
+  {
+   "text": "more",
+   "start": 14.96,
+   "end": 15.04
+  },
+  {
+   "text": "than",
+   "start": 15.12,
+   "end": 15.2
+  },
+  {
+   "text": "six",
+   "start": 15.44,
+   "end": 15.6
+  },
+  {
+   "text": "dollars",
+   "start": 15.68,
+   "end": 16.0
+  },
+  {
+   "text": "a",
+   "start": 16.08,
+   "end": 16.12
+  },
+  {
+   "text": "gallon,",
+   "start": 16.16,
+   "end": 16.88
+  },
+  {
+   "text": "near",
+   "start": 16.96,
+   "end": 17.04
+  },
+  {
+   "text": "a",
+   "start": 17.12,
+   "end": 17.2
+  },
+  {
+   "text": "record",
+   "start": 17.28,
+   "end": 17.6
+  },
+  {
+   "text": "high,",
+   "start": 17.76,
+   "end": 18.24
+  },
+  {
+   "text": "amid",
+   "start": 18.32,
+   "end": 18.48
+  },
+  {
+   "text": "the",
+   "start": 18.56,
+   "end": 18.64
+  },
+  {
+   "text": "war",
+   "start": 18.72,
+   "end": 18.96
+  },
+  {
+   "text": "in",
+   "start": 19.0,
+   "end": 19.04
+  },
+  {
+   "text": "Iran.",
+   "start": 19.12,
+   "end": 19.68
+  },
+  {
+   "text": "Russian",
+   "start": 20.32,
+   "end": 20.64
+  },
+  {
+   "text": "oil",
+   "start": 20.72,
+   "end": 21.04
+  },
+  {
+   "text": "has",
+   "start": 21.12,
+   "end": 21.2
+  },
+  {
+   "text": "been",
+   "start": 21.28,
+   "end": 21.36
+  },
+  {
+   "text": "banned",
+   "start": 21.44,
+   "end": 21.76
+  },
+  {
+   "text": "in",
+   "start": 21.8,
+   "end": 21.84
+  },
+  {
+   "text": "America",
+   "start": 21.92,
+   "end": 22.4
+  },
+  {
+   "text": "since",
+   "start": 22.48,
+   "end": 22.72
+  },
+  {
+   "text": "twenty",
+   "start": 22.8,
+   "end": 22.96
+  },
+  {
+   "text": "twenty-two,",
+   "start": 23.12,
+   "end": 24.16
+  },
+  {
+   "text": "so",
+   "start": 24.2,
+   "end": 24.24
+  },
+  {
+   "text": "the",
+   "start": 24.32,
+   "end": 24.4
+  },
+  {
+   "text": "Treasury",
+   "start": 24.48,
+   "end": 24.96
+  },
+  {
+   "text": "issued",
+   "start": 25.04,
+   "end": 25.28
+  },
+  {
+   "text": "a",
+   "start": 25.36,
+   "end": 25.44
+  },
+  {
+   "text": "temporary",
+   "start": 25.52,
+   "end": 26.0
+  },
+  {
+   "text": "license.",
+   "start": 26.08,
+   "end": 26.72
+  },
+  {
+   "text": "Ukraine's",
+   "start": 27.36,
+   "end": 27.84
+  },
+  {
+   "text": "President",
+   "start": 28.04,
+   "end": 28.24
+  },
+  {
+   "text": "Zelenskyy",
+   "start": 28.28,
+   "end": 28.88
+  },
+  {
+   "text": "said",
+   "start": 28.96,
+   "end": 29.12
+  },
+  {
+   "text": "gifts",
+   "start": 29.28,
+   "end": 29.6
+  },
+  {
+   "text": "to",
+   "start": 29.64,
+   "end": 29.68
+  },
+  {
+   "text": "Putin",
+   "start": 29.76,
+   "end": 30.16
+  },
+  {
+   "text": "will",
+   "start": 30.24,
+   "end": 30.4
+  },
+  {
+   "text": "not",
+   "start": 30.56,
+   "end": 30.8
+  },
+  {
+   "text": "bring",
+   "start": 30.88,
+   "end": 31.04
+  },
+  {
+   "text": "peace.",
+   "start": 31.12,
+   "end": 31.92
+  },
+  {
+   "text": "Cheaper",
+   "start": 32.24,
+   "end": 32.48
+  },
+  {
+   "text": "fuel,",
+   "start": 32.64,
+   "end": 33.36
+  },
+  {
+   "text": "or",
+   "start": 33.4,
+   "end": 33.44
+  },
+  {
+   "text": "a",
+   "start": 33.52,
+   "end": 33.6
+  },
+  {
+   "text": "line",
+   "start": 33.68,
+   "end": 34.0
+  },
+  {
+   "text": "that",
+   "start": 34.08,
+   "end": 34.16
+  },
+  {
+   "text": "shouldn't",
+   "start": 34.24,
+   "end": 34.453
+  },
+  {
+   "text": "be",
+   "start": 34.48,
+   "end": 34.56
+  },
+  {
+   "text": "crossed?",
+   "start": 34.64,
+   "end": 35.2
+  },
+  {
+   "text": "Tell",
+   "start": 35.68,
+   "end": 35.76
+  },
+  {
+   "text": "us",
+   "start": 35.84,
+   "end": 36.0
+  },
+  {
+   "text": "below.",
+   "start": 36.2,
+   "end": 36.72
+  }
+ ]
+}
