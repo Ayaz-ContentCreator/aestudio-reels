@@ -712,12 +712,14 @@ def commons_check(s):
 def clip_info(src):
     """Log who published a video page (for the render log / audit); returns the publisher name or ""."""
     r = subprocess.run(["yt-dlp", "--no-playlist", "--no-warnings", "--skip-download", "--js-runtimes", "node",
-                        "--print", "%(channel,uploader,extractor_key)s | %(license)s | %(duration)ss | %(title).80s",
+                        "--print", "%(channel,uploader)s | %(extractor_key)s | %(duration)ss | %(title).80s",
                         src], capture_output=True, text=True)
     out = r.stdout.strip().splitlines()
     print(f"source {src}: {out[0] if out else (r.stderr.strip().splitlines()[-1:] or ['?'])}")
     who = out[0].split(" | ")[0].strip() if out else ""
-    return "" if who in ("NA", "Generic") else who
+    if who in ("", "NA"):
+        who = re.sub(r"^www\.", "", urllib.parse.urlparse(src).hostname or "")   # e.g. nbcnews.com
+    return who
 
 
 def remote_size(src):

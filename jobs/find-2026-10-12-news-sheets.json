@@ -1,0 +1,8 @@
+{
+ "id": "find-2026-10-12-news-sheets",
+ "note": "Frame-sheet test for reused news clips.",
+ "find": [
+  {"probe": "https://www.nbcnews.com/news/amp-video/mmvo42821701557", "sheet": true, "dur": 22},
+  {"probe": "https://de.euronews.com/video/2026/10/09/nachrichten-des-tages-9-oktober-2026-abendausgabe", "in": 0, "sheet": true}
+ ]
+}

@@ -53,7 +53,7 @@ jobs:
             status=ok
             if python3 -c "import json,sys; sys.exit(0 if 'find' in json.load(open(sys.argv[1])) else 1)" "$job"; then
               # media search job: results in find.txt, no video
-              python3 tools/find_media.py "$job" > "$dir/find.txt" 2>&1 || status=failed
+              python3 tools/find_media.py "$job" "$dir" > "$dir/find.txt" 2>&1 || status=failed
               tail -60 "$dir/find.txt"
               gh release delete "$id" --yes --cleanup-tag > /dev/null 2>&1 || true
               gh release create "$id" "$dir"/* --title "$id ($status)" --notes "Media search for $job" --latest=false

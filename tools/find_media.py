@@ -6,7 +6,8 @@ Job file jobs/find-<id>.json:
      {"commons": "Donald Tusk", "kind": "image"},        # Wikimedia Commons search, licence + author + direct URL
      {"commons": "European Parliament plenary", "kind": "video"},
      {"nasa": "Artemis II launch", "kind": "video"},       # NASA Image and Video Library (public domain)
-     {"probe": "https://www.dvidshub.net/video/1015038", "in": 10, "dur": 6}   # can the renderer download it?
+     {"probe": "https://www.dvidshub.net/video/1015038", "in": 10, "dur": 6},  # can the renderer download it?
+     {"probe": "https://www.nbcnews.com/news/amp-video/mmvo42821701557", "sheet": true}  # + frame sheet (60 s)
   ]}
 Results go to the release "<id>" as find.txt (one block per query). Only PD / CC0 / CC BY results are marked
 "OK to use"; CC BY-SA is marked "SA" (avoid unless it is the only real image); everything else "NO".
@@ -77,7 +78,17 @@ def nasa(q, kind="video", limit=5):
             print(f"    url: {f.replace('http://', 'https://')}")
 
 
-def probe(src, a=0.0, dur=6.0):
+def sheet(path, a, out_png):
+    """Frames every 2 s with their source timecode, so the right seconds can be picked."""
+    font = os.path.join(reel.FONTS, "InterDisplay-Bold.ttf").replace(":", "\\:")
+    vf = (f"fps=1/2,scale=360:-2,drawtext=fontfile={font}:text='%{{pts\\:hms\\:{a:.0f}}}':x=10:y=10:"
+          f"fontsize=26:fontcolor=white:box=1:boxcolor=black@0.6:boxborderw=6,tile=5x6:padding=4:color=0x202020")
+    r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-vf", vf, "-frames:v", "1", "-q:v", "3", out_png],
+                       capture_output=True, text=True)
+    return r.returncode == 0
+
+
+def probe(src, a=0.0, dur=6.0, sheet_png=None):
     tmp = tempfile.mkdtemp()
     s = {"src": src, "type": "video"}
     try:
@@ -93,13 +104,15 @@ def probe(src, a=0.0, dur=6.0):
                               "stream=width,height:format=duration", "-of", "csv=p=0", path],
                              capture_output=True, text=True).stdout.split()
         print(f"- [DOWNLOADS] {src} -> {' '.join(out)}")
+        if sheet_png and sheet(path, a, sheet_png):
+            print(f"    frames: {os.path.basename(sheet_png)} (every 2 s from {a:.0f}s; timecodes = source time)")
     except SystemExit as e:
         print(f"- [FAILS] {src}: {e}")
 
 
-def main(job_path):
+def main(job_path, outdir="."):
     job = json.load(open(job_path))
-    for q in job["find"]:
+    for n, q in enumerate(job["find"], 1):
         print(f"\n## {json.dumps(q, ensure_ascii=False)}")
         try:
             if "commons" in q:
@@ -107,10 +120,11 @@ def main(job_path):
             elif "nasa" in q:
                 nasa(q["nasa"], q.get("kind", "video"), q.get("limit", 5))
             elif "probe" in q:
-                probe(q["probe"], float(q.get("in", 0)), float(q.get("dur", 6)))
+                png = os.path.join(outdir, f"{job['id']}-{n}.jpg") if q.get("sheet") else None
+                probe(q["probe"], float(q.get("in", 0)), float(q.get("dur", 60 if png else 6)), png)
         except Exception as e:
             print(f"- [ERROR] {e}")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else ".")
