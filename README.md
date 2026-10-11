@@ -59,6 +59,37 @@ Recommended (no ElevenLabs transcription needed: word timings come from Whisper 
 - Captions are hidden automatically during hook titles and cards. `words.json` (timings used) is attached
   to each release.
 
+## Original footage (preferred over stock)
+Scene fields for `video` / `photo`:
+- `"src"`: a direct media file (Wikimedia Commons `upload.wikimedia.org/...`, NASA `images-assets.nasa.gov/...`,
+  Pexels) **or** a video page on a site yt-dlp supports (tested: DVIDS). Only the needed seconds are downloaded;
+  big remote files are cut over HTTP. **YouTube does not work on GitHub runners** (bot check) — don't use it.
+- `"in"`: where in the source the scene starts (seconds).
+- `"credit"`: shown on screen as a quiet line above the kicker (`VIDEO: …` / `PHOTO: …`; text with `:` or `©`
+  is shown as written). Cards keep the credit of the clip blurred behind them.
+- Wikimedia Commons files are licence-checked on the runner: public domain, CC0, CC BY, OGL and the EU
+  "Attribution" licence pass; CC BY-SA only with `"allow_sa": true`; anything else stops the render. Commons
+  files get an automatic credit (author / licence / Wikimedia Commons) when `"credit"` is missing.
+- `"fit"`: default is automatic — portrait media fills the frame, landscape media is shown whole across the
+  width over a blurred fill ("band"). Force a crop with `"fit": "fill"` plus `"focus": 0.3` (x) or `[x, y]`.
+  While a hook title is on screen the band sits lower so the headline never covers it.
+
+### Find media (runs on GitHub, which can reach Commons/NASA/DVIDS)
+Push `jobs/find-<id>.json`:
+```json
+{"id": "find-2026-10-12-tusk", "find": [
+  {"commons": "Donald Tusk", "kind": "image"},
+  {"commons": "European Parliament plenary", "kind": "video"},
+  {"nasa": "Artemis II", "kind": "video"},
+  {"probe": "https://www.dvidshub.net/video/1015038", "in": 10, "dur": 6}]}
+```
+The release `find-<id>` gets `find.txt`: each result with `[OK to use]` / `[SA …]` / `[NO]`, size, duration,
+licence, author and the direct URL to put in `"src"`.
+
+### Topics
+`python3 tools/trends.py --hours 24 --geos US,GB,CA,DE,FR` — Google Trends "Trending now" for the last 24 h,
+sports removed, merged across countries (volume, countries, category, related searches).
+
 Local test: `python3 render/reel.py job.json out/test.mp4` or `--stills 0.5,4,9` for PNG frames.
 
 Fonts: Inter (SIL OFL 1.1), JetBrains Mono (SIL OFL 1.1) — licences in `assets/fonts/`.

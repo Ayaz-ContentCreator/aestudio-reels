@@ -766,7 +766,7 @@ def fetch_clip(src, cache, a, b):
 
 
 def auto_fit(path, src):
-    """Full-bleed crop when the source is sharp enough for 9:16, otherwise show the whole frame ("band")."""
+    """Portrait sources fill the frame; landscape sources are shown whole ("band") unless the job sets "fit"."""
     r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
                         "-of", "csv=p=0", path], capture_output=True, text=True)
     try:
@@ -774,7 +774,7 @@ def auto_fit(path, src):
     except ValueError:
         return "fill"
     scale = max(W / w, H / h)                      # upscale needed to fill 1080x1920
-    fit = "band" if (w > h * 1.1 and scale > 1.35) else "fill"
+    fit = "band" if w > h * 1.1 else "fill"        # landscape: show it whole; crop only when the job asks
     if fit == "fill" and scale > 1.6:
         print(f"warning: {src} is only {w}x{h}; it will look soft full-screen")
     print(f"media {src.split('?')[0][-70:]}: {w}x{h} -> {fit}")
@@ -790,7 +790,7 @@ def _focus(s):
     return clamp(float(fx)), clamp(float(fy))
 
 
-def decode(path, start, n, blur=False, fit="fill", focus=(0.5, 0.5)):
+def decode(path, start, n, blur=False, fit="fill", focus=(0.5, 0.5), band_y=BAND_Y):
     fx, fy = focus
     if fit == "band" and not blur:
         # whole landscape frame across the width, over a blurred, darker fill of itself
@@ -798,7 +798,7 @@ def decode(path, start, n, blur=False, fit="fill", focus=(0.5, 0.5)):
               f"[a]scale={W}:{H}:force_original_aspect_ratio=increase:flags=bilinear,crop={W}:{H},"
               f"gblur=sigma=40:steps=3,eq=brightness=-0.10:saturation=0.80[bg];"
               f"[b]scale={W}:{int(H * 0.6)}:force_original_aspect_ratio=decrease:flags=lanczos[fg];"
-              f"[bg][fg]overlay=x=(W-w)/2:y={BAND_Y}-h/2,{GRADE}")
+              f"[bg][fg]overlay=x=(W-w)/2:y={band_y}-h/2,{GRADE}")
     else:
         vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,"
               f"crop={W}:{H}:(in_w-{W})*{fx:.3f}:(in_h-{H})*{fy:.3f},fps={FPS},{GRADE}")
@@ -825,7 +825,8 @@ def decode(path, start, n, blur=False, fit="fill", focus=(0.5, 0.5)):
         yield last
 
 
-def kenburns(path, n, z0=1.0, z1=1.08, pan=(0.0, -0.015), blur=False, fit="fill", focus=(0.5, 0.5)):
+def kenburns(path, n, z0=1.0, z1=1.08, pan=(0.0, -0.015), blur=False, fit="fill", focus=(0.5, 0.5),
+             band_y=BAND_Y):
     """Smooth sub-pixel push-in on a still image (zoom z0 -> z1, slight pan).
     fit="band": the whole (landscape) photo across the width over a blurred fill, slow push-in inside it."""
     img = Image.open(path).convert("RGB")
@@ -845,7 +846,7 @@ def kenburns(path, n, z0=1.0, z1=1.08, pan=(0.0, -0.015), blur=False, fit="fill"
             fg = src.transform((fw, fh), Image.EXTENT, (cx - ww / 2, cy - hh / 2, cx + ww / 2, cy + hh / 2),
                                Image.BICUBIC)
             frame = bg.copy()
-            frame.paste(fg, ((W - fw) // 2, BAND_Y - fh // 2))
+            frame.paste(fg, ((W - fw) // 2, band_y - fh // 2))
             yield frame
         return
     s = max(W / img.width, H / img.height) * max(z0, z1) * 1.02   # never upscale past the source
@@ -1113,10 +1114,11 @@ def scene_frames(s, start_frame=0, count=None):
     n = s["n"] - start_frame if count is None else count
     off = start_frame / FPS
     if s["type"] == "video":
-        return decode(s["path"], s["in"] + off, n, fit=s["fit_mode"], focus=s["focus_xy"])
+        return decode(s["path"], s["in"] + off, n, fit=s["fit_mode"], focus=s["focus_xy"], band_y=s.get("band_y", BAND_Y))
     if s["type"] == "photo":
         z0, z1 = s.get("zoom", (1.0, 1.08))
-        return itertools.islice(kenburns(s["path"], s["n"], z0, z1, fit=s["fit_mode"], focus=s["focus_xy"]),
+        return itertools.islice(kenburns(s["path"], s["n"], z0, z1, fit=s["fit_mode"], focus=s["focus_xy"],
+                                         band_y=s.get("band_y", BAND_Y)),
                                 start_frame, start_frame + n)
     if s.get("bg_path"):
         if s["bg_type"] == "photo":
@@ -1160,6 +1162,9 @@ def render(job_path, out, stills=None):
     resolve_times(job, cache)
     scenes, total = plan(job, cache)
     titles = [Title(t) for t in job.get("titles", [])]
+    for s in scenes:
+        if any(ti.hook and ti.t0 < s["end"] and ti.t1 > s["start"] for ti in titles):
+            s["band_y"] = BAND_Y + 150
     hide = [(t.t0, t.t1) for t in titles if t.hook]
     hide += [(s["start"], s["end"]) for s in scenes if s["type"] == "card"]
     hide += [tuple(h) for h in job.get("captions", {}).get("hide", [])]
