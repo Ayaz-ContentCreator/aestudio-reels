@@ -1,0 +1,15 @@
+{
+ "id": "find-2026-10-12-news-sources",
+ "note": "Which news-video sites download from the GitHub runner (for reused-footage clips).",
+ "find": [
+  {"probe": "https://www.nbcnews.com/nightly-news/video/netflix--new-parents-get--unlimited--paid-leave-for-a-year-499195459621", "in": 5, "dur": 5},
+  {"probe": "https://www.nbcnews.com/news/amp-video/mmvo42821701557", "in": 5, "dur": 5},
+  {"probe": "https://www.cbsnews.com/video/trump-crime-crackdown-iowas-2026-senate-race-and-more-from-cbs-news-political-panel", "in": 20, "dur": 5},
+  {"probe": "https://abcnews.com/video/131280553/", "in": 2, "dur": 5},
+  {"probe": "https://de.euronews.com/video/2026/10/09/nachrichten-des-tages-9-oktober-2026-abendausgabe", "in": 20, "dur": 5},
+  {"probe": "https://www.aljazeera.com/video/newsfeed/2026/6/20/world-cup-wrap-day-9", "in": 5, "dur": 5},
+  {"probe": "https://www.ctvnews.ca/toronto/video/2026/06/23/milestones-for-june-23-2026/", "in": 5, "dur": 5},
+  {"probe": "https://www.wrdw.com/video/2026/10/06/watch-catch-top-headlines-news-12-wrdw/", "in": 5, "dur": 5},
+  {"probe": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-oct-6-2026/", "in": 30, "dur": 5}
+ ]
+}

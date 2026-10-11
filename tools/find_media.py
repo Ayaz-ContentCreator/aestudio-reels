@@ -82,7 +82,8 @@ def probe(src, a=0.0, dur=6.0):
     s = {"src": src, "type": "video"}
     try:
         if reel.is_page(s):
-            reel.clip_info(src)
+            who = reel.clip_info(src)
+            print(f"    credit would be: {who or '(set \"credit\" in the job)'}")
             path = reel.fetch_clip(src, tmp, a, a + dur)
         else:
             if re.search(r"//upload\.wikimedia\.org/", src):

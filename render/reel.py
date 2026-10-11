@@ -649,8 +649,10 @@ def is_page(s):
     if s.get("ytdlp") is not None:
         return bool(s["ytdlp"])
     u = urllib.parse.urlparse(s["src"])
+    if u.scheme not in ("http", "https"):
+        return False
     ext = os.path.splitext(u.path)[1].lower()
-    return bool(PAGE_HOSTS.search(u.hostname or "")) and ext not in MEDIA_EXT
+    return ext not in MEDIA_EXT            # any web page with a video (news sites, X, TikTok, DVIDS...)
 
 
 def fetch(src, cache):
@@ -708,11 +710,14 @@ def commons_check(s):
 
 
 def clip_info(src):
-    """Log who published a video page and under what licence (for the render log / audit)."""
+    """Log who published a video page (for the render log / audit); returns the publisher name or ""."""
     r = subprocess.run(["yt-dlp", "--no-playlist", "--no-warnings", "--skip-download", "--js-runtimes", "node",
-                        "--print", "%(channel,uploader)s | %(license)s | %(duration)ss | %(title).80s", src],
-                       capture_output=True, text=True)
-    print(f"source {src}: {(r.stdout.strip() or r.stderr.strip().splitlines()[-1:] or ['?'])}")
+                        "--print", "%(channel,uploader,extractor_key)s | %(license)s | %(duration)ss | %(title).80s",
+                        src], capture_output=True, text=True)
+    out = r.stdout.strip().splitlines()
+    print(f"source {src}: {out[0] if out else (r.stderr.strip().splitlines()[-1:] or ['?'])}")
+    who = out[0].split(" | ")[0].strip() if out else ""
+    return "" if who in ("NA", "Generic") else who
 
 
 def remote_size(src):
@@ -1079,7 +1084,9 @@ def plan(job, cache):
             a = s["in"]
             b = a + (s["end"] - s["start"]) + float(s.get("extra", 12))
             if s["type"] == "video" and is_page(s):
-                clip_info(s["src"])
+                who = clip_info(s["src"])
+                if not s.get("credit") and who:
+                    s["credit"] = who                     # reused clip: always credit the publisher
                 s["path"] = fetch_clip(s["src"], cache, a, b)
                 s["in"] = 0.0
             elif s["type"] == "video" and re.match(r"https?://", s["src"]) and remote_size(s["src"]) > 150e6:
