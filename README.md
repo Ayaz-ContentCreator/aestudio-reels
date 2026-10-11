@@ -74,6 +74,14 @@ Scene fields for `video` / `photo`:
   width over a blurred fill ("band"). Force a crop with `"fit": "fill"` plus `"focus": 0.3` (x) or `[x, y]`.
   While a hook title is on screen the band sits lower so the headline never covers it.
 
+### Reused news clips
+Any video page link in `"src"` goes through yt-dlp (only the needed seconds, their audio is dropped — our
+voiceover runs on top). Tested from GitHub: nbcnews.com video pages (`/news/amp-video/...`), `*.euronews.com/video/...`,
+US local TV station sites (Gray/Arc, e.g. wrdw.com/video, kptv.com/video), dvidshub.net. Not working from GitHub:
+YouTube (incl. whitehouse.gov embeds), cbsnews.com, abcnews.com, aljazeera.com. Probe anything else first.
+Without `"credit"` the clip is credited to its channel or site name; better set the outlet's proper name
+(`"credit": "NBC News"`).
+
 ### Find media (runs on GitHub, which can reach Commons/NASA/DVIDS)
 Push `jobs/find-<id>.json`:
 ```json
@@ -81,10 +89,12 @@ Push `jobs/find-<id>.json`:
   {"commons": "Donald Tusk", "kind": "image"},
   {"commons": "European Parliament plenary", "kind": "video"},
   {"nasa": "Artemis II", "kind": "video"},
-  {"probe": "https://www.dvidshub.net/video/1015038", "in": 10, "dur": 6}]}
+  {"probe": "https://www.dvidshub.net/video/1015038", "in": 10, "dur": 6},
+  {"probe": "https://www.nbcnews.com/news/amp-video/mmvo42821701557", "sheet": true}]}
 ```
 The release `find-<id>` gets `find.txt`: each result with `[OK to use]` / `[SA …]` / `[NO]`, size, duration,
-licence, author and the direct URL to put in `"src"`.
+licence, author and the direct URL to put in `"src"`. A probe with `"sheet": true` also attaches
+`<id>-<n>.jpg`: frames every 2 s (first 60 s from `"in"`, or `"dur"`) with source timecodes, to pick the exact seconds.
 
 ### Topics
 `python3 tools/trends.py --hours 24 --geos US,GB,CA,DE,FR` — Google Trends "Trending now" for the last 24 h,
