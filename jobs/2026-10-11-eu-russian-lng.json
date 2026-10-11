@@ -1,0 +1,638 @@
+{
+ "id": "2026-10-11-eu-russian-lng",
+ "duration": 38.32,
+ "voice": {
+  "url": "https://storage.googleapis.com/xi-backend/database/workspace/cc3ca8aac80743e2b16fb409abf71273/content_generation/ZfKLPE7D5PhZKP7kvaln/VvxmpZTUAA3iow8JedlT/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261011%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261011T160228Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=3ce2fdbe3cf661a77bd520a270dd36ece3399eb1e9921ef3d62979f7a37451639c89da4f70c79a192939cc7e93ef49ff8de0b417b6a7efe868a2e3ca1bb2b6f36a5263079f11c4cf0b2acbf623dac6eb82f1688c5122059e213fe291a2dd1dce90b5e1cfc2a5690e1cab643a5a2fb513528d2813bcbea80e965d708b5bcfd0ebaa6237e139857fc4a904002cc6e2d7b964151a821d36628492207e7c7bfd845c44c698ae3af7ff605160c36029ad4af026dc235c7c6a38da34b356b5058d3dbafa3d67dc1a3bc9db125ad9807d530ab4511d63d24f8abb573ba4322772cda4d789a795c68b201c77cd7ff2e5656d619a818293f0ed82f46e3f7e4799eb100c97"
+ },
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "words": [
+  {
+   "text": "Europe",
+   "start": 0.0,
+   "end": 0.4
+  },
+  {
+   "text": "paid",
+   "start": 0.48,
+   "end": 0.72
+  },
+  {
+   "text": "nearly",
+   "start": 0.76,
+   "end": 1.12
+  },
+  {
+   "text": "eight",
+   "start": 1.2,
+   "end": 1.36
+  },
+  {
+   "text": "billion",
+   "start": 1.6,
+   "end": 2.0
+  },
+  {
+   "text": "euros",
+   "start": 2.08,
+   "end": 2.56
+  },
+  {
+   "text": "for",
+   "start": 2.64,
+   "end": 2.72
+  },
+  {
+   "text": "Russian",
+   "start": 2.8,
+   "end": 3.12
+  },
+  {
+   "text": "Arctic",
+   "start": 3.2,
+   "end": 3.52
+  },
+  {
+   "text": "gas.",
+   "start": 3.6,
+   "end": 4.08
+  },
+  {
+   "text": "That",
+   "start": 4.64,
+   "end": 4.8
+  },
+  {
+   "text": "is",
+   "start": 4.88,
+   "end": 4.96
+  },
+  {
+   "text": "the",
+   "start": 5.0,
+   "end": 5.04
+  },
+  {
+   "text": "estimate",
+   "start": 5.12,
+   "end": 5.52
+  },
+  {
+   "text": "from",
+   "start": 5.6,
+   "end": 5.68
+  },
+  {
+   "text": "German",
+   "start": 5.76,
+   "end": 6.08
+  },
+  {
+   "text": "campaign",
+   "start": 6.16,
+   "end": 6.64
+  },
+  {
+   "text": "group",
+   "start": 6.72,
+   "end": 6.96
+  },
+  {
+   "text": "Urgewald,",
+   "start": 7.04,
+   "end": 7.92
+  },
+  {
+   "text": "based",
+   "start": 8.0,
+   "end": 8.24
+  },
+  {
+   "text": "on",
+   "start": 8.32,
+   "end": 8.4
+  },
+  {
+   "text": "Kpler",
+   "start": 8.48,
+   "end": 8.88
+  },
+  {
+   "text": "shipping",
+   "start": 8.96,
+   "end": 9.2
+  },
+  {
+   "text": "data.",
+   "start": 9.28,
+   "end": 9.92
+  },
+  {
+   "text": "From",
+   "start": 10.24,
+   "end": 10.4
+  },
+  {
+   "text": "January",
+   "start": 10.48,
+   "end": 10.96
+  },
+  {
+   "text": "to",
+   "start": 11.04,
+   "end": 11.12
+  },
+  {
+   "text": "September,",
+   "start": 11.2,
+   "end": 12.08
+  },
+  {
+   "text": "EU",
+   "start": 12.16,
+   "end": 12.4
+  },
+  {
+   "text": "ports",
+   "start": 12.48,
+   "end": 12.88
+  },
+  {
+   "text": "took",
+   "start": 12.96,
+   "end": 13.04
+  },
+  {
+   "text": "in",
+   "start": 13.12,
+   "end": 13.2
+  },
+  {
+   "text": "a",
+   "start": 13.24,
+   "end": 13.28
+  },
+  {
+   "text": "record",
+   "start": 13.36,
+   "end": 13.6
+  },
+  {
+   "text": "of",
+   "start": 13.68,
+   "end": 13.76
+  },
+  {
+   "text": "more",
+   "start": 13.84,
+   "end": 13.92
+  },
+  {
+   "text": "than",
+   "start": 14.0,
+   "end": 14.16
+  },
+  {
+   "text": "twelve",
+   "start": 14.24,
+   "end": 14.64
+  },
+  {
+   "text": "million",
+   "start": 14.8,
+   "end": 15.2
+  },
+  {
+   "text": "tons",
+   "start": 15.28,
+   "end": 15.68
+  },
+  {
+   "text": "of",
+   "start": 15.72,
+   "end": 15.76
+  },
+  {
+   "text": "liquefied",
+   "start": 15.84,
+   "end": 16.4
+  },
+  {
+   "text": "gas",
+   "start": 16.48,
+   "end": 16.8
+  },
+  {
+   "text": "from",
+   "start": 17.12,
+   "end": 17.28
+  },
+  {
+   "text": "Russia's",
+   "start": 17.36,
+   "end": 17.68
+  },
+  {
+   "text": "Yamal",
+   "start": 17.76,
+   "end": 18.08
+  },
+  {
+   "text": "project.",
+   "start": 18.16,
+   "end": 18.72
+  },
+  {
+   "text": "That",
+   "start": 19.28,
+   "end": 19.36
+  },
+  {
+   "text": "is",
+   "start": 19.44,
+   "end": 19.52
+  },
+  {
+   "text": "up",
+   "start": 19.6,
+   "end": 19.68
+  },
+  {
+   "text": "nine",
+   "start": 19.84,
+   "end": 20.08
+  },
+  {
+   "text": "and",
+   "start": 20.16,
+   "end": 20.24
+  },
+  {
+   "text": "a",
+   "start": 20.28,
+   "end": 20.32
+  },
+  {
+   "text": "half",
+   "start": 20.4,
+   "end": 20.56
+  },
+  {
+   "text": "percent",
+   "start": 20.64,
+   "end": 21.12
+  },
+  {
+   "text": "on",
+   "start": 21.2,
+   "end": 21.28
+  },
+  {
+   "text": "last",
+   "start": 21.36,
+   "end": 21.68
+  },
+  {
+   "text": "year.",
+   "start": 21.76,
+   "end": 22.08
+  },
+  {
+   "text": "A",
+   "start": 22.64,
+   "end": 22.72
+  },
+  {
+   "text": "tanker",
+   "start": 22.84,
+   "end": 23.12
+  },
+  {
+   "text": "arrived",
+   "start": 23.24,
+   "end": 23.52
+  },
+  {
+   "text": "about",
+   "start": 23.68,
+   "end": 23.84
+  },
+  {
+   "text": "every",
+   "start": 23.92,
+   "end": 24.16
+  },
+  {
+   "text": "day",
+   "start": 24.24,
+   "end": 24.4
+  },
+  {
+   "text": "and",
+   "start": 24.44,
+   "end": 24.48
+  },
+  {
+   "text": "a",
+   "start": 24.56,
+   "end": 24.6
+  },
+  {
+   "text": "half.",
+   "start": 24.64,
+   "end": 25.32
+  },
+  {
+   "text": "The",
+   "start": 25.6,
+   "end": 25.68
+  },
+  {
+   "text": "EU",
+   "start": 25.76,
+   "end": 26.16
+  },
+  {
+   "text": "restricted",
+   "start": 26.48,
+   "end": 26.8
+  },
+  {
+   "text": "short-term",
+   "start": 26.88,
+   "end": 27.36
+  },
+  {
+   "text": "contracts",
+   "start": 27.44,
+   "end": 28.0
+  },
+  {
+   "text": "in",
+   "start": 28.04,
+   "end": 28.08
+  },
+  {
+   "text": "April.",
+   "start": 28.16,
+   "end": 28.64
+  },
+  {
+   "text": "The",
+   "start": 29.12,
+   "end": 29.2
+  },
+  {
+   "text": "ban",
+   "start": 29.36,
+   "end": 29.52
+  },
+  {
+   "text": "on",
+   "start": 29.6,
+   "end": 29.68
+  },
+  {
+   "text": "long-term",
+   "start": 29.76,
+   "end": 30.24
+  },
+  {
+   "text": "contracts",
+   "start": 30.32,
+   "end": 30.88
+  },
+  {
+   "text": "starts",
+   "start": 31.04,
+   "end": 31.36
+  },
+  {
+   "text": "in",
+   "start": 31.4,
+   "end": 31.44
+  },
+  {
+   "text": "January",
+   "start": 31.6,
+   "end": 32.08
+  },
+  {
+   "text": "twenty",
+   "start": 32.24,
+   "end": 32.48
+  },
+  {
+   "text": "twenty-seven.",
+   "start": 32.56,
+   "end": 33.64
+  },
+  {
+   "text": "Should",
+   "start": 34.0,
+   "end": 34.16
+  },
+  {
+   "text": "Europe",
+   "start": 34.24,
+   "end": 34.48
+  },
+  {
+   "text": "cut",
+   "start": 34.56,
+   "end": 34.72
+  },
+  {
+   "text": "off",
+   "start": 34.8,
+   "end": 34.88
+  },
+  {
+   "text": "Russian",
+   "start": 34.96,
+   "end": 35.2
+  },
+  {
+   "text": "gas",
+   "start": 35.28,
+   "end": 35.6
+  },
+  {
+   "text": "sooner?",
+   "start": 35.68,
+   "end": 36.48
+  },
+  {
+   "text": "Tell",
+   "start": 36.56,
+   "end": 36.64
+  },
+  {
+   "text": "us",
+   "start": 36.72,
+   "end": 36.8
+  },
+  {
+   "text": "below.",
+   "start": 36.88,
+   "end": 37.6
+  }
+ ],
+ "display": [
+  {
+   "i": 3,
+   "n": 3,
+   "text": "€8 billion",
+   "em": true
+  },
+  {
+   "i": 37,
+   "n": 2,
+   "text": "12 million",
+   "em": true
+  },
+  {
+   "i": 50,
+   "n": 5,
+   "text": "9.5%",
+   "em": true
+  },
+  {
+   "i": 82,
+   "n": 2,
+   "text": "2027."
+  }
+ ],
+ "emphasis": [
+  8,
+  33,
+  59,
+  77,
+  90
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/15739058/15739058-hd_1080_1920_60fps.mp4",
+   "in": 2.0,
+   "start": 0,
+   "end": 4.35
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/30583752/13097021_1080_1920_30fps.mp4",
+   "in": 1.0,
+   "start": 4.35,
+   "end": 10.1
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/12438823/12438823-hd_1080_1920_30fps.mp4",
+   "in": 0.0,
+   "start": 10.1,
+   "end": 13.3
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "start": 13.3,
+   "end": 16.95,
+   "kicker": "Jan–Sep 2026",
+   "value": 12,
+   "suffix": "M+",
+   "sub": "tons of liquefied gas from Russia's Yamal project",
+   "source": "Urgewald"
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/16448242/16448242-hd_1080_1920_30fps.mp4",
+   "in": 6.0,
+   "start": 16.95,
+   "end": 22.35
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/26329253/11948323_1080_1920_60fps.mp4",
+   "in": 1.0,
+   "start": 22.35,
+   "end": 25.45
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/6831473/6831473-hd_1080_1920_25fps.mp4",
+   "in": 1.0,
+   "start": 25.45,
+   "end": 28.9
+  },
+  {
+   "type": "video",
+   "src": "https://videos.pexels.com/video-files/34433104/14589360_1080_1920_24fps.mp4",
+   "in": 6.0,
+   "start": 28.9,
+   "end": 33.85
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "start": 33.85,
+   "end": 38.32,
+   "kicker": "Your take",
+   "text": "Should Europe cut off Russian gas *sooner?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "start": 0.0,
+   "end": 4.25,
+   "kicker": "Europe · Energy",
+   "text": "Nearly *€8 billion* for Russian Arctic gas"
+  },
+  {
+   "style": "label",
+   "start": 4.4,
+   "end": 7.7,
+   "kicker": "The estimate",
+   "text": "From Urgewald, using *Kpler* data"
+  },
+  {
+   "style": "label",
+   "start": 10.15,
+   "end": 13.25,
+   "kicker": "Jan–Sep",
+   "text": "A *record* for EU ports"
+  },
+  {
+   "style": "label",
+   "start": 19.2,
+   "end": 22.3,
+   "kicker": "Vs last year",
+   "text": "Up *9.5%*"
+  },
+  {
+   "style": "label",
+   "start": 22.4,
+   "end": 25.4,
+   "kicker": "Deliveries",
+   "text": "A tanker about *every 1.5 days*"
+  },
+  {
+   "style": "label",
+   "start": 25.5,
+   "end": 28.8,
+   "kicker": "Since April",
+   "text": "*Short-term* contracts restricted"
+  },
+  {
+   "style": "label",
+   "start": 28.95,
+   "end": 32.25,
+   "kicker": "The ban",
+   "text": "Long-term contracts: *January 2027*"
+  }
+ ]
+}
