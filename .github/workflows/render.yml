@@ -27,7 +27,8 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg libraqm0 > /dev/null
-          pip install --quiet pillow numpy faster-whisper
+          pip install --quiet pillow numpy faster-whisper "yt-dlp[default]"
+          yt-dlp --version
           ffmpeg -version | head -1
           python3 -c "from PIL import features; print('raqm:', features.check('raqm'))"
       - name: Pick jobs

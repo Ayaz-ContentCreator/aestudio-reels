@@ -8,6 +8,7 @@ Job format: see README.md. Remote media (http/https) is downloaded to a cache
 next to the output; local paths are used as-is (handy for tests).
 """
 import argparse
+import glob
 import hashlib
 import itertools
 import json
@@ -16,6 +17,7 @@ import os
 import re
 import subprocess
 import sys
+import urllib.parse
 import urllib.request
 
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
@@ -37,6 +39,8 @@ CAP_SIZE = 68
 CAP_MAXW = 820                   # keeps captions clear of the right-side buttons
 HOOK_SIZE = 104
 LABEL_SIZE = 78
+BAND_Y = 870                     # centre of a landscape clip shown whole ("fit": "band")
+CREDIT_TOP = 232                 # cap top of the source credit line, above the kicker
 
 BLACK = "InterDisplay-Black.ttf"
 XBOLD = "InterDisplay-ExtraBold.ttf"
@@ -185,6 +189,7 @@ def card_shade():
 
 
 TOP_SCRIM = vgrad(980, 0.72, 0.0, power=1.5)
+CREDIT_SCRIM = vgrad(520, 0.50, 0.0, power=1.4)   # behind a credit line when no title is on screen
 BOTTOM_SCRIM = vgrad(1000, 0.0, 0.58, power=1.5)
 CARD_SHADE = None  # built lazily
 
@@ -278,6 +283,35 @@ class Kicker:
         self.img = img
         self.pad = pad
         self.cap = capk
+
+
+class Credit:
+    """Source credit for original footage, e.g. 'VIDEO: THE WHITE HOUSE' — quiet mono line above the kicker."""
+
+    def __init__(self, text):
+        f = font(MONO_B, 22)
+        tr = 22 * 0.1
+        s = text.upper()
+        capk = cap_height(f)
+        pad = 20
+        self.img = shadowed((int(text_w(f, s, tr) + 2 * pad), int(capk + 2 * pad + 8)),
+                            [(pad, pad + capk, s, f, (238, 240, 243), tr)],
+                            shadows=((0, 2, 7, 0.75), (0, 1, 2, 0.55)))
+        self.pad = pad
+
+    def draw(self, canvas, lt, dur, op=1.0, lead=False, scrim=False):
+        p = 1.0 if lead else ease_out_cubic(lt / 0.3)
+        out = ease_out_cubic((dur - lt) / 0.2)
+        if scrim:
+            blit(canvas, CREDIT_SCRIM, 0, 0, p * out)
+        blit(canvas, self.img, MARGIN - self.pad, CREDIT_TOP - self.pad, p * out * op)
+
+
+def credit_text(s):
+    c = str(s["credit"]).strip()
+    if re.search(r"[:©]", c):
+        return c
+    return ("Photo: " if s["type"] == "photo" else "Video: ") + c
 
 
 class TextBlock:
@@ -602,6 +636,23 @@ class Card:
 
 
 # ------------------------------------------------------------------ media
+UA_BROWSER = "Mozilla/5.0 (X11; Linux x86_64)"
+UA_BOT = "AEStudioReels/1.0 (https://github.com/Ayaz-ContentCreator/aestudio-reels)"  # Wikimedia asks for this
+MEDIA_EXT = {".mp4", ".m4v", ".mov", ".webm", ".mkv", ".ogv", ".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff"}
+PAGE_HOSTS = re.compile(r"(^|\.)(youtube\.com|youtu\.be|x\.com|twitter\.com|vimeo\.com|dailymotion\.com|"
+                        r"c-span\.org|dvidshub\.net|europarl\.europa\.eu|ec\.europa\.eu|consilium\.europa\.eu|"
+                        r"parliamentlive\.tv|archive\.org|nasa\.gov)$")
+
+
+def is_page(s):
+    """True when the source is a web page with a video (downloaded with yt-dlp), not a direct media file."""
+    if s.get("ytdlp") is not None:
+        return bool(s["ytdlp"])
+    u = urllib.parse.urlparse(s["src"])
+    ext = os.path.splitext(u.path)[1].lower()
+    return bool(PAGE_HOSTS.search(u.hostname or "")) and ext not in MEDIA_EXT
+
+
 def fetch(src, cache):
     if not re.match(r"https?://", src):
         return src
@@ -609,27 +660,109 @@ def fetch(src, cache):
     ext = os.path.splitext(src.split("?")[0])[1][:5] or ".bin"
     path = os.path.join(cache, hashlib.sha1(src.encode()).hexdigest()[:16] + ext)
     if not os.path.exists(path):
-        req = urllib.request.Request(src, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64)"})
-        with urllib.request.urlopen(req, timeout=300) as r, open(path + ".part", "wb") as fh:
-            while True:
-                b = r.read(1 << 20)
-                if not b:
-                    break
-                fh.write(b)
+        host = urllib.parse.urlparse(src).hostname or ""
+        ua = UA_BOT if re.search(r"wiki(media|pedia)\.org$", host) else UA_BROWSER
+        req = urllib.request.Request(src, headers={"User-Agent": ua})
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r, open(path + ".part", "wb") as fh:
+                while True:
+                    b = r.read(1 << 20)
+                    if not b:
+                        break
+                    fh.write(b)
+        except Exception as e:
+            raise SystemExit(f"could not download {src}: {e}")
         os.replace(path + ".part", path)
     return path
+
+
+OK_LICENSE = re.compile(r"^(public domain|pd\b|pd-|cc0|cc[ -]by(?![ -]?(sa|nc|nd))\b)", re.I)
+SA_LICENSE = re.compile(r"^cc[ -]by[ -]sa\b", re.I)
+
+
+def commons_check(s):
+    """Wikimedia Commons file: read its licence from the Commons API, refuse unsafe ones, fill in the credit."""
+    src = s["src"]
+    m = re.search(r"/commons/(?:transcoded|thumb)/\w/\w\w/([^/]+)/", src)
+    name = urllib.parse.unquote(m.group(1) if m else src.split("?")[0].rsplit("/", 1)[-1])
+    api = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(
+        {"action": "query", "titles": "File:" + name, "prop": "imageinfo", "iiprop": "extmetadata",
+         "format": "json"})
+    try:
+        with urllib.request.urlopen(urllib.request.Request(api, headers={"User-Agent": UA_BOT}), timeout=60) as r:
+            page = next(iter(json.load(r)["query"]["pages"].values()))
+        md = page["imageinfo"][0]["extmetadata"]
+    except Exception as e:
+        raise SystemExit(f"could not read the Commons licence of {name}: {e}")
+    lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
+    artist = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", ""))).strip()
+    print(f"commons {name}: licence {lic!r}, author {artist!r}")
+    if not (OK_LICENSE.search(lic) or (SA_LICENSE.search(lic) and s.get("allow_sa"))):
+        raise SystemExit(f"refused {name}: licence {lic!r} is not public domain / CC0 / CC BY"
+                         + (" (CC BY-SA needs \"allow_sa\": true)" if SA_LICENSE.search(lic) else ""))
+    if not s.get("credit"):
+        who = artist[:32] + ("…" if len(artist) > 32 else "")
+        pd = re.match(r"(public domain|pd\b|pd-|cc0)", lic, re.I)
+        s["credit"] = ("Photo: " if s["type"] == "photo" else "Video: ") + " / ".join(
+            x for x in (who, "" if pd else lic, "Wikimedia Commons") if x)
+
+
+def clip_info(src):
+    """Log who published a video page and under what licence (for the render log / audit)."""
+    r = subprocess.run(["yt-dlp", "--no-playlist", "--no-warnings", "--skip-download", "--js-runtimes", "node",
+                        "--print", "%(channel,uploader)s | %(license)s | %(duration)ss | %(title).80s", src],
+                       capture_output=True, text=True)
+    print(f"source {src}: {(r.stdout.strip() or r.stderr.strip().splitlines()[-1:] or ['?'])}")
+
+
+def fetch_clip(src, cache, a, b):
+    """Download only seconds a..b of a video page (YouTube, official sites...) with yt-dlp, video track only."""
+    os.makedirs(cache, exist_ok=True)
+    key = hashlib.sha1(f"{src}|{a:.2f}|{b:.2f}".encode()).hexdigest()[:16]
+    done = [p for p in glob.glob(os.path.join(cache, key + ".*")) if not p.endswith((".part", ".ytdl"))]
+    if done:
+        return done[0]
+    cmd = ["yt-dlp", "--no-playlist", "--no-warnings", "--no-progress",
+           "-f", "bv*[height<=2160][height>=480]/bv*/b",
+           "--download-sections", f"*{a:.2f}-{b:.2f}", "--force-keyframes-at-cuts",
+           "-o", os.path.join(cache, key + ".%(ext)s")]
+    r = subprocess.run(cmd + ["--js-runtimes", "node", src], capture_output=True, text=True)
+    if r.returncode != 0 and "js-runtimes" in r.stderr:
+        r = subprocess.run(cmd + [src], capture_output=True, text=True)
+    done = [p for p in glob.glob(os.path.join(cache, key + ".*")) if not p.endswith((".part", ".ytdl"))]
+    if r.returncode != 0 or not done:
+        last = (r.stderr.strip().splitlines() or ["no output"])[-1]
+        raise SystemExit(f"could not download clip {src} [{a:.1f}-{b:.1f}s]: {last}")
+    print(f"clip {src} [{a:.1f}-{b:.1f}s] -> {os.path.basename(done[0])}")
+    return done[0]
 
 
 GRADE = "eq=contrast=1.05:saturation=1.06"
 
 
-def decode(path, start, n, blur=False):
-    vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},"
-          f"fps={FPS},{GRADE}")
+def _focus(s):
+    f = s.get("focus", 0.5)
+    fx, fy = (f, 0.5) if isinstance(f, (int, float)) else (f[0], f[1])
+    return clamp(float(fx)), clamp(float(fy))
+
+
+def decode(path, start, n, blur=False, fit="fill", focus=(0.5, 0.5)):
+    fx, fy = focus
+    if fit == "band" and not blur:
+        # whole landscape frame across the width, over a blurred, darker fill of itself
+        vf = (f"fps={FPS},split[a][b];"
+              f"[a]scale={W}:{H}:force_original_aspect_ratio=increase:flags=bilinear,crop={W}:{H},"
+              f"gblur=sigma=40:steps=3,eq=brightness=-0.10:saturation=0.80[bg];"
+              f"[b]scale={W}:{int(H * 0.6)}:force_original_aspect_ratio=decrease:flags=lanczos[fg];"
+              f"[bg][fg]overlay=x=(W-w)/2:y={BAND_Y}-h/2,{GRADE}")
+    else:
+        vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,"
+              f"crop={W}:{H}:(in_w-{W})*{fx:.3f}:(in_h-{H})*{fy:.3f},fps={FPS},{GRADE}")
     if blur:
         vf += ",gblur=sigma=36:steps=3,eq=brightness=-0.04:saturation=0.85"
     cmd = ["ffmpeg", "-v", "error", "-stream_loop", "-1", "-ss", f"{max(0.0, start):.3f}", "-i", path,
-           "-frames:v", str(n), "-vf", vf, "-an", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"]
+           "-frames:v", str(n), "-filter_complex" if fit == "band" and not blur else "-vf", vf,
+           "-an", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"]
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, bufsize=W * H * 3)
     last = None
     got = 0
@@ -648,22 +781,43 @@ def decode(path, start, n, blur=False):
         yield last
 
 
-def kenburns(path, n, z0=1.0, z1=1.08, pan=(0.0, -0.015), blur=False):
-    """Smooth sub-pixel push-in on a still image (zoom z0 -> z1, slight pan)."""
+def kenburns(path, n, z0=1.0, z1=1.08, pan=(0.0, -0.015), blur=False, fit="fill", focus=(0.5, 0.5)):
+    """Smooth sub-pixel push-in on a still image (zoom z0 -> z1, slight pan).
+    fit="band": the whole (landscape) photo across the width over a blurred fill, slow push-in inside it."""
     img = Image.open(path).convert("RGB")
+    if fit == "band" and not blur:
+        bg = img.resize((max(W, int(img.width * max(W / img.width, H / img.height))) + 2,
+                         max(H, int(img.height * max(W / img.width, H / img.height))) + 2), Image.BILINEAR)
+        bg = bg.crop(((bg.width - W) // 2, (bg.height - H) // 2, (bg.width - W) // 2 + W, (bg.height - H) // 2 + H))
+        bg = bg.filter(ImageFilter.GaussianBlur(40))
+        bg = Image.eval(bg, lambda v: int(v * 0.78))
+        sc = min(W / img.width, H * 0.6 / img.height)
+        fw, fh = int(round(img.width * sc)), int(round(img.height * sc))
+        src = img.resize((int(fw * 1.06) + 2, int(fh * 1.06) + 2), Image.LANCZOS)
+        for i in range(n):
+            z = lerp(1.0, 1.05, ease_in_out(i / max(n - 1, 1)))
+            ww, hh = src.width / z, src.height / z
+            cx, cy = src.width / 2, src.height / 2
+            fg = src.transform((fw, fh), Image.EXTENT, (cx - ww / 2, cy - hh / 2, cx + ww / 2, cy + hh / 2),
+                               Image.BICUBIC)
+            frame = bg.copy()
+            frame.paste(fg, ((W - fw) // 2, BAND_Y - fh // 2))
+            yield frame
+        return
     s = max(W / img.width, H / img.height) * max(z0, z1) * 1.02   # never upscale past the source
     big = img.resize((max(W, int(img.width * s)), max(H, int(img.height * s))), Image.LANCZOS)
     if blur:
         big = big.filter(ImageFilter.GaussianBlur(36))
     cw = min(big.width, big.height * W / H)          # widest W:H window that fits
+    fx, fy = focus
     for i in range(n):
         p = ease_in_out(i / max(n - 1, 1))
         z = lerp(z0, z1, p)
         ww = cw / z
         hh = ww * H / W
         mx, my = (big.width - ww) / 2, (big.height - hh) / 2
-        cx = big.width / 2 + clamp(pan[0] * big.width * p, -mx, mx)
-        cy = big.height / 2 + clamp(pan[1] * big.height * p, -my, my)
+        cx = big.width / 2 + clamp((fx - 0.5) * 2 * mx + pan[0] * big.width * p, -mx, mx)
+        cy = big.height / 2 + clamp((fy - 0.5) * 2 * my + pan[1] * big.height * p, -my, my)
         yield big.transform((W, H), Image.EXTENT, (cx - ww / 2, cy - hh / 2, cx + ww / 2, cy + hh / 2),
                             Image.BICUBIC)
 
@@ -873,18 +1027,34 @@ def plan(job, cache):
         s["n"] = int(round(s["end"] * FPS)) - int(round(s["start"] * FPS))
         s["f0"] = int(round(s["start"] * FPS))
         if s["type"] in ("video", "photo"):
-            s["path"] = fetch(s["src"], cache)
             s["in"] = float(s.get("in", 0.0))
+            if re.search(r"//upload\.wikimedia\.org/", s["src"]):
+                commons_check(s)
+            if s["type"] == "video" and is_page(s):
+                clip_info(s["src"])
+                # only the needed seconds (+ margin for a following card's blurred background)
+                a = s["in"]
+                s["path"] = fetch_clip(s["src"], cache, a, a + (s["end"] - s["start"]) + float(s.get("extra", 12)))
+                s["in"] = 0.0
+            else:
+                s["path"] = fetch(s["src"], cache)
+            s["fit_mode"], s["focus_xy"] = s.get("fit", "fill"), _focus(s)
+            if s.get("credit"):
+                s["credit_obj"] = Credit(credit_text(s))
             prev = s
         elif s["type"] == "card":
             bg = s.get("bg", "prev")
             if bg == "prev" and prev is not None:
                 s["bg_path"], s["bg_type"] = prev["path"], prev["type"]
                 s["bg_in"] = prev["in"] + (prev["end"] - prev["start"]) if prev["type"] == "video" else 0
+                if prev.get("credit_obj"):
+                    s["credit_obj"] = prev["credit_obj"]       # the blurred footage is still theirs
             elif isinstance(bg, dict):
                 s["bg_path"] = fetch(bg["src"], cache)
                 s["bg_type"] = bg.get("type", "video")
                 s["bg_in"] = float(bg.get("in", 0))
+                if bg.get("credit"):
+                    s["credit_obj"] = Credit(credit_text({"credit": bg["credit"], "type": s["bg_type"]}))
             else:
                 s["bg_path"] = None
             s["obj"] = Card(s)
@@ -895,10 +1065,11 @@ def scene_frames(s, start_frame=0, count=None):
     n = s["n"] - start_frame if count is None else count
     off = start_frame / FPS
     if s["type"] == "video":
-        return decode(s["path"], s["in"] + off, n)
+        return decode(s["path"], s["in"] + off, n, fit=s["fit_mode"], focus=s["focus_xy"])
     if s["type"] == "photo":
-        return itertools.islice(kenburns(s["path"], s["n"], *s.get("zoom", (1.0, 1.08))), start_frame,
-                                start_frame + n)
+        z0, z1 = s.get("zoom", (1.0, 1.08))
+        return itertools.islice(kenburns(s["path"], s["n"], z0, z1, fit=s["fit_mode"], focus=s["focus_xy"]),
+                                start_frame, start_frame + n)
     if s.get("bg_path"):
         if s["bg_type"] == "photo":
             return itertools.islice(kenburns(s["bg_path"], s["n"], 1.04, 1.10, blur=True), start_frame,
@@ -923,6 +1094,11 @@ def compose(job, scenes, s, base, t, captions, titles, xfade_from=None, j=0):
         blit(canvas, BOTTOM_SCRIM, 0, H - BOTTOM_SCRIM.height)
     for ti in titles:
         ti.draw(canvas, t)
+    if s.get("credit_obj"):                                   # after titles so their scrim doesn't dim it
+        lt = t - s["start"]
+        titled = any(ti.t0 <= t < ti.t1 for ti in titles)
+        s["credit_obj"].draw(canvas, lt, s["end"] - s["start"], op=0.8 if s["type"] == "card" else 1.0,
+                             lead=s["start"] == 0, scrim=not titled and s["type"] != "card")
     captions.draw(canvas, t)
     return canvas.convert("RGB")
 
