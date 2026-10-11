@@ -1,0 +1,12 @@
+{
+ "id": "find-2026-10-12-sources",
+ "note": "Which original-footage sources download from the GitHub runner, and Commons/NASA search test.",
+ "find": [
+  {"probe": "https://multimedia.europarl.europa.eu/en/event/ep-plenary-debate-on-october-european-council_av-20251017-2809", "in": 30, "dur": 6},
+  {"probe": "https://www.dvidshub.net/video/1015038/hubs-kosu-cave-lake-chungju-boat-ride", "in": 5, "dur": 6},
+  {"probe": "https://audiovisual.ec.europa.eu/en/video/I-260807", "in": 5, "dur": 6},
+  {"commons": "European Parliament plenary", "kind": "video", "limit": 6},
+  {"commons": "Donald Tusk", "kind": "image", "limit": 6},
+  {"nasa": "Artemis II", "kind": "video", "limit": 3}
+ ]
+}

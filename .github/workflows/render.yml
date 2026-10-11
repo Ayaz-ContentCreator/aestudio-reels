@@ -51,6 +51,14 @@ jobs:
             id=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1]))['id'])" "$job")
             dir="out/$id"; mkdir -p "$dir"
             status=ok
+            if python3 -c "import json,sys; sys.exit(0 if 'find' in json.load(open(sys.argv[1])) else 1)" "$job"; then
+              # media search job: results in find.txt, no video
+              python3 tools/find_media.py "$job" > "$dir/find.txt" 2>&1 || status=failed
+              tail -60 "$dir/find.txt"
+              gh release delete "$id" --yes --cleanup-tag > /dev/null 2>&1 || true
+              gh release create "$id" "$dir"/* --title "$id ($status)" --notes "Media search for $job" --latest=false
+              continue
+            fi
             python3 render/reel.py "$job" "$dir/$id.mp4" > "$dir/render-log.txt" 2>&1 || status=failed
             if [ "$status" = ok ]; then
               ffprobe -v error -show_entries format=duration,size:stream=codec_name,width,height,r_frame_rate \
