@@ -676,7 +676,7 @@ def fetch(src, cache):
     return path
 
 
-OK_LICENSE = re.compile(r"^(public domain|pd\b|pd-|cc0|cc[ -]by(?![ -]?(sa|nc|nd))\b)", re.I)
+OK_LICENSE = re.compile(r"^(public domain|pd\b|pd-|cc0|cc[ -]by(?![ -]?(sa|nc|nd))\b|attribution$|ogl\b)", re.I)
 SA_LICENSE = re.compile(r"^cc[ -]by[ -]sa\b", re.I)
 
 
@@ -715,6 +715,34 @@ def clip_info(src):
     print(f"source {src}: {(r.stdout.strip() or r.stderr.strip().splitlines()[-1:] or ['?'])}")
 
 
+def remote_size(src):
+    host = urllib.parse.urlparse(src).hostname or ""
+    ua = UA_BOT if re.search(r"wiki(media|pedia)\.org$", host) else UA_BROWSER
+    try:
+        req = urllib.request.Request(src, method="HEAD", headers={"User-Agent": ua})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return int(r.headers.get("Content-Length") or 0)
+    except Exception:
+        return 0
+
+
+def fetch_section(src, cache, a, b):
+    """Cut seconds a..b out of a big remote video file over HTTP (no full download), re-encoded to H.264."""
+    os.makedirs(cache, exist_ok=True)
+    path = os.path.join(cache, hashlib.sha1(f"{src}|{a:.2f}|{b:.2f}".encode()).hexdigest()[:16] + ".mp4")
+    if not os.path.exists(path):
+        host = urllib.parse.urlparse(src).hostname or ""
+        ua = UA_BOT if re.search(r"wiki(media|pedia)\.org$", host) else UA_BROWSER
+        r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-user_agent", ua, "-ss", f"{a:.3f}", "-i", src,
+                            "-t", f"{b - a:.3f}", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "16",
+                            "-pix_fmt", "yuv420p", path + ".part.mp4"], capture_output=True, text=True)
+        if r.returncode != 0:
+            raise SystemExit(f"could not cut {src} [{a:.1f}-{b:.1f}s]: {r.stderr.strip()[-300:]}")
+        os.replace(path + ".part.mp4", path)
+    print(f"section {src.split('?')[0][-70:]} [{a:.1f}-{b:.1f}s]")
+    return path
+
+
 def fetch_clip(src, cache, a, b):
     """Download only seconds a..b of a video page (YouTube, official sites...) with yt-dlp, video track only."""
     os.makedirs(cache, exist_ok=True)
@@ -735,6 +763,22 @@ def fetch_clip(src, cache, a, b):
         raise SystemExit(f"could not download clip {src} [{a:.1f}-{b:.1f}s]: {last}")
     print(f"clip {src} [{a:.1f}-{b:.1f}s] -> {os.path.basename(done[0])}")
     return done[0]
+
+
+def auto_fit(path, src):
+    """Full-bleed crop when the source is sharp enough for 9:16, otherwise show the whole frame ("band")."""
+    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+                        "-of", "csv=p=0", path], capture_output=True, text=True)
+    try:
+        w, h = [int(x) for x in r.stdout.strip().split(",")[:2]]
+    except ValueError:
+        return "fill"
+    scale = max(W / w, H / h)                      # upscale needed to fill 1080x1920
+    fit = "band" if (w > h * 1.1 and scale > 1.35) else "fill"
+    if fit == "fill" and scale > 1.6:
+        print(f"warning: {src} is only {w}x{h}; it will look soft full-screen")
+    print(f"media {src.split('?')[0][-70:]}: {w}x{h} -> {fit}")
+    return fit
 
 
 GRADE = "eq=contrast=1.05:saturation=1.06"
@@ -1030,15 +1074,19 @@ def plan(job, cache):
             s["in"] = float(s.get("in", 0.0))
             if re.search(r"//upload\.wikimedia\.org/", s["src"]):
                 commons_check(s)
+            # only the needed seconds (+ margin for a following card's blurred background)
+            a = s["in"]
+            b = a + (s["end"] - s["start"]) + float(s.get("extra", 12))
             if s["type"] == "video" and is_page(s):
                 clip_info(s["src"])
-                # only the needed seconds (+ margin for a following card's blurred background)
-                a = s["in"]
-                s["path"] = fetch_clip(s["src"], cache, a, a + (s["end"] - s["start"]) + float(s.get("extra", 12)))
+                s["path"] = fetch_clip(s["src"], cache, a, b)
+                s["in"] = 0.0
+            elif s["type"] == "video" and re.match(r"https?://", s["src"]) and remote_size(s["src"]) > 150e6:
+                s["path"] = fetch_section(s["src"], cache, a, b)
                 s["in"] = 0.0
             else:
                 s["path"] = fetch(s["src"], cache)
-            s["fit_mode"], s["focus_xy"] = s.get("fit", "fill"), _focus(s)
+            s["fit_mode"], s["focus_xy"] = s.get("fit") or auto_fit(s["path"], s["src"]), _focus(s)
             if s.get("credit"):
                 s["credit_obj"] = Credit(credit_text(s))
             prev = s

@@ -1,6 +1,6 @@
 {
  "id": "test-2026-10-12-original",
- "note": "Pipeline test for original footage (yt-dlp sections, Wikimedia licence check, band layout, credits). Audio reused from the Spain release; not for posting.",
+ "note": "Pipeline test for original footage (Commons sections + licence check, DVIDS via yt-dlp, band layout, credits). Audio reused from the Spain release; not for posting.",
  "duration": 36.7,
  "voice": {
   "url": "https://github.com/Ayaz-ContentCreator/aestudio-reels/releases/download/2026-10-09-spain-rent/2026-10-09-spain-rent.mp4"
@@ -475,10 +475,9 @@
  "scenes": [
   {
    "type": "video",
-   "src": "https://www.youtube.com/watch?v=E9KW7xNK02E",
-   "in": 95,
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/EP_Plenary_Session_European_Citizens%27_Initiative_%22Stop_Destroying_Videogames%22.webm",
+   "in": 600,
    "start": 0.0,
-   "credit": "The White House",
    "end": 3.7
   },
   {
@@ -492,17 +491,20 @@
   },
   {
    "type": "video",
-   "src": "https://www.youtube.com/watch?v=E9KW7xNK02E",
-   "in": 400,
+   "src": "https://www.dvidshub.net/video/1015038/hubs-kosu-cave-lake-chungju-boat-ride",
+   "in": 5,
    "start": 6.4,
-   "fit": "band",
-   "credit": "The White House",
+   "credit": "DVIDS",
    "end": 12.0
   },
   {
    "type": "photo",
-   "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Donald_Franciszek_Tusk_-_Wojciech_Grzegorz_Domaga%C5%82a_-_DSCF9868.jpg",
    "start": 12.0,
+   "focus": [
+    0.5,
+    0.35
+   ],
    "end": 17.95
   },
   {
@@ -517,11 +519,9 @@
   },
   {
    "type": "video",
-   "src": "https://www.youtube.com/watch?v=E9KW7xNK02E",
-   "in": 900,
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/40/Debating_the_Future_of_Europe_with_Angela_Merkel.webm",
+   "in": 120,
    "start": 21.4,
-   "focus": 0.35,
-   "credit": "The White House",
    "end": 28.5
   },
   {

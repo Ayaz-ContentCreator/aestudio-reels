@@ -59,7 +59,7 @@ def commons(q, kind="image", limit=8):
         desc = strip(md.get("ImageDescription", {}).get("value"))[:140]
         dur = f" {ii.get('duration', 0):.0f}s" if ii.get("duration") else ""
         print(f"- [{verdict(lic)}] {p['title']}  {ii.get('width')}x{ii.get('height')}{dur}  {lic}  by {who}  {date}")
-        print(f"    url: {ii.get('url')}")
+        print(f"    url: {(ii.get('url') or '').split('?')[0]}")
         if desc:
             print(f"    about: {desc}")
 
@@ -68,8 +68,9 @@ def nasa(q, kind="video", limit=5):
     data = get_json("https://images-api.nasa.gov/search?" + urllib.parse.urlencode({"q": q, "media_type": kind}))
     for item in data.get("collection", {}).get("items", [])[:limit]:
         d = (item.get("data") or [{}])[0]
-        files = get_json(item["href"]) if item.get("href") else []
-        want = [f for f in files if re.search(r"~(orig|large|medium)\.(mp4|jpg)$", f)]
+        href = urllib.parse.quote(item.get("href", ""), safe=":/~?=&%")
+        files = get_json(href) if href else []
+        want = [urllib.parse.quote(f, safe=":/~%") for f in files if re.search(r"~(orig|large|medium)\.(mp4|jpg)$", f)]
         print(f"- [OK to use - NASA, public domain] {d.get('title')}  {d.get('date_created', '')[:10]}  "
               f"center: {d.get('center')}")
         for f in want[:3]:
