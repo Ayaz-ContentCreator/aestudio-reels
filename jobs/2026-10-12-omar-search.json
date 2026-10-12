@@ -1,0 +1,29 @@
+{
+ "id": "2026-10-12-omar-search",
+ "duration": 39.33,
+ "voice": {"url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-12-omar-search.mp3"},
+ "script": "Federal agents searched Congresswoman Ilhan Omar's home before dawn Monday. The Justice Department said Homeland Security agents carried out a judge-approved warrant. It called the search part of an ongoing federal criminal investigation. According to CBS News sources, the probe centers on her immigration paperwork. Here's what's still missing. No charges have been announced. Omar has denied past immigration fraud allegations. A search warrant means a judge found probable cause. But it isn't a charge, and it isn't a conviction. What should the Justice Department explain first? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "emphasis": ["dawn", "judge-approved", "criminal", "immigration", "charge,", "conviction."],
+ "scenes": [
+  {"type": "video", "src": "https://www.foxnews.com/video/6406689941112", "in": 18, "credit": "Fox News"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/Robert_F._Kennedy_Department_of_Justice_Building.jpg", "zoom": [1.0, 1.08], "at": "The Justice Department said"},
+  {"type": "video", "src": "https://www.nbcnews.com/video/federal-agents-search-rep-ilhan-omar-s-home-in-ongoing-criminal-probe-271439941984", "in": 18, "credit": "NBC News", "at": "It called the search"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ilhan_Omar%2C_official_portrait%2C_116th_Congress.jpg", "zoom": [1.0, 1.08], "focus": [0.5, 0.3], "at": "According to CBS"},
+  {"type": "card", "card": "stat", "at": "Here's what's still", "kicker": "So far", "value": 0, "sub": "charges announced"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Ilhan_Omar_votes_in_Minneapolis.jpg", "zoom": [1.0, 1.06], "at": "Omar has denied"},
+  {"type": "video", "src": "https://www.foxnews.com/video/6406689941112", "in": 42, "credit": "Fox News", "at": "A search warrant means"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ilhan_Omar_rally.jpg", "zoom": [1.0, 1.06], "at": "But it isn't"},
+  {"type": "card", "card": "end", "at": "What should the", "kicker": "Your take",
+   "text": "What should the DOJ *explain* first?", "cta": "Tell us below ↓", "follow": "Follow for daily US & Europe news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "dawn Monday.", "kicker": "US · Congress", "text": "Feds searched *Ilhan Omar's* home"},
+  {"style": "label", "at": "The Justice Department said", "dur": 3.3, "kicker": "Justice Dept", "text": "A *judge-approved* warrant"},
+  {"style": "label", "at": "It called the search", "dur": 3.3, "kicker": "DOJ statement", "text": "An *ongoing* criminal probe"},
+  {"style": "label", "at": "According to CBS", "dur": 3.3, "kicker": "CBS News sources", "text": "Focus: her *immigration* papers"},
+  {"style": "label", "at": "Omar has denied", "dur": 3.0, "kicker": "Her side", "text": "She *denied* past allegations"},
+  {"style": "label", "at": "A search warrant means", "dur": 3.3, "kicker": "The law", "text": "Warrant = *probable cause*"},
+  {"style": "label", "at": "But it isn't", "dur": 2.6, "kicker": "Not a verdict", "text": "No charge, *no conviction*"}
+ ]
+}
