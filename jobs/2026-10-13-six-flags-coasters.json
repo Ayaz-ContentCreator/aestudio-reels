@@ -1,0 +1,156 @@
+{
+ "id": "2026-10-13-six-flags-coasters",
+ "duration": 36.4,
+ "voice": {
+  "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-13-six-flags-coasters.mp3"
+ },
+ "script": "Six Flags shut nine roller coasters after a rider died in Georgia. Cobb County police said one person died and several were hurt on Monday. Witnesses said a man fell from the Goliath coaster, but police haven't confirmed it. Goliath is two hundred feet tall and reaches seventy miles an hour. Here's what changes for your park trip. Six Flags closed nine similar coasters at six parks, the AP reported. That includes California, New Jersey and Ontario. The company says the closures are temporary. What would make you trust a coaster again? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "two hundred feet",
+   "text": "200 feet"
+  },
+  {
+   "match": "seventy miles an hour",
+   "text": "70 mph"
+  },
+  {
+   "match": "nine",
+   "text": "9",
+   "em": true
+  },
+  {
+   "match": "six parks",
+   "text": "6 parks"
+  }
+ ],
+ "emphasis": [
+  "died",
+  "Goliath",
+  "confirmed",
+  "temporary.",
+  "trust"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://www.fox5atlanta.com/news/six-flags-over-georgia-police-respond-after-goliath-coaster-stops",
+   "in": 2,
+   "credit": "FOX 5 Atlanta"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/0/07/Six_Flags_Over_Georgia_-_Main_gate.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Cobb County police said"
+  },
+  {
+   "type": "video",
+   "src": "https://www.atlantanewsfirst.com/video/2026/10/13/1-dead-several-injured-incident-six-flags-over-georgia-ride/",
+   "in": 22,
+   "credit": "Atlanta News First",
+   "at": "Witnesses said"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "Goliath is two",
+   "kicker": "Goliath",
+   "value": 200,
+   "suffix": " ft",
+   "sub": "tall, up to 70 mph"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "Here's what changes",
+   "kicker": "What changes",
+   "text": "Your *park trip*",
+   "sub": "similar rides shut for now"
+  },
+  {
+   "type": "video",
+   "src": "https://www.fox5atlanta.com/news/six-flags-over-georgia-police-respond-after-goliath-coaster-stops",
+   "in": 32,
+   "credit": "FOX 5 Atlanta",
+   "at": "Six Flags closed nine"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Leviathan_train_on_hammerhead.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "That includes"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Fury_325_%28Carowinds%29_2.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "The company says"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "What would make",
+   "kicker": "Your take",
+   "text": "What would make you *trust* a coaster again?",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "in Georgia.",
+   "kicker": "US · Theme parks",
+   "text": "Six Flags shuts *9 coasters* after a death"
+  },
+  {
+   "style": "label",
+   "at": "Cobb County police said",
+   "dur": 3.3,
+   "kicker": "Cobb County police",
+   "text": "*1 dead*, several hurt"
+  },
+  {
+   "style": "label",
+   "at": "Witnesses said",
+   "dur": 3.3,
+   "kicker": "Goliath coaster",
+   "text": "Cause *not confirmed*"
+  },
+  {
+   "style": "label",
+   "at": "Six Flags closed nine",
+   "dur": 3.3,
+   "kicker": "AP reports",
+   "text": "*9 coasters*, 6 parks"
+  },
+  {
+   "style": "label",
+   "at": "That includes",
+   "dur": 3.0,
+   "kicker": "Canada's Wonderland",
+   "text": "*Leviathan* among closures"
+  },
+  {
+   "style": "label",
+   "at": "The company says",
+   "dur": 2.8,
+   "kicker": "Six Flags",
+   "text": "Closures are *temporary*"
+  }
+ ]
+}
