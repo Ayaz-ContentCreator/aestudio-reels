@@ -4,7 +4,6 @@
  "voice": {
   "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-13-six-flags-coasters.mp3"
  },
- "script": "Six Flags shut nine roller coasters after a rider died in Georgia. Cobb County police said one person died and several were hurt on Monday. Witnesses said a man fell from the Goliath coaster, but police haven't confirmed it. Goliath is two hundred feet tall and reaches seventy miles an hour. Here's what changes for your park trip. Six Flags closed nine similar coasters at six parks, the AP reported. That includes California, New Jersey and Ontario. The company says the closures are temporary. What would make you trust a coaster again? Tell us below.",
  "music": {
   "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
   "gain_db": -13
@@ -151,6 +150,483 @@
    "dur": 2.8,
    "kicker": "Six Flags",
    "text": "Closures are *temporary*"
+  }
+ ],
+ "words": [
+  {
+   "text": "Six",
+   "start": 0.0,
+   "end": 0.3
+  },
+  {
+   "text": "Flags",
+   "start": 0.3,
+   "end": 0.74
+  },
+  {
+   "text": "shut",
+   "start": 0.74,
+   "end": 1.08
+  },
+  {
+   "text": "nine",
+   "start": 1.08,
+   "end": 1.44
+  },
+  {
+   "text": "roller",
+   "start": 1.44,
+   "end": 1.82
+  },
+  {
+   "text": "coasters",
+   "start": 1.82,
+   "end": 2.26
+  },
+  {
+   "text": "after",
+   "start": 2.26,
+   "end": 2.58
+  },
+  {
+   "text": "a",
+   "start": 2.58,
+   "end": 2.78
+  },
+  {
+   "text": "rider",
+   "start": 2.78,
+   "end": 3.04
+  },
+  {
+   "text": "died",
+   "start": 3.04,
+   "end": 3.38
+  },
+  {
+   "text": "in",
+   "start": 3.38,
+   "end": 3.6
+  },
+  {
+   "text": "Georgia.",
+   "start": 3.6,
+   "end": 3.96
+  },
+  {
+   "text": "Cobb",
+   "start": 4.92,
+   "end": 4.92
+  },
+  {
+   "text": "County",
+   "start": 4.92,
+   "end": 5.3
+  },
+  {
+   "text": "police",
+   "start": 5.3,
+   "end": 5.6
+  },
+  {
+   "text": "said",
+   "start": 5.6,
+   "end": 5.86
+  },
+  {
+   "text": "one",
+   "start": 5.86,
+   "end": 6.12
+  },
+  {
+   "text": "person",
+   "start": 6.12,
+   "end": 6.44
+  },
+  {
+   "text": "died",
+   "start": 6.44,
+   "end": 6.84
+  },
+  {
+   "text": "and",
+   "start": 6.84,
+   "end": 7.08
+  },
+  {
+   "text": "several",
+   "start": 7.08,
+   "end": 7.4
+  },
+  {
+   "text": "were",
+   "start": 7.4,
+   "end": 7.68
+  },
+  {
+   "text": "hurt",
+   "start": 7.68,
+   "end": 7.9
+  },
+  {
+   "text": "on",
+   "start": 7.9,
+   "end": 8.04
+  },
+  {
+   "text": "Monday.",
+   "start": 8.04,
+   "end": 8.42
+  },
+  {
+   "text": "Witnesses",
+   "start": 9.46,
+   "end": 9.46
+  },
+  {
+   "text": "said",
+   "start": 9.46,
+   "end": 9.86
+  },
+  {
+   "text": "a",
+   "start": 9.86,
+   "end": 9.96
+  },
+  {
+   "text": "man",
+   "start": 9.96,
+   "end": 10.2
+  },
+  {
+   "text": "fell",
+   "start": 10.2,
+   "end": 10.46
+  },
+  {
+   "text": "from",
+   "start": 10.46,
+   "end": 10.7
+  },
+  {
+   "text": "the",
+   "start": 10.7,
+   "end": 10.86
+  },
+  {
+   "text": "Goliath",
+   "start": 10.86,
+   "end": 11.26
+  },
+  {
+   "text": "coaster,",
+   "start": 11.26,
+   "end": 11.74
+  },
+  {
+   "text": "but",
+   "start": 12.18,
+   "end": 12.38
+  },
+  {
+   "text": "police",
+   "start": 12.38,
+   "end": 12.7
+  },
+  {
+   "text": "haven't",
+   "start": 12.7,
+   "end": 13.04
+  },
+  {
+   "text": "confirmed",
+   "start": 13.04,
+   "end": 13.44
+  },
+  {
+   "text": "it.",
+   "start": 13.44,
+   "end": 13.8
+  },
+  {
+   "text": "Goliath",
+   "start": 14.32,
+   "end": 14.74
+  },
+  {
+   "text": "is",
+   "start": 14.74,
+   "end": 15.0
+  },
+  {
+   "text": "two",
+   "start": 15.0,
+   "end": 15.26
+  },
+  {
+   "text": "hundred",
+   "start": 15.26,
+   "end": 15.52
+  },
+  {
+   "text": "feet",
+   "start": 15.52,
+   "end": 15.8
+  },
+  {
+   "text": "tall",
+   "start": 15.8,
+   "end": 16.16
+  },
+  {
+   "text": "and",
+   "start": 16.16,
+   "end": 16.38
+  },
+  {
+   "text": "reaches",
+   "start": 16.38,
+   "end": 16.68
+  },
+  {
+   "text": "seventy",
+   "start": 16.68,
+   "end": 17.18
+  },
+  {
+   "text": "miles",
+   "start": 17.18,
+   "end": 17.46
+  },
+  {
+   "text": "an",
+   "start": 17.46,
+   "end": 17.66
+  },
+  {
+   "text": "hour.",
+   "start": 17.66,
+   "end": 17.94
+  },
+  {
+   "text": "Here's",
+   "start": 18.58,
+   "end": 18.8
+  },
+  {
+   "text": "what",
+   "start": 18.8,
+   "end": 18.94
+  },
+  {
+   "text": "changes",
+   "start": 18.94,
+   "end": 19.22
+  },
+  {
+   "text": "for",
+   "start": 19.22,
+   "end": 19.54
+  },
+  {
+   "text": "your",
+   "start": 19.54,
+   "end": 19.7
+  },
+  {
+   "text": "park",
+   "start": 19.7,
+   "end": 19.92
+  },
+  {
+   "text": "trip.",
+   "start": 19.92,
+   "end": 20.24
+  },
+  {
+   "text": "Six",
+   "start": 20.98,
+   "end": 21.24
+  },
+  {
+   "text": "Flags",
+   "start": 21.24,
+   "end": 21.7
+  },
+  {
+   "text": "closed",
+   "start": 21.7,
+   "end": 22.2
+  },
+  {
+   "text": "nine",
+   "start": 22.2,
+   "end": 22.6
+  },
+  {
+   "text": "similar",
+   "start": 22.6,
+   "end": 23.08
+  },
+  {
+   "text": "coasters",
+   "start": 23.08,
+   "end": 23.54
+  },
+  {
+   "text": "at",
+   "start": 23.54,
+   "end": 23.78
+  },
+  {
+   "text": "six",
+   "start": 23.78,
+   "end": 24.1
+  },
+  {
+   "text": "parks,",
+   "start": 24.1,
+   "end": 24.56
+  },
+  {
+   "text": "the",
+   "start": 24.98,
+   "end": 25.08
+  },
+  {
+   "text": "AP",
+   "start": 25.08,
+   "end": 25.42
+  },
+  {
+   "text": "reported.",
+   "start": 25.42,
+   "end": 25.94
+  },
+  {
+   "text": "That",
+   "start": 26.5,
+   "end": 26.72
+  },
+  {
+   "text": "includes",
+   "start": 26.72,
+   "end": 27.06
+  },
+  {
+   "text": "California,",
+   "start": 27.06,
+   "end": 27.66
+  },
+  {
+   "text": "New",
+   "start": 28.02,
+   "end": 28.14
+  },
+  {
+   "text": "Jersey",
+   "start": 28.14,
+   "end": 28.48
+  },
+  {
+   "text": "and",
+   "start": 28.64,
+   "end": 28.74
+  },
+  {
+   "text": "Ontario.",
+   "start": 28.74,
+   "end": 29.24
+  },
+  {
+   "text": "The",
+   "start": 29.68,
+   "end": 29.94
+  },
+  {
+   "text": "company",
+   "start": 29.94,
+   "end": 30.2
+  },
+  {
+   "text": "says",
+   "start": 30.2,
+   "end": 30.48
+  },
+  {
+   "text": "the",
+   "start": 30.48,
+   "end": 30.7
+  },
+  {
+   "text": "closures",
+   "start": 30.7,
+   "end": 30.98
+  },
+  {
+   "text": "are",
+   "start": 30.98,
+   "end": 31.22
+  },
+  {
+   "text": "temporary.",
+   "start": 31.22,
+   "end": 31.68
+  },
+  {
+   "text": "What",
+   "start": 32.3,
+   "end": 32.38
+  },
+  {
+   "text": "would",
+   "start": 32.38,
+   "end": 32.5
+  },
+  {
+   "text": "make",
+   "start": 32.5,
+   "end": 32.64
+  },
+  {
+   "text": "you",
+   "start": 32.64,
+   "end": 32.82
+  },
+  {
+   "text": "trust",
+   "start": 32.82,
+   "end": 33.04
+  },
+  {
+   "text": "a",
+   "start": 33.04,
+   "end": 33.2
+  },
+  {
+   "text": "coaster",
+   "start": 33.2,
+   "end": 33.48
+  },
+  {
+   "text": "again?",
+   "start": 33.48,
+   "end": 33.86
+  },
+  {
+   "text": "Tell",
+   "start": 34.48,
+   "end": 34.56
+  },
+  {
+   "text": "us",
+   "start": 34.56,
+   "end": 34.74
+  },
+  {
+   "text": "below.",
+   "start": 34.74,
+   "end": 35.04
   }
  ]
 }
