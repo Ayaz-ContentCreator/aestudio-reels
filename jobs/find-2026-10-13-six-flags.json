@@ -1,0 +1,10 @@
+{"id": "find-2026-10-13-six-flags", "find": [
+  {"probe": "https://www.atlantanewsfirst.com/video/2026/10/13/1-dead-several-injured-incident-six-flags-over-georgia-ride/", "in": 0, "sheet": true},
+  {"probe": "https://www.atlantanewsfirst.com/video/2026/10/13/six-flags-fun-turns-deadly-heres-what-we-know/", "in": 0, "sheet": true},
+  {"probe": "https://www.fox5atlanta.com/news/six-flags-over-georgia-police-respond-after-goliath-coaster-stops", "in": 0, "sheet": true},
+  {"commons": "Goliath Six Flags Over Georgia", "kind": "image"},
+  {"commons": "Six Flags Over Georgia", "kind": "image"},
+  {"commons": "Fury 325", "kind": "image"},
+  {"commons": "Leviathan Canada's Wonderland", "kind": "image"},
+  {"commons": "roller coaster", "kind": "video"}
+]}
