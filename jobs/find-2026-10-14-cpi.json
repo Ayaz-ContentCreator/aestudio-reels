@@ -1,0 +1,10 @@
+{"id": "find-2026-10-14-cpi", "find": [
+  {"probe": "https://www.nbcnews.com/now/video/september-inflation-rises-to-3-7-driven-by-high-diesel-prices-271557189651", "in": 0, "sheet": true},
+  {"probe": "https://www.cnbc.com/video/2026/10/14/consumer-prices-rose-0-point-6-percent-in-september-putting-annual-inflation-rate-at-3-point-7-percent.html", "in": 0, "sheet": true},
+  {"probe": "https://www.wfsb.com/video/2026/09/20/no-relief-sight-drivers-gas-prices-surge/", "in": 0, "sheet": true},
+  {"probe": "https://www.wilx.com/video/2026/10/13/delivery-drivers-lose-pay-gas-prices-rise/", "in": 0, "sheet": true},
+  {"commons": "gas station price sign", "kind": "image"},
+  {"commons": "gasoline pump", "kind": "video"},
+  {"commons": "Marriner S. Eccles Federal Reserve Board Building", "kind": "image"},
+  {"commons": "Frances Perkins Building", "kind": "image"}
+]}
