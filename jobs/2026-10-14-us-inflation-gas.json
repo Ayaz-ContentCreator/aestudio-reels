@@ -1,0 +1,626 @@
+{
+ "id": "2026-10-14-us-inflation-gas",
+ "duration": 37.29,
+ "voice": {
+  "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-14-us-inflation-gas.mp3"
+ },
+ "script": "US gas prices rose nine point one percent in a single month. That pushed inflation to three point seven percent, the Labor Department said Wednesday. Gasoline caused more than half of September's increase. The Iran war has disrupted oil supplies since late February. Here's the part that hits your wallet. In September, gas cost thirty-four point two percent more than a year earlier. Food prices were flat last month. Fed officials, who raised rates in September, expect one more hike this year. What do you pay for a gallon where you live? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "nine point one percent",
+   "text": "9.1%",
+   "em": true
+  },
+  {
+   "match": "three point seven percent",
+   "text": "3.7%",
+   "em": true
+  },
+  {
+   "match": "thirty-four point two percent",
+   "text": "34.2%",
+   "em": true
+  }
+ ],
+ "emphasis": [
+  "gasoline",
+  "Iran",
+  "wallet",
+  "flat",
+  "hike"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://www.wfsb.com/video/2026/09/20/no-relief-sight-drivers-gas-prices-surge/",
+   "in": 0,
+   "credit": "WFSB"
+  },
+  {
+   "type": "video",
+   "src": "https://www.nbcnews.com/now/video/september-inflation-rises-to-3-7-driven-by-high-diesel-prices-271557189651",
+   "in": 30,
+   "credit": "NBC News",
+   "at": "That pushed"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Gas_Prices_Sign_-_Yes_Way_Gas_Station_-_Fort_Pierre_-_South_Dakota.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Gasoline caused"
+  },
+  {
+   "type": "video",
+   "src": "https://www.wfsb.com/video/2026/09/20/no-relief-sight-drivers-gas-prices-surge/",
+   "in": 40,
+   "credit": "WFSB",
+   "at": "The Iran war"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/A_Wawa_gas_station_sign_in_Lecanto%2C_Florida.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Here's the part"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "In September, gas",
+   "kicker": "Gasoline",
+   "value": 34.2,
+   "suffix": "%",
+   "sub": "higher than a year earlier",
+   "source": "Labor Department",
+   "decimals": 1
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "Food prices",
+   "kicker": "Groceries",
+   "text": "Food prices *flat*",
+   "sub": "no rise in September"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Eccles_Building_%2826088200676%29.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Fed officials"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "What do you pay",
+   "kicker": "Your take",
+   "text": "What do you pay for a *gallon* where you live?",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "single month.",
+   "kicker": "US · Inflation",
+   "text": "Gas prices up *9.1%* in one month"
+  },
+  {
+   "style": "label",
+   "at": "That pushed",
+   "dur": 3.3,
+   "kicker": "Labor Department",
+   "text": "Inflation hits *3.7%*"
+  },
+  {
+   "style": "label",
+   "at": "Gasoline caused",
+   "dur": 3.0,
+   "kicker": "September",
+   "text": "Gas: over *half* the rise"
+  },
+  {
+   "style": "label",
+   "at": "The Iran war",
+   "dur": 3.3,
+   "kicker": "Since late February",
+   "text": "*Iran war* hits oil supply"
+  },
+  {
+   "style": "label",
+   "at": "Fed officials",
+   "dur": 3.3,
+   "kicker": "Federal Reserve",
+   "text": "One more *hike* expected"
+  }
+ ],
+ "words": [
+  {
+   "text": "US",
+   "start": 0.0,
+   "end": 0.48
+  },
+  {
+   "text": "gas",
+   "start": 0.56,
+   "end": 0.82
+  },
+  {
+   "text": "prices",
+   "start": 0.82,
+   "end": 1.36
+  },
+  {
+   "text": "rose",
+   "start": 1.36,
+   "end": 1.78
+  },
+  {
+   "text": "nine",
+   "start": 1.78,
+   "end": 2.15
+  },
+  {
+   "text": "point",
+   "start": 2.15,
+   "end": 2.53
+  },
+  {
+   "text": "one",
+   "start": 2.53,
+   "end": 2.9
+  },
+  {
+   "text": "percent",
+   "start": 2.9,
+   "end": 3.32
+  },
+  {
+   "text": "in",
+   "start": 3.32,
+   "end": 3.52
+  },
+  {
+   "text": "a",
+   "start": 3.52,
+   "end": 3.66
+  },
+  {
+   "text": "single",
+   "start": 3.66,
+   "end": 3.92
+  },
+  {
+   "text": "month.",
+   "start": 3.92,
+   "end": 4.34
+  },
+  {
+   "text": "That",
+   "start": 4.96,
+   "end": 5.12
+  },
+  {
+   "text": "pushed",
+   "start": 5.12,
+   "end": 5.36
+  },
+  {
+   "text": "inflation",
+   "start": 5.36,
+   "end": 5.86
+  },
+  {
+   "text": "to",
+   "start": 5.86,
+   "end": 6.16
+  },
+  {
+   "text": "three",
+   "start": 6.16,
+   "end": 6.48
+  },
+  {
+   "text": "point",
+   "start": 6.48,
+   "end": 6.8
+  },
+  {
+   "text": "seven",
+   "start": 6.8,
+   "end": 7.12
+  },
+  {
+   "text": "percent,",
+   "start": 7.12,
+   "end": 7.58
+  },
+  {
+   "text": "the",
+   "start": 7.9,
+   "end": 7.94
+  },
+  {
+   "text": "Labor",
+   "start": 7.94,
+   "end": 8.12
+  },
+  {
+   "text": "Department",
+   "start": 8.12,
+   "end": 8.5
+  },
+  {
+   "text": "said",
+   "start": 8.5,
+   "end": 8.92
+  },
+  {
+   "text": "Wednesday.",
+   "start": 9.38,
+   "end": 9.78
+  },
+  {
+   "text": "Gasoline",
+   "start": 10.8,
+   "end": 11.24
+  },
+  {
+   "text": "caused",
+   "start": 11.24,
+   "end": 11.62
+  },
+  {
+   "text": "more",
+   "start": 11.62,
+   "end": 11.84
+  },
+  {
+   "text": "than",
+   "start": 11.84,
+   "end": 12.06
+  },
+  {
+   "text": "half",
+   "start": 12.06,
+   "end": 12.36
+  },
+  {
+   "text": "of",
+   "start": 12.36,
+   "end": 12.62
+  },
+  {
+   "text": "September's",
+   "start": 12.62,
+   "end": 13.16
+  },
+  {
+   "text": "increase.",
+   "start": 13.16,
+   "end": 13.58
+  },
+  {
+   "text": "The",
+   "start": 14.18,
+   "end": 14.28
+  },
+  {
+   "text": "Iran",
+   "start": 14.28,
+   "end": 14.62
+  },
+  {
+   "text": "war",
+   "start": 14.62,
+   "end": 14.96
+  },
+  {
+   "text": "has",
+   "start": 14.96,
+   "end": 15.22
+  },
+  {
+   "text": "disrupted",
+   "start": 15.22,
+   "end": 15.68
+  },
+  {
+   "text": "oil",
+   "start": 15.68,
+   "end": 16.02
+  },
+  {
+   "text": "supplies",
+   "start": 16.02,
+   "end": 16.5
+  },
+  {
+   "text": "since",
+   "start": 16.5,
+   "end": 16.8
+  },
+  {
+   "text": "late",
+   "start": 16.8,
+   "end": 17.08
+  },
+  {
+   "text": "February.",
+   "start": 17.08,
+   "end": 17.6
+  },
+  {
+   "text": "Here's",
+   "start": 18.46,
+   "end": 18.74
+  },
+  {
+   "text": "the",
+   "start": 18.74,
+   "end": 18.88
+  },
+  {
+   "text": "part",
+   "start": 18.88,
+   "end": 19.08
+  },
+  {
+   "text": "that",
+   "start": 19.08,
+   "end": 19.28
+  },
+  {
+   "text": "hits",
+   "start": 19.28,
+   "end": 19.5
+  },
+  {
+   "text": "your",
+   "start": 19.5,
+   "end": 19.7
+  },
+  {
+   "text": "wallet.",
+   "start": 19.7,
+   "end": 20.02
+  },
+  {
+   "text": "In",
+   "start": 20.56,
+   "end": 20.74
+  },
+  {
+   "text": "September,",
+   "start": 20.74,
+   "end": 21.16
+  },
+  {
+   "text": "gas",
+   "start": 21.42,
+   "end": 21.54
+  },
+  {
+   "text": "cost",
+   "start": 21.54,
+   "end": 21.96
+  },
+  {
+   "text": "thirty-four",
+   "start": 21.96,
+   "end": 22.33
+  },
+  {
+   "text": "point",
+   "start": 22.33,
+   "end": 22.71
+  },
+  {
+   "text": "two",
+   "start": 22.71,
+   "end": 23.08
+  },
+  {
+   "text": "percent",
+   "start": 23.08,
+   "end": 23.46
+  },
+  {
+   "text": "more",
+   "start": 23.46,
+   "end": 23.74
+  },
+  {
+   "text": "than",
+   "start": 23.74,
+   "end": 23.96
+  },
+  {
+   "text": "a",
+   "start": 23.96,
+   "end": 24.08
+  },
+  {
+   "text": "year",
+   "start": 24.08,
+   "end": 24.28
+  },
+  {
+   "text": "earlier.",
+   "start": 24.28,
+   "end": 24.74
+  },
+  {
+   "text": "Food",
+   "start": 25.52,
+   "end": 25.68
+  },
+  {
+   "text": "prices",
+   "start": 25.68,
+   "end": 26.1
+  },
+  {
+   "text": "were",
+   "start": 26.1,
+   "end": 26.32
+  },
+  {
+   "text": "flat",
+   "start": 26.32,
+   "end": 26.62
+  },
+  {
+   "text": "last",
+   "start": 26.62,
+   "end": 26.9
+  },
+  {
+   "text": "month.",
+   "start": 26.9,
+   "end": 27.28
+  },
+  {
+   "text": "Fed",
+   "start": 27.68,
+   "end": 27.94
+  },
+  {
+   "text": "officials,",
+   "start": 27.94,
+   "end": 28.34
+  },
+  {
+   "text": "who",
+   "start": 28.34,
+   "end": 28.7
+  },
+  {
+   "text": "raised",
+   "start": 28.7,
+   "end": 28.94
+  },
+  {
+   "text": "rates",
+   "start": 28.94,
+   "end": 29.22
+  },
+  {
+   "text": "in",
+   "start": 29.22,
+   "end": 29.44
+  },
+  {
+   "text": "September,",
+   "start": 29.44,
+   "end": 29.92
+  },
+  {
+   "text": "expect",
+   "start": 29.92,
+   "end": 30.66
+  },
+  {
+   "text": "one",
+   "start": 30.66,
+   "end": 31.1
+  },
+  {
+   "text": "more",
+   "start": 31.1,
+   "end": 31.36
+  },
+  {
+   "text": "hike",
+   "start": 31.36,
+   "end": 31.66
+  },
+  {
+   "text": "this",
+   "start": 31.66,
+   "end": 31.92
+  },
+  {
+   "text": "year.",
+   "start": 31.92,
+   "end": 32.28
+  },
+  {
+   "text": "What",
+   "start": 33.2,
+   "end": 33.28
+  },
+  {
+   "text": "do",
+   "start": 33.28,
+   "end": 33.36
+  },
+  {
+   "text": "you",
+   "start": 33.36,
+   "end": 33.46
+  },
+  {
+   "text": "pay",
+   "start": 33.46,
+   "end": 33.62
+  },
+  {
+   "text": "for",
+   "start": 33.62,
+   "end": 33.78
+  },
+  {
+   "text": "a",
+   "start": 33.78,
+   "end": 33.9
+  },
+  {
+   "text": "gallon",
+   "start": 33.9,
+   "end": 34.12
+  },
+  {
+   "text": "where",
+   "start": 34.12,
+   "end": 34.36
+  },
+  {
+   "text": "you",
+   "start": 34.36,
+   "end": 34.5
+  },
+  {
+   "text": "live?",
+   "start": 34.5,
+   "end": 34.78
+  },
+  {
+   "text": "Tell",
+   "start": 35.42,
+   "end": 35.52
+  },
+  {
+   "text": "us",
+   "start": 35.52,
+   "end": 35.66
+  },
+  {
+   "text": "below.",
+   "start": 35.66,
+   "end": 35.96
+  }
+ ]
+}
