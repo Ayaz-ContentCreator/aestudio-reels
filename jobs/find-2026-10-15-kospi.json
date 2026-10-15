@@ -1,0 +1,12 @@
+{"id": "find-2026-10-15-kospi", "find": [
+  {"probe": "https://www.nbcnews.com/world/asia/south-korea-kospi-index-sinks-semiconductor-share-sell-ai-boom-worries-rcna603143", "in": 0, "sheet": true},
+  {"probe": "https://www.koreajoongangdaily.com/multimedia-news/what-goes-up-must-come-down/12923159", "in": 0, "sheet": true},
+  {"probe": "https://www.cnn.com/2026/10/15/business/tech-selloff-nasdaq-ai-intl", "in": 0, "sheet": true},
+  {"probe": "https://en.sedaily.com/finance/2026/10/15/kospi-plunges-757-percent-to-close-at-555422", "in": 0, "sheet": true},
+  {"commons": "Korea Exchange Seoul", "kind": "image"},
+  {"commons": "KOSPI stock board Seoul", "kind": "image"},
+  {"commons": "SK hynix", "kind": "image"},
+  {"commons": "Samsung Electronics Seocho", "kind": "image"},
+  {"commons": "Seoul Yeouido skyline", "kind": "video"},
+  {"commons": "stock exchange trading screen", "kind": "video"}
+]}
