@@ -1,0 +1,10 @@
+{"id": "find-2026-10-15-kospi2", "find": [
+  {"probe": "https://www.euronews.com/2026/10/15/deepening-tech-sell-off-drags-stocks-lower-as-major-markets-slide", "in": 0, "sheet": true},
+  {"probe": "https://www.cnn.com/2026/06/19/business/video/kospi-rally-korea-ai-chip-samsung-sk-hynix-hnk-vrtc-digvid", "in": 0, "sheet": true},
+  {"probe": "https://www.euronews.com/2026/10/08/samsung-flags-783-profit-jump-to-record-80bn-as-ai-chip-boom-also-lifts-tsmc-sales", "in": 0, "sheet": true},
+  {"probe": "https://www.euronews.com/business/2026/07/28/shares-slip-as-chip-stocks-come-under-heavy-selling-heres-why", "in": 0, "sheet": true},
+  {"commons": "Samsung Electronics headquarters", "kind": "image"},
+  {"commons": "Seoul skyline Yeouido", "kind": "image"},
+  {"commons": "Nasdaq MarketSite Times Square", "kind": "image"},
+  {"commons": "Seoul city", "kind": "video"}
+]}
