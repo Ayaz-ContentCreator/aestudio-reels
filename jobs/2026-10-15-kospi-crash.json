@@ -1,0 +1,193 @@
+{
+ "id": "2026-10-15-kospi-crash",
+ "duration": 36.59,
+ "voice": {
+  "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-15-kospi-crash.mp3"
+ },
+ "script": "South Korea's stock market fell eight percent, and trading was halted. The Kospi triggered a twenty-minute circuit breaker, Reuters reported. It's the tenth halt this year. Chipmaker Samsung fell nine point seven percent, and SK Hynix more than eleven. Here's the part that started in America. US inflation came in hotter than expected. So traders bet on more Fed rate hikes, and AI stocks fell. The Kospi closed down seven point six percent. But it's still up more than thirty percent this year. What's your move when markets drop this fast? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "eight percent",
+   "text": "8%",
+   "em": true
+  },
+  {
+   "match": "twenty-minute",
+   "text": "20-minute"
+  },
+  {
+   "match": "tenth",
+   "text": "10th",
+   "em": true
+  },
+  {
+   "match": "nine point seven percent",
+   "text": "9.7%",
+   "em": true
+  },
+  {
+   "match": "eleven",
+   "text": "11%",
+   "em": true
+  },
+  {
+   "match": "seven point six percent",
+   "text": "7.6%",
+   "em": true
+  },
+  {
+   "match": "thirty percent",
+   "text": "30%"
+  }
+ ],
+ "emphasis": [
+  "halted",
+  "Samsung",
+  "America",
+  "hotter",
+  "rate",
+  "fast"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Skyline_of_Yeouido%2C_a_prominent_finance_district_in_Seoul.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Yeouido_Night_View_2010.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "The Kospi triggered"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "It's the tenth",
+   "kicker": "This year",
+   "text": "*10th* halt",
+   "sub": "Kospi circuit breakers in 2026"
+  },
+  {
+   "type": "video",
+   "src": "https://www.cnn.com/2026/06/19/business/video/kospi-rally-korea-ai-chip-samsung-sk-hynix-hnk-vrtc-digvid",
+   "in": 36,
+   "credit": "CNN",
+   "at": "Chipmaker Samsung"
+  },
+  {
+   "type": "video",
+   "src": "https://www.cnn.com/2026/06/19/business/video/kospi-rally-korea-ai-chip-samsung-sk-hynix-hnk-vrtc-digvid",
+   "in": 45.6,
+   "credit": "CNN",
+   "at": "and SK Hynix"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Here's the part"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Nasdaq_Tower_May_2026.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "So traders"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "The Kospi closed",
+   "kicker": "Kospi close",
+   "value": 7.6,
+   "prefix": "−",
+   "suffix": "%",
+   "decimals": 1,
+   "sub": "after the 20-minute halt"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Han_River_Seoul_skyline_Pixabay_1214950.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "But it's still"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "What's your move",
+   "kicker": "Your take",
+   "text": "What's your move when markets drop this *fast?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "was halted.",
+   "kicker": "South Korea · Markets",
+   "text": "Stocks fell *8%*. Trading halted."
+  },
+  {
+   "style": "label",
+   "at": "The Kospi triggered",
+   "dur": 3.3,
+   "kicker": "Circuit breaker",
+   "text": "*20-minute* trading halt"
+  },
+  {
+   "style": "label",
+   "at": "Chipmaker Samsung",
+   "dur": 3.0,
+   "kicker": "Samsung",
+   "text": "Shares *−9.7%*"
+  },
+  {
+   "style": "label",
+   "at": "and SK Hynix",
+   "dur": 2.4,
+   "kicker": "SK Hynix",
+   "text": "Down more than *11%*"
+  },
+  {
+   "style": "label",
+   "at": "US inflation",
+   "dur": 3.0,
+   "kicker": "United States",
+   "text": "Inflation *hotter* than expected"
+  },
+  {
+   "style": "label",
+   "at": "So traders",
+   "dur": 3.3,
+   "kicker": "Federal Reserve",
+   "text": "Bets on more *rate hikes*"
+  },
+  {
+   "style": "label",
+   "at": "But it's still",
+   "dur": 2.8,
+   "kicker": "Kospi · 2026",
+   "text": "Still up *30%+* this year"
+  }
+ ]
+}
