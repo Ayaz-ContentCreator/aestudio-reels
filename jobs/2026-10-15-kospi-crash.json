@@ -156,20 +156,6 @@
   },
   {
    "style": "label",
-   "at": "Chipmaker Samsung",
-   "dur": 3.0,
-   "kicker": "Samsung",
-   "text": "Shares *−9.7%*"
-  },
-  {
-   "style": "label",
-   "at": "and SK Hynix",
-   "dur": 2.4,
-   "kicker": "SK Hynix",
-   "text": "Down more than *11%*"
-  },
-  {
-   "style": "label",
    "at": "US inflation",
    "dur": 3.0,
    "kicker": "United States",
