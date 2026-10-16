@@ -1,0 +1,10 @@
+{"id": "find-2026-10-16-roadster", "find": [
+  {"probe": "https://www.foxbusiness.com/video/6406956114112", "in": 0, "sheet": true},
+  {"probe": "https://www.foxbusiness.com/video/6406955336112", "in": 0, "sheet": true},
+  {"probe": "https://www.cnbc.com/video/2026/10/16/tesla-unveils-its-next-generation-roadster-flying-car.html", "in": 0, "sheet": true},
+  {"probe": "https://www.nbcnews.com/news/amp-video/mmvo43515973865", "in": 0, "sheet": true},
+  {"commons": "Tesla Roadster 2020 prototype", "kind": "image"},
+  {"commons": "Tesla Roadster second generation", "kind": "image"},
+  {"commons": "Elon Musk 2025", "kind": "image"},
+  {"commons": "SpaceX McGregor", "kind": "image"}
+]}
