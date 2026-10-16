@@ -1,0 +1,140 @@
+{
+ "id": "2026-10-16-tesla-roadster",
+ "duration": 37.76,
+ "voice": {
+  "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-16-tesla-roadster.mp3"
+ },
+ "script": "Tesla says its new Roadster hits sixty in under one second. It was unveiled Thursday at a SpaceX site in Texas, CBS News reported. Cold-gas thrusters built with SpaceX launched it off a ramp into a midair flip. But this car was first shown in twenty-seventeen, with deliveries promised for twenty-twenty. Here's the part that matters if you want one. Musk says production starts in twenty-twenty-eight, eleven years after the first reveal. Tesla's website says the flying version isn't approved for public roads. What would you actually use a flying car for? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "sixty",
+   "text": "60",
+   "em": true
+  },
+  {
+   "match": "twenty-twenty-eight",
+   "text": "2028",
+   "em": true
+  },
+  {
+   "match": "twenty-seventeen",
+   "text": "2017",
+   "em": true
+  },
+  {
+   "match": "twenty-twenty",
+   "text": "2020"
+  },
+  {
+   "match": "eleven years",
+   "text": "11 years",
+   "em": true
+  }
+ ],
+ "emphasis": [
+  "Roadster",
+  "SpaceX",
+  "flip",
+  "approved",
+  "flying"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://www.foxbusiness.com/video/6406955336112",
+   "in": 35.5,
+   "credit": "Fox Business"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Central_Site_at_Rocket_Development_Facility.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "It was unveiled"
+  },
+  {
+   "type": "video",
+   "src": "https://www.foxbusiness.com/video/6406956114112",
+   "in": 6,
+   "credit": "Fox Business",
+   "at": "Cold-gas thrusters"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Tesla_Roadster_2.0_%2847619421652%29.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "But this car"
+  },
+  {
+   "type": "video",
+   "src": "https://www.foxbusiness.com/video/6406956114112",
+   "in": 32,
+   "credit": "Fox Business",
+   "at": "Here's the part"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "Musk says",
+   "kicker": "Production · 2028",
+   "value": 11,
+   "suffix": " years",
+   "sub": "from first reveal to production"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "Tesla's website",
+   "kicker": "Flying version",
+   "text": "*Not approved*",
+   "sub": "for public roads, Tesla's website says"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "What would you",
+   "kicker": "Your take",
+   "text": "What would you use a flying car *for?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "one second.",
+   "kicker": "Tesla · Roadster",
+   "text": "0–60 mph in *under 1 second*"
+  },
+  {
+   "style": "label",
+   "at": "It was unveiled",
+   "dur": 3.3,
+   "kicker": "Thursday · Texas",
+   "text": "Unveiled at a *SpaceX* site"
+  },
+  {
+   "style": "label",
+   "at": "Cold-gas thrusters",
+   "dur": 3.3,
+   "kicker": "The trick",
+   "text": "*Cold-gas* thrusters"
+  },
+  {
+   "style": "label",
+   "at": "But this car",
+   "dur": 3.3,
+   "kicker": "First shown 2017",
+   "text": "Deliveries promised for *2020*"
+  }
+ ]
+}
