@@ -136,5 +136,482 @@
    "kicker": "First shown 2017",
    "text": "Deliveries promised for *2020*"
   }
+ ],
+ "words": [
+  {
+   "text": "Tesla",
+   "start": 0.0,
+   "end": 0.4
+  },
+  {
+   "text": "says",
+   "start": 0.4,
+   "end": 0.68
+  },
+  {
+   "text": "its",
+   "start": 0.68,
+   "end": 0.92
+  },
+  {
+   "text": "new",
+   "start": 0.92,
+   "end": 1.22
+  },
+  {
+   "text": "Roadster",
+   "start": 1.22,
+   "end": 1.7
+  },
+  {
+   "text": "hits",
+   "start": 1.7,
+   "end": 1.96
+  },
+  {
+   "text": "sixty",
+   "start": 1.96,
+   "end": 2.52
+  },
+  {
+   "text": "in",
+   "start": 2.52,
+   "end": 2.74
+  },
+  {
+   "text": "under",
+   "start": 2.74,
+   "end": 3.02
+  },
+  {
+   "text": "one",
+   "start": 3.02,
+   "end": 3.26
+  },
+  {
+   "text": "second.",
+   "start": 3.26,
+   "end": 3.72
+  },
+  {
+   "text": "It",
+   "start": 4.5,
+   "end": 4.54
+  },
+  {
+   "text": "was",
+   "start": 4.54,
+   "end": 4.66
+  },
+  {
+   "text": "unveiled",
+   "start": 4.66,
+   "end": 5.0
+  },
+  {
+   "text": "Thursday",
+   "start": 5.0,
+   "end": 5.46
+  },
+  {
+   "text": "at",
+   "start": 5.46,
+   "end": 5.76
+  },
+  {
+   "text": "a",
+   "start": 5.76,
+   "end": 5.94
+  },
+  {
+   "text": "SpaceX",
+   "start": 5.94,
+   "end": 6.32
+  },
+  {
+   "text": "site",
+   "start": 6.32,
+   "end": 6.7
+  },
+  {
+   "text": "in",
+   "start": 6.7,
+   "end": 6.9
+  },
+  {
+   "text": "Texas,",
+   "start": 6.9,
+   "end": 7.34
+  },
+  {
+   "text": "CBS",
+   "start": 7.88,
+   "end": 8.12
+  },
+  {
+   "text": "News",
+   "start": 8.12,
+   "end": 8.6
+  },
+  {
+   "text": "reported.",
+   "start": 8.6,
+   "end": 9.1
+  },
+  {
+   "text": "Cold-gas",
+   "start": 9.66,
+   "end": 10.26
+  },
+  {
+   "text": "thrusters",
+   "start": 10.26,
+   "end": 10.76
+  },
+  {
+   "text": "built",
+   "start": 10.76,
+   "end": 11.06
+  },
+  {
+   "text": "with",
+   "start": 11.06,
+   "end": 11.28
+  },
+  {
+   "text": "SpaceX",
+   "start": 11.28,
+   "end": 11.82
+  },
+  {
+   "text": "launched",
+   "start": 11.82,
+   "end": 12.3
+  },
+  {
+   "text": "it",
+   "start": 12.3,
+   "end": 12.5
+  },
+  {
+   "text": "off",
+   "start": 12.5,
+   "end": 12.66
+  },
+  {
+   "text": "a",
+   "start": 12.66,
+   "end": 12.84
+  },
+  {
+   "text": "ramp",
+   "start": 12.84,
+   "end": 13.1
+  },
+  {
+   "text": "into",
+   "start": 13.1,
+   "end": 13.38
+  },
+  {
+   "text": "a",
+   "start": 13.38,
+   "end": 13.58
+  },
+  {
+   "text": "midair",
+   "start": 13.58,
+   "end": 13.92
+  },
+  {
+   "text": "flip.",
+   "start": 13.92,
+   "end": 14.3
+  },
+  {
+   "text": "But",
+   "start": 14.82,
+   "end": 14.98
+  },
+  {
+   "text": "this",
+   "start": 14.98,
+   "end": 15.2
+  },
+  {
+   "text": "car",
+   "start": 15.2,
+   "end": 15.48
+  },
+  {
+   "text": "was",
+   "start": 15.48,
+   "end": 15.64
+  },
+  {
+   "text": "first",
+   "start": 15.64,
+   "end": 15.96
+  },
+  {
+   "text": "shown",
+   "start": 15.96,
+   "end": 16.3
+  },
+  {
+   "text": "in",
+   "start": 16.3,
+   "end": 16.54
+  },
+  {
+   "text": "twenty-seventeen,",
+   "start": 16.54,
+   "end": 17.34
+  },
+  {
+   "text": "with",
+   "start": 17.34,
+   "end": 17.94
+  },
+  {
+   "text": "deliveries",
+   "start": 17.94,
+   "end": 18.42
+  },
+  {
+   "text": "promised",
+   "start": 18.42,
+   "end": 18.96
+  },
+  {
+   "text": "for",
+   "start": 18.96,
+   "end": 19.22
+  },
+  {
+   "text": "twenty-twenty.",
+   "start": 19.22,
+   "end": 19.72
+  },
+  {
+   "text": "Here's",
+   "start": 20.68,
+   "end": 20.86
+  },
+  {
+   "text": "the",
+   "start": 20.86,
+   "end": 21.0
+  },
+  {
+   "text": "part",
+   "start": 21.0,
+   "end": 21.16
+  },
+  {
+   "text": "that",
+   "start": 21.16,
+   "end": 21.36
+  },
+  {
+   "text": "matters",
+   "start": 21.36,
+   "end": 21.66
+  },
+  {
+   "text": "if",
+   "start": 21.66,
+   "end": 21.86
+  },
+  {
+   "text": "you",
+   "start": 21.86,
+   "end": 21.98
+  },
+  {
+   "text": "want",
+   "start": 21.98,
+   "end": 22.16
+  },
+  {
+   "text": "one.",
+   "start": 22.16,
+   "end": 22.48
+  },
+  {
+   "text": "Musk",
+   "start": 23.24,
+   "end": 23.36
+  },
+  {
+   "text": "says",
+   "start": 23.36,
+   "end": 23.66
+  },
+  {
+   "text": "production",
+   "start": 23.66,
+   "end": 24.12
+  },
+  {
+   "text": "starts",
+   "start": 24.12,
+   "end": 24.54
+  },
+  {
+   "text": "in",
+   "start": 24.54,
+   "end": 24.76
+  },
+  {
+   "text": "twenty-twenty-eight,",
+   "start": 24.76,
+   "end": 25.68
+  },
+  {
+   "text": "eleven",
+   "start": 26.24,
+   "end": 26.42
+  },
+  {
+   "text": "years",
+   "start": 26.42,
+   "end": 26.74
+  },
+  {
+   "text": "after",
+   "start": 26.74,
+   "end": 27.06
+  },
+  {
+   "text": "the",
+   "start": 27.06,
+   "end": 27.22
+  },
+  {
+   "text": "first",
+   "start": 27.22,
+   "end": 27.48
+  },
+  {
+   "text": "reveal.",
+   "start": 27.48,
+   "end": 27.86
+  },
+  {
+   "text": "Tesla's",
+   "start": 28.62,
+   "end": 29.26
+  },
+  {
+   "text": "website",
+   "start": 29.26,
+   "end": 29.68
+  },
+  {
+   "text": "says",
+   "start": 29.68,
+   "end": 30.02
+  },
+  {
+   "text": "the",
+   "start": 30.02,
+   "end": 30.24
+  },
+  {
+   "text": "flying",
+   "start": 30.24,
+   "end": 30.58
+  },
+  {
+   "text": "version",
+   "start": 30.58,
+   "end": 30.92
+  },
+  {
+   "text": "isn't",
+   "start": 30.92,
+   "end": 31.32
+  },
+  {
+   "text": "approved",
+   "start": 31.32,
+   "end": 31.7
+  },
+  {
+   "text": "for",
+   "start": 31.7,
+   "end": 31.96
+  },
+  {
+   "text": "public",
+   "start": 31.96,
+   "end": 32.28
+  },
+  {
+   "text": "roads.",
+   "start": 32.28,
+   "end": 32.78
+  },
+  {
+   "text": "What",
+   "start": 33.48,
+   "end": 33.56
+  },
+  {
+   "text": "would",
+   "start": 33.56,
+   "end": 33.68
+  },
+  {
+   "text": "you",
+   "start": 33.68,
+   "end": 33.82
+  },
+  {
+   "text": "actually",
+   "start": 33.82,
+   "end": 34.14
+  },
+  {
+   "text": "use",
+   "start": 34.14,
+   "end": 34.42
+  },
+  {
+   "text": "a",
+   "start": 34.42,
+   "end": 34.58
+  },
+  {
+   "text": "flying",
+   "start": 34.58,
+   "end": 34.84
+  },
+  {
+   "text": "car",
+   "start": 34.84,
+   "end": 35.14
+  },
+  {
+   "text": "for?",
+   "start": 35.14,
+   "end": 35.52
+  },
+  {
+   "text": "Tell",
+   "start": 35.92,
+   "end": 35.96
+  },
+  {
+   "text": "us",
+   "start": 35.96,
+   "end": 36.12
+  },
+  {
+   "text": "below.",
+   "start": 36.12,
+   "end": 36.4
+  }
  ]
 }
