@@ -1,0 +1,641 @@
+{
+ "id": "2026-10-18-france-protests",
+ "duration": 40.61,
+ "voice": {
+  "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-18-france-protests.mp3"
+ },
+ "script": "France saw five hundred fifty thousand protesters in one day. That's the Interior Ministry's count for Saturday, the AP reported. It began with students blockading schools in mid-September. But the anger spread to prices, as gas, energy and food costs spiked. Then came Limoges. A fire during the unrest destroyed much of its hundred-and-forty-three-year-old town hall. President Macron said there's no place for violence in the Republic. Prices are biting in America too. Gas cost thirty-four percent more in September than a year earlier. What price has risen most where you live? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "five hundred fifty thousand",
+   "text": "550,000",
+   "em": true
+  },
+  {
+   "match": "hundred-and-forty-three-year-old",
+   "text": "143-year-old",
+   "em": true
+  },
+  {
+   "match": "thirty-four percent",
+   "text": "34%",
+   "em": true
+  }
+ ],
+ "emphasis": [
+  "students",
+  "prices",
+  "Limoges",
+  "violence",
+  "America"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://www.foxnews.com/video/6407025706112",
+   "in": 6,
+   "credit": "Fox News"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "That's the Interior",
+   "kicker": "France · Saturday",
+   "value": 550000,
+   "sub": "protesters, by the Interior Ministry's count",
+   "source": "AP"
+  },
+  {
+   "type": "video",
+   "src": "https://www.foxnews.com/video/6407025706112",
+   "in": 14,
+   "credit": "Fox News",
+   "at": "It began with"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "But the anger",
+   "kicker": "The anger",
+   "text": "Then *prices* spiked",
+   "sub": "gas, energy and food costs"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/H%C3%B4tel_de_ville_de_Limoges%2C_campanile.jpg",
+   "allow_sa": true,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Then came Limoges"
+  },
+  {
+   "type": "video",
+   "src": "https://www.euronews.com/video/2026/10/17/historic-limoges-town-hall-engulfed-in-flames-amid-protests-in-france",
+   "in": 12,
+   "credit": "Euronews",
+   "at": "destroyed much"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Emmanuel_Macron_-_June_2025.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "President Macron"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Fuel_pumps_at_a_Pilot_Flying_J_gas_station_in_Cleveland%2C_Tennessee.jpg/1280px-Fuel_pumps_at_a_Pilot_Flying_J_gas_station_in_Cleveland%2C_Tennessee.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Prices are biting"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Gas_Prices_Sign_-_Yes_Way_Gas_Station_-_Fort_Pierre_-_South_Dakota.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Gas cost"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "What price",
+   "kicker": "Your take",
+   "text": "What price has risen most where you *live?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "one day.",
+   "kicker": "France · Protests",
+   "text": "*550,000* protesters in one day"
+  },
+  {
+   "style": "label",
+   "at": "It began with",
+   "dur": 3.3,
+   "kicker": "Since mid-September",
+   "text": "Students blockaded *schools*"
+  },
+  {
+   "style": "label",
+   "at": "Then came Limoges",
+   "dur": 3.0,
+   "kicker": "Limoges",
+   "text": "A *143-year-old* town hall"
+  },
+  {
+   "style": "label",
+   "at": "destroyed much",
+   "dur": 3.3,
+   "kicker": "Saturday night",
+   "text": "Much of it *destroyed*"
+  },
+  {
+   "style": "label",
+   "at": "President Macron",
+   "dur": 3.3,
+   "kicker": "Macron",
+   "text": "“No place for *violence*”"
+  },
+  {
+   "style": "label",
+   "at": "Gas cost",
+   "dur": 3.3,
+   "kicker": "US · September",
+   "text": "Gas up *34%* in a year"
+  }
+ ],
+ "words": [
+  {
+   "text": "France",
+   "start": 0.0,
+   "end": 0.4
+  },
+  {
+   "text": "saw",
+   "start": 0.4,
+   "end": 0.7
+  },
+  {
+   "text": "five",
+   "start": 0.7,
+   "end": 1.16
+  },
+  {
+   "text": "hundred",
+   "start": 1.16,
+   "end": 1.62
+  },
+  {
+   "text": "fifty",
+   "start": 1.62,
+   "end": 2.08
+  },
+  {
+   "text": "thousand",
+   "start": 2.08,
+   "end": 2.54
+  },
+  {
+   "text": "protesters",
+   "start": 2.54,
+   "end": 3.0
+  },
+  {
+   "text": "in",
+   "start": 3.0,
+   "end": 3.36
+  },
+  {
+   "text": "one",
+   "start": 3.36,
+   "end": 3.62
+  },
+  {
+   "text": "day.",
+   "start": 3.62,
+   "end": 4.14
+  },
+  {
+   "text": "That's",
+   "start": 4.72,
+   "end": 4.86
+  },
+  {
+   "text": "the",
+   "start": 4.86,
+   "end": 4.96
+  },
+  {
+   "text": "Interior",
+   "start": 4.96,
+   "end": 5.4
+  },
+  {
+   "text": "Ministry's",
+   "start": 5.4,
+   "end": 6.0
+  },
+  {
+   "text": "count",
+   "start": 6.0,
+   "end": 6.18
+  },
+  {
+   "text": "for",
+   "start": 6.18,
+   "end": 6.42
+  },
+  {
+   "text": "Saturday,",
+   "start": 6.42,
+   "end": 6.9
+  },
+  {
+   "text": "the",
+   "start": 7.24,
+   "end": 7.36
+  },
+  {
+   "text": "AP",
+   "start": 7.36,
+   "end": 7.62
+  },
+  {
+   "text": "reported.",
+   "start": 7.62,
+   "end": 8.18
+  },
+  {
+   "text": "It",
+   "start": 8.8,
+   "end": 8.88
+  },
+  {
+   "text": "began",
+   "start": 8.88,
+   "end": 9.16
+  },
+  {
+   "text": "with",
+   "start": 9.16,
+   "end": 9.38
+  },
+  {
+   "text": "students",
+   "start": 9.38,
+   "end": 9.82
+  },
+  {
+   "text": "blockading",
+   "start": 9.82,
+   "end": 10.3
+  },
+  {
+   "text": "schools",
+   "start": 10.3,
+   "end": 10.76
+  },
+  {
+   "text": "in",
+   "start": 10.76,
+   "end": 11.0
+  },
+  {
+   "text": "mid-September.",
+   "start": 11.0,
+   "end": 11.62
+  },
+  {
+   "text": "But",
+   "start": 12.26,
+   "end": 12.4
+  },
+  {
+   "text": "the",
+   "start": 12.4,
+   "end": 12.54
+  },
+  {
+   "text": "anger",
+   "start": 12.54,
+   "end": 12.9
+  },
+  {
+   "text": "spread",
+   "start": 12.9,
+   "end": 13.28
+  },
+  {
+   "text": "to",
+   "start": 13.28,
+   "end": 13.46
+  },
+  {
+   "text": "prices,",
+   "start": 13.46,
+   "end": 13.86
+  },
+  {
+   "text": "as",
+   "start": 13.86,
+   "end": 14.5
+  },
+  {
+   "text": "gas,",
+   "start": 14.5,
+   "end": 14.84
+  },
+  {
+   "text": "energy",
+   "start": 15.14,
+   "end": 15.44
+  },
+  {
+   "text": "and",
+   "start": 15.66,
+   "end": 15.76
+  },
+  {
+   "text": "food",
+   "start": 15.76,
+   "end": 16.08
+  },
+  {
+   "text": "costs",
+   "start": 16.08,
+   "end": 16.5
+  },
+  {
+   "text": "spiked.",
+   "start": 16.5,
+   "end": 17.02
+  },
+  {
+   "text": "Then",
+   "start": 17.7,
+   "end": 17.86
+  },
+  {
+   "text": "came",
+   "start": 17.86,
+   "end": 18.18
+  },
+  {
+   "text": "Limoges.",
+   "start": 18.18,
+   "end": 18.84
+  },
+  {
+   "text": "A",
+   "start": 19.26,
+   "end": 19.4
+  },
+  {
+   "text": "fire",
+   "start": 19.4,
+   "end": 19.78
+  },
+  {
+   "text": "during",
+   "start": 19.78,
+   "end": 20.14
+  },
+  {
+   "text": "the",
+   "start": 20.14,
+   "end": 20.3
+  },
+  {
+   "text": "unrest",
+   "start": 20.3,
+   "end": 20.82
+  },
+  {
+   "text": "destroyed",
+   "start": 20.82,
+   "end": 21.44
+  },
+  {
+   "text": "much",
+   "start": 21.44,
+   "end": 21.86
+  },
+  {
+   "text": "of",
+   "start": 21.86,
+   "end": 22.04
+  },
+  {
+   "text": "its",
+   "start": 22.04,
+   "end": 22.18
+  },
+  {
+   "text": "hundred-and-forty-three-year-old",
+   "start": 22.18,
+   "end": 23.7
+  },
+  {
+   "text": "town",
+   "start": 23.7,
+   "end": 24.02
+  },
+  {
+   "text": "hall.",
+   "start": 24.02,
+   "end": 24.4
+  },
+  {
+   "text": "President",
+   "start": 24.98,
+   "end": 25.28
+  },
+  {
+   "text": "Macron",
+   "start": 25.28,
+   "end": 25.68
+  },
+  {
+   "text": "said",
+   "start": 25.68,
+   "end": 26.12
+  },
+  {
+   "text": "there's",
+   "start": 26.36,
+   "end": 26.74
+  },
+  {
+   "text": "no",
+   "start": 26.74,
+   "end": 27.0
+  },
+  {
+   "text": "place",
+   "start": 27.0,
+   "end": 27.32
+  },
+  {
+   "text": "for",
+   "start": 27.32,
+   "end": 27.64
+  },
+  {
+   "text": "violence",
+   "start": 27.64,
+   "end": 27.98
+  },
+  {
+   "text": "in",
+   "start": 27.98,
+   "end": 28.24
+  },
+  {
+   "text": "the",
+   "start": 28.24,
+   "end": 28.34
+  },
+  {
+   "text": "Republic.",
+   "start": 28.34,
+   "end": 28.7
+  },
+  {
+   "text": "Prices",
+   "start": 29.42,
+   "end": 29.78
+  },
+  {
+   "text": "are",
+   "start": 29.78,
+   "end": 30.12
+  },
+  {
+   "text": "biting",
+   "start": 30.12,
+   "end": 30.46
+  },
+  {
+   "text": "in",
+   "start": 30.46,
+   "end": 30.72
+  },
+  {
+   "text": "America",
+   "start": 30.72,
+   "end": 31.04
+  },
+  {
+   "text": "too.",
+   "start": 31.36,
+   "end": 31.48
+  },
+  {
+   "text": "Gas",
+   "start": 31.94,
+   "end": 32.24
+  },
+  {
+   "text": "cost",
+   "start": 32.24,
+   "end": 32.62
+  },
+  {
+   "text": "thirty-four",
+   "start": 32.62,
+   "end": 33.12
+  },
+  {
+   "text": "percent",
+   "start": 33.12,
+   "end": 33.62
+  },
+  {
+   "text": "more",
+   "start": 33.62,
+   "end": 33.96
+  },
+  {
+   "text": "in",
+   "start": 33.96,
+   "end": 34.14
+  },
+  {
+   "text": "September",
+   "start": 34.14,
+   "end": 34.54
+  },
+  {
+   "text": "than",
+   "start": 34.54,
+   "end": 34.88
+  },
+  {
+   "text": "a",
+   "start": 34.88,
+   "end": 35.02
+  },
+  {
+   "text": "year",
+   "start": 35.02,
+   "end": 35.2
+  },
+  {
+   "text": "earlier.",
+   "start": 35.2,
+   "end": 35.64
+  },
+  {
+   "text": "What",
+   "start": 36.36,
+   "end": 36.48
+  },
+  {
+   "text": "price",
+   "start": 36.48,
+   "end": 36.82
+  },
+  {
+   "text": "has",
+   "start": 36.82,
+   "end": 37.02
+  },
+  {
+   "text": "risen",
+   "start": 37.02,
+   "end": 37.28
+  },
+  {
+   "text": "most",
+   "start": 37.28,
+   "end": 37.66
+  },
+  {
+   "text": "where",
+   "start": 37.66,
+   "end": 37.9
+  },
+  {
+   "text": "you",
+   "start": 37.9,
+   "end": 38.08
+  },
+  {
+   "text": "live?",
+   "start": 38.08,
+   "end": 38.36
+  },
+  {
+   "text": "Tell",
+   "start": 38.88,
+   "end": 38.98
+  },
+  {
+   "text": "us",
+   "start": 38.98,
+   "end": 39.16
+  },
+  {
+   "text": "below.",
+   "start": 39.16,
+   "end": 39.42
+  }
+ ]
+}
