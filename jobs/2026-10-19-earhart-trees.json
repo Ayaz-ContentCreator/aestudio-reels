@@ -1,34 +1,627 @@
 {
  "id": "2026-10-19-earhart-trees",
  "duration": 37.55,
- "voice": {"url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-19-earhart-trees.mp3"},
+ "voice": {
+  "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-19-earhart-trees.mp3"
+ },
  "script": "That suspected Amelia Earhart wreck in a Pacific lagoon was likely trees. Purdue University announced the result after a seventeen-person team spent four days on Nikumaroro. The shape was first spotted in satellite images in twenty-twenty. It even appeared in aerial photos from nineteen thirty-eight. But by the time the team arrived, much of it had washed away. Here's what they did find: a steel tube, about thirty inches long. Earhart vanished in nineteen thirty-seven. Purdue says the search goes on. Where do you think her plane ended up? Tell us below.",
- "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
  "display": [
-  {"match": "seventeen-person", "text": "17-person", "em": true},
-  {"match": "twenty-twenty", "text": "2020", "em": true},
-  {"match": "nineteen thirty-eight", "text": "1938", "em": true},
-  {"match": "thirty inches", "text": "30 inches", "em": true},
-  {"match": "nineteen thirty-seven", "text": "1937", "em": true}
+  {
+   "match": "seventeen-person",
+   "text": "17-person",
+   "em": true
+  },
+  {
+   "match": "twenty-twenty",
+   "text": "2020",
+   "em": true
+  },
+  {
+   "match": "nineteen thirty-eight",
+   "text": "1938",
+   "em": true
+  },
+  {
+   "match": "thirty inches",
+   "text": "30 inches",
+   "em": true
+  },
+  {
+   "match": "nineteen thirty-seven",
+   "text": "1937",
+   "em": true
+  }
  ],
- "emphasis": ["trees", "Purdue", "satellite", "washed", "steel"],
+ "emphasis": [
+  "trees",
+  "Purdue",
+  "satellite",
+  "washed",
+  "steel"
+ ],
  "scenes": [
-  {"type": "video", "src": "https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/nbcnews/video/2026/10/1792409692920_tdy_news_7a_jmf_amelia_earhart_261019_4500.mp4", "in": 46, "credit": "NBC News"},
-  {"type": "video", "src": "https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/nbcnews/video/2026/10/1792409692920_tdy_news_7a_jmf_amelia_earhart_261019_4500.mp4", "in": 22, "credit": "NBC News", "at": "Purdue University announced"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Nikumaroro_oli_2014209_lrg_cropped.jpg", "zoom": [1.0, 1.08], "at": "spent four days"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Nikumaroro_Island.jpg", "zoom": [1.0, 1.08], "at": "It even appeared"},
-  {"type": "card", "card": "headline", "at": "But by the time", "kicker": "On arrival", "text": "Much of it *washed away*", "sub": "only a Y-shaped piece was left"},
-  {"type": "card", "card": "stat", "at": "Here's what", "kicker": "What they found", "value": 30, "suffix": "-inch", "sub": "steel tube found in the lagoon", "source": "Purdue"},
-  {"type": "video", "src": "https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20261019/6ad59f1f1fa9e22559c311b6/file_1920x1080-5400-v4/file_1280x720-2000-v3_1.mp4", "in": 2, "credit": "WLFI", "at": "Earhart vanished"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small.jpg", "zoom": [1.0, 1.08], "at": "Purdue says the search"},
-  {"type": "card", "card": "end", "at": "Where do you think", "kicker": "Your take", "text": "Where do you think her plane *ended up?*", "cta": "Tell us below ↓", "follow": "Follow for daily US & Europe news"}
+  {
+   "type": "video",
+   "src": "https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/nbcnews/video/2026/10/1792409692920_tdy_news_7a_jmf_amelia_earhart_261019_4500.mp4",
+   "in": 46,
+   "credit": "NBC News"
+  },
+  {
+   "type": "video",
+   "src": "https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/nbcnews/video/2026/10/1792409692920_tdy_news_7a_jmf_amelia_earhart_261019_4500.mp4",
+   "in": 22,
+   "credit": "NBC News",
+   "at": "Purdue University announced"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Nikumaroro_oli_2014209_lrg_cropped.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "spent four days"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Nikumaroro_Island.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "It even appeared"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "But by the time",
+   "kicker": "On arrival",
+   "text": "Much of it *washed away*",
+   "sub": "only a Y-shaped piece was left"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "Here's what",
+   "kicker": "What they found",
+   "value": 30,
+   "suffix": "-inch",
+   "sub": "steel tube found in the lagoon",
+   "source": "Purdue"
+  },
+  {
+   "type": "video",
+   "src": "https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20261019/6ad59f1f1fa9e22559c311b6/file_1920x1080-5400-v4/file_1280x720-2000-v3_1.mp4",
+   "in": 2,
+   "credit": "WLFI",
+   "at": "Earhart vanished"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Purdue says the search"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Where do you think",
+   "kicker": "Your take",
+   "text": "Where do you think her plane *ended up?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
  ],
  "titles": [
-  {"style": "hook", "until": "likely trees.", "kicker": "Pacific · Amelia Earhart", "text": "The Earhart “wreck” was likely *trees*"},
-  {"style": "label", "at": "Purdue University announced", "dur": 3.3, "kicker": "Purdue University", "text": "*17* searchers, *4* days ashore"},
-  {"style": "label", "at": "The shape was", "dur": 3.3, "kicker": "Since 2020", "text": "Spotted in *satellite* images"},
-  {"style": "label", "at": "It even appeared", "dur": 3.3, "kicker": "Aerial photos", "text": "Visible as far back as *1938*"},
-  {"style": "label", "at": "Earhart vanished", "dur": 3.0, "kicker": "July 1937", "text": "Lost over the *Pacific*"},
-  {"style": "label", "at": "Purdue says the search", "dur": 2.3, "kicker": "What's next", "text": "The search *goes on*"}
+  {
+   "style": "hook",
+   "until": "likely trees.",
+   "kicker": "Pacific · Amelia Earhart",
+   "text": "The Earhart “wreck” was likely *trees*"
+  },
+  {
+   "style": "label",
+   "at": "Purdue University announced",
+   "dur": 3.3,
+   "kicker": "Purdue University",
+   "text": "*17* searchers, *4* days ashore"
+  },
+  {
+   "style": "label",
+   "at": "The shape was",
+   "dur": 3.3,
+   "kicker": "Since 2020",
+   "text": "Spotted in *satellite* images"
+  },
+  {
+   "style": "label",
+   "at": "It even appeared",
+   "dur": 3.3,
+   "kicker": "Aerial photos",
+   "text": "Visible as far back as *1938*"
+  },
+  {
+   "style": "label",
+   "at": "Earhart vanished",
+   "dur": 3.0,
+   "kicker": "July 1937",
+   "text": "Lost over the *Pacific*"
+  },
+  {
+   "style": "label",
+   "at": "Purdue says the search",
+   "dur": 2.3,
+   "kicker": "What's next",
+   "text": "The search *goes on*"
+  }
+ ],
+ "words": [
+  {
+   "text": "That",
+   "start": 0.0,
+   "end": 0.26
+  },
+  {
+   "text": "suspected",
+   "start": 0.26,
+   "end": 0.84
+  },
+  {
+   "text": "Amelia",
+   "start": 0.84,
+   "end": 1.22
+  },
+  {
+   "text": "Earhart",
+   "start": 1.22,
+   "end": 1.8
+  },
+  {
+   "text": "wreck",
+   "start": 1.8,
+   "end": 2.1
+  },
+  {
+   "text": "in",
+   "start": 2.1,
+   "end": 2.32
+  },
+  {
+   "text": "a",
+   "start": 2.32,
+   "end": 2.42
+  },
+  {
+   "text": "Pacific",
+   "start": 2.42,
+   "end": 2.72
+  },
+  {
+   "text": "lagoon",
+   "start": 2.72,
+   "end": 3.4
+  },
+  {
+   "text": "was",
+   "start": 3.4,
+   "end": 3.72
+  },
+  {
+   "text": "likely",
+   "start": 3.72,
+   "end": 4.16
+  },
+  {
+   "text": "trees.",
+   "start": 4.16,
+   "end": 4.74
+  },
+  {
+   "text": "Purdue",
+   "start": 5.58,
+   "end": 5.72
+  },
+  {
+   "text": "University",
+   "start": 5.72,
+   "end": 6.32
+  },
+  {
+   "text": "announced",
+   "start": 6.32,
+   "end": 6.8
+  },
+  {
+   "text": "the",
+   "start": 6.8,
+   "end": 7.02
+  },
+  {
+   "text": "result",
+   "start": 7.02,
+   "end": 7.4
+  },
+  {
+   "text": "after",
+   "start": 7.4,
+   "end": 7.74
+  },
+  {
+   "text": "a",
+   "start": 7.74,
+   "end": 7.98
+  },
+  {
+   "text": "seventeen-person",
+   "start": 7.98,
+   "end": 8.84
+  },
+  {
+   "text": "team",
+   "start": 8.84,
+   "end": 9.32
+  },
+  {
+   "text": "spent",
+   "start": 9.32,
+   "end": 9.68
+  },
+  {
+   "text": "four",
+   "start": 9.68,
+   "end": 10.08
+  },
+  {
+   "text": "days",
+   "start": 10.08,
+   "end": 10.54
+  },
+  {
+   "text": "on",
+   "start": 10.54,
+   "end": 10.76
+  },
+  {
+   "text": "Nikumaroro.",
+   "start": 10.76,
+   "end": 11.48
+  },
+  {
+   "text": "The",
+   "start": 12.06,
+   "end": 12.34
+  },
+  {
+   "text": "shape",
+   "start": 12.34,
+   "end": 12.54
+  },
+  {
+   "text": "was",
+   "start": 12.54,
+   "end": 12.74
+  },
+  {
+   "text": "first",
+   "start": 12.74,
+   "end": 13.06
+  },
+  {
+   "text": "spotted",
+   "start": 13.06,
+   "end": 13.48
+  },
+  {
+   "text": "in",
+   "start": 13.48,
+   "end": 13.74
+  },
+  {
+   "text": "satellite",
+   "start": 13.74,
+   "end": 14.14
+  },
+  {
+   "text": "images",
+   "start": 14.14,
+   "end": 14.56
+  },
+  {
+   "text": "in",
+   "start": 14.56,
+   "end": 14.86
+  },
+  {
+   "text": "twenty-twenty.",
+   "start": 14.86,
+   "end": 15.42
+  },
+  {
+   "text": "It",
+   "start": 16.08,
+   "end": 16.18
+  },
+  {
+   "text": "even",
+   "start": 16.18,
+   "end": 16.44
+  },
+  {
+   "text": "appeared",
+   "start": 16.44,
+   "end": 16.78
+  },
+  {
+   "text": "in",
+   "start": 16.78,
+   "end": 17.02
+  },
+  {
+   "text": "aerial",
+   "start": 17.02,
+   "end": 17.34
+  },
+  {
+   "text": "photos",
+   "start": 17.34,
+   "end": 17.8
+  },
+  {
+   "text": "from",
+   "start": 17.8,
+   "end": 18.06
+  },
+  {
+   "text": "nineteen",
+   "start": 18.06,
+   "end": 18.5
+  },
+  {
+   "text": "thirty-eight.",
+   "start": 18.5,
+   "end": 18.94
+  },
+  {
+   "text": "But",
+   "start": 19.68,
+   "end": 19.86
+  },
+  {
+   "text": "by",
+   "start": 19.86,
+   "end": 20.0
+  },
+  {
+   "text": "the",
+   "start": 20.0,
+   "end": 20.14
+  },
+  {
+   "text": "time",
+   "start": 20.14,
+   "end": 20.34
+  },
+  {
+   "text": "the",
+   "start": 20.34,
+   "end": 20.52
+  },
+  {
+   "text": "team",
+   "start": 20.52,
+   "end": 20.72
+  },
+  {
+   "text": "arrived,",
+   "start": 20.72,
+   "end": 21.26
+  },
+  {
+   "text": "much",
+   "start": 21.76,
+   "end": 21.84
+  },
+  {
+   "text": "of",
+   "start": 21.84,
+   "end": 22.02
+  },
+  {
+   "text": "it",
+   "start": 22.02,
+   "end": 22.18
+  },
+  {
+   "text": "had",
+   "start": 22.18,
+   "end": 22.3
+  },
+  {
+   "text": "washed",
+   "start": 22.3,
+   "end": 22.6
+  },
+  {
+   "text": "away.",
+   "start": 22.6,
+   "end": 22.98
+  },
+  {
+   "text": "Here's",
+   "start": 23.74,
+   "end": 23.96
+  },
+  {
+   "text": "what",
+   "start": 23.96,
+   "end": 24.06
+  },
+  {
+   "text": "they",
+   "start": 24.06,
+   "end": 24.24
+  },
+  {
+   "text": "did",
+   "start": 24.24,
+   "end": 24.42
+  },
+  {
+   "text": "find:",
+   "start": 24.42,
+   "end": 24.76
+  },
+  {
+   "text": "a",
+   "start": 25.32,
+   "end": 25.42
+  },
+  {
+   "text": "steel",
+   "start": 25.42,
+   "end": 25.78
+  },
+  {
+   "text": "tube,",
+   "start": 25.78,
+   "end": 26.28
+  },
+  {
+   "text": "about",
+   "start": 26.56,
+   "end": 26.78
+  },
+  {
+   "text": "thirty",
+   "start": 26.78,
+   "end": 27.2
+  },
+  {
+   "text": "inches",
+   "start": 27.2,
+   "end": 27.42
+  },
+  {
+   "text": "long.",
+   "start": 27.42,
+   "end": 27.86
+  },
+  {
+   "text": "Earhart",
+   "start": 28.42,
+   "end": 28.9
+  },
+  {
+   "text": "vanished",
+   "start": 28.9,
+   "end": 29.28
+  },
+  {
+   "text": "in",
+   "start": 29.28,
+   "end": 29.6
+  },
+  {
+   "text": "nineteen",
+   "start": 29.6,
+   "end": 30.07
+  },
+  {
+   "text": "thirty-seven.",
+   "start": 30.07,
+   "end": 30.54
+  },
+  {
+   "text": "Purdue",
+   "start": 31.54,
+   "end": 31.54
+  },
+  {
+   "text": "says",
+   "start": 31.54,
+   "end": 31.9
+  },
+  {
+   "text": "the",
+   "start": 31.9,
+   "end": 32.2
+  },
+  {
+   "text": "search",
+   "start": 32.2,
+   "end": 32.46
+  },
+  {
+   "text": "goes",
+   "start": 32.46,
+   "end": 32.76
+  },
+  {
+   "text": "on.",
+   "start": 32.76,
+   "end": 33.12
+  },
+  {
+   "text": "Where",
+   "start": 33.82,
+   "end": 33.9
+  },
+  {
+   "text": "do",
+   "start": 33.9,
+   "end": 34.02
+  },
+  {
+   "text": "you",
+   "start": 34.02,
+   "end": 34.14
+  },
+  {
+   "text": "think",
+   "start": 34.14,
+   "end": 34.3
+  },
+  {
+   "text": "her",
+   "start": 34.3,
+   "end": 34.46
+  },
+  {
+   "text": "plane",
+   "start": 34.46,
+   "end": 34.76
+  },
+  {
+   "text": "ended",
+   "start": 34.76,
+   "end": 35.02
+  },
+  {
+   "text": "up?",
+   "start": 35.02,
+   "end": 35.36
+  },
+  {
+   "text": "Tell",
+   "start": 35.84,
+   "end": 35.94
+  },
+  {
+   "text": "us",
+   "start": 35.94,
+   "end": 36.12
+  },
+  {
+   "text": "below.",
+   "start": 36.12,
+   "end": 36.4
+  }
  ]
 }
