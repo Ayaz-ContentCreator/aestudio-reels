@@ -1,0 +1,11 @@
+{"id": "find-2026-10-20-cloud2", "find": [
+  {"probe": "https://www.cnn.com/2026/10/20/europe/google-cloud-outage-london-revolut-intl", "in": 0, "sheet": true},
+  {"probe": "https://www.itv.com/news/2026-10-20/revolut-services-down-as-google-cloud-apologises-for-outage", "in": 0, "sheet": true},
+  {"commons": "data center", "kind": "video"},
+  {"commons": "datacenter servers", "kind": "image"},
+  {"commons": "Lloyds Bank branch", "kind": "image"},
+  {"commons": "HSBC UK branch", "kind": "image"},
+  {"commons": "ATM United Kingdom", "kind": "image"},
+  {"commons": "Royal Courts of Justice", "kind": "image"},
+  {"commons": "City of London skyline", "kind": "image"},
+  {"commons": "card payment terminal", "kind": "image"}]}
