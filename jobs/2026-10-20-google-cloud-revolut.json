@@ -43,9 +43,12 @@
    "credit": "PHOTO: Olgierd / CC BY 2.0 / Wikimedia Commons"
   },
   {
-   "type": "video",
-   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Data_Center_Tour_%26_Technical_Deep_Dive_into_the_Power%2C_Data_and_Cooling_Infrastructure%21.webm",
-   "in": 164,
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/Canary_Wharf_skyline_from_Dawson_Heights%2C_Dulwich.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
    "at": "Google said a power"
   },
   {
