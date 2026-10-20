@@ -1,0 +1,3 @@
+{"id": "find-2026-10-20-cloud3", "find": [
+  {"probe": "https://upload.wikimedia.org/wikipedia/commons/5/5e/What%27s_Inside_This_Decommissioned_Data_Center-.webm", "in": 30, "sheet": true},
+  {"probe": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Data_Center_Tour_%26_Technical_Deep_Dive_into_the_Power%2C_Data_and_Cooling_Infrastructure%21.webm", "in": 120, "sheet": true}]}
