@@ -39,12 +39,13 @@
    "zoom": [
     1.0,
     1.08
-   ]
+   ],
+   "credit": "PHOTO: Olgierd / CC BY 2.0 / Wikimedia Commons"
   },
   {
    "type": "video",
    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Data_Center_Tour_%26_Technical_Deep_Dive_into_the_Power%2C_Data_and_Cooling_Infrastructure%21.webm",
-   "in": 156,
+   "in": 164,
    "at": "Google said a power"
   },
   {
@@ -72,7 +73,8 @@
     1.0,
     1.08
    ],
-   "at": "Lloyds, HSBC"
+   "at": "Lloyds, HSBC",
+   "credit": "PHOTO: Reading Tom / CC BY 2.0 / Wikimedia Commons"
   },
   {
    "type": "card",
@@ -90,13 +92,18 @@
     1.0,
     1.08
    ],
-   "at": "Even a court"
+   "at": "Even a court",
+   "credit": "PHOTO: David Castor / CC0 / Wikimedia Commons"
   },
   {
-   "type": "video",
-   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Data_Center_Tour_%26_Technical_Deep_Dive_into_the_Power%2C_Data_and_Cooling_Infrastructure%21.webm",
-   "in": 124,
-   "at": "Google says services"
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Google_Data_Center%2C_Council_Bluffs_Iowa_%2849062863796%29.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Google says services",
+   "credit": "PHOTO: Chad Davis / CC BY 2.0 / Wikimedia Commons"
   },
   {
    "type": "card",
