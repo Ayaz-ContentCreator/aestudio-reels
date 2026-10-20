@@ -1,0 +1,623 @@
+{
+ "id": "2026-10-20-google-cloud-revolut",
+ "duration": 40.85,
+ "voice": {
+  "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-20-google-cloud-revolut.mp3"
+ },
+ "script": "Revolut services went down Tuesday after one power failure at Google Cloud. Google said a power event hit its London region around seven a.m. UK time. ITV News said card payments, transfers and cash withdrawals were hit. Revolut said customers' money and data are safe. Lloyds, HSBC and Halifax customers also reported problems. Here's the weak spot. Google's London region has three zones. Only one failed. Even a court video system went down. Google says services are now recovering. How would you pay if your bank app went dark? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "seven a.m.",
+   "text": "7 a.m.",
+   "em": true
+  },
+  {
+   "match": "three",
+   "text": "3",
+   "em": true
+  },
+  {
+   "match": "one failed.",
+   "text": "1 failed."
+  }
+ ],
+ "emphasis": [
+  "Revolut",
+  "power",
+  "safe",
+  "weak",
+  "recovering"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/Baribal_card_holder_%26_Revolut_card_%2848956651156%29.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Data_Center_Tour_%26_Technical_Deep_Dive_into_the_Power%2C_Data_and_Cooling_Infrastructure%21.webm",
+   "in": 156,
+   "at": "Google said a power"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/LaCuCa_card_reader_-_payment_terminal_at_supermarket_register.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "ITV News said"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Canary_Wharf_skyline_in_September_2025.png",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Revolut said customers'"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Lloyds_Bank%2C_High_Street%2C_Cheltenham.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Lloyds, HSBC"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "Here's the weak",
+   "kicker": "The weak spot",
+   "value": 1,
+   "suffix": " of 3",
+   "sub": "Google zones in London failed"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Royal_Courts_of_Justice_2019.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Even a court"
+  },
+  {
+   "type": "video",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Data_Center_Tour_%26_Technical_Deep_Dive_into_the_Power%2C_Data_and_Cooling_Infrastructure%21.webm",
+   "in": 124,
+   "at": "Google says services"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "How would you pay",
+   "kicker": "Your take",
+   "text": "How would you pay if your bank app went *dark?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "Google Cloud.",
+   "kicker": "UK · Banking outage",
+   "text": "One power failure took *Revolut* down"
+  },
+  {
+   "style": "label",
+   "at": "Google said a power",
+   "dur": 3.3,
+   "kicker": "Google Cloud",
+   "text": "*Power event* in London"
+  },
+  {
+   "style": "label",
+   "at": "ITV News said",
+   "dur": 3.3,
+   "kicker": "Revolut",
+   "text": "Cards, transfers, *cash* hit"
+  },
+  {
+   "style": "label",
+   "at": "Revolut said customers'",
+   "dur": 3.3,
+   "kicker": "Revolut",
+   "text": "Money and data *safe*"
+  },
+  {
+   "style": "label",
+   "at": "Lloyds, HSBC",
+   "dur": 3.3,
+   "kicker": "Also hit",
+   "text": "*Lloyds*, HSBC, Halifax"
+  },
+  {
+   "style": "label",
+   "at": "Even a court",
+   "dur": 2.4,
+   "kicker": "Courts",
+   "text": "Court video system *down*"
+  },
+  {
+   "style": "label",
+   "at": "Google says services",
+   "dur": 2.8,
+   "kicker": "Latest",
+   "text": "Services *recovering*"
+  }
+ ],
+ "words": [
+  {
+   "text": "Revolut",
+   "start": 0.0,
+   "end": 0.48
+  },
+  {
+   "text": "services",
+   "start": 0.48,
+   "end": 0.76
+  },
+  {
+   "text": "went",
+   "start": 0.76,
+   "end": 1.24
+  },
+  {
+   "text": "down",
+   "start": 1.24,
+   "end": 1.62
+  },
+  {
+   "text": "Tuesday",
+   "start": 1.62,
+   "end": 2.04
+  },
+  {
+   "text": "after",
+   "start": 2.04,
+   "end": 2.58
+  },
+  {
+   "text": "one",
+   "start": 2.58,
+   "end": 2.96
+  },
+  {
+   "text": "power",
+   "start": 2.96,
+   "end": 3.32
+  },
+  {
+   "text": "failure",
+   "start": 3.32,
+   "end": 3.78
+  },
+  {
+   "text": "at",
+   "start": 3.78,
+   "end": 4.02
+  },
+  {
+   "text": "Google",
+   "start": 4.02,
+   "end": 4.34
+  },
+  {
+   "text": "Cloud.",
+   "start": 4.34,
+   "end": 4.78
+  },
+  {
+   "text": "Google",
+   "start": 5.6,
+   "end": 5.66
+  },
+  {
+   "text": "said",
+   "start": 5.66,
+   "end": 5.98
+  },
+  {
+   "text": "a",
+   "start": 5.98,
+   "end": 6.16
+  },
+  {
+   "text": "power",
+   "start": 6.16,
+   "end": 6.5
+  },
+  {
+   "text": "event",
+   "start": 6.5,
+   "end": 6.86
+  },
+  {
+   "text": "hit",
+   "start": 6.86,
+   "end": 7.1
+  },
+  {
+   "text": "its",
+   "start": 7.1,
+   "end": 7.28
+  },
+  {
+   "text": "London",
+   "start": 7.28,
+   "end": 7.62
+  },
+  {
+   "text": "region",
+   "start": 7.62,
+   "end": 8.04
+  },
+  {
+   "text": "around",
+   "start": 8.04,
+   "end": 8.38
+  },
+  {
+   "text": "seven",
+   "start": 8.38,
+   "end": 8.77
+  },
+  {
+   "text": "a.m.",
+   "start": 8.77,
+   "end": 9.16
+  },
+  {
+   "text": "UK",
+   "start": 9.16,
+   "end": 9.56
+  },
+  {
+   "text": "time.",
+   "start": 9.56,
+   "end": 10.1
+  },
+  {
+   "text": "ITV",
+   "start": 10.72,
+   "end": 10.98
+  },
+  {
+   "text": "News",
+   "start": 10.98,
+   "end": 11.42
+  },
+  {
+   "text": "said",
+   "start": 11.42,
+   "end": 11.78
+  },
+  {
+   "text": "card",
+   "start": 11.78,
+   "end": 12.12
+  },
+  {
+   "text": "payments,",
+   "start": 12.12,
+   "end": 12.6
+  },
+  {
+   "text": "transfers",
+   "start": 13.02,
+   "end": 13.36
+  },
+  {
+   "text": "and",
+   "start": 13.68,
+   "end": 13.82
+  },
+  {
+   "text": "cash",
+   "start": 13.82,
+   "end": 14.14
+  },
+  {
+   "text": "withdrawals",
+   "start": 14.14,
+   "end": 14.6
+  },
+  {
+   "text": "were",
+   "start": 14.6,
+   "end": 14.92
+  },
+  {
+   "text": "hit.",
+   "start": 14.92,
+   "end": 15.2
+  },
+  {
+   "text": "Revolut",
+   "start": 15.9,
+   "end": 16.34
+  },
+  {
+   "text": "said",
+   "start": 16.34,
+   "end": 16.66
+  },
+  {
+   "text": "customers'",
+   "start": 17.42,
+   "end": 17.42
+  },
+  {
+   "text": "money",
+   "start": 17.62,
+   "end": 17.72
+  },
+  {
+   "text": "and",
+   "start": 17.72,
+   "end": 18.06
+  },
+  {
+   "text": "data",
+   "start": 18.06,
+   "end": 18.3
+  },
+  {
+   "text": "are",
+   "start": 18.3,
+   "end": 18.6
+  },
+  {
+   "text": "safe.",
+   "start": 18.6,
+   "end": 19.0
+  },
+  {
+   "text": "Lloyds,",
+   "start": 19.84,
+   "end": 20.16
+  },
+  {
+   "text": "HSBC",
+   "start": 20.38,
+   "end": 20.84
+  },
+  {
+   "text": "and",
+   "start": 21.34,
+   "end": 21.54
+  },
+  {
+   "text": "Halifax",
+   "start": 21.54,
+   "end": 21.84
+  },
+  {
+   "text": "customers",
+   "start": 21.84,
+   "end": 22.48
+  },
+  {
+   "text": "also",
+   "start": 22.48,
+   "end": 23.02
+  },
+  {
+   "text": "reported",
+   "start": 23.02,
+   "end": 23.44
+  },
+  {
+   "text": "problems.",
+   "start": 23.44,
+   "end": 23.98
+  },
+  {
+   "text": "Here's",
+   "start": 24.86,
+   "end": 25.1
+  },
+  {
+   "text": "the",
+   "start": 25.1,
+   "end": 25.18
+  },
+  {
+   "text": "weak",
+   "start": 25.18,
+   "end": 25.38
+  },
+  {
+   "text": "spot.",
+   "start": 25.38,
+   "end": 25.64
+  },
+  {
+   "text": "Google's",
+   "start": 26.28,
+   "end": 26.76
+  },
+  {
+   "text": "London",
+   "start": 26.76,
+   "end": 27.04
+  },
+  {
+   "text": "region",
+   "start": 27.04,
+   "end": 27.38
+  },
+  {
+   "text": "has",
+   "start": 27.38,
+   "end": 27.74
+  },
+  {
+   "text": "three",
+   "start": 27.74,
+   "end": 28.14
+  },
+  {
+   "text": "zones.",
+   "start": 28.14,
+   "end": 28.54
+  },
+  {
+   "text": "Only",
+   "start": 29.18,
+   "end": 29.36
+  },
+  {
+   "text": "one",
+   "start": 29.36,
+   "end": 29.7
+  },
+  {
+   "text": "failed.",
+   "start": 29.7,
+   "end": 30.12
+  },
+  {
+   "text": "Even",
+   "start": 30.82,
+   "end": 30.98
+  },
+  {
+   "text": "a",
+   "start": 30.98,
+   "end": 31.16
+  },
+  {
+   "text": "court",
+   "start": 31.16,
+   "end": 31.4
+  },
+  {
+   "text": "video",
+   "start": 31.4,
+   "end": 31.68
+  },
+  {
+   "text": "system",
+   "start": 31.68,
+   "end": 32.04
+  },
+  {
+   "text": "went",
+   "start": 32.04,
+   "end": 32.34
+  },
+  {
+   "text": "down.",
+   "start": 32.34,
+   "end": 32.66
+  },
+  {
+   "text": "Google",
+   "start": 33.42,
+   "end": 33.54
+  },
+  {
+   "text": "says",
+   "start": 33.54,
+   "end": 33.88
+  },
+  {
+   "text": "services",
+   "start": 33.88,
+   "end": 34.3
+  },
+  {
+   "text": "are",
+   "start": 34.3,
+   "end": 34.7
+  },
+  {
+   "text": "now",
+   "start": 34.7,
+   "end": 34.94
+  },
+  {
+   "text": "recovering.",
+   "start": 34.94,
+   "end": 35.46
+  },
+  {
+   "text": "How",
+   "start": 36.3,
+   "end": 36.4
+  },
+  {
+   "text": "would",
+   "start": 36.4,
+   "end": 36.56
+  },
+  {
+   "text": "you",
+   "start": 36.56,
+   "end": 36.7
+  },
+  {
+   "text": "pay",
+   "start": 36.7,
+   "end": 37.02
+  },
+  {
+   "text": "if",
+   "start": 37.02,
+   "end": 37.24
+  },
+  {
+   "text": "your",
+   "start": 37.24,
+   "end": 37.38
+  },
+  {
+   "text": "bank",
+   "start": 37.38,
+   "end": 37.64
+  },
+  {
+   "text": "app",
+   "start": 37.64,
+   "end": 37.86
+  },
+  {
+   "text": "went",
+   "start": 37.86,
+   "end": 38.1
+  },
+  {
+   "text": "dark?",
+   "start": 38.1,
+   "end": 38.42
+  },
+  {
+   "text": "Tell",
+   "start": 39.08,
+   "end": 39.18
+  },
+  {
+   "text": "us",
+   "start": 39.18,
+   "end": 39.36
+  },
+  {
+   "text": "below.",
+   "start": 39.36,
+   "end": 39.66
+  }
+ ]
+}
