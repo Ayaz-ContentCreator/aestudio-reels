@@ -1,0 +1,12 @@
+{"id": "find-2026-10-20-cloud", "find": [
+  {"probe": "https://www.euronews.com/2026/10/20/power-outage-hits-google-cloud-services-disrupting-uk-banks", "in": 0, "sheet": true},
+  {"probe": "https://www.euronews.com/next/2026/10/20/power-outage-hits-google-cloud-services-disrupting-uk-banks", "in": 0, "sheet": true},
+  {"commons": "Revolut card", "kind": "image"},
+  {"commons": "Revolut", "kind": "image"},
+  {"commons": "Google data center", "kind": "image"},
+  {"commons": "Google Cloud", "kind": "image"},
+  {"commons": "Canary Wharf skyline", "kind": "image"},
+  {"commons": "contactless payment", "kind": "image"},
+  {"commons": "cash machine London", "kind": "image"},
+  {"commons": "London skyline", "kind": "video"},
+  {"commons": "server room", "kind": "video"}]}
