@@ -1,0 +1,148 @@
+{
+ "id": "2026-10-21-hubbard-freed",
+ "duration": 36.85,
+ "voice": {
+  "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-21-hubbard-freed.mp3"
+ },
+ "script": "Russia freed a seventy-four-year-old American on Wednesday, after more than four years. He's Stephen Hubbard, a former Michigan teacher, the Associated Press reports. Russia said he fought for Ukraine and sentenced him to nearly seven years. Here's how he got out. Trump says he asked Putin last week. The release came as envoy Steve Witkoff met Putin in Saint Petersburg. Trump says the US gave up no one in return. But one advocacy group says five other Americans it represents remain held. What should the US ask for next? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "seventy-four-year-old",
+   "text": "74-year-old",
+   "em": true
+  },
+  {
+   "match": "four years",
+   "text": "4 years"
+  },
+  {
+   "match": "seven years",
+   "text": "7 years",
+   "em": true
+  },
+  {
+   "match": "five other",
+   "text": "5 other",
+   "em": true
+  },
+  {
+   "match": "Saint Petersburg",
+   "text": "St. Petersburg"
+  }
+ ],
+ "emphasis": [
+  "Hubbard",
+  "Putin",
+  "Witkoff",
+  "return",
+  "held"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://www.nbcnews.com/news/amp-video/mmvo271956037651",
+   "in": 44,
+   "credit": "NBC News"
+  },
+  {
+   "type": "video",
+   "src": "https://www.nbcnews.com/news/amp-video/mmvo271956037651",
+   "in": 24,
+   "credit": "NBC News",
+   "at": "He's Stephen"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "Russia said",
+   "kicker": "Russia's sentence",
+   "value": 7,
+   "prefix": "~",
+   "suffix": " yrs",
+   "sub": "for fighting for Ukraine, Russia said",
+   "source": "AP"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Putin_listening_to_Witkoff.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Here's how"
+  },
+  {
+   "type": "video",
+   "src": "https://www.nbcnews.com/news/amp-video/mmvo271956037651",
+   "in": 52,
+   "credit": "NBC News",
+   "at": "The release came"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "Trump says the",
+   "kicker": "The deal",
+   "text": "*No* swap",
+   "sub": "Trump says the US gave up no one"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Moscow_-_2026_-_Kremlin_wall_at_evening_light.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "But one advocacy"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "What should",
+   "kicker": "Your take",
+   "text": "What should the US ask for *next?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "four years.",
+   "kicker": "Russia · US",
+   "text": "Russia frees a *74-year-old* American"
+  },
+  {
+   "style": "label",
+   "at": "He's Stephen",
+   "dur": 3.3,
+   "kicker": "Who",
+   "text": "Stephen Hubbard, *Michigan*"
+  },
+  {
+   "style": "label",
+   "at": "Here's how",
+   "dur": 3.3,
+   "kicker": "Last week",
+   "text": "Trump asked *Putin*"
+  },
+  {
+   "style": "label",
+   "at": "The release came",
+   "dur": 3.3,
+   "kicker": "St. Petersburg",
+   "text": "Witkoff meets *Putin*"
+  },
+  {
+   "style": "label",
+   "at": "But one advocacy",
+   "dur": 3.3,
+   "kicker": "Still held",
+   "text": "*5* others, one group says"
+  }
+ ]
+}
