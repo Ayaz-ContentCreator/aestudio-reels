@@ -168,5 +168,477 @@
    "kicker": "Still coming",
    "text": "*Iron Man*, Star Wars Jedi"
   }
+ ],
+ "words": [
+  {
+   "text": "BioWare,",
+   "start": 0.0,
+   "end": 0.66
+  },
+  {
+   "text": "the",
+   "start": 0.94,
+   "end": 1.04
+  },
+  {
+   "text": "Mass",
+   "start": 1.04,
+   "end": 1.28
+  },
+  {
+   "text": "Effect",
+   "start": 1.28,
+   "end": 1.52
+  },
+  {
+   "text": "studio,",
+   "start": 1.52,
+   "end": 1.94
+  },
+  {
+   "text": "is",
+   "start": 2.46,
+   "end": 2.62
+  },
+  {
+   "text": "closing",
+   "start": 2.62,
+   "end": 3.1
+  },
+  {
+   "text": "after",
+   "start": 3.1,
+   "end": 3.48
+  },
+  {
+   "text": "thirty-one",
+   "start": 3.48,
+   "end": 4.12
+  },
+  {
+   "text": "years.",
+   "start": 4.12,
+   "end": 4.76
+  },
+  {
+   "text": "Electronic",
+   "start": 5.52,
+   "end": 5.76
+  },
+  {
+   "text": "Arts",
+   "start": 5.76,
+   "end": 6.12
+  },
+  {
+   "text": "told",
+   "start": 6.12,
+   "end": 6.4
+  },
+  {
+   "text": "staff",
+   "start": 6.4,
+   "end": 6.78
+  },
+  {
+   "text": "on",
+   "start": 6.78,
+   "end": 6.98
+  },
+  {
+   "text": "Wednesday,",
+   "start": 6.98,
+   "end": 7.48
+  },
+  {
+   "text": "Reuters",
+   "start": 7.84,
+   "end": 8.02
+  },
+  {
+   "text": "reports.",
+   "start": 8.02,
+   "end": 8.64
+  },
+  {
+   "text": "EA",
+   "start": 9.62,
+   "end": 9.755
+  },
+  {
+   "text": "is",
+   "start": 9.755,
+   "end": 9.89
+  },
+  {
+   "text": "cutting",
+   "start": 9.89,
+   "end": 10.362
+  },
+  {
+   "text": "about",
+   "start": 10.362,
+   "end": 10.699
+  },
+  {
+   "text": "four",
+   "start": 10.699,
+   "end": 10.969
+  },
+  {
+   "text": "hundred",
+   "start": 10.969,
+   "end": 11.441
+  },
+  {
+   "text": "jobs,",
+   "start": 11.441,
+   "end": 11.779
+  },
+  {
+   "text": "roughly",
+   "start": 11.779,
+   "end": 12.251
+  },
+  {
+   "text": "three",
+   "start": 12.251,
+   "end": 12.588
+  },
+  {
+   "text": "percent",
+   "start": 12.588,
+   "end": 13.06
+  },
+  {
+   "text": "of",
+   "start": 13.06,
+   "end": 13.195
+  },
+  {
+   "text": "staff.",
+   "start": 13.195,
+   "end": 13.6
+  },
+  {
+   "text": "About",
+   "start": 14.24,
+   "end": 14.46
+  },
+  {
+   "text": "fifty",
+   "start": 14.46,
+   "end": 14.88
+  },
+  {
+   "text": "are",
+   "start": 14.88,
+   "end": 15.18
+  },
+  {
+   "text": "at",
+   "start": 15.18,
+   "end": 15.34
+  },
+  {
+   "text": "BioWare",
+   "start": 15.34,
+   "end": 15.9
+  },
+  {
+   "text": "in",
+   "start": 15.9,
+   "end": 16.14
+  },
+  {
+   "text": "Edmonton,",
+   "start": 16.14,
+   "end": 16.54
+  },
+  {
+   "text": "Canada.",
+   "start": 16.78,
+   "end": 17.04
+  },
+  {
+   "text": "The",
+   "start": 17.88,
+   "end": 17.96
+  },
+  {
+   "text": "next",
+   "start": 17.96,
+   "end": 18.24
+  },
+  {
+   "text": "Mass",
+   "start": 18.24,
+   "end": 18.5
+  },
+  {
+   "text": "Effect,",
+   "start": 18.5,
+   "end": 18.82
+  },
+  {
+   "text": "still",
+   "start": 19.22,
+   "end": 19.38
+  },
+  {
+   "text": "in",
+   "start": 19.38,
+   "end": 19.6
+  },
+  {
+   "text": "early",
+   "start": 19.6,
+   "end": 19.84
+  },
+  {
+   "text": "development,",
+   "start": 19.84,
+   "end": 20.26
+  },
+  {
+   "text": "is",
+   "start": 20.72,
+   "end": 20.9
+  },
+  {
+   "text": "cancelled.",
+   "start": 20.9,
+   "end": 21.28
+  },
+  {
+   "text": "Here's",
+   "start": 22.12,
+   "end": 22.32
+  },
+  {
+   "text": "what",
+   "start": 22.32,
+   "end": 22.46
+  },
+  {
+   "text": "changed.",
+   "start": 22.46,
+   "end": 22.82
+  },
+  {
+   "text": "EA",
+   "start": 23.6,
+   "end": 23.753
+  },
+  {
+   "text": "went",
+   "start": 23.753,
+   "end": 24.058
+  },
+  {
+   "text": "private",
+   "start": 24.058,
+   "end": 24.592
+  },
+  {
+   "text": "in",
+   "start": 24.592,
+   "end": 24.744
+  },
+  {
+   "text": "August",
+   "start": 24.744,
+   "end": 25.202
+  },
+  {
+   "text": "in",
+   "start": 25.202,
+   "end": 25.355
+  },
+  {
+   "text": "a",
+   "start": 25.355,
+   "end": 25.431
+  },
+  {
+   "text": "fifty-five",
+   "start": 25.431,
+   "end": 26.194
+  },
+  {
+   "text": "billion",
+   "start": 26.194,
+   "end": 26.728
+  },
+  {
+   "text": "dollar",
+   "start": 26.728,
+   "end": 27.186
+  },
+  {
+   "text": "buyout.",
+   "start": 27.186,
+   "end": 27.72
+  },
+  {
+   "text": "Now",
+   "start": 27.72,
+   "end": 27.967
+  },
+  {
+   "text": "it",
+   "start": 27.967,
+   "end": 28.131
+  },
+  {
+   "text": "says",
+   "start": 28.131,
+   "end": 28.46
+  },
+  {
+   "text": "it'll",
+   "start": 28.46,
+   "end": 28.871
+  },
+  {
+   "text": "focus",
+   "start": 28.871,
+   "end": 29.281
+  },
+  {
+   "text": "on",
+   "start": 29.281,
+   "end": 29.446
+  },
+  {
+   "text": "fewer,",
+   "start": 29.446,
+   "end": 29.939
+  },
+  {
+   "text": "bigger",
+   "start": 29.939,
+   "end": 30.432
+  },
+  {
+   "text": "action-adventure",
+   "start": 30.432,
+   "end": 31.747
+  },
+  {
+   "text": "games.",
+   "start": 31.747,
+   "end": 32.24
+  },
+  {
+   "text": "So",
+   "start": 32.8,
+   "end": 32.98
+  },
+  {
+   "text": "Iron",
+   "start": 32.98,
+   "end": 33.32
+  },
+  {
+   "text": "Man",
+   "start": 33.32,
+   "end": 33.64
+  },
+  {
+   "text": "and",
+   "start": 33.64,
+   "end": 33.92
+  },
+  {
+   "text": "the",
+   "start": 33.92,
+   "end": 34.02
+  },
+  {
+   "text": "next",
+   "start": 34.02,
+   "end": 34.32
+  },
+  {
+   "text": "Star",
+   "start": 34.32,
+   "end": 34.68
+  },
+  {
+   "text": "Wars",
+   "start": 34.68,
+   "end": 34.98
+  },
+  {
+   "text": "Jedi",
+   "start": 34.98,
+   "end": 35.26
+  },
+  {
+   "text": "game",
+   "start": 35.26,
+   "end": 35.68
+  },
+  {
+   "text": "continue.",
+   "start": 35.68,
+   "end": 36.1
+  },
+  {
+   "text": "Which",
+   "start": 37.04,
+   "end": 37.22
+  },
+  {
+   "text": "BioWare",
+   "start": 37.22,
+   "end": 37.76
+  },
+  {
+   "text": "game",
+   "start": 37.76,
+   "end": 38.06
+  },
+  {
+   "text": "meant",
+   "start": 38.06,
+   "end": 38.26
+  },
+  {
+   "text": "the",
+   "start": 38.26,
+   "end": 38.4
+  },
+  {
+   "text": "most",
+   "start": 38.4,
+   "end": 38.6
+  },
+  {
+   "text": "to",
+   "start": 38.6,
+   "end": 38.82
+  },
+  {
+   "text": "you?",
+   "start": 38.82,
+   "end": 39.08
+  },
+  {
+   "text": "Tell",
+   "start": 39.48,
+   "end": 39.58
+  },
+  {
+   "text": "us",
+   "start": 39.58,
+   "end": 39.76
+  },
+  {
+   "text": "below.",
+   "start": 39.76,
+   "end": 40.02
+  }
  ]
 }
