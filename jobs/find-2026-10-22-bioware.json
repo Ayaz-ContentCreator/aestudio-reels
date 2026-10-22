@@ -1,0 +1,10 @@
+{"id": "find-2026-10-22-bioware", "find": [
+  {"commons": "BioWare", "kind": "image"},
+  {"commons": "BioWare Edmonton", "kind": "image"},
+  {"commons": "Electronic Arts headquarters Redwood City", "kind": "image"},
+  {"commons": "Edmonton downtown skyline", "kind": "image"},
+  {"commons": "Mass Effect", "kind": "image"},
+  {"commons": "Edmonton", "kind": "video"},
+  {"probe": "https://www.ctvnews.ca/edmonton/article/bioware-edmonton-based-video-game-company-shutting-down/", "in": 0, "sheet": true},
+  {"probe": "https://www.cbc.ca/news/canada/electronic-arts-shutting-bioware-edmonton-9.7391164", "in": 0, "sheet": true}
+]}
