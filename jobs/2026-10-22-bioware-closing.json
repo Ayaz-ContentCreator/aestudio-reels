@@ -1,0 +1,172 @@
+{
+ "id": "2026-10-22-bioware-closing",
+ "duration": 41.16,
+ "voice": {
+  "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-22-bioware-closing.mp3"
+ },
+ "script": "BioWare, the Mass Effect studio, is closing after thirty-one years. Electronic Arts told staff on Wednesday, Reuters reports. EA is cutting about four hundred jobs, roughly three percent of staff. About fifty are at BioWare in Edmonton, Canada. The next Mass Effect, still in early development, is cancelled. Here's what changed. EA went private in August in a fifty-five billion dollar buyout. Now it says it'll focus on fewer, bigger action-adventure games. So Iron Man and the next Star Wars Jedi game continue. Which BioWare game meant the most to you? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "thirty-one years",
+   "text": "31 years",
+   "em": true
+  },
+  {
+   "match": "four hundred",
+   "text": "400",
+   "em": true
+  },
+  {
+   "match": "three percent",
+   "text": "3%"
+  },
+  {
+   "match": "fifty are",
+   "text": "50 are",
+   "em": true
+  },
+  {
+   "match": "fifty-five billion dollar",
+   "text": "$55 billion"
+  }
+ ],
+ "emphasis": [
+  "BioWare",
+  "Edmonton",
+  "cancelled",
+  "private",
+  "Jedi"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/PAX_2009_-_Mass_Effect_2_booth_%283899545854%29.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/46/Electronic_Arts_Redwood_City_May_2011.jpg",
+   "allow_sa": true,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Electronic Arts told"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "EA is cutting",
+   "kicker": "EA job cuts",
+   "value": 400,
+   "prefix": "~",
+   "sub": "about 3% of staff, Bloomberg reported",
+   "source": "Bloomberg"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/65/Sunset-East-Downtown-Skyline-Edmonton-Alberta-Canada-01.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "About fifty"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/Mass_Effect_New_Earth.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "The next Mass"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/cd/209_Redwood_Shores_Parkway%2C_RC_3.JPG",
+   "allow_sa": true,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Here's what"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "Now it says",
+   "kicker": "EA's new plan",
+   "text": "Fewer, *bigger* games",
+   "sub": "action-adventure focus, EA says"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/1/1b/250_Redwood_Shores_Pkwy%2C_RC_1.JPG",
+   "allow_sa": true,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "So Iron Man"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Which BioWare",
+   "kicker": "Your take",
+   "text": "Which BioWare game meant the most to *you?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "thirty-one years.",
+   "kicker": "Canada · Games",
+   "text": "BioWare is *closing* after 31 years"
+  },
+  {
+   "style": "label",
+   "at": "Electronic Arts told",
+   "dur": 3.3,
+   "kicker": "Wednesday",
+   "text": "EA tells staff, *Reuters* says"
+  },
+  {
+   "style": "label",
+   "at": "About fifty",
+   "dur": 3.3,
+   "kicker": "Edmonton",
+   "text": "*~50* BioWare jobs"
+  },
+  {
+   "style": "label",
+   "at": "The next Mass",
+   "dur": 3.3,
+   "kicker": "Mass Effect",
+   "text": "Next game *cancelled*"
+  },
+  {
+   "style": "label",
+   "at": "EA went private",
+   "dur": 3.3,
+   "kicker": "August",
+   "text": "*$55 billion* buyout"
+  },
+  {
+   "style": "label",
+   "at": "So Iron Man",
+   "dur": 3.3,
+   "kicker": "Still coming",
+   "text": "*Iron Man*, Star Wars Jedi"
+  }
+ ]
+}
