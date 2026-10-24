@@ -1,0 +1,10 @@
+{"id": "find-2026-10-24-eagles-nest", "find": [
+  {"probe": "https://www.euronews.com/video/2026/10/24/fire-engulfs-hitlers-former-eagles-nest-retreat-in-germany", "in": 0, "sheet": true},
+  {"probe": "https://www.euronews.com/2026/10/24/arrest-made-after-major-fire-breaks-out-at-hitlers-eagles-nest-mountain-retreat-in-bavaria", "in": 0, "sheet": true},
+  {"probe": "https://www.nbcnews.com/world/germany/fire-engulfs-hitlers-eagles-nest-retreat-rcna605359", "in": 0, "sheet": true},
+  {"probe": "https://www.cnn.com/2026/10/24/europe/nazi-house-fire-germany-intl-hnk", "in": 0, "sheet": true},
+  {"commons": "Kehlsteinhaus", "kind": "image"},
+  {"commons": "Kehlsteinhaus", "kind": "video"},
+  {"commons": "Kehlstein", "kind": "image"},
+  {"commons": "Berchtesgaden Alps", "kind": "image"}
+]}
