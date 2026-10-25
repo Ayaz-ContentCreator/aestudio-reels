@@ -1,0 +1,13 @@
+{"id": "find-2026-10-25-clocks", "find": [
+  {"probe": "https://www.euronews.com/video/2019/03/26/the-european-parliament-votes-to-end-mandatory-twice-a-year-clock-changes", "in": 0, "sheet": true},
+  {"probe": "https://www.euronews.com/video/2025/03/28/changing-time-a-political-issue", "in": 0, "sheet": true},
+  {"probe": "https://abc11.com/videoClip/19515781/", "in": 0, "sheet": true},
+  {"probe": "https://www.nbcwashington.com/news/national-international/house-vote-daylight-saving-permanent-bill/4128726/", "in": 0, "sheet": true},
+  {"probe": "https://www.fox5ny.com/news/when-daylight-saving-time-ends-2026-date-clocks-fall-back-one-hour", "in": 0, "sheet": true},
+  {"commons": "Elizabeth Tower clock face", "kind": "image"},
+  {"commons": "Big Ben", "kind": "video"},
+  {"commons": "Clock change daylight saving time", "kind": "image"},
+  {"commons": "United States Capitol", "kind": "video"},
+  {"commons": "Times Square night", "kind": "video"},
+  {"commons": "Clock hands", "kind": "video"}
+]}
