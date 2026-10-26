@@ -1,0 +1,607 @@
+{
+ "id": "2026-10-25-clock-change",
+ "duration": 40.35,
+ "voice": {
+  "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-25-clock-change.mp3"
+ },
+ "script": "Daylight saving time ended in Europe this weekend. US clocks fall back November 1, ABC News reports. This week, New York is only four hours behind London. Europe's Parliament voted to scrap the switch in 2019, but EU governments never agreed. In July, the US House voted to make daylight saving time permanent. The vote was 308 to 117. President Trump backs it, but the bill has stalled in the Senate. Until Congress acts, clocks keep changing. Which would you keep all year? Lighter mornings or lighter evenings? Tell us below.",
+ "words": [
+  {
+   "text": "Daylight",
+   "start": 0.0,
+   "end": 0.4
+  },
+  {
+   "text": "saving",
+   "start": 0.4,
+   "end": 0.74
+  },
+  {
+   "text": "time",
+   "start": 0.74,
+   "end": 1.22
+  },
+  {
+   "text": "ended",
+   "start": 1.22,
+   "end": 1.5
+  },
+  {
+   "text": "in",
+   "start": 1.5,
+   "end": 1.72
+  },
+  {
+   "text": "Europe",
+   "start": 1.72,
+   "end": 2.02
+  },
+  {
+   "text": "this",
+   "start": 2.02,
+   "end": 2.28
+  },
+  {
+   "text": "weekend.",
+   "start": 2.28,
+   "end": 2.7
+  },
+  {
+   "text": "US",
+   "start": 3.5,
+   "end": 3.74
+  },
+  {
+   "text": "clocks",
+   "start": 3.92,
+   "end": 3.98
+  },
+  {
+   "text": "fall",
+   "start": 3.98,
+   "end": 4.34
+  },
+  {
+   "text": "back",
+   "start": 4.34,
+   "end": 4.68
+  },
+  {
+   "text": "November",
+   "start": 4.68,
+   "end": 4.94
+  },
+  {
+   "text": "1,",
+   "start": 4.94,
+   "end": 5.76
+  },
+  {
+   "text": "ABC",
+   "start": 5.94,
+   "end": 6.18
+  },
+  {
+   "text": "News",
+   "start": 6.18,
+   "end": 6.62
+  },
+  {
+   "text": "reports.",
+   "start": 6.62,
+   "end": 7.0
+  },
+  {
+   "text": "This",
+   "start": 7.82,
+   "end": 7.96
+  },
+  {
+   "text": "week,",
+   "start": 7.96,
+   "end": 8.24
+  },
+  {
+   "text": "New",
+   "start": 8.6,
+   "end": 8.72
+  },
+  {
+   "text": "York",
+   "start": 8.72,
+   "end": 8.98
+  },
+  {
+   "text": "is",
+   "start": 8.98,
+   "end": 9.16
+  },
+  {
+   "text": "only",
+   "start": 9.16,
+   "end": 9.42
+  },
+  {
+   "text": "four",
+   "start": 9.42,
+   "end": 9.78
+  },
+  {
+   "text": "hours",
+   "start": 9.78,
+   "end": 10.14
+  },
+  {
+   "text": "behind",
+   "start": 10.14,
+   "end": 10.58
+  },
+  {
+   "text": "London.",
+   "start": 10.58,
+   "end": 10.98
+  },
+  {
+   "text": "Europe's",
+   "start": 11.8,
+   "end": 12.18
+  },
+  {
+   "text": "Parliament",
+   "start": 12.18,
+   "end": 12.46
+  },
+  {
+   "text": "voted",
+   "start": 12.46,
+   "end": 12.9
+  },
+  {
+   "text": "to",
+   "start": 12.9,
+   "end": 13.16
+  },
+  {
+   "text": "scrap",
+   "start": 13.16,
+   "end": 13.5
+  },
+  {
+   "text": "the",
+   "start": 13.5,
+   "end": 13.74
+  },
+  {
+   "text": "switch",
+   "start": 13.74,
+   "end": 13.96
+  },
+  {
+   "text": "in",
+   "start": 13.96,
+   "end": 14.16
+  },
+  {
+   "text": "2019,",
+   "start": 14.16,
+   "end": 14.88
+  },
+  {
+   "text": "but",
+   "start": 15.64,
+   "end": 15.74
+  },
+  {
+   "text": "EU",
+   "start": 15.74,
+   "end": 16.1
+  },
+  {
+   "text": "governments",
+   "start": 16.1,
+   "end": 16.54
+  },
+  {
+   "text": "never",
+   "start": 16.54,
+   "end": 17.1
+  },
+  {
+   "text": "agreed.",
+   "start": 17.1,
+   "end": 17.54
+  },
+  {
+   "text": "In",
+   "start": 18.28,
+   "end": 18.44
+  },
+  {
+   "text": "July,",
+   "start": 18.44,
+   "end": 18.8
+  },
+  {
+   "text": "the",
+   "start": 19.22,
+   "end": 19.36
+  },
+  {
+   "text": "US",
+   "start": 19.36,
+   "end": 19.7
+  },
+  {
+   "text": "House",
+   "start": 19.96,
+   "end": 19.96
+  },
+  {
+   "text": "voted",
+   "start": 19.96,
+   "end": 20.28
+  },
+  {
+   "text": "to",
+   "start": 20.28,
+   "end": 20.5
+  },
+  {
+   "text": "make",
+   "start": 20.5,
+   "end": 20.7
+  },
+  {
+   "text": "daylight",
+   "start": 20.7,
+   "end": 21.12
+  },
+  {
+   "text": "saving",
+   "start": 21.12,
+   "end": 21.5
+  },
+  {
+   "text": "time",
+   "start": 21.5,
+   "end": 21.92
+  },
+  {
+   "text": "permanent",
+   "start": 21.92,
+   "end": 22.36
+  },
+  {
+   "text": "The",
+   "start": 23.02,
+   "end": 23.18
+  },
+  {
+   "text": "vote",
+   "start": 23.18,
+   "end": 23.4
+  },
+  {
+   "text": "was",
+   "start": 23.4,
+   "end": 23.6
+  },
+  {
+   "text": "308",
+   "start": 23.6,
+   "end": 24.42
+  },
+  {
+   "text": "to",
+   "start": 24.42,
+   "end": 24.8
+  },
+  {
+   "text": "117.",
+   "start": 24.8,
+   "end": 25.64
+  },
+  {
+   "text": "President",
+   "start": 26.76,
+   "end": 27.08
+  },
+  {
+   "text": "Trump",
+   "start": 27.08,
+   "end": 27.48
+  },
+  {
+   "text": "backs",
+   "start": 27.48,
+   "end": 27.78
+  },
+  {
+   "text": "it,",
+   "start": 27.78,
+   "end": 28.14
+  },
+  {
+   "text": "but",
+   "start": 28.14,
+   "end": 28.54
+  },
+  {
+   "text": "the",
+   "start": 28.54,
+   "end": 28.66
+  },
+  {
+   "text": "bill",
+   "start": 28.66,
+   "end": 28.9
+  },
+  {
+   "text": "has",
+   "start": 28.9,
+   "end": 29.12
+  },
+  {
+   "text": "stalled",
+   "start": 29.12,
+   "end": 29.52
+  },
+  {
+   "text": "in",
+   "start": 29.52,
+   "end": 29.76
+  },
+  {
+   "text": "the",
+   "start": 29.76,
+   "end": 29.9
+  },
+  {
+   "text": "Senate.",
+   "start": 29.9,
+   "end": 30.14
+  },
+  {
+   "text": "Until",
+   "start": 30.8,
+   "end": 31.06
+  },
+  {
+   "text": "Congress",
+   "start": 31.06,
+   "end": 31.44
+  },
+  {
+   "text": "acts,",
+   "start": 31.44,
+   "end": 31.98
+  },
+  {
+   "text": "clocks",
+   "start": 32.48,
+   "end": 32.6
+  },
+  {
+   "text": "keep",
+   "start": 32.6,
+   "end": 32.9
+  },
+  {
+   "text": "changing.",
+   "start": 32.9,
+   "end": 33.42
+  },
+  {
+   "text": "Which",
+   "start": 34.26,
+   "end": 34.3
+  },
+  {
+   "text": "would",
+   "start": 34.3,
+   "end": 34.5
+  },
+  {
+   "text": "you",
+   "start": 34.5,
+   "end": 34.64
+  },
+  {
+   "text": "keep",
+   "start": 34.64,
+   "end": 34.84
+  },
+  {
+   "text": "all",
+   "start": 34.84,
+   "end": 35.12
+  },
+  {
+   "text": "year?",
+   "start": 35.12,
+   "end": 35.5
+  },
+  {
+   "text": "Lighter",
+   "start": 36.14,
+   "end": 36.28
+  },
+  {
+   "text": "mornings",
+   "start": 36.28,
+   "end": 36.66
+  },
+  {
+   "text": "or",
+   "start": 36.66,
+   "end": 37.18
+  },
+  {
+   "text": "lighter",
+   "start": 37.18,
+   "end": 37.46
+  },
+  {
+   "text": "evenings?",
+   "start": 37.46,
+   "end": 37.96
+  },
+  {
+   "text": "Tell",
+   "start": 38.7,
+   "end": 38.78
+  },
+  {
+   "text": "us",
+   "start": 38.78,
+   "end": 38.96
+  },
+  {
+   "text": "below.",
+   "start": 38.96,
+   "end": 39.24
+  }
+ ],
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [],
+ "emphasis": [
+  "Europe",
+  "four",
+  "2019",
+  "permanent",
+  "308",
+  "stalled"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://abc11.com/videoClip/19515781/",
+   "in": 13.0,
+   "credit": "ABC11"
+  },
+  {
+   "type": "video",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Aerial_views_at_night_of_Times_Square%2C_Midtown_Manhattan%2C_Times_Square_Tower%2C_One_Times_Square%2C_One_Five_One%2C_New_York_City%2C_USA.webm",
+   "in": 40,
+   "at": "US clocks"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "This week,",
+   "kicker": "New York → London",
+   "value": 4,
+   "suffix": " hours",
+   "sub": "time gap until Nov 1 (usually 5)",
+   "bg": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Big_Ben_MVI_1834.webm",
+    "in": 3,
+    "allow_sa": true
+   }
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/European_Parliament_hemicycle.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "Europe's Parliament"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bruxelles_-_Europa_building_%2823533328676%29.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "at": "but EU"
+  },
+  {
+   "type": "video",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/United_States_Capitol_Dome_Restoration.webm",
+   "in": 5,
+   "at": "In July,"
+  },
+  {
+   "type": "video",
+   "src": "https://abc11.com/videoClip/19515781/",
+   "in": 17.7,
+   "credit": "ABC11",
+   "at": "The vote was"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "President Trump",
+   "kicker": "What's next",
+   "text": "*Stalled* in the Senate",
+   "sub": "Trump backs the bill",
+   "bg": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/United_States_Senate_Floor.jpg"
+   }
+  },
+  {
+   "type": "video",
+   "src": "https://abc11.com/videoClip/19515781/",
+   "in": 11.8,
+   "credit": "ABC11",
+   "at": "Until Congress"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Which would",
+   "kicker": "Your take",
+   "text": "Lighter mornings or lighter *evenings?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "this weekend.",
+   "kicker": "Europe · US",
+   "text": "Clocks went back in *Europe*"
+  },
+  {
+   "style": "label",
+   "at": "US clocks",
+   "dur": 3.3,
+   "kicker": "US · Nov 1",
+   "text": "Clocks fall back at *2 a.m.*"
+  },
+  {
+   "style": "label",
+   "at": "Europe's Parliament",
+   "dur": 3.3,
+   "kicker": "European Parliament",
+   "text": "Voted to scrap it in *2019*"
+  },
+  {
+   "style": "label",
+   "at": "but EU",
+   "dur": 2.4,
+   "kicker": "EU governments",
+   "text": "*No* final deal"
+  },
+  {
+   "style": "label",
+   "at": "In July,",
+   "dur": 3.3,
+   "kicker": "US House · July",
+   "text": "*Permanent* daylight time"
+  },
+  {
+   "style": "label",
+   "at": "Until Congress",
+   "dur": 3.0,
+   "kicker": "For now",
+   "text": "Twice a year, *for now*"
+  }
+ ]
+}
