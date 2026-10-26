@@ -484,8 +484,9 @@
   },
   {
    "type": "video",
-   "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Aerial_views_at_night_of_Times_Square%2C_Midtown_Manhattan%2C_Times_Square_Tower%2C_One_Times_Square%2C_One_Five_One%2C_New_York_City%2C_USA.webm",
-   "in": 40,
+   "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/TimesSquare-NewYork-may25-2017.webm",
+   "in": 0,
+   "allow_sa": true,
    "at": "US clocks"
   },
   {
@@ -499,7 +500,8 @@
    "bg": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Big_Ben_MVI_1834.webm",
     "in": 3,
-    "allow_sa": true
+    "type": "video",
+    "credit": "Video: Deror avi / CC BY-SA 4.0 / Wikimedia Commons"
    }
   },
   {
@@ -521,9 +523,12 @@
    "at": "but EU"
   },
   {
-   "type": "video",
-   "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/United_States_Capitol_Dome_Restoration.webm",
-   "in": 5,
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/80/United_States_Capitol_west_front_edit2_%28cropped%29.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
    "at": "In July,"
   },
   {
@@ -541,7 +546,9 @@
    "text": "*Stalled* in the Senate",
    "sub": "Trump backs the bill",
    "bg": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/United_States_Senate_Floor.jpg"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/United_States_Senate_Floor.jpg",
+    "type": "photo",
+    "credit": "Photo: United States Senate / Wikimedia Commons"
    }
   },
   {
