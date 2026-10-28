@@ -1,0 +1,31 @@
+{
+  "id": "2026-10-24-eagles-nest-fire",
+  "duration": 32.93,
+  "voice": {"url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-24-eagles-nest-fire.mp3"},
+  "script": "Hitler's Eagle's Nest in the Alps burned on Friday night. Around two hundred firefighters fought the blaze, Reuters reported. The house sits on a cliff, more than eighteen hundred meters up. It was finished in nineteen thirty-eight and survived World War Two undamaged. Here's what's at risk now. Since nineteen fifty-two, it's been a restaurant with a history exhibit. No one was hurt. But tourism officials say it's not clear if parts can be saved. What should happen to the site? Tell us below.",
+  "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+  "display": [
+    {"match": "two hundred", "text": "200", "em": true},
+    {"match": "eighteen hundred", "text": "1,800"},
+    {"match": "nineteen thirty-eight", "text": "1938"},
+    {"match": "nineteen fifty-two", "text": "1952"},
+    {"match": "World War Two", "text": "World War II"}
+  ],
+  "emphasis": ["Eagle's", "Nest", "undamaged", "saved"],
+  "scenes": [
+    {"type": "video", "src": "https://www.euronews.com/video/2026/10/24/fire-engulfs-hitlers-former-eagles-nest-retreat-in-germany", "in": 4, "credit": "Euronews"},
+    {"type": "video", "src": "https://www.euronews.com/video/2026/10/24/fire-engulfs-hitlers-former-eagles-nest-retreat-in-germany", "in": 18, "credit": "Euronews", "at": "Around two hundred"},
+    {"type": "card", "card": "stat", "at": "The house sits", "kicker": "Kehlstein", "value": 1834, "suffix": " m", "sub": "up, on a cliff above Berchtesgaden", "source": "AP"},
+    {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Kehlsteinhaus_Frontside.JPG", "zoom": [1.0, 1.08], "at": "It was finished"},
+    {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Kehlsteinhaus_Restaurant.jpg", "zoom": [1.0, 1.08], "at": "Here's what's"},
+    {"type": "video", "src": "https://www.euronews.com/video/2026/10/24/fire-engulfs-hitlers-former-eagles-nest-retreat-in-germany", "in": 29.5, "credit": "Euronews", "at": "No one was"},
+    {"type": "card", "card": "end", "at": "What should happen", "kicker": "Your take", "text": "What should happen to the *site?*", "cta": "Tell us below ↓", "follow": "Follow for daily US & Europe news"}
+  ],
+  "titles": [
+    {"style": "hook", "until": "Friday night", "kicker": "Germany · Alps", "text": "Hitler's *Eagle's Nest* burned"},
+    {"style": "label", "at": "Around two hundred", "dur": 3.3, "kicker": "Firefighters", "text": "*200* fought the blaze"},
+    {"style": "label", "at": "It was finished", "dur": 3.3, "kicker": "Built 1938", "text": "Survived *WWII* undamaged"},
+    {"style": "label", "at": "Since nineteen fifty-two", "dur": 3.3, "kicker": "Since 1952", "text": "Restaurant and *history* exhibit"},
+    {"style": "label", "at": "But tourism officials", "dur": 3.3, "kicker": "Tourism office", "text": "*Unclear* if parts can be saved"}
+  ]
+}
