@@ -1,0 +1,10 @@
+{"id": "find-2026-10-28-spain-train", "find": [
+  {"probe": "https://www.euronews.com/video/2026/10/28/spain-first-footage-reveals-wreckage-of-deadly-high-speed-train-crash", "in": 0, "sheet": true},
+  {"probe": "https://www.euronews.com/video/2026/10/28/first-aerial-images-show-scene-of-deadly-train-crash-in-toledo-spain", "in": 0, "sheet": true},
+  {"probe": "https://www.nbcnews.com/world/spain/spain-train-crash-high-speed-collision-toledo-rcna606070", "in": 0, "sheet": true},
+  {"commons": "Iryo train", "kind": "image"},
+  {"commons": "Renfe AVE S-112", "kind": "image"},
+  {"commons": "AVE Madrid Sevilla", "kind": "video"},
+  {"commons": "Madrid Puerta de Atocha AVE", "kind": "image"},
+  {"commons": "Urda Toledo", "kind": "image"}
+]}
