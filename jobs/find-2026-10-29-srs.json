@@ -1,0 +1,8 @@
+{"id": "find-2026-10-29-srs", "find": [
+  {"probe": "https://www.wrdw.com/video/2026/10/29/srs-ends-site-area-emergency-after-lab-fire/", "in": 0, "dur": 120, "sheet": true},
+  {"probe": "https://www.wfxg.com/news/site-area-emergency-declared-at-srs/article_43d05f96-fcd0-42d6-bb3d-c96838a42857.html", "in": 0, "sheet": true},
+  {"probe": "https://www.wrdw.com/2026/10/28/emergency-response-activities-underway-srs/", "in": 0, "sheet": true},
+  {"commons": "Savannah River Site", "kind": "image"},
+  {"commons": "Savannah River National Laboratory", "kind": "image"},
+  {"commons": "Savannah River Site", "kind": "video"}
+]}
