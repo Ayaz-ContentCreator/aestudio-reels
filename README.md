@@ -13,6 +13,10 @@ Free render pipeline for the AE Studio news Reels (Instagram, Facebook, TikTok, 
 Re-rendering: push a changed job file (same `id` replaces the release), or run the workflow manually
 (Actions → render → Run workflow) with the job path.
 
+**Free voiceover (default since 31 Oct 2026):** `"voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05}`
+speaks the job's `"script"` on the runner with Kokoro (open-source, no credits). The voice is published as
+`<id>-voice.mp3`; leave `duration` out (it becomes voice length + 0.8 s). `tools/tts.py` does this step.
+
 Note: voiceover links from ElevenLabs are signed and expire about 2 hours after generation, so commit
 the job right after generating the voice.
 

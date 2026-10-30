@@ -27,10 +27,22 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg libraqm0 > /dev/null
-          pip install --quiet pillow numpy faster-whisper "yt-dlp[default]"
+          pip install --quiet pillow numpy faster-whisper "yt-dlp[default]" kokoro-onnx soundfile
           yt-dlp --version
           ffmpeg -version | head -1
           python3 -c "from PIL import features; print('raqm:', features.check('raqm'))"
+      - name: Cache Kokoro voice model
+        uses: actions/cache@v4
+        with:
+          path: ~/kokoro
+          key: kokoro-v1.0
+      - name: Get Kokoro voice model
+        run: |
+          mkdir -p ~/kokoro
+          base=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
+          [ -s ~/kokoro/kokoro-v1.0.onnx ] || curl -sSL -o ~/kokoro/kokoro-v1.0.onnx $base/kokoro-v1.0.onnx
+          [ -s ~/kokoro/voices-v1.0.bin ] || curl -sSL -o ~/kokoro/voices-v1.0.bin $base/voices-v1.0.bin
+          ls -la ~/kokoro
       - name: Pick jobs
         id: jobs
         run: |
@@ -59,7 +71,11 @@ jobs:
               gh release create "$id" "$dir"/* --title "$id ($status)" --notes "Media search for $job" --latest=false
               continue
             fi
-            python3 render/reel.py "$job" "$dir/$id.mp4" > "$dir/render-log.txt" 2>&1 || status=failed
+            # free voiceover (Kokoro) when the job asks for "voice": {"tts": "kokoro"}
+            python3 tools/tts.py "$job" "$dir" "out/$id.job.json" > "$dir/render-log.txt" 2>&1 || status=failed
+            if [ "$status" = ok ]; then
+              python3 render/reel.py "out/$id.job.json" "$dir/$id.mp4" >> "$dir/render-log.txt" 2>&1 || status=failed
+            fi
             if [ "$status" = ok ]; then
               ffprobe -v error -show_entries format=duration,size:stream=codec_name,width,height,r_frame_rate \
                 -of json "$dir/$id.mp4" > "$dir/probe.json"
