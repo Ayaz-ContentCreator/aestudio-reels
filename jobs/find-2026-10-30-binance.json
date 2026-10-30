@@ -1,0 +1,8 @@
+{"id": "find-2026-10-30-binance", "find": [
+  {"probe": "https://www.cnn.com/2026/10/30/world/video/binance-crypto-heist-levin-intv-ctw-103009aseg1-cnni-world-fast", "in": 0, "sheet": true},
+  {"probe": "https://www.cnbc.com/video/2026/10/30/hackers-steal-6b-from-binance-in-what-is-likely-biggest-crypto-heist-of-all-time.html", "in": 0, "sheet": true},
+  {"probe": "https://finance.yahoo.com/video/binance-hit-by-record-63b-crypto-hack-suspends-withdrawals-133839060.html", "in": 0, "sheet": true},
+  {"commons": "Binance", "kind": "image"},
+  {"commons": "Bitcoin", "kind": "video"},
+  {"commons": "Changpeng Zhao", "kind": "image"}
+]}
