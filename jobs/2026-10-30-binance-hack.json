@@ -1,30 +1,131 @@
 {
   "id": "2026-10-30-binance-hack",
   "duration": 39.07,
-  "voice": {"url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-30-binance-hack.mp3"},
+  "voice": {
+    "url": "https://raw.githubusercontent.com/Ayaz-ContentCreator/aestudio-reels/main/voice/2026-10-30-binance-hack.mp3"
+  },
   "script": "Crypto exchange Binance lost six point three billion dollars to hackers. That's the biggest crypto theft on record, according to Al Jazeera. It hit Thursday, and Binance paused withdrawals on several networks. Blockchain firm TRM Labs blames North Korean hackers. The old record was one point five billion, at Bybit last year. Here's what it means if you hold crypto. Binance says user funds are safe and it will cover losses. It says about two and a half billion dollars has been frozen. Where do you keep your coins: an exchange, or your own wallet? Tell us below.",
-  "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+  "music": {
+    "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+    "gain_db": -13
+  },
   "display": [
-    {"match": "six point three billion dollars", "text": "$6.3 billion", "em": true},
-    {"match": "one point five billion", "text": "$1.5 billion"},
-    {"match": "two and a half billion dollars", "text": "$2.5 billion", "em": true}
+    {
+      "match": "six point three billion dollars",
+      "text": "$6.3 billion",
+      "em": true
+    },
+    {
+      "match": "one point five billion",
+      "text": "$1.5 billion"
+    },
+    {
+      "match": "two and a half billion dollars",
+      "text": "$2.5 billion",
+      "em": true
+    }
   ],
-  "emphasis": ["record", "North", "Korean", "safe", "frozen"],
+  "emphasis": [
+    "record",
+    "North",
+    "Korean",
+    "safe",
+    "frozen"
+  ],
   "scenes": [
-    {"type": "video", "src": "https://www.cnbc.com/video/2026/10/30/hackers-steal-6b-from-binance-in-what-is-likely-biggest-crypto-heist-of-all-time.html", "in": 10, "credit": "CNBC"},
-    {"type": "card", "card": "stat", "at": "That's the biggest", "kicker": "Binance hack", "value": 6.3, "decimals": 1, "prefix": "$", "suffix": "bn", "sub": "the biggest crypto theft on record", "source": "Al Jazeera"},
-    {"type": "video", "src": "https://www.cnn.com/2026/10/30/world/video/binance-crypto-heist-levin-intv-ctw-103009aseg1-cnni-world-fast", "in": 14, "credit": "CNN", "at": "It hit Thursday"},
-    {"type": "video", "src": "https://www.cnbc.com/video/2026/10/30/hackers-steal-6b-from-binance-in-what-is-likely-biggest-crypto-heist-of-all-time.html", "in": 32, "credit": "CNBC", "at": "Blockchain firm"},
-    {"type": "card", "card": "headline", "at": "The old record", "kicker": "Previous record", "text": "Bybit: *$1.5bn*", "sub": "stolen in 2025"},
-    {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/2022_-_Press_Conferences_BE6_1595_%2852471628042%29.jpg", "zoom": [1.0, 1.08], "at": "Here's what it"},
-    {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/2022_-_Press_Conferences_BE6_1683_%2852472715583%29.jpg", "zoom": [1.0, 1.08], "at": "It says about"},
-    {"type": "card", "card": "end", "at": "Where do you", "kicker": "Your take", "text": "Where do you keep your *coins?*", "cta": "Tell us below ↓", "follow": "Follow for daily US & Europe news"}
+    {
+      "type": "video",
+      "src": "https://www.cnbc.com/video/2026/10/30/hackers-steal-6b-from-binance-in-what-is-likely-biggest-crypto-heist-of-all-time.html",
+      "in": 10,
+      "credit": "CNBC"
+    },
+    {
+      "type": "card",
+      "card": "stat",
+      "at": "That's the biggest",
+      "kicker": "Binance hack",
+      "value": 6.3,
+      "decimals": 1,
+      "prefix": "$",
+      "suffix": "bn",
+      "sub": "the biggest crypto theft on record",
+      "source": "Al Jazeera"
+    },
+    {
+      "type": "video",
+      "src": "https://www.cnn.com/2026/10/30/world/video/binance-crypto-heist-levin-intv-ctw-103009aseg1-cnni-world-fast",
+      "in": 14,
+      "credit": "CNN",
+      "at": "It hit Thursday"
+    },
+    {
+      "type": "video",
+      "src": "https://www.cnbc.com/video/2026/10/30/hackers-steal-6b-from-binance-in-what-is-likely-biggest-crypto-heist-of-all-time.html",
+      "in": 32,
+      "credit": "CNBC",
+      "at": "Blockchain firm"
+    },
+    {
+      "type": "card",
+      "card": "headline",
+      "at": "The old record",
+      "kicker": "Previous record",
+      "text": "Bybit: *$1.5bn*",
+      "sub": "stolen in 2025"
+    },
+    {
+      "type": "photo",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/2022_-_Press_Conferences_BE6_1595_%2852471628042%29.jpg",
+      "zoom": [
+        1.0,
+        1.15
+      ],
+      "at": "Here's what it"
+    },
+    {
+      "type": "card",
+      "card": "end",
+      "at": "Where do you",
+      "kicker": "Your take",
+      "text": "Where do you keep your *coins?*",
+      "cta": "Tell us below ↓",
+      "follow": "Follow for daily US & Europe news"
+    }
   ],
   "titles": [
-    {"style": "hook", "until": "to hackers", "kicker": "Crypto · Binance", "text": "Binance loses *$6.3 billion* to hackers"},
-    {"style": "label", "at": "It hit Thursday", "dur": 3.3, "kicker": "Thursday", "text": "Withdrawals *paused*"},
-    {"style": "label", "at": "Blockchain firm", "dur": 3.3, "kicker": "TRM Labs", "text": "Blames *North Korean* hackers"},
-    {"style": "label", "at": "Binance says", "dur": 3.3, "kicker": "Binance", "text": "Says it will *cover* losses"},
-    {"style": "label", "at": "It says about", "dur": 3.3, "kicker": "Frozen", "text": "About *$2.5 billion*"}
+    {
+      "style": "hook",
+      "until": "to hackers",
+      "kicker": "Crypto · Binance",
+      "text": "Binance loses *$6.3 billion* to hackers"
+    },
+    {
+      "style": "label",
+      "at": "It hit Thursday",
+      "dur": 3.3,
+      "kicker": "Thursday",
+      "text": "Withdrawals *paused*"
+    },
+    {
+      "style": "label",
+      "at": "Blockchain firm",
+      "dur": 3.3,
+      "kicker": "TRM Labs",
+      "text": "Blames *North Korean* hackers"
+    },
+    {
+      "style": "label",
+      "at": "Binance says",
+      "dur": 3.3,
+      "kicker": "Binance",
+      "text": "Says it will *cover* losses"
+    },
+    {
+      "style": "label",
+      "at": "It says about",
+      "dur": 3.3,
+      "kicker": "Frozen",
+      "text": "About *$2.5 billion*"
+    }
   ]
 }
