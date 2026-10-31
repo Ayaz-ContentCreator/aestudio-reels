@@ -1,0 +1,9 @@
+{"id": "find-2026-10-31-altman-ram", "find": [
+  {"probe": "https://www.nbcnews.com/news/amp-video/mmvo256000581930", "in": 0, "sheet": true},
+  {"probe": "https://turnto10.com/news/back-to-school/back-to-school-tech-prices-soaring-artifical-intelligence-ai-creates-computer-memory-shortage-august-20-2026", "in": 0, "sheet": true},
+  {"commons": "Sam Altman", "kind": "image"},
+  {"commons": "DDR5 SDRAM", "kind": "image"},
+  {"commons": "RAM module", "kind": "image"},
+  {"commons": "data center servers", "kind": "video"},
+  {"commons": "OpenAI Stargate Abilene", "kind": "image"}
+]}
