@@ -1,0 +1,32 @@
+{
+  "id": "2026-10-31-altman-ram",
+  "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+  "script": "Sam Altman says your computer's RAM is used five percent of the time. The OpenAI boss said it on the Cheeky Pint podcast, Tom's Hardware reports. He called that quite terrible while memory is in short supply. He wants it in the cloud, used at maximum capacity. Here's what it means for your next laptop. A I data centers are buying up memory chips, so RAM prices have climbed. That makes upgrading your own computer cost more. Where would you rather run A I: your own computer, or the cloud? Tell us below.",
+  "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+  "display": [
+    {"match": "five percent", "text": "5%", "em": true},
+    {"match": "A I", "text": "AI"}
+  ],
+  "emphasis": ["terrible", "cloud", "climbed", "more"],
+  "scenes": [
+    {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sam_Altman_speaking_at_TED_%28cropped%29.jpg", "zoom": [1.0, 1.12]},
+    {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_%28cropped%29.jpg", "zoom": [1.05, 1.15], "at": "The OpenAI boss"},
+    {"type": "card", "card": "stat", "at": "He called that", "kicker": "Altman on PC RAM",
+     "value": 5, "suffix": "%", "sub": "of the time it's in use, he says"},
+    {"type": "video", "src": "https://www.nbcnews.com/news/amp-video/mmvo256000581930", "in": 20, "credit": "NBC News", "at": "He wants it"},
+    {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/e/e3/SDRAM_memory_module%2C_zoomed.jpg", "zoom": [1.0, 1.15], "at": "Here's what it"},
+    {"type": "video", "src": "https://www.nbcnews.com/news/amp-video/mmvo256000581930", "in": 26, "credit": "NBC News", "at": "A I data centers"},
+    {"type": "card", "card": "headline", "at": "That makes upgrading", "kicker": "Your PC",
+     "text": "Upgrades *cost more*", "sub": "as AI buys up memory chips"},
+    {"type": "card", "card": "end", "at": "Where would you", "kicker": "Your take",
+     "text": "Your own computer or the *cloud?*", "cta": "Tell us below ↓",
+     "follow": "Follow for daily US & Europe news"}
+  ],
+  "titles": [
+    {"style": "hook", "until": "of the time", "kicker": "AI · OpenAI", "text": "Altman: your RAM is used *5%* of the time"},
+    {"style": "label", "at": "The OpenAI boss", "dur": 3.3, "kicker": "Cheeky Pint", "text": "OpenAI CEO *on podcast*"},
+    {"style": "label", "at": "He wants it", "dur": 3.3, "kicker": "His fix", "text": "Memory *in the cloud*"},
+    {"style": "label", "at": "Here's what it", "dur": 2.6, "kicker": "For you", "text": "Your next *laptop*"},
+    {"style": "label", "at": "A I data centers", "dur": 3.3, "kicker": "Shortage", "text": "RAM prices *climbing*"}
+  ]
+}
