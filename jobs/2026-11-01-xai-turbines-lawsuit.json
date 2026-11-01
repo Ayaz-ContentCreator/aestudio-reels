@@ -12,11 +12,28 @@
  },
  "display": [
   {
-   "match": "XAI",
+   "i": 2,
+   "n": 1,
    "text": "xAI"
   },
   {
-   "match": "one point two gigawatt",
+   "i": 25,
+   "n": 1,
+   "text": "xAI"
+  },
+  {
+   "i": 42,
+   "n": 1,
+   "text": "xAI"
+  },
+  {
+   "i": 59,
+   "n": 1,
+   "text": "xAI"
+  },
+  {
+   "i": 63,
+   "n": 4,
    "text": "1.2-gigawatt",
    "em": true
   }
@@ -31,9 +48,9 @@
  "scenes": [
   {
    "type": "video",
-   "src": "https://www.wowt.com/video/2026/03/11/state-approves-xais-use-gas-turbines-southaven/",
-   "in": 40,
-   "credit": "Action News 5"
+   "src": "https://www.nbcnews.com/news/amp-video/mmvo240630853602",
+   "in": 35.5,
+   "credit": "NBC News"
   },
   {
    "type": "photo",
@@ -47,7 +64,7 @@
   {
    "type": "video",
    "src": "https://www.nbcnews.com/news/amp-video/mmvo240630853602",
-   "in": 50,
+   "in": 48.5,
    "credit": "NBC News",
    "at": "The NAACP says"
   },
