@@ -4,7 +4,7 @@ name: render-long
 # prep (voice, timings, media) -> render (parallel slices) -> assemble (join, mix, publish).
 on:
   push:
-    paths: ['longform/*.json']
+    paths: ['longform/*.json', '!longform/queue.json']
   workflow_dispatch:
     inputs:
       job:
@@ -35,7 +35,7 @@ jobs:
           else
             before="${{ github.event.before }}"
             if [ -z "$before" ] || ! git cat-file -e "$before" 2>/dev/null; then before="HEAD~1"; fi
-            job=$(git diff --name-only --diff-filter=AM "$before" HEAD -- 'longform/*.json' | head -1)
+            job=$(git diff --name-only --diff-filter=AM "$before" HEAD -- 'longform/*.json' | grep -v '^longform/queue.json$' | head -1)
           fi
           [ -n "$job" ] || { echo "no job"; exit 1; }
           id=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1]))['id'])" "$job")
