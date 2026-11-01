@@ -1,0 +1,12 @@
+{
+  "note": "Long-form WWE videos. status: waiting-footage -> scheduled. 'in-chat' = being finished in a chat session; scheduled runs skip it.",
+  "videos": [
+    {"id": "2026-11-02-the-rock", "star": "The Rock", "drive_folder": "WWE The Rock",
+     "drive_folder_id": "1eHprMR_otXqVWfmDYaTiKzH0k0095UTU",
+     "shotlist": "https://claude.ai/artifact/7uPTKGESfr8bgTRNcizetm", "status": "in-chat"}
+  ],
+  "next_stars": ["Stone Cold Steve Austin", "Triple H", "The Undertaker", "John Cena", "Shawn Michaels",
+                 "Hulk Hogan", "Randy Orton", "Roman Reigns", "Brock Lesnar", "Batista", "Edge", "Rey Mysterio",
+                 "Ric Flair", "Bret Hart", "Eddie Guerrero", "CM Punk", "Kurt Angle", "Seth Rollins",
+                 "Becky Lynch", "Cody Rhodes"]
+}
