@@ -49,7 +49,7 @@
   {
    "type": "video",
    "src": "https://www.nbcnews.com/news/amp-video/mmvo240630853602",
-   "in": 35.5,
+   "in": 35.0,
    "credit": "NBC News"
   },
   {
@@ -64,7 +64,7 @@
   {
    "type": "video",
    "src": "https://www.nbcnews.com/news/amp-video/mmvo240630853602",
-   "in": 48.5,
+   "in": 49.2,
    "credit": "NBC News",
    "at": "The NAACP says"
   },
@@ -150,7 +150,7 @@
   {
    "style": "label",
    "at": "The judge disagreed",
-   "dur": 2.6,
+   "dur": 1.5,
    "kicker": "Ruling",
    "text": "Judge *disagreed*"
   },
