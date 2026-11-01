@@ -1,0 +1,70 @@
+name: fetch-media
+# Supplied footage for a long-form video. Push longform/media/<id>.json:
+#   {"id": "2026-11-02-the-rock", "files": [{"drive": "<Google Drive file id>", "name": "R01.jpg"}, ...]}
+# Files must be shared "anyone with the link". Each file is downloaded, checked and stored in the DRAFT
+# release "media-<id>" (not public), plus a contact sheet per video ("sheet-R15.jpg", one frame every few
+# seconds with timestamps) for choosing in-points. render-long.yml reads the same draft release.
+on:
+  push:
+    paths: ['longform/media/*.json']
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'Media list, e.g. longform/media/2026-11-02-the-rock.json'
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: fetch-media
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Pick list
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.job }}" ]; then
+            job="${{ github.event.inputs.job }}"
+          else
+            before="${{ github.event.before }}"
+            if [ -z "$before" ] || ! git cat-file -e "$before" 2>/dev/null; then before="HEAD~1"; fi
+            job=$(git diff --name-only --diff-filter=AM "$before" HEAD -- 'longform/media/*.json' | head -1)
+          fi
+          [ -n "$job" ] || { echo "no list"; exit 1; }
+          id=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1]))['id'])" "$job")
+          echo "job=$job" >> "$GITHUB_OUTPUT"; echo "id=$id" >> "$GITHUB_OUTPUT"; echo "list: $job ($id)"
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          pip install --quiet gdown pillow
+      - name: Download from Drive
+        run: |
+          mkdir -p out/slots out/sheets
+          python3 tools/fetch_media.py "${{ steps.pick.outputs.job }}" out/slots out/sheets 2>&1 | tee out/sheets/fetch-log.txt
+      - name: Store in draft release media-<id>
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          id="${{ steps.pick.outputs.id }}"; tag="media-$id"
+          rid=$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" --jq ".[] | select(.tag_name==\"$tag\") | .id" | head -1)
+          if [ -z "$rid" ]; then
+            rid=$(gh api -X POST "repos/$GITHUB_REPOSITORY/releases" -f tag_name="$tag" -f name="$tag (supplied footage)" \
+                  -F draft=true -f body="Supplied footage for $id. Draft: not public." --jq .id)
+          fi
+          echo "draft release id $rid"
+          existing=$(gh api "repos/$GITHUB_REPOSITORY/releases/$rid/assets?per_page=100" --jq '.[] | "\(.id) \(.name)"')
+          for f in out/slots/* out/sheets/*; do
+            name=$(basename "$f")
+            old=$(echo "$existing" | awk -v n="$name" '$2==n {print $1}')
+            [ -n "$old" ] && gh api -X DELETE "repos/$GITHUB_REPOSITORY/releases/assets/$old" > /dev/null
+            ct=$(file -b --mime-type "$f")
+            curl -sS --fail -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: $ct" \
+              --data-binary @"$f" "https://uploads.github.com/repos/$GITHUB_REPOSITORY/releases/$rid/assets?name=$name" > /dev/null
+            echo "uploaded $name"
+          done

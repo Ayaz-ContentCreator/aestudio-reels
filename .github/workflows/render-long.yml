@@ -1,0 +1,156 @@
+name: render-long
+# Long-form 16:9 videos (WWE stories channel). Push longform/<id>.json -> release "<id>" with
+# <id>.mp4, <id>-thumb.jpg, <id>-sheet.jpg, chapters.txt, script.txt, words.json, render-log.txt.
+# prep (voice, timings, media) -> render (parallel slices) -> assemble (join, mix, publish).
+on:
+  push:
+    paths: ['longform/*.json']
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'Job file, e.g. longform/2026-11-02-the-rock.json'
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: render-long
+  cancel-in-progress: false
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    outputs:
+      id: ${{ steps.pick.outputs.id }}
+      job: ${{ steps.pick.outputs.job }}
+      slices: ${{ steps.plan.outputs.slices }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Pick job
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.job }}" ]; then
+            job="${{ github.event.inputs.job }}"
+          else
+            before="${{ github.event.before }}"
+            if [ -z "$before" ] || ! git cat-file -e "$before" 2>/dev/null; then before="HEAD~1"; fi
+            job=$(git diff --name-only --diff-filter=AM "$before" HEAD -- 'longform/*.json' | head -1)
+          fi
+          [ -n "$job" ] || { echo "no job"; exit 1; }
+          id=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1]))['id'])" "$job")
+          echo "job=$job" >> "$GITHUB_OUTPUT"; echo "id=$id" >> "$GITHUB_OUTPUT"; echo "job: $job ($id)"
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg libraqm0 > /dev/null
+          pip install --quiet pillow numpy faster-whisper kokoro-onnx soundfile
+      - name: Cache Kokoro voice model
+        uses: actions/cache@v4
+        with:
+          path: ~/kokoro
+          key: kokoro-v1.0
+      - name: Get Kokoro voice model
+        run: |
+          mkdir -p ~/kokoro
+          base=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
+          [ -s ~/kokoro/kokoro-v1.0.onnx ] || curl -sSL -o ~/kokoro/kokoro-v1.0.onnx $base/kokoro-v1.0.onnx
+          [ -s ~/kokoro/voices-v1.0.bin ] || curl -sSL -o ~/kokoro/voices-v1.0.bin $base/voices-v1.0.bin
+      - name: Get supplied footage (draft release "media-<id>", files named R01.jpg, R15.mp4 ...)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          id="${{ steps.pick.outputs.id }}"
+          mkdir -p out/slots
+          rid=$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" --jq ".[] | select(.tag_name==\"media-$id\") | .id" | head -1)
+          if [ -z "$rid" ]; then echo "no supplied footage for $id"; exit 0; fi
+          gh api "repos/$GITHUB_REPOSITORY/releases/$rid/assets?per_page=100" --jq '.[] | "\(.id) \(.name)"' |
+          while read -r aid name; do
+            gh api -H "Accept: application/octet-stream" "repos/$GITHUB_REPOSITORY/releases/assets/$aid" > "out/slots/$name"
+          done
+          ls -la out/slots
+      - name: Prepare (voice, timings, media, slices)
+        id: plan
+        run: |
+          mkdir -p out/plan
+          set -o pipefail
+          python3 tools/longform_prep.py "${{ steps.pick.outputs.job }}" out/plan out/slots 2>&1 | tee out/plan/prep-log.txt
+          test -s out/plan/plan.json
+          echo "slices=$(python3 -c "import json; print(json.dumps(list(range(len(json.load(open('out/plan/plan.json'))['slices'])))))")" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: plan
+          path: out/plan
+          retention-days: 3
+      - name: Publish failure log
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          id="${{ steps.pick.outputs.id }}"; [ -n "$id" ] || exit 0
+          gh release delete "$id" --yes --cleanup-tag > /dev/null 2>&1 || true
+          gh release create "$id" out/plan/prep-log.txt --title "$id (failed)" --notes "prep failed" --latest=false
+
+  render:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: true
+      matrix:
+        slice: ${{ fromJson(needs.prep.outputs.slices) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg libraqm0 > /dev/null
+          pip install --quiet pillow numpy
+      - uses: actions/download-artifact@v4
+        with:
+          name: plan
+          path: out/plan
+      - name: Render slice ${{ matrix.slice }}
+        run: |
+          mkdir -p out/seg
+          python3 render/longform.py out/plan/plan.json out/seg/seg_${{ matrix.slice }}.mp4 --slice ${{ matrix.slice }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seg-${{ matrix.slice }}
+          path: out/seg/seg_${{ matrix.slice }}.mp4
+          retention-days: 2
+
+  assemble:
+    needs: [prep, render]
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg libraqm0 > /dev/null
+          pip install --quiet pillow numpy
+      - uses: actions/download-artifact@v4
+        with:
+          name: plan
+          path: out/plan
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: seg-*
+          path: out/seg
+          merge-multiple: true
+      - name: Assemble
+        run: |
+          id="${{ needs.prep.outputs.id }}"
+          mkdir -p "out/$id"
+          cp out/plan/prep-log.txt "out/$id/render-log.txt"
+          python3 tools/longform_assemble.py out/plan out/seg "out/$id"
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          id="${{ needs.prep.outputs.id }}"
+          rm -f "out/$id/concat.txt"
+          gh release delete "$id" --yes --cleanup-tag > /dev/null 2>&1 || true
+          gh release create "$id" out/$id/* --title "$id (ok)" --notes "Long-form render for ${{ needs.prep.outputs.job }}" --latest=false
