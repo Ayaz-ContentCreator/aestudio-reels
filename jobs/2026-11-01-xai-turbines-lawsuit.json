@@ -1,0 +1,145 @@
+{
+ "id": "2026-11-01-xai-turbines-lawsuit",
+ "voice": {
+  "tts": "kokoro",
+  "voice": "af_bella",
+  "speed": 1.05
+ },
+ "script": "Elon Musk's x A I must face a pollution lawsuit, a judge ruled. A federal court in Mississippi ruled Friday, TechCrunch and Earthjustice report. The NAACP says x A I ran dozens of gas turbines without permits. They power its Colossus 2 data center near Memphis. x A I said the turbines were mobile, so exempt. The judge disagreed. Here's what it means beyond Memphis. x A I is building a one point two gigawatt gas plant for its A I. So the case goes ahead, and a bid to halt the turbines is still pending. Where should A I data centers get their power? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "x A I",
+   "text": "xAI"
+  },
+  {
+   "match": "A I",
+   "text": "AI"
+  },
+  {
+   "match": "one point two gigawatt",
+   "text": "1.2-gigawatt",
+   "em": true
+  }
+ ],
+ "emphasis": [
+  "lawsuit",
+  "permits",
+  "mobile",
+  "disagreed",
+  "pending"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://www.wowt.com/video/2026/03/11/state-approves-xais-use-gas-turbines-southaven/",
+   "in": 40,
+   "credit": "Action News 5"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/Elon_Musk_Colorado_2022_%28cropped2%29.jpg",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "at": "A federal court"
+  },
+  {
+   "type": "video",
+   "src": "https://www.nbcnews.com/news/amp-video/mmvo240630853602",
+   "in": 50,
+   "credit": "NBC News",
+   "at": "The NAACP says"
+  },
+  {
+   "type": "video",
+   "src": "https://www.wowt.com/video/2026/03/11/state-approves-xais-use-gas-turbines-southaven/",
+   "in": 24,
+   "credit": "Action News 5",
+   "at": "They power its"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "at": "x A I said the"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "x A I is building",
+   "kicker": "xAI's new gas plant",
+   "value": 1.2,
+   "decimals": 1,
+   "suffix": " GW",
+   "sub": "permanent plant to power its AI"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "So the case",
+   "kicker": "What's next",
+   "text": "Case *goes ahead*",
+   "sub": "bid to halt turbines still pending"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Where should",
+   "kicker": "Your take",
+   "text": "Where should AI get its *power?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "a judge ruled",
+   "kicker": "AI · xAI",
+   "text": "Musk's xAI must face *pollution lawsuit*"
+  },
+  {
+   "style": "label",
+   "at": "A federal court",
+   "dur": 3.3,
+   "kicker": "Friday",
+   "text": "Federal court, *Mississippi*"
+  },
+  {
+   "style": "label",
+   "at": "The NAACP says",
+   "dur": 3.3,
+   "kicker": "The claim",
+   "text": "Turbines *without permits*"
+  },
+  {
+   "style": "label",
+   "at": "They power its",
+   "dur": 3.0,
+   "kicker": "Near Memphis",
+   "text": "Powering *Colossus 2*"
+  },
+  {
+   "style": "label",
+   "at": "x A I said the",
+   "dur": 3.0,
+   "kicker": "xAI's case",
+   "text": "Turbines are *'mobile'*"
+  },
+  {
+   "style": "label",
+   "at": "The judge disagreed",
+   "dur": 2.6,
+   "kicker": "Ruling",
+   "text": "Judge *disagreed*"
+  }
+ ]
+}
