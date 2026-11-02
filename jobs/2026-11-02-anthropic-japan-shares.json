@@ -1,0 +1,166 @@
+{
+ "id": "2026-11-02-anthropic-japan-shares",
+ "voice": {
+  "tts": "kokoro",
+  "voice": "af_bella",
+  "speed": 1.05
+ },
+ "script": "Anthropic will sell up to three point five billion dollars of its shares in Japan. It's for its U S stock listing, Reuters reported Monday. The Claude maker filed for a Nasdaq listing last week. Here's why investors are watching. The filing shows sixteen point three billion dollars in revenue in six months. That's over three times its sales for all of last year. But it also shows a net loss of eighty point seven billion, mostly on paper. No date or share price is set yet. Which A I company goes public next? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "three point five billion dollars",
+   "text": "$3.5 billion",
+   "em": true
+  },
+  {
+   "match": "sixteen point three billion dollars",
+   "text": "$16.3 billion",
+   "em": true
+  },
+  {
+   "match": "eighty point seven billion",
+   "text": "$80.7 billion"
+  },
+  {
+   "match": "U S",
+   "text": "US"
+  },
+  {
+   "match": "A I",
+   "text": "AI"
+  }
+ ],
+ "emphasis": [
+  "Japan",
+  "Nasdaq",
+  "three times",
+  "loss"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Outside_Tokyo_Stock_Exchange_%2898572%29.jpg",
+   "zoom": [
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "at": "It's for its"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Dario_Amodei_at_TechCrunch_Disrupt_2023_06.jpg",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "at": "The Claude maker"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Claude_AI_website_screenshot.webp",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Here's why investors"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "The filing shows",
+   "kicker": "Anthropic S-1",
+   "value": 16.3,
+   "decimals": 1,
+   "prefix": "$",
+   "suffix": "B",
+   "sub": "revenue, first half of 2026"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "That's over three",
+   "kicker": "Growth",
+   "text": "Over *3x* 2025 sales",
+   "sub": "all of 2025: $4.6 billion"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Nasdaq_Tower_May_2026.jpg",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "at": "But it also"
+  },
+  {
+   "type": "video",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Shibuya_crossing_time-lapse_2019-01-05.webm",
+   "in": 3,
+   "at": "No date or"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Which A I",
+   "kicker": "Your take",
+   "text": "Which AI company lists *next?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "shares in Japan",
+   "kicker": "AI · Anthropic",
+   "text": "Anthropic to sell *$3.5B* of shares in Japan"
+  },
+  {
+   "style": "label",
+   "at": "It's for its",
+   "dur": 3.3,
+   "kicker": "Reuters",
+   "text": "Part of its *US listing*"
+  },
+  {
+   "style": "label",
+   "at": "The Claude maker",
+   "dur": 3.3,
+   "kicker": "Nasdaq",
+   "text": "Proposed ticker: *ANT*"
+  },
+  {
+   "style": "label",
+   "at": "Here's why investors",
+   "dur": 2.6,
+   "kicker": "The filing",
+   "text": "Inside the *S-1*"
+  },
+  {
+   "style": "label",
+   "at": "But it also",
+   "dur": 3.3,
+   "kicker": "Net loss",
+   "text": "*$80.7B*, mostly on paper"
+  },
+  {
+   "style": "label",
+   "at": "No date or",
+   "dur": 3.0,
+   "kicker": "Still open",
+   "text": "No date, *no price*"
+  }
+ ]
+}
