@@ -1,0 +1,140 @@
+{
+ "id": "find-2026-11-06-stone-cold-venues",
+ "find": [
+  {
+   "commons": "Austin Texas skyline",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "Victoria Texas downtown",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "Edna Texas",
+   "kind": "image",
+   "limit": 5
+  },
+  {
+   "commons": "Wharton County Junior College",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "University of North Texas Denton",
+   "kind": "image",
+   "limit": 5
+  },
+  {
+   "commons": "Dallas Sportatorium",
+   "kind": "image",
+   "limit": 5
+  },
+  {
+   "commons": "Dallas skyline night",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "CNN Center Atlanta",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "ECW Arena Philadelphia 2300 Arena",
+   "kind": "image",
+   "limit": 5
+  },
+  {
+   "commons": "Yokohama Arena",
+   "kind": "image",
+   "limit": 3
+  },
+  {
+   "commons": "UW-Milwaukee Panther Arena MECCA",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "Allstate Arena Rosemont",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "Meadowlands Arena Continental Airlines Arena",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "TD Garden FleetCenter Boston",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "Allegiant Stadium Las Vegas",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "off-road racing desert UTV",
+   "kind": "image",
+   "limit": 6
+  },
+  {
+   "commons": "Nevada desert dust racing",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "beer can pouring",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "podcast microphone studio",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "South Texas ranch brush country",
+   "kind": "image",
+   "limit": 4
+  },
+  {
+   "commons": "Zamboni ice resurfacer",
+   "kind": "image",
+   "limit": 3
+  },
+  {
+   "commons": "Chevrolet Corvette C5",
+   "kind": "image",
+   "limit": 3
+  },
+  {
+   "commons": "cement mixer truck",
+   "kind": "image",
+   "limit": 3
+  },
+  {
+   "commons": "Steve Austin wrestler",
+   "kind": "image",
+   "limit": 12
+  },
+  {
+   "commons": "Stone Cold Steve Austin",
+   "kind": "image",
+   "limit": 12
+  },
+  {
+   "commons": "off-road racing",
+   "kind": "video",
+   "limit": 5
+  },
+  {
+   "commons": "Texas highway",
+   "kind": "video",
+   "limit": 4
+  }
+ ]
+}
