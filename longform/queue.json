@@ -3,9 +3,14 @@
   "videos": [
     {"id": "2026-11-02-the-rock", "star": "The Rock", "drive_folder": "WWE The Rock",
      "drive_folder_id": "1eHprMR_otXqVWfmDYaTiKzH0k0095UTU",
-     "shotlist": "https://claude.ai/artifact/7uPTKGESfr8bgTRNcizetm", "status": "in-chat"}
+     "shotlist": "https://claude.ai/artifact/7uPTKGESfr8bgTRNcizetm", "status": "in-chat"},
+    {"id": "2026-11-02-stone-cold", "star": "Stone Cold Steve Austin", "drive_folder": "WWE Stone Cold",
+     "drive_folder_id": "", "title": "How Stone Cold Went From Fired to WWE Icon | Full Story",
+     "shotlist": "https://claude.ai/artifact/Ney6MXdrPA88Xozknq6y6z", "status": "waiting-footage",
+     "first_comment": "What is the greatest Stone Cold moment of all time: WrestleMania 13, the beer truck, or the first Stunner on Vince?",
+     "next_named_in_end_card": "Triple H", "requested": "2026-11-02"}
   ],
-  "next_stars": ["Stone Cold Steve Austin", "Triple H", "The Undertaker", "John Cena", "Shawn Michaels",
+  "next_stars": ["Triple H", "The Undertaker", "John Cena", "Shawn Michaels",
                  "Hulk Hogan", "Randy Orton", "Roman Reigns", "Brock Lesnar", "Batista", "Edge", "Rey Mysterio",
                  "Ric Flair", "Bret Hart", "Eddie Guerrero", "CM Punk", "Kurt Angle", "Seth Rollins",
                  "Becky Lynch", "Cody Rhodes"]

@@ -1,0 +1,155 @@
+<title>Stone Cold Shot List</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+  /* Layout: one narrow column of numbered footage slots, sticky progress bar, dark studio look like the videos */
+  :root{--bg:#0e0f12;--card:#17191e;--line:#262931;--chip:#23262d;--chip-line:#333743;--ink:#f2f3f5;--soft:#a9adb7;
+        --acc:#FFD23F;--acc-ink:#111;--ok:#7fd99a;--yt:#ff5a5a;--bar:rgba(14,15,18,.94);color-scheme:dark}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45}
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+  .wrap{max-width:820px;margin:0 auto;padding-block:22px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .kick{font-family:"JetBrains Mono",ui-monospace,monospace;color:var(--acc);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+  h1{font-weight:900;font-size:34px;line-height:1.05;margin:6px 0 10px;text-wrap:balance}
+  h1 b{color:var(--acc)}
+  .how{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:16px 0}
+  .how ol{margin:6px 0 0;padding-left:20px}.how li{margin:5px 0}
+  .how code{background:var(--chip);padding:1px 6px;border-radius:5px;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13px}
+  .bar{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bar);backdrop-filter:blur(6px);padding:10px 0;z-index:5;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .prog{flex:1;min-width:160px;height:8px;background:var(--line);border-radius:9px;overflow:hidden}
+  .prog i{display:block;height:100%;background:var(--acc);width:0}
+  .count{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13px;color:var(--soft);font-variant-numeric:tabular-nums}
+  .filter{background:var(--chip);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:6px 10px;font:600 13px Inter,system-ui,sans-serif;cursor:pointer}
+  .filter.on{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
+  .filter:focus-visible,.links a:focus-visible,.chk:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+  h2{font-weight:900;font-size:20px;margin:26px 0 8px;text-wrap:balance}
+  h2 span{font-family:"JetBrains Mono",ui-monospace,monospace;color:var(--acc);font-size:12px;letter-spacing:.1em;margin-right:8px}
+  .slot{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:10px 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px}
+  .slot.done{opacity:.45}
+  .chk{grid-row:1/4;width:26px;height:26px;margin-top:2px;accent-color:var(--acc)}
+  .top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+  .code{font-family:"JetBrains Mono",ui-monospace,monospace;font-weight:700;background:var(--acc);color:var(--acc-ink);border-radius:6px;padding:1px 7px;font-size:13px}
+  .must{font-size:11px;font-weight:700;color:var(--acc);border:1px solid var(--acc);border-radius:20px;padding:0 7px}
+  .opt{font-size:11px;font-weight:700;color:var(--soft);border:1px solid var(--chip-line);border-radius:20px;padding:0 7px}
+  .what{font-weight:700}
+  .tip{color:var(--soft);font-size:14px}
+  .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .links a{color:var(--ink);text-decoration:none;background:var(--chip);border:1px solid var(--chip-line);border-radius:9px;padding:6px 10px;font-size:13px;font-weight:600;overflow-wrap:anywhere}
+  .links a.yt::before{content:"▶ ";color:var(--yt)}.links a.ph::before{content:"▣ ";color:var(--acc)}
+  .note{color:var(--soft);font-size:13px;margin-top:24px}
+  @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="kick">WWE channel · Video 2 · Shot list</div>
+  <h1>Stone Cold: From <b>Fired</b> to WWE Icon</h1>
+
+  <div class="how">
+    <div class="kick">How it works · about 15 min</div>
+    <ol>
+      <li>In Google Drive, make a folder named <code>WWE Stone Cold</code> and set sharing to <b>Anyone with the link: Viewer</b>.</li>
+      <li>Open each link below and save the <b>whole</b> clip or the photo. No trimming needed. I pick the exact seconds myself.</li>
+      <li>Name each file with its slot code, e.g. <code>R01.mp4</code>, <code>R60.jpg</code> (several files for one slot: <code>R22a.mp4</code>, <code>R22b.mp4</code>).</li>
+      <li>Upload them to the folder and reply <b>“done”</b>. I pull them from Drive, edit, render and upload.</li>
+    </ol>
+    <div class="tip" style="margin-top:8px">★ Must-have slots first. Skip anything you like; I fill gaps with the arena and city photos I already have. Clips go in as short 3–6 s cuts with their audio muted, under my own narration.</div>
+  </div>
+
+  <div class="bar">
+    <div class="prog"><i id="pg"></i></div>
+    <span class="count" id="ct">0 / 0</span>
+    <button class="filter" id="fm" type="button">★ Must-have only</button>
+  </div>
+
+  <div id="list"></div>
+  <p class="note">R19 and R31 can come from the same WWE video (all three Austin vs. Rock WrestleMania matches). Save it once as R19 and once more as R31, or just as R19 and tell me.</p>
+</div>
+
+<script>
+const Y = id => "https://www.youtube.com/watch?v=" + id;
+const W = f => "https://upload.wikimedia.org/wikipedia/commons/" + f;
+const S = [
+ ["Cold open", "0:00", [
+  ["R29",1,"Austin talking about being fired by Eric Bischoff (WCW, 1995)","Opens the video.",[["yt","Austin on getting fired by Bischoff (WWE)",Y("v70Yayplfkw")]]],
+  ["R03",1,"“Stunning” Steve Austin in WCW, 1991–1994","Long blond hair era. Also used for the Hollywood Blonds and his US title.",[["yt","Hollywood Blonds cage match, Slamboree 1993 (WCW)",Y("xw0GWtAcKA8")],["yt","TV title vs Barry Windham, 1992 (WWE)",Y("9Ui9Ihcv0bM")],["yt","US title vs Ricky Steamboat, 1994 (WCW)",Y("svqCtkn2Bbs")]]],
+  ["R11",1,"Wins the WWF title at WrestleMania XIV, Mike Tyson counts the pin","The Stunner, Tyson's count, the celebration.",[["yt","The Austin Era begins (WWE)",Y("cj1hJd3gH6E")],["yt","Full match (WWE Vault)",Y("TTArBJAVZog")],["ph","As WWF Champion (free licence)",W("4/44/WWF_Champion_Stone_Cold_Steve_Austin.jpg")]]],
+  ["R05",1,"The beer truck, 1999","Austin hosing down McMahon, Shane and The Rock.",[["yt","Beer bath for The Corporation (WWE)",Y("_O89Y0VwdPs")],["yt","The iconic beer truck (A&E)",Y("a_at_4rCTlE")]]],
+  ["R58",1,"Glass-shatter entrance","Also used for the beer-toast line and the title card.",[["yt","Stone Cold entrance video (WWE)",Y("MOzjBO2dsmY")],["yt","WrestleMania 38 entrance (WWE)",Y("kpZKYxCTOc4")]]],
+ ]],
+ ["Ch 3 · Superstar (ECW)", "1995", [
+  ["R08",1,"“Superstar” Steve Austin promos in ECW","Him talking on the mic.",[["yt","The story of Steve Austin in ECW (WWE Vault)",Y("WqFRxLKrJtY")]]],
+ ]],
+ ["Ch 4 · Austin 3:16", "1996", [
+  ["R09",1,"The Ringmaster debut + first match as “Stone Cold”","Two clips: R09a and R09b.",[["yt","WWE debut, Raw Jan 8 1996 (WWE)",Y("u6TQtjsfp-k")],["yt","First match as Stone Cold, Mar 11 1996 (WWE)",Y("xnqwGGdOXjA")]]],
+  ["R01",1,"“Austin 3:16” speech, King of the Ring 1996","The coronation promo and the win over Jake Roberts.",[["yt","The Austin 3:16 speech (WWE)",Y("tjWPoQWdmjg")]]],
+  ["R30",0,"Austin 3:16 Day","",[["yt","Austin celebrates 3:16 Day (WWE)",Y("UQi7SaX0ilc")],["yt","Austin on the origins of 3:16 Day (Rich Eisen Show)",Y("mXYvSlj8p8k")]]],
+ ]],
+ ["Ch 5 · The double turn", "1997", [
+  ["R02",1,"WrestleMania 13 vs Bret Hart","Sharpshooter, Austin passing out, the crowd turning.",[["yt","Full match (WWE)",Y("DYELJpHHwCQ")],["yt","Hall of Fame Immortal Moment video (WWE)",Y("WXPVV5o_IGI")]]],
+  ["R26",1,"Hall of Fame 2025 Immortal Moment with Bret Hart","The two of them on stage together.",[["yt","Bret & Austin toast their Immortal Moment (WWE)",Y("DXK2KwmW4_o")]]],
+  ["R10",1,"SummerSlam 1997 vs Owen Hart","The roll-up win or Austin with the belt. Please not the piledriver itself.",[["ph","“Stone Cold's breakneck win” (WWE.com photos)","https://www.wwe.com/inside/listthis/greatestsslammoments/greatestsslammoments2"],["yt","Story of the rise of Stone Cold, 1996–97 (WWE Vault)",Y("SCHuOf12S4o")]]],
+  ["R04",1,"First Stunner on Vince McMahon, MSG, Sep 22 1997","The Stunner and the arrest.",[["yt","Stunner leads to arrest (WWE)",Y("leG3Aq4orCo")],["yt","Birth of the Stunner documentary (WWE Vault)",Y("d49VuZOO-JE")]]],
+ ]],
+ ["Ch 6 · Austin vs. McMahon", "1998", [
+  ["R14",0,"Austin vs. McMahon segments, 1998","Any face-offs with Vince.",[["yt","Stone Cold vs. The McMahons (WWE)",Y("v4kd2fzz0tY")]]],
+  ["R12",1,"Austin drives a Zamboni to the ring","",[["yt","Zamboni (WWE)",Y("3og0ZWIAizI")]]],
+  ["R13",1,"Cement poured into McMahon's Corvette","",[["yt","Cement Corvette (WWE)",Y("4gLjQiYBPQI")]]],
+ ]],
+ ["Ch 7 · Broken", "1999–2000", [
+  ["R31",1,"WrestleMania XV vs The Rock","Austin winning the title back.",[["yt","All three Austin vs. Rock WrestleMania matches (WWE)",Y("_36kWvCwjf8")]]],
+  ["R15",0,"Rikishi did it, 2000","",[["yt","Rikishi confesses (WWE)",Y("2jYpQsWbeds")],["yt","Triple H denies it, Raw Sep 2000 (WWE)",Y("NOGvuqlyxA8")]]],
+ ]],
+ ["Ch 8 · Selling out", "2001–2002", [
+  ["R16",1,"WrestleMania X-Seven: Austin shakes McMahon's hand","",[["yt","Stone Cold sells out (WWE)",Y("7MJP2wUYt5E")],["yt","Full match vs The Rock (WWE)",Y("UicJBCAIgto")]]],
+  ["R17",1,"Heel Austin comedy, 2001","Gifts, “What?”, hugging.",[["yt","Stone Cold's funniest moments (WWE)",Y("eIRVxrNDvJs")],["yt","Gifts for McMahon and Kurt Angle (WWE)",Y("OF6a7ilPCt8")]]],
+ ]],
+ ["Ch 9 · The last match", "2003–2004", [
+  ["R19",1,"WrestleMania XIX vs The Rock, his last match","Rock Bottoms, the finish, Austin after the match.",[["yt","The Rock retires Stone Cold (WWE)",Y("uzQF3LUHRDs")],["yt","Full match (WWE)",Y("yWugBmcUBlo")]]],
+  ["R20",0,"Co-General Manager / Sheriff of Raw","",[["yt","Co-General Managers of Raw (WWE)",Y("PnfoD6Ak_7M")]]],
+ ]],
+ ["Ch 10 · Life after the ring", "2005–2021", [
+  ["R22",1,"His movies: The Longest Yard, The Condemned, The Expendables","Three trailers: R22a, R22b, R22c.",[["yt","The Longest Yard clip (Paramount)",Y("D-r5h1P7amc")],["yt","The Longest Yard trailer",Y("biEgx-g4V_g")],["yt","The Condemned trailer (Lionsgate)",Y("z8qNp15B3EA")],["yt","The Expendables trailer (Lionsgate)",Y("8KtYRALe-xo")]]],
+  ["R21",1,"WWE Hall of Fame 2009","Speech or a photo from that weekend.",[["yt","Hall of Fame 2009 (WWE)",Y("ekjsTwYoLPU")],["ph","Hall of Fame 2009 photo (free licence)",W("2/21/Stone_Cold_Steve_Austin_hof.jpg")],["ph","WrestleMania 25 weekend, 2009 (free licence)",W("d/d9/Stone_Cold_Steve_Austin_%283421115221%29.jpg")]]],
+  ["R23",1,"His TV shows","Three trailers: R23a, R23b, R23c.",[["yt","Broken Skull Challenge (CMT)",Y("hXOIjwbr-nA")],["yt","Straight Up Steve Austin (USA Network)",Y("7DU5IUYkJhA")],["yt","The Broken Skull Sessions (WWE)",Y("cOwf7qeitec")]]],
+ ]],
+ ["Ch 11 · One more beer", "2022–2025", [
+  ["R24",1,"WrestleMania 38 vs Kevin Owens","Entrance, Stunner, beers with the crowd.",[["yt","Full match (WWE)",Y("L0UXg-9O3-A")],["yt","In-ring return (WWE)",Y("E29mWyEKORI")]]],
+  ["R25",1,"WrestleMania 38 Night 2: Stunner on Vince McMahon","",[["yt","Austin raises hell (WWE)",Y("PHLicE9hG1Y")]]],
+  ["R27",1,"WrestleMania 41: the ATV entrance","",[["yt","WrestleMania 41 Sunday highlights (WWE)",Y("AZ53bcM-goo")]]],
+ ]],
+ ["Ch 12 · Where is he now?", "2026", [
+  ["R28",1,"Off-road racing, 2026: Austin in the #316 car","2–3 photos: R28a, R28b…",[["ph","Wrestling Observer (F4W)","https://www.f4wonline.com/news/wwe/wwe-legend-steve-austin-wins-category-in-off-road-race/"],["ph","Off-Road.com","https://www.off-road.com/blog/stone-cold-steve-austin-wins-his-class-in-off-road-race-debut/"],["ph","Wrestling Headlines, Oct 2026","https://wrestlingheadlines.com/stone-cold-steve-austin-wraps-up-first-racing-season-confirms-plans-for-2027/"],["ph","Slam Wrestling","https://slamwrestling.net/news/steve-austin-crashes-out-of-vorra-race/"]]],
+  ["R59",1,"Best moments for the final montage","Any 3–4 big moments.",[["yt","Greatest mic moments (WWE)",Y("SUbomFDbJBI")],["yt","Best WrestleMania moments (WWE)",Y("KyAuHFVd_zI")],["yt","Legendary career look-back (WWE)",Y("0O87okqdIrY")],["ph","With Hogan and Rock, WrestleMania XXX (free licence)",W("b/b2/Hogan_Rock_and_Austin_WrestleMania_XXX.jpg")]]],
+  ["R60",1,"One sharp close-up photo of his face for the thumbnail","Highest quality you can find.",[["ph","2010 close-up (free licence)",W("8/89/Stone_Cold_Steve_Austin_%284840047167%29_%28cropped%29.jpg")],["ph","2016 close-up (free licence)",W("2/2f/Stone_Cold_Steve_Austin_2016-03-31_%28cropped%29.jpg")]]],
+ ]],
+];
+let done = {};
+try { done = JSON.parse(localStorage.getItem("stoneColdShots") || "{}"); } catch (e) {}
+let mustOnly = false;
+function save(){ try { localStorage.setItem("stoneColdShots", JSON.stringify(done)); } catch (e) {} }
+function render(){
+  const L = document.getElementById("list"); L.innerHTML = "";
+  let tot = 0, ok = 0;
+  for (const [ch, yrs, slots] of S){
+    const vis = slots.filter(s => !mustOnly || s[1]);
+    if (!vis.length) continue;
+    const h = document.createElement("h2"); h.innerHTML = `<span>${yrs}</span>${ch}`; L.appendChild(h);
+    for (const [code, must, what, tip, links] of vis){
+      tot++; if (done[code]) ok++;
+      const d = document.createElement("div"); d.className = "slot" + (done[code] ? " done" : "");
+      const lk = links.map(([t, n, u]) => `<a class="${t}" href="${u}" target="_blank" rel="noopener">${n}</a>`).join("");
+      d.innerHTML = `<input type="checkbox" class="chk" id="chk-${code}" ${done[code]?"checked":""} aria-label="${code} saved">
+        <div class="top"><span class="code">${code}</span>${must?'<span class="must">★ must-have</span>':'<span class="opt">optional</span>'}<span class="what">${what}</span></div>
+        <div class="tip">${tip ? tip + " " : ""}Save as <b>${code}</b>.</div>
+        <div class="links">${lk || '<span class="tip">Any source you like.</span>'}</div>`;
+      d.querySelector("input").addEventListener("change", e => { done[code] = e.target.checked; save(); render(); });
+      L.appendChild(d);
+    }
+  }
+  document.getElementById("ct").textContent = `${ok} / ${tot} saved`;
+  document.getElementById("pg").style.width = (tot ? ok / tot * 100 : 0) + "%";
+}
+document.getElementById("fm").addEventListener("click", e => { mustOnly = !mustOnly; e.target.classList.toggle("on", mustOnly); render(); });
+render();
+</script>
