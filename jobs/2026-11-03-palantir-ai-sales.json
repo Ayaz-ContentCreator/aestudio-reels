@@ -1,0 +1,32 @@
+{
+ "id": "2026-11-03-palantir-ai-sales",
+ "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "script": "Palantir's sales rose ninety-six percent on A I demand. Revenue hit two point three one billion dollars last quarter, it said Monday. For the first time, U S businesses paid it more than the government. Their spending rose a hundred and forty-eight percent. Here's why that matters. Palantir sells A I tools that run on a company's own data. So more firms are paying to use A I at work. It expects eight point five three billion dollars in sales this year. Which A I tool do you use at work? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "display": [
+  {"match": "ninety-six percent", "text": "96%", "em": true},
+  {"match": "two point three one billion dollars", "text": "$2.31 billion", "em": true},
+  {"match": "a hundred and forty-eight percent", "text": "148%", "em": true},
+  {"match": "eight point five three billion dollars", "text": "$8.53 billion"},
+  {"match": "U S", "text": "US"},
+  {"match": "A I", "text": "AI"}
+ ],
+ "emphasis": ["Palantir", "first time", "businesses", "own data"],
+ "scenes": [
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Alex_Karp_attends_AI_Summit_%2853302457013%29_%28cropped%29.jpg", "zoom": [1.0, 1.12]},
+  {"type": "video", "src": "https://www.cnbc.com/video/2026/11/02/palantir-beats-on-earnings-and-revenue-q3-commercial-revenue-surpasses-government-revenue.html", "in": 10, "credit": "CNBC", "at": "Revenue hit two"},
+  {"type": "video", "src": "https://www.cnbc.com/video/2026/11/02/palantir-beats-on-earnings-and-revenue-q3-commercial-revenue-surpasses-government-revenue.html", "in": 28, "credit": "CNBC", "at": "For the first"},
+  {"type": "card", "card": "stat", "at": "Their spending rose", "kicker": "US business sales", "value": 148, "suffix": "%", "sub": "year on year, to $984 million", "source": "Palantir"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/REUNI%C3%93N_CON_ALEX_KARP%2C_CEO_DE_PALANTIR_TECHNOLOGIES._DAVOS%2C_21_DE_ENERO_2026._%2855053118176%29.jpg", "zoom": [1.0, 1.12], "at": "Here's why that"},
+  {"type": "card", "card": "headline", "at": "So more firms", "kicker": "AI at work", "text": "Firms pay for *AI*", "sub": "US business sales passed government"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/REUNI%C3%93N_CON_ALEX_KARP%2C_CEO_DE_PALANTIR_TECHNOLOGIES._DAVOS%2C_21_DE_ENERO_2026._%2855053371189%29.jpg", "zoom": [1.05, 1.15], "at": "It expects eight"},
+  {"type": "card", "card": "end", "at": "Which A I", "kicker": "Your take", "text": "Which AI tool do you use at *work?*", "cta": "Tell us below ↓", "follow": "Follow for daily US & Europe news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "on A I demand", "kicker": "AI · Palantir", "text": "Palantir sales up *96%* on AI demand"},
+  {"style": "label", "at": "Revenue hit two", "dur": 3.3, "kicker": "Q3 revenue", "text": "*$2.31 billion*"},
+  {"style": "label", "at": "For the first", "dur": 3.3, "kicker": "First time", "text": "Business beat *government*"},
+  {"style": "label", "at": "Palantir sells A", "dur": 3.3, "kicker": "What it sells", "text": "AI tools on *your own data*"},
+  {"style": "label", "at": "It expects eight", "dur": 3.3, "kicker": "2026 forecast", "text": "*$8.53B* in sales"}
+ ]
+}
