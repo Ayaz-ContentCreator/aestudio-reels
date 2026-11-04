@@ -5,7 +5,7 @@
   "voice": "af_bella",
   "speed": 1.05
  },
- "script": "A M D's data center sales nearly doubled on A I chip demand. That unit made eight point five billion dollars last quarter. That's up ninety-seven percent, A M D said Tuesday. Reuters says its forecast beat Wall Street estimates. Here's what's driving it. A M D launched its new M I four fifty A I chips. Now OpenAI, Anthropic, Meta and Microsoft run models on its Helios server racks. Total revenue rose forty-five percent, to thirteen point four billion dollars. But gaming sales fell forty percent. It expects about seventeen billion dollars next quarter. Which A I chip maker will lead next year? Tell us below.",
+ "script": "A M D's data center sales nearly doubled on A I chip demand. Sales there hit eight point five billion dollars. That's up ninety-seven percent, A M D said Tuesday. Reuters says its forecast beat Wall Street estimates. Here's what's driving it. A M D launched its new M I four fifty A I chips. OpenAI, Anthropic, Meta and Microsoft now run models on them. Total revenue rose forty-five percent, to thirteen point four billion dollars. But gaming sales fell forty percent. It expects about seventeen billion dollars next quarter. Which A I chip maker will lead next year? Tell us below.",
  "music": {
   "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
   "gain_db": -13
@@ -73,7 +73,7 @@
    "src": "https://www.cnbc.com/video/2026/11/03/amd-posts-q3-beat-stock-pops-slightly-in-extended-trading.html",
    "in": 16,
    "credit": "CNBC",
-   "at": "That unit made"
+   "at": "Sales there hit"
   },
   {
    "type": "card",
@@ -104,7 +104,7 @@
   {
    "type": "card",
    "card": "headline",
-   "at": "Now OpenAI, Anthropic",
+   "at": "OpenAI, Anthropic, Meta",
    "kicker": "Who uses it",
    "text": "AI labs on *AMD*",
    "sub": "OpenAI, Anthropic, Meta, Microsoft"
@@ -144,7 +144,7 @@
   },
   {
    "style": "label",
-   "at": "That unit made",
+   "at": "Sales there hit",
    "dur": 3.3,
    "kicker": "Data center",
    "text": "*$8.5 billion* in Q3"
