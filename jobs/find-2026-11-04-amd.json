@@ -1,0 +1,6 @@
+{"id": "find-2026-11-04-amd", "find": [
+  {"probe": "https://www.cnbc.com/video/2026/11/03/amd-posts-q3-beat-stock-pops-slightly-in-extended-trading.html", "in": 0, "sheet": true},
+  {"probe": "https://www.cnbc.com/video/2026/11/03/says-bernsteins-stacy-rasgon.html", "in": 0, "sheet": true},
+  {"commons": "Lisa Su", "kind": "image"},
+  {"commons": "AMD Instinct", "kind": "image"},
+  {"commons": "AMD headquarters", "kind": "image"}]}
