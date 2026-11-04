@@ -5,7 +5,7 @@
   "voice": "af_bella",
   "speed": 1.05
  },
- "script": "A M D's data center sales nearly doubled on A I chip demand. Sales there hit eight point five billion dollars. That's up ninety-seven percent, A M D said Tuesday. Reuters says its forecast beat Wall Street estimates. Here's what's driving it. A M D launched its new M I four fifty A I chips. OpenAI, Anthropic, Meta and Microsoft now run models on them. Total revenue rose forty-five percent, to thirteen point four billion dollars. But gaming sales fell forty percent. It expects about seventeen billion dollars next quarter. Which A I chip maker will lead next year? Tell us below.",
+ "script": "A M D's data center sales nearly doubled on A I chip demand. Sales there hit eight point five billion dollars. That's up ninety-seven percent, A M D said Tuesday. Reuters says its forecast beat Wall Street estimates. Here's what's driving it. A M D launched its new M I four fifty chips for A I. OpenAI, Anthropic, Meta and Microsoft now run models on them. Total revenue rose forty-five percent, to thirteen point four billion dollars. But gaming sales fell forty percent. It expects about seventeen billion dollars next quarter. Which A I chip maker will lead next year? Tell us below.",
  "music": {
   "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
   "gain_db": -13
@@ -62,7 +62,7 @@
  "scenes": [
   {
    "type": "photo",
-   "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/SXSW-2024-alih-OB7A0861-Lisa_Su_%28cropped%29.jpg",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/AMD_CEO_Lisa_Su_20150603.jpg",
    "zoom": [
     1.0,
     1.12
@@ -94,7 +94,7 @@
   },
   {
    "type": "photo",
-   "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/AMD_CEO_Lisa_Su_20150603.jpg",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Lisa_T._Su%2C_PCAST_Member.jpg",
    "zoom": [
     1.0,
     1.1
@@ -118,10 +118,10 @@
   },
   {
    "type": "photo",
-   "src": "https://upload.wikimedia.org/wikipedia/commons/d/dd/SXSW-2024-alih-OB7A0861-Lisa_Su.jpg",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/AMD_CEO_Lisa_Su_20150603.jpg",
    "zoom": [
-    1.0,
-    1.1
+    1.15,
+    1.0
    ],
    "at": "But gaming sales"
   },
@@ -140,7 +140,7 @@
    "style": "hook",
    "until": "on A I chip demand",
    "kicker": "AI · AMD",
-   "text": "AMD's AI chip sales *nearly doubled*"
+   "text": "AMD data center sales *nearly doubled*"
   },
   {
    "style": "label",
