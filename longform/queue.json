@@ -1,17 +1,9 @@
 {
   "note": "Long-form WWE videos. status: waiting-footage -> scheduled. 'in-chat' = being finished in a chat session; scheduled runs skip it.",
   "videos": [
-    {"id": "2026-11-02-the-rock", "star": "The Rock", "drive_folder": "WWE The Rock",
-     "drive_folder_id": "1eHprMR_otXqVWfmDYaTiKzH0k0095UTU",
-     "shotlist": "https://claude.ai/artifact/7uPTKGESfr8bgTRNcizetm", "status": "in-chat"},
-    {"id": "2026-11-02-stone-cold", "star": "Stone Cold Steve Austin", "drive_folder": "WWE Stone Cold",
-     "drive_folder_id": "", "title": "How Stone Cold Went From Fired to WWE Icon | Full Story",
-     "shotlist": "https://claude.ai/artifact/Ney6MXdrPA88Xozknq6y6z", "status": "waiting-footage",
-     "first_comment": "What is the greatest Stone Cold moment of all time: WrestleMania 13, the beer truck, or the first Stunner on Vince?",
-     "next_named_in_end_card": "Triple H", "requested": "2026-11-02"}
+    {"id": "2026-11-02-the-rock", "star": "The Rock", "drive_folder": "WWE The Rock", "drive_folder_id": "1eHprMR_otXqVWfmDYaTiKzH0k0095UTU", "shotlist": "https://claude.ai/artifact/7uPTKGESfr8bgTRNcizetm", "status": "in-chat"},
+    {"id": "2026-11-02-stone-cold", "star": "Stone Cold Steve Austin", "drive_folder": "WWE Stone Cold", "drive_folder_id": "", "title": "How Stone Cold Went From Fired to WWE Icon | Full Story", "shotlist": "https://claude.ai/artifact/Ney6MXdrPA88Xozknq6y6z", "status": "waiting-footage", "first_comment": "What is the greatest Stone Cold moment of all time: WrestleMania 13, the beer truck, or the first Stunner on Vince?", "next_named_in_end_card": "Triple H", "requested": "2026-11-02"},
+    {"id": "2026-11-05-triple-h", "star": "Triple H", "drive_folder": "WWE Triple H", "drive_folder_id": "", "title": "How Triple H Went From Punished to WWE Boss | Full Story", "shotlist": "https://claude.ai/artifact/JTXwvpToEQJv5Yh4fXSH9S", "status": "waiting-footage", "first_comment": "What is the greatest Triple H match of all time: Hell in a Cell with Cactus Jack, the street fight with Shawn Michaels, or the End of an Era?", "next_named_in_end_card": "The Undertaker", "requested": "2026-11-05"}
   ],
-  "next_stars": ["Triple H", "The Undertaker", "John Cena", "Shawn Michaels",
-                 "Hulk Hogan", "Randy Orton", "Roman Reigns", "Brock Lesnar", "Batista", "Edge", "Rey Mysterio",
-                 "Ric Flair", "Bret Hart", "Eddie Guerrero", "CM Punk", "Kurt Angle", "Seth Rollins",
-                 "Becky Lynch", "Cody Rhodes"]
+  "next_stars": ["The Undertaker", "John Cena", "Shawn Michaels", "Hulk Hogan", "Randy Orton", "Roman Reigns", "Brock Lesnar", "Batista", "Edge", "Rey Mysterio", "Ric Flair", "Bret Hart", "Eddie Guerrero", "CM Punk", "Kurt Angle", "Seth Rollins", "Becky Lynch", "Cody Rhodes"]
 }

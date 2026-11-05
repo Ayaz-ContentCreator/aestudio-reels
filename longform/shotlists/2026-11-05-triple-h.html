@@ -1,0 +1,167 @@
+<title>Triple H Shot List</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+  /* Layout: one narrow column of numbered footage slots, sticky progress bar, dark studio look like the videos */
+  :root{--bg:#0e0f12;--card:#17191e;--line:#262931;--chip:#23262d;--chip-line:#333743;--ink:#f2f3f5;--soft:#a9adb7;
+        --acc:#FFD23F;--acc-ink:#111;--ok:#7fd99a;--yt:#ff5a5a;--bar:rgba(14,15,18,.94);color-scheme:dark}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45}
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+  .wrap{max-width:820px;margin:0 auto;padding-block:22px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .kick{font-family:"JetBrains Mono",ui-monospace,monospace;color:var(--acc);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+  h1{font-weight:900;font-size:34px;line-height:1.05;margin:6px 0 10px;text-wrap:balance}
+  h1 b{color:var(--acc)}
+  .how{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:16px 0}
+  .how ol{margin:6px 0 0;padding-left:20px}.how li{margin:5px 0}
+  .how code{background:var(--chip);padding:1px 6px;border-radius:5px;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13px}
+  .bar{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bar);backdrop-filter:blur(6px);padding:10px 0;z-index:5;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .prog{flex:1;min-width:160px;height:8px;background:var(--line);border-radius:9px;overflow:hidden}
+  .prog i{display:block;height:100%;background:var(--acc);width:0}
+  .count{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13px;color:var(--soft);font-variant-numeric:tabular-nums}
+  .filter{background:var(--chip);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:6px 10px;font:600 13px Inter,system-ui,sans-serif;cursor:pointer}
+  .filter.on{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
+  .filter:focus-visible,.links a:focus-visible,.chk:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+  h2{font-weight:900;font-size:20px;margin:26px 0 8px;text-wrap:balance}
+  h2 span{font-family:"JetBrains Mono",ui-monospace,monospace;color:var(--acc);font-size:12px;letter-spacing:.1em;margin-right:8px}
+  .slot{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:10px 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px}
+  .slot.done{opacity:.45}
+  .chk{grid-row:1/4;width:26px;height:26px;margin-top:2px;accent-color:var(--acc)}
+  .top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+  .code{font-family:"JetBrains Mono",ui-monospace,monospace;font-weight:700;background:var(--acc);color:var(--acc-ink);border-radius:6px;padding:1px 7px;font-size:13px}
+  .must{font-size:11px;font-weight:700;color:var(--acc);border:1px solid var(--acc);border-radius:20px;padding:0 7px}
+  .opt{font-size:11px;font-weight:700;color:var(--soft);border:1px solid var(--chip-line);border-radius:20px;padding:0 7px}
+  .what{font-weight:700}
+  .tip{color:var(--soft);font-size:14px}
+  .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .links a{color:var(--ink);text-decoration:none;background:var(--chip);border:1px solid var(--chip-line);border-radius:9px;padding:6px 10px;font-size:13px;font-weight:600;overflow-wrap:anywhere}
+  .links a.yt::before{content:"▶ ";color:var(--yt)}.links a.ph::before{content:"▣ ";color:var(--acc)}
+  .note{color:var(--soft);font-size:13px;margin-top:24px}
+  @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="kick">WWE channel · Video 3 · Shot list</div>
+  <h1>Triple H: From <b>Punished</b> to WWE Boss</h1>
+
+  <div class="how">
+    <div class="kick">How it works · about 15 min</div>
+    <ol>
+      <li>In Google Drive, make a folder named <code>WWE Triple H</code> and set sharing to <b>Anyone with the link: Viewer</b>.</li>
+      <li>Open each link below and save the <b>whole</b> clip or the photo. No trimming needed. I pick the exact seconds myself.</li>
+      <li>Name each file with its slot code, e.g. <code>R01.mp4</code>, <code>R60.jpg</code> (several files for one slot: <code>R22a.mp4</code>, <code>R22b.mp4</code>).</li>
+      <li>Upload them to the folder and reply <b>“done”</b>. I pull them from Drive, edit, render and upload.</li>
+    </ol>
+    <div class="tip" style="margin-top:8px">★ Must-have slots first. Skip anything you like; I fill gaps with the arena and city photos I already have. Clips go in as short 3–6 s cuts with their audio muted, under my own narration.</div>
+  </div>
+
+  <div class="bar">
+    <div class="prog"><i id="pg"></i></div>
+    <span class="count" id="ct">0 / 0</span>
+    <button class="filter" id="fm" type="button">★ Must-have only</button>
+  </div>
+
+  <div id="list"></div>
+  <p class="note">Full-match links are there so you can save the whole video; I only use a few 3–6 s moments of each. R16 has no official upload, so it is optional. Several photos here are free-licensed Wikimedia Commons files.</p>
+</div>
+
+<script>
+const Y = id => "https://www.youtube.com/watch?v=" + id;
+const W = f => "https://upload.wikimedia.org/wikipedia/commons/" + f;
+const S = [
+ ["Cold open", "0:00", [
+  ["R01",1,"The “Curtain Call”, Madison Square Garden, May 19, 1996","Michaels, Nash, Hall and Helmsley hugging in the ring. Opens the video.",[["ph","Curtain Call video (WWE.com)","https://www.wwe.com/videos/the-kliq-participates-in-the-infamous-curtain-call-madison-square-garden-live-event-may-19-1996"],["yt","Kliq surprises the fans who filmed it (WWE)",Y("6gbdzKsX_mU")],["ph","Curtain Call roundtable (WWE.com)","https://www.wwe.com/classics/the-kliq-curtain-call-roundtable"]]],
+  ["R03",1,"Triple H today, as WWE Chief Content Officer","Him at a post-show press conference (he is at the table in most of them). Also used for WrestleMania 42.",[["yt","WrestleMania 42 Sunday Post-Show (WWE)",Y("2aXfq7NIvK0")],["yt","Royal Rumble 2026 Post-Show (WWE)",Y("T6KxvFj98wk")],["yt","SummerSlam 2025 Post-Show (WWE)",Y("NlSGvD1h_CM")],["ph","With Cody Rhodes, 2024 (free licence)",W("a/a2/Cody_Rhodes_%26_Triple_H_at_the_Raw_after_WrestleMania_XL.jpg")]]],
+  ["R58",1,"His classic entrance: water spit, Motörhead “The Game”","Also used on the title card.",[["yt","Every Triple H WrestleMania entrance (WWE)",Y("vjbiRNshXL0")],["yt","Motörhead WrestleMania entrance history (WWE Music)",Y("kcbOYY35M6o")],["yt","“It's Time to Play the Game” (WWE)",Y("XuYyMeoVIjw")]]],
+ ]],
+ ["Ch 1 · The kid from Nashua", "1969–1992", [
+  ["R04",1,"Young Paul Levesque as a bodybuilder","1–3 photos: R04a, R04b…",[["ph","Superstars' bodybuilding pasts (WWE.com)","https://www.wwe.com/inside/overtheropes/superstar-bodybuilders"],["ph","International Sports Hall of Fame photos (WWE.com)","https://www.wwe.com/inside/arnold-sports-festival/paul-triple-h-levesque-international-sports-hall-of-fame-photos"],["yt","Feats of strength (WWE)",Y("KkV5kqbLaJE")]]],
+ ]],
+ ["Ch 2 · The French aristocrat (WCW)", "1994–1995", [
+  ["R05",1,"WCW 1994: Terra Ryzing / Jean-Paul Lévesque","Any WCW match of his. Also used for his 1992 debut line.",[["yt","Full match, Starrcade 1994 (WCW)",Y("_-1gjrlMxTU")],["yt","Steamboat vs Jean-Paul Lévesque, 1994 (WWE)",Y("5Af_xyjT564")]]],
+ ]],
+ ["Ch 3 · The Curtain Call", "1995–1996", [
+  ["R06",1,"Hunter Hearst Helmsley, the Connecticut blue blood, 1995","Etiquette vignettes, early matches.",[["yt","The story of Hunter Hearst Helmsley (WWE Vault)",Y("E78oWbpSN5k")],["yt","Triple H on the character's origins (ESPN)",Y("mMw7vaFa-hA")]]],
+ ]],
+ ["Ch 4 · Earning it back", "1996–1997", [
+  ["R07",1,"First IC title, Chyna's debut, King of the Ring 1997","Three clips: R07a, R07b, R07c.",[["ph","IC title vs Marc Mero, Raw Oct 21 1996 (WWE.com video)","https://www.wwe.com/videos/marc-mero-vs-triple-h-intercontinental-championship-match-raw-october-21-1996"],["yt","Chyna's debut, Feb 1997 (WWE)",Y("QiLgQId7cok")],["yt","Helmsley wins King of the Ring 1997 (WWE)",Y("BLzacQ8i3S0")]]],
+ ]],
+ ["Ch 5 · D-Generation X", "1997–1998", [
+  ["R08",1,"DX with Shawn Michaels, 1997, and the new DX of 1998","Formation, “D-Generation X” named, best moments.",[["yt","Formation of DX (WWE)",Y("N_umHTtwhow")],["yt","HBK names D-Generation X, Raw Oct 13 1997 (WWE)",Y("ujdAwWpzyDU")],["yt","HHH & HBK take over the business (WWE)",Y("mJ3SdAqiiOw")]]],
+  ["R09",1,"DX “invades” WCW Nitro, April 27, 1998","The military vehicle at the Norfolk Scope.",[["yt","DX invades WCW (WWE)",Y("1bD_knW8YR0")],["yt","DX invades WCW, 25 Years of Raw (WWE)",Y("UvmEAftpjGs")]]],
+  ["R10",1,"SummerSlam 1998 ladder match vs The Rock","",[["yt","Full match (WWE)",Y("pfrA4AhravI")],["yt","Same match (WWE Vault)",Y("QB8dLqQjfIw")]]],
+ ]],
+ ["Ch 6 · The Game", "1999–2000", [
+  ["R11",1,"First WWF Championship, Raw Aug 23 1999 vs Mankind","",[["yt","First WWE Championship win (WWE)",Y("eRwuwmcyTjE")],["yt","Alternate cut (WWE)",Y("yMeDt6UIHBk")]]],
+  ["R12",1,"The Las Vegas wedding reveal and Armageddon 1999","Triple H and Stephanie, Vince McMahon.",[["yt","Triple H marries Stephanie, 1999 (WWE Vault)",Y("kNySiYh8BeQ")],["yt","HHH ruins the Stephanie–Test wedding (WWE)",Y("hLkxeIC06YQ")],["ph","Armageddon 1999 main event (WWE.com)","https://www.wwe.com/shows/armageddon/1999/mainevent"]]],
+  ["R13",1,"No Way Out 2000: Hell in a Cell vs Cactus Jack","The cell, the Pedigree, the finish.",[["yt","Full match (WWE Vault)",Y("mX_nXGK4908")],["yt","60 Seconds in Hell (WWE)",Y("bBNnDaes4hQ")]]],
+  ["R14",0,"WrestleMania 2000 fatal four-way","",[["yt","WrestleMania 2000 in 60 seconds (WWE)",Y("R8OQ-Ygsy0k")]]],
+  ["R15",0,"Judgment Day 2000: Iron Man match vs The Rock","",[["yt","Full match (WWE Vault)",Y("_VLhPF1Jx1c")],["yt","Iron Man match (WWE)",Y("yVQR9Cs6If8")]]],
+ ]],
+ ["Ch 7 · Torn", "2001–2002", [
+  ["R16",0,"Raw May 21, 2001: he tears his quad and finishes the match","I found no official WWE upload. Save it only if you find WWE's own video; otherwise skip (I use the San Jose arena photo).",[]],
+  ["R17",1,"The return at Madison Square Garden, Raw Jan 7 2002","The entrance and the crowd.",[["yt","Full segment (WWE Vault)",Y("hhc3Sk_G3Lk")],["yt","Triumphant return (WWE)",Y("VSDbTDX4snI")]]],
+  ["R18",1,"Royal Rumble 2002 win and WrestleMania X8 vs Jericho","Two clips: R18a, R18b.",[["yt","His return in the 2002 Rumble (WWE)",Y("oo-CPRWYi5M")],["yt","Full match vs Jericho, WM X8 (WWE Vault)",Y("42EIVy6zjKs")]]],
+ ]],
+ ["Ch 8 · Evolution", "2002–2005", [
+  ["R20",1,"SummerSlam 2002 street fight vs Shawn Michaels","",[["yt","Full match (WWE)",Y("jphS4xGOBFQ")],["yt","HBK's rebirth at SummerSlam 2002 (WWE Vault)",Y("YqEqmb17RvQ")]]],
+  ["R19",0,"Eric Bischoff hands him the World Heavyweight title, Sept 2 2002","",[["yt","Bischoff awards the title (WWE)",Y("UBfxm82M6uo")]]],
+  ["R21",1,"Evolution: Triple H, Flair, Orton, Batista","",[["yt","The rise of Evolution (WWE Vault)",Y("Cp08lHFSSlo")],["yt","The night Evolution won all the titles (WWE)",Y("l5m5FJdglNo")]]],
+  ["R23",0,"Blade: Trinity (2004)","Official studio clip.",[["yt","Blade: Trinity clip (Warner Bros.)",Y("zbq5nsJbgw0")]]],
+  ["R22",1,"WrestleMania 21 vs Batista","Batista winning the title.",[["yt","Full match (WWE Vault)",Y("7CGY8GCY488")]]],
+ ]],
+ ["Ch 9 · End of an era", "2006–2012", [
+  ["R24",0,"DX reunion, Raw June 12 2006","",[["yt","HBK & HHH reform DX (WWE)",Y("Xql2M677lzU")],["yt","DX reunite in 2006 (WWE)",Y("-pTUvgSb02U")]]],
+  ["R25",0,"WrestleMania 25 vs Randy Orton","",[["yt","Full match (WWE)",Y("9IWDFt7ssdc")],["yt","Orton sledgehammer moment (WWE)",Y("qWsYfkst2hs")]]],
+  ["R26",1,"WrestleMania 27 and 28 vs The Undertaker","End of an Era Hell in a Cell, HBK as referee, the three walking out together.",[["yt","Full match, WM 28 (WWE Vault)",Y("UTEY64n1cW0")],["yt","Their WrestleMania matches (WWE)",Y("lMXrMFqkmfw")]]],
+ ]],
+ ["Ch 10 · The architect", "2012–2016", [
+  ["R27",1,"NXT and the Performance Center","Him at the opening, NXT TakeOver crowds.",[["yt","Performance Center opening press conference (WWE)",Y("hTfVC11MQ-0")],["ph","The Performance Center opens (WWE.com)","https://www.wwe.com/inside/overtheropes/wwe-performance-center-opens"],["yt","Triple H opens NXT TakeOver: Brooklyn (WWE)",Y("yMG9r32zBW4")]]],
+  ["R28",1,"The Authority and WrestleMania 30 vs Daniel Bryan","",[["yt","Full match, WM 30 (WWE)",Y("Dq3EJB4Nc1g")],["yt","The Authority, Raw Nov 25 2013 (WWE)",Y("YVlI5kL0GZg")]]],
+  ["R29",1,"WrestleMania 31: Terminator entrance and the win over Sting","",[["yt","Full match (WWE)",Y("_T2pXKLccCc")],["yt","Behind the Terminator entrance (WWE)",Y("_v6qGfZj14k")],["ph","WM 31 entrance photo (free licence)",W("a/ae/Triple_H_WrestleMania_31_entrance.jpg")]]],
+  ["R30",1,"Royal Rumble 2016: enters at No. 30 and wins the title","",[["yt","Triple H wins the 2016 Rumble (WWE)",Y("qAhY_A7TnP8")],["yt","Wins the WWE title in the Rumble (WWE)",Y("j6d4I9VIOmc")]]],
+ ]],
+ ["Ch 11 · The last bell", "2018–2022", [
+  ["R31",0,"WrestleMania 35 vs Batista","",[["yt","Full match (WWE)",Y("ea4f_TKiOSM")],["yt","Same match (WWE Vault)",Y("yO8kNUJtDOc")]]],
+  ["R32",1,"Hall of Fame 2019: D-Generation X","",[["yt","DX's Hall of Fame speech (WWE)",Y("0Et-X5zu0c0")],["yt","DX celebrates Chyna (WWE)",Y("9R23Riaod6g")]]],
+  ["R33",1,"ESPN First Take, March 25 2022: “I will never wrestle again”","The photo or video in the ESPN article.",[["ph","Triple H announces his retirement (ESPN.com)","https://www.espn.com/wwe/story/_/id/33594137/wwe-star-triple-h-announces-retirement-ring-action-heart-surgery"]]],
+  ["R02",1,"WrestleMania 38: he leaves his boots in the ring","Also used near the start.",[["yt","Triple H leaves his boots in the ring (WWE)",Y("WLIOuYrGa7w")],["ph","Photos (WWE.com)","https://www.wwe.com/shows/wrestlemania/wrestlemania-38/wrestlemania-sunday/article/triple-h-addresses-the-wwe-universe"]]],
+ ]],
+ ["Ch 12 · The boss", "2022–2026", [
+  ["R34",1,"Running WWE: Raw's Netflix premiere, Jan 6 2025","",[["yt","Triple H kicks off the Raw on Netflix era (WWE)",Y("eKgNUqYSuL0")],["yt","At the Raw on Netflix Kickoff (WWE)",Y("7vu0aOy7Q-A")],["ph","He replaces Vince McMahon as head of creative (ESPN.com)","https://www.espn.com/wwe/story/_/id/34293405/paul-triple-h-levesque-replaces-vince-mcmahon-wwe-head-creative-direction"]]],
+  ["R35",1,"Hall of Fame 2025: inducted by Shawn Michaels","",[["yt","HBK inducts Triple H (WWE)",Y("fOhztzneuCo")],["yt","Triple H surprised with the honour (WWE)",Y("e1AIW51vBgE")]]],
+  ["R36",1,"WrestleMania 43 in Riyadh announcement, Sept 2025","",[["yt","Triple H & Turki Alalshikh announce WM 43 (WWE)",Y("ZjtX-ykaRV4")],["yt","Full announcement (WWE)",Y("SPInrw5DKs4")]]],
+  ["R59",1,"Best moments for the final montage","Any 3–4 big moments.",[["yt","Triple H's 25 greatest moments (WWE)",Y("9PT5_m1kJWE")],["yt","The Game's greatest moments (WWE)",Y("bLjI3AQ39Ik")],["yt","Most memorable segments (WWE)",Y("LbDuFI-nyWw")],["ph","WWE Champion, 2007 (free licence)",W("d/da/Triple_H_WWE_Champion_No_Mercy_07.jpg")],["ph","With Chyna, 1999 (free licence)",W("2/26/Chyna_and_Triple_H.jpg")]]],
+  ["R60",1,"One sharp close-up photo of his face for the thumbnail","Highest quality you can find.",[["ph","April 2024 portrait (free licence)",W("5/54/Triple_H%2C_April_2024.jpg")],["ph","November 2017 (free licence)",W("f/fd/Triple_H_November_2017.jpg")],["ph","April 2016 (free licence)",W("7/74/Triple_H_in_April_2016.jpg")]]],
+ ]],
+];
+let done = {};
+try { done = JSON.parse(localStorage.getItem("tripleHShots") || "{}"); } catch (e) {}
+let mustOnly = false;
+function save(){ try { localStorage.setItem("tripleHShots", JSON.stringify(done)); } catch (e) {} }
+function render(){
+  const L = document.getElementById("list"); L.innerHTML = "";
+  let tot = 0, ok = 0;
+  for (const [ch, yrs, slots] of S){
+    const vis = slots.filter(s => !mustOnly || s[1]);
+    if (!vis.length) continue;
+    const h = document.createElement("h2"); h.innerHTML = `<span>${yrs}</span>${ch}`; L.appendChild(h);
+    for (const [code, must, what, tip, links] of vis){
+      tot++; if (done[code]) ok++;
+      const d = document.createElement("div"); d.className = "slot" + (done[code] ? " done" : "");
+      const lk = links.map(([t, n, u]) => `<a class="${t}" href="${u}" target="_blank" rel="noopener">${n}</a>`).join("");
+      d.innerHTML = `<input type="checkbox" class="chk" id="chk-${code}" ${done[code]?"checked":""} aria-label="${code} saved">
+        <div class="top"><span class="code">${code}</span>${must?'<span class="must">★ must-have</span>':'<span class="opt">optional</span>'}<span class="what">${what}</span></div>
+        <div class="tip">${tip ? tip + " " : ""}Save as <b>${code}</b>.</div>
+        <div class="links">${lk || '<span class="tip">No official link found yet.</span>'}</div>`;
+      d.querySelector("input").addEventListener("change", e => { done[code] = e.target.checked; save(); render(); });
+      L.appendChild(d);
+    }
+  }
+  document.getElementById("ct").textContent = `${ok} / ${tot} saved`;
+  document.getElementById("pg").style.width = (tot ? ok / tot * 100 : 0) + "%";
+}
+document.getElementById("fm").addEventListener("click", e => { mustOnly = !mustOnly; e.target.classList.toggle("on", mustOnly); render(); });
+render();
+</script>
