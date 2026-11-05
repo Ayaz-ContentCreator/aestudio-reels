@@ -67,11 +67,20 @@
    "at": "They range from"
   },
   {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/CAMPUS_-_Military_Data_Center_%2852106762896%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Here's why it"
+  },
+  {
    "type": "video",
    "src": "https://www.ktvu.com/video/fmc-yl4kdv1ma8rie6ck",
    "in": 10,
    "credit": "KTVU FOX 2",
-   "at": "Here's why it"
+   "at": "Many residents worry"
   },
   {
    "type": "card",
