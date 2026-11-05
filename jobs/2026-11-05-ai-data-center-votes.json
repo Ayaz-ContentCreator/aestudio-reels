@@ -1,0 +1,146 @@
+{
+ "id": "2026-11-05-ai-data-center-votes",
+ "voice": {
+  "tts": "kokoro",
+  "voice": "af_bella",
+  "speed": 1.05
+ },
+ "script": "A I data centers were on forty-five local ballots Tuesday. Thirty-three measures to limit them passed, Engadget and Tom's Hardware reported. They range from outright bans to pauses and energy caps. Here's why it matters to you. Many residents worry data centers will push up their power bills. Wall Street noticed. On Wednesday, the Nasdaq fell three percent as investors sold tech stocks. The Associated Press says traders fear data center pauses in some areas. Some towns now want a public vote before one gets built. What would make you accept a data center near your home? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "forty-five",
+   "text": "45",
+   "em": true
+  },
+  {
+   "match": "Thirty-three",
+   "text": "33",
+   "em": true
+  },
+  {
+   "match": "three percent",
+   "text": "3%",
+   "em": true
+  },
+  {
+   "match": "A I",
+   "text": "AI"
+  }
+ ],
+ "emphasis": [
+  "ballots",
+  "bans",
+  "power bills",
+  "Nasdaq",
+  "public vote"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://www.ktvu.com/video/fmc-yl4kdv1ma8rie6ck",
+   "in": 6,
+   "credit": "KTVU FOX 2",
+   "zoom": [
+    1.0,
+    1.1
+   ]
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "Thirty-three measures",
+   "kicker": "Limits passed",
+   "value": 33,
+   "sub": "of 45 local data center votes"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/A_voter_leaves_polling_place%2C_Cohasset_City_Hall%2C_Minnesota_on_Election_Day%2C_Nov._5%2C_2024.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "They range from"
+  },
+  {
+   "type": "video",
+   "src": "https://www.ktvu.com/video/fmc-yl4kdv1ma8rie6ck",
+   "in": 10,
+   "credit": "KTVU FOX 2",
+   "at": "Here's why it"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "Wall Street noticed",
+   "kicker": "Wednesday",
+   "text": "Nasdaq *down 3%*",
+   "sub": "as investors sold tech stocks"
+  },
+  {
+   "type": "video",
+   "src": "https://www.ktvu.com/video/fmc-yl4kdv1ma8rie6ck",
+   "in": 20,
+   "credit": "KTVU FOX 2",
+   "at": "The Associated Press"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Data_centers_in_Ashburn.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Some towns now"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "What would make",
+   "kicker": "Your take",
+   "text": "What would make you accept a data center *nearby*?",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "local ballots Tuesday",
+   "kicker": "AI · Data centers",
+   "text": "AI data centers *on the ballot*"
+  },
+  {
+   "style": "label",
+   "at": "They range from",
+   "dur": 3.3,
+   "kicker": "The rules",
+   "text": "Bans, pauses, *energy caps*"
+  },
+  {
+   "style": "label",
+   "at": "Many residents worry",
+   "dur": 3.3,
+   "kicker": "Voters' worry",
+   "text": "Higher *power bills*"
+  },
+  {
+   "style": "label",
+   "at": "The Associated Press",
+   "dur": 3.3,
+   "kicker": "AP",
+   "text": "Traders fear *data center pauses*"
+  },
+  {
+   "style": "label",
+   "at": "Some towns now",
+   "dur": 3.3,
+   "kicker": "What's next",
+   "text": "A *public vote* first"
+  }
+ ]
+}
