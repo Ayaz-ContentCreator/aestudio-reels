@@ -1,0 +1,8 @@
+{"id": "find-2026-11-05-datacenters", "find": [
+  {"probe": "https://www.foxnews.com/video/6403766542112", "in": 0, "sheet": true},
+  {"probe": "https://www.ktvu.com/video/fmc-yl4kdv1ma8rie6ck", "in": 0, "sheet": true},
+  {"probe": "https://www.ktvu.com/video/fmc-v24zergd2eg0z93r", "in": 0, "sheet": true},
+  {"probe": "https://www.wcpo.com/videos/news/local-news/tri-state-vote-on-data-center-ban-depends-on-ohio-supreme-court-decision", "in": 0, "sheet": true},
+  {"commons": "data center Loudoun", "kind": "image"},
+  {"commons": "data center construction", "kind": "image"},
+  {"commons": "polling station voters 2024 United States", "kind": "image"}]}
