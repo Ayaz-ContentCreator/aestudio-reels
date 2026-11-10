@@ -1,35 +1,180 @@
 {
  "id": "2026-11-10-anthropic-ipo-price",
- "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
- "script": "Anthropic could be worth up to one point oh two trillion dollars. That's according to Reuters, based on a filing Tuesday. The Claude maker plans to sell shares at seventy to seventy-eight dollars each. At the top, that raises sixty-four point four billion dollars. Here's why investors are watching. Last week, the Financial Times reported a target of one point five trillion. But Wall Street has grown cautious about A I costs. So its Nasdaq debut is a test for the A I boom. Anthropic hasn't announced a trading date yet. What would you pay for one Anthropic share? Tell us below.",
- "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "voice": {
+  "tts": "kokoro",
+  "voice": "af_bella",
+  "speed": 1.05
+ },
+ "script": "Anthropic could be worth up to one point oh two trillion dollars. That's according to Reuters, based on a filing Tuesday. The Claude maker plans to sell shares at seventy to seventy-eight dollars each. At the top, that raises sixty-four point four billion dollars. Here's why investors are watching. Last week, the Financial Times reported a target of one point five trillion. But Wall Street has grown cautious about the cost of chips and data centers. So its Nasdaq debut is a test for the A I boom. Anthropic hasn't announced a trading date yet. What would you pay for one Anthropic share? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
  "display": [
-  {"match": "one point oh two trillion dollars", "text": "$1.02 trillion", "em": true},
-  {"match": "seventy to seventy-eight dollars", "text": "$70 to $78", "em": true},
-  {"match": "sixty-four point four billion dollars", "text": "$64.4 billion", "em": true},
-  {"match": "one point five trillion", "text": "$1.5 trillion"},
-  {"match": "A I", "text": "AI"}
+  {
+   "match": "one point oh two trillion dollars",
+   "text": "$1.02 trillion",
+   "em": true
+  },
+  {
+   "match": "seventy to seventy-eight dollars",
+   "text": "$70 to $78",
+   "em": true
+  },
+  {
+   "match": "sixty-four point four billion dollars",
+   "text": "$64.4 billion",
+   "em": true
+  },
+  {
+   "match": "one point five trillion",
+   "text": "$1.5 trillion"
+  },
+  {
+   "match": "A I",
+   "text": "AI"
+  }
  ],
- "emphasis": ["Reuters", "cautious", "Nasdaq", "test"],
+ "emphasis": [
+  "Reuters",
+  "cautious",
+  "Nasdaq",
+  "test"
+ ],
  "scenes": [
-  {"type": "video", "src": "https://www.cnbc.com/video/2026/11/07/anthropics-breakneck-rise-what-to-know-before-the-ipo.html", "in": 19.5, "credit": "CNBC"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg", "zoom": [1.0, 1.12], "at": "That's according to"},
-  {"type": "video", "src": "https://www.cnbc.com/video/2026/11/07/anthropics-breakneck-rise-what-to-know-before-the-ipo.html", "in": 11.5, "credit": "CNBC", "at": "The Claude maker"},
-  {"type": "card", "card": "stat", "at": "At the top", "kicker": "The share sale", "value": 64.4, "decimals": 1, "prefix": "$", "suffix": "B", "sub": "raised at the top of the range"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Dario_Amodei_at_TechCrunch_Disrupt_2023_06.jpg", "zoom": [1.0, 1.12], "at": "Here's why investors"},
-  {"type": "video", "src": "https://www.cnbc.com/video/2026/11/09/countdown-to-anthropic-ipo.html", "in": 15.0, "credit": "CNBC", "at": "Last week, the"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/No_Known_Restrictions_Trading_Floor%2C_New_York_Stock_Exchange_%28Highsmith_LOC%29_%286718386525%29.jpg", "zoom": [1.0, 1.1], "at": "But Wall Street"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Dario_Amodei_at_TechCrunch_Disrupt_2023_08.jpg", "zoom": [1.0, 1.12], "at": "So its Nasdaq"},
-  {"type": "card", "card": "headline", "at": "Anthropic hasn't announced", "kicker": "Still open", "text": "No date *yet*", "sub": "trading date not announced"},
-  {"type": "card", "card": "end", "at": "What would you", "kicker": "Your take", "text": "What would you pay for one *share?*", "cta": "Tell us below ↓", "follow": "Follow for daily US & Europe news"}
+  {
+   "type": "video",
+   "src": "https://www.cnbc.com/video/2026/11/07/anthropics-breakneck-rise-what-to-know-before-the-ipo.html",
+   "in": 19.5,
+   "credit": "CNBC"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "at": "That's according to"
+  },
+  {
+   "type": "video",
+   "src": "https://www.cnbc.com/video/2026/11/07/anthropics-breakneck-rise-what-to-know-before-the-ipo.html",
+   "in": 11.5,
+   "credit": "CNBC",
+   "at": "The Claude maker"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "At the top",
+   "kicker": "The share sale",
+   "value": 64.4,
+   "decimals": 1,
+   "prefix": "$",
+   "suffix": "B",
+   "sub": "raised at the top of the range"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Dario_Amodei_at_TechCrunch_Disrupt_2023_06.jpg",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "at": "Here's why investors"
+  },
+  {
+   "type": "video",
+   "src": "https://www.cnbc.com/video/2026/11/09/countdown-to-anthropic-ipo.html",
+   "in": 16.5,
+   "credit": "CNBC",
+   "at": "Last week, the"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/No_Known_Restrictions_Trading_Floor%2C_New_York_Stock_Exchange_%28Highsmith_LOC%29_%286718386525%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "But Wall Street"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Dario_Amodei_at_TechCrunch_Disrupt_2023_08.jpg",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "at": "So its Nasdaq"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "Anthropic hasn't announced",
+   "kicker": "Still open",
+   "text": "No date *yet*",
+   "sub": "trading date not announced"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "What would you",
+   "kicker": "Your take",
+   "text": "What would you pay for one *share?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
  ],
  "titles": [
-  {"style": "hook", "until": "trillion dollars", "kicker": "AI · Anthropic", "text": "Anthropic eyes up to *$1.02 trillion*"},
-  {"style": "label", "at": "That's according to", "dur": 3.3, "kicker": "Reuters", "text": "Based on Tuesday's *filing*"},
-  {"style": "label", "at": "The Claude maker", "dur": 3.3, "kicker": "Price range", "text": "*$70 to $78* a share"},
-  {"style": "label", "at": "Here's why investors", "dur": 2.4, "kicker": "Why it matters", "text": "All eyes on *Anthropic*"},
-  {"style": "label", "at": "Last week, the", "dur": 3.3, "kicker": "Financial Times", "text": "Earlier target: *$1.5T*"},
-  {"style": "label", "at": "But Wall Street", "dur": 3.0, "kicker": "AI costs", "text": "Wall Street *cautious*"},
-  {"style": "label", "at": "So its Nasdaq", "dur": 3.3, "kicker": "Nasdaq", "text": "A test for the *AI boom*"}
+  {
+   "style": "hook",
+   "until": "trillion dollars",
+   "kicker": "AI · Anthropic",
+   "text": "Anthropic eyes up to *$1.02 trillion*"
+  },
+  {
+   "style": "label",
+   "at": "That's according to",
+   "dur": 3.3,
+   "kicker": "Reuters",
+   "text": "Based on Tuesday's *filing*"
+  },
+  {
+   "style": "label",
+   "at": "The Claude maker",
+   "dur": 3.3,
+   "kicker": "Price range",
+   "text": "*$70 to $78* a share"
+  },
+  {
+   "style": "label",
+   "at": "Here's why investors",
+   "dur": 2.4,
+   "kicker": "Why it matters",
+   "text": "All eyes on *Anthropic*"
+  },
+  {
+   "style": "label",
+   "at": "Last week, the",
+   "dur": 3.3,
+   "kicker": "Financial Times",
+   "text": "Earlier target: *$1.5T*"
+  },
+  {
+   "style": "label",
+   "at": "But Wall Street",
+   "dur": 3.0,
+   "kicker": "The costs",
+   "text": "Wall Street *cautious*"
+  },
+  {
+   "style": "label",
+   "at": "So its Nasdaq",
+   "dur": 3.3,
+   "kicker": "Nasdaq",
+   "text": "A test for the *AI boom*"
+  }
  ]
 }
