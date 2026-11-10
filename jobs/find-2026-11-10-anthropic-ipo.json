@@ -1,0 +1,8 @@
+{"id": "find-2026-11-10-anthropic-ipo", "find": [
+  {"probe": "https://www.cnbc.com/video/2026/11/09/countdown-to-anthropic-ipo.html", "in": 0, "sheet": true},
+  {"probe": "https://www.cnbc.com/video/2026/11/07/anthropics-breakneck-rise-what-to-know-before-the-ipo.html", "in": 0, "sheet": true},
+  {"probe": "https://www.nbcnews.com/video/ai-startup-anthropic-unveils-its-public-ipo-filing-for-the-first-time-272224837929", "in": 0, "sheet": true},
+  {"probe": "https://www.cnbc.com/video/2026/11/09/anthropics-ipo-is-the-next-big-test-for-tech-says-jim-cramer.html", "in": 0, "sheet": true},
+  {"commons": "Nasdaq MarketSite", "kind": "image"},
+  {"commons": "New York Stock Exchange trading floor", "kind": "image"}
+]}
