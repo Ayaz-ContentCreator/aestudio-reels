@@ -23,6 +23,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Network check (diagnostic only)
+        continue-on-error: true
+        timeout-minutes: 3
+        run: |
+          cat /etc/resolv.conf || true
+          for h in archive.ubuntu.com azure.archive.ubuntu.com security.ubuntu.com pypi.org files.pythonhosted.org github.com objects.githubusercontent.com upload.wikimedia.org; do
+            ip=$(getent hosts "$h" | awk '{print $1}' | head -1)
+            code=$(curl -s -o /dev/null -m 10 -w '%{http_code} %{time_total}s' "https://$h/" || echo "curl-fail")
+            echo "$h dns=${ip:-NONE} https=$code"
+          done
+          which ffmpeg || echo "ffmpeg not preinstalled"
       - name: Install tools
         run: |
           # Technical fix (11 Nov 2026): the runner's Azure apt mirror stopped resolving and apt hung for 30 min.
@@ -31,7 +42,7 @@ jobs:
             [ -f "$f" ] && sudo sed -i 's|mirror+file:/etc/apt/apt-mirrors.txt|http://archive.ubuntu.com/ubuntu/|g; s|http://azure.archive.ubuntu.com/ubuntu/|http://archive.ubuntu.com/ubuntu/|g' "$f"
           done
           APTOPT="-o Acquire::Retries=3 -o Acquire::http::Timeout=30"
-          sudo timeout 300 apt-get $APTOPT update -qq || true
+          sudo timeout 180 apt-get $APTOPT update || true
           sudo timeout 600 apt-get $APTOPT install -y -qq ffmpeg libraqm0 > /dev/null
           pip install --quiet pillow numpy faster-whisper "yt-dlp[default]" kokoro-onnx soundfile
           yt-dlp --version
