@@ -1,9 +1,40 @@
-{"id": "find-2026-11-11-ny-raise", "find": [
-  {"probe": "https://www.governor.ny.gov/news/video-audio-photos-rush-transcript-governor-hochul-declares-ny-will-lead-nation-ai-science-and", "in": 0, "sheet": true},
-  {"probe": "https://governor.ny.gov/news/b-roll-video-audio-photos-rush-transcript-governor-hochul-highlights-next-steps-nation-leading", "in": 0, "sheet": true},
-  {"probe": "https://www.governor.ny.gov/news/video-audio-photos-rush-transcript-ai-safety-governor-hochul-announces-next-steps-regulate", "in": 0, "sheet": true},
-  {"commons": "Kathy Hochul", "kind": "image"},
-  {"commons": "New York State Capitol Albany", "kind": "image"},
-  {"commons": "OpenAI headquarters San Francisco", "kind": "image"},
-  {"commons": "data center servers", "kind": "image"}
-]}
+{
+ "id": "find-2026-11-11-ny-raise",
+ "find": [
+  {
+   "probe": "https://www.governor.ny.gov/news/video-audio-photos-rush-transcript-governor-hochul-declares-ny-will-lead-nation-ai-science-and",
+   "in": 0,
+   "sheet": true
+  },
+  {
+   "probe": "https://governor.ny.gov/news/b-roll-video-audio-photos-rush-transcript-governor-hochul-highlights-next-steps-nation-leading",
+   "in": 0,
+   "sheet": true
+  },
+  {
+   "probe": "https://www.governor.ny.gov/news/video-audio-photos-rush-transcript-ai-safety-governor-hochul-announces-next-steps-regulate",
+   "in": 0,
+   "sheet": true
+  },
+  {
+   "commons": "Kathy Hochul",
+   "kind": "image"
+  },
+  {
+   "commons": "New York State Capitol Albany",
+   "kind": "image"
+  },
+  {
+   "commons": "OpenAI headquarters San Francisco",
+   "kind": "image"
+  },
+  {
+   "commons": "data center servers",
+   "kind": "image"
+  },
+  {
+   "commons": "Binghamton University",
+   "kind": "image"
+  }
+ ]
+}
