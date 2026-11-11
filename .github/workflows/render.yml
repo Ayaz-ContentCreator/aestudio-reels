@@ -25,8 +25,14 @@ jobs:
           fetch-depth: 0
       - name: Install tools
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg libraqm0 > /dev/null
+          # Technical fix (11 Nov 2026): the runner's Azure apt mirror stopped resolving and apt hung for 30 min.
+          # Use the main Ubuntu archive with timeouts/retries instead. Same packages, same output.
+          for f in /etc/apt/sources.list.d/ubuntu.sources /etc/apt/sources.list; do
+            [ -f "$f" ] && sudo sed -i 's|mirror+file:/etc/apt/apt-mirrors.txt|http://archive.ubuntu.com/ubuntu/|g; s|http://azure.archive.ubuntu.com/ubuntu/|http://archive.ubuntu.com/ubuntu/|g' "$f"
+          done
+          APTOPT="-o Acquire::Retries=3 -o Acquire::http::Timeout=30"
+          sudo timeout 300 apt-get $APTOPT update -qq || true
+          sudo timeout 600 apt-get $APTOPT install -y -qq ffmpeg libraqm0 > /dev/null
           pip install --quiet pillow numpy faster-whisper "yt-dlp[default]" kokoro-onnx soundfile
           yt-dlp --version
           ffmpeg -version | head -1
