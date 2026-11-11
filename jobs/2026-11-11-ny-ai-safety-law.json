@@ -1,0 +1,193 @@
+{
+ "id": "2026-11-11-ny-ai-safety-law",
+ "voice": {
+  "tts": "kokoro",
+  "voice": "af_bella",
+  "speed": 1.05
+ },
+ "script": "New York's A I law gives big labs seventy-two hours to report a critical safety incident. The state opened a sign-up portal Tuesday, TechCrunch reported. Companies with over five hundred million dollars in revenue must register by January first. That includes OpenAI and Anthropic. Here's what changes in January. Big labs must publish their safety plans. Fines can reach one million dollars, or three million for repeat violations. California allows fifteen days to report. New York allows three. Governor Kathy Hochul said New York won't simply take A I companies at their word. Who should check A I safety claims? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "seventy-two hours",
+   "text": "72 hours",
+   "em": true
+  },
+  {
+   "match": "five hundred million dollars",
+   "text": "$500 million",
+   "em": true
+  },
+  {
+   "match": "January first",
+   "text": "January 1"
+  },
+  {
+   "match": "one million dollars",
+   "text": "$1 million"
+  },
+  {
+   "match": "three million",
+   "text": "$3 million",
+   "em": true
+  },
+  {
+   "match": "fifteen days",
+   "text": "15 days"
+  },
+  {
+   "match": "New York allows three",
+   "text": "New York allows 3"
+  },
+  {
+   "match": "A I",
+   "text": "AI"
+  }
+ ],
+ "emphasis": [
+  "TechCrunch",
+  "OpenAI",
+  "Anthropic",
+  "safety",
+  "word"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Gov._Kathy_Hochul_speaks_during_the_Maimonides_Visit.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "credit": "MTA / CC BY 2.0 / Wikimedia Commons"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/NYSCapitolPanorama.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "credit": "Matt H. Wade / CC BY 3.0 / Wikimedia Commons",
+   "at": "The state opened"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Google_Data_Center%2C_Council_Bluffs_Iowa_%2849062863796%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Companies with over"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sam_Altman_speaking_at_TED_%28cropped%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "That includes OpenAI"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Dario_Amodei_at_TechCrunch_Disrupt_2023_06.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Here's what changes"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "Fines can reach",
+   "kicker": "Repeat violations",
+   "value": 3,
+   "prefix": "$",
+   "suffix": "M",
+   "sub": "maximum fine · $1M for a first violation"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Data_centers_in_Ashburn.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "California allows fifteen"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Kathy_Hochul_February_2024.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "credit": "MTA / CC BY 2.0 / Wikimedia Commons",
+   "at": "Governor Kathy Hochul"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Who should check",
+   "kicker": "Your take",
+   "text": "Who should check AI *safety* claims?",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "critical safety incident",
+   "kicker": "AI · New York law",
+   "text": "*72 hours* to report AI incidents"
+  },
+  {
+   "style": "label",
+   "at": "The state opened",
+   "dur": 3.3,
+   "kicker": "TechCrunch",
+   "text": "Sign-up portal opened *Tuesday*"
+  },
+  {
+   "style": "label",
+   "at": "Companies with over",
+   "dur": 3.3,
+   "kicker": "Who must register",
+   "text": "*$500M+* revenue, by Jan 1"
+  },
+  {
+   "style": "label",
+   "at": "That includes OpenAI",
+   "dur": 2.4,
+   "kicker": "Covered",
+   "text": "*OpenAI* and Anthropic"
+  },
+  {
+   "style": "label",
+   "at": "Here's what changes",
+   "dur": 3.3,
+   "kicker": "From January",
+   "text": "Safety plans go *public*"
+  },
+  {
+   "style": "label",
+   "at": "California allows fifteen",
+   "dur": 3.3,
+   "kicker": "Report deadline",
+   "text": "California 15 days, NY *3*"
+  },
+  {
+   "style": "label",
+   "at": "Governor Kathy Hochul",
+   "dur": 3.3,
+   "kicker": "Gov. Kathy Hochul",
+   "text": "Not taking AI firms at their *word*"
+  }
+ ]
+}
