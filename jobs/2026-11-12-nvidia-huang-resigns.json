@@ -68,12 +68,13 @@
   },
   {
    "type": "photo",
-   "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Director_L%C3%AA_Nguy%E1%BB%85n_Thi%C3%AAn_Nga_and_NVIDIA_Founder_and_CEO_Jensen_Huang.jpg",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Jensen_Huang_Stanford_2026-04-30_010_%28cropped%29.jpg",
    "zoom": [
     1.0,
     1.1
    ],
-   "at": "It came days"
+   "at": "It came days",
+   "allow_sa": true
   },
   {
    "type": "card",
@@ -139,7 +140,7 @@
    "at": "Finance chief Colette",
    "dur": 3.3,
    "kicker": "Interim CEO",
-   "text": "*Colette Kress*, Nvidia's CFO"
+   "text": "*Colette Kress* takes over"
   },
   {
    "style": "label",
