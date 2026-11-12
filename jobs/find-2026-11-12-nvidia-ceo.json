@@ -1,0 +1,8 @@
+{"id": "find-2026-11-12-nvidia-ceo", "find": [
+  {"probe": "https://www.kptv.com/2026/11/09/nvidia-investigates-whether-ceo-jensen-huang-was-targeted-by-chinese-spy-with-whom-he-had-an-affair/", "in": 0, "sheet": true},
+  {"probe": "https://www.foxnews.com/video/6383072877112", "in": 0, "sheet": true},
+  {"commons": "Jensen Huang", "kind": "image"},
+  {"commons": "Colette Kress", "kind": "image"},
+  {"commons": "Nvidia headquarters Santa Clara", "kind": "image"},
+  {"commons": "Nvidia GPU data center", "kind": "image"}
+]}
