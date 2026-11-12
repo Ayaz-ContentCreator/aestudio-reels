@@ -1,0 +1,159 @@
+{
+ "id": "2026-11-12-nvidia-huang-resigns",
+ "voice": {
+  "tts": "kokoro",
+  "voice": "af_bella",
+  "speed": 1.05
+ },
+ "script": "Nvidia's Jensen Huang has resigned as C E O after thirty-three years. The A I chip maker said it's effective immediately. Finance chief Colette Kress is now interim C E O. It came days after Huang admitted an affair and the board opened an investigation. Nvidia gave no reason for his exit. Shares fell more than eleven percent before the opening bell, TechCrunch reported. Here's why it matters. Nvidia's chips run A I models. That includes Chat G P T. Next Tuesday, Nvidia reports earnings, its first without its co-founder. Who should lead Nvidia next? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "thirty-three years",
+   "text": "33 years",
+   "em": true
+  },
+  {
+   "match": "eleven percent",
+   "text": "11%",
+   "em": true
+  },
+  {
+   "match": "Chat G P T",
+   "text": "ChatGPT"
+  },
+  {
+   "match": "C E O",
+   "text": "CEO"
+  },
+  {
+   "match": "A I",
+   "text": "AI"
+  }
+ ],
+ "emphasis": [
+  "immediately",
+  "Colette Kress",
+  "TechCrunch",
+  "investigation",
+  "earnings"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://www.kptv.com/2026/11/09/nvidia-investigates-whether-ceo-jensen-huang-was-targeted-by-chinese-spy-with-whom-he-had-an-affair/",
+   "in": 11.5,
+   "credit": "CNN"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Nvidia_sign.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "The A I chip maker"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Colette_Kress.png",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Finance chief Colette"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Director_L%C3%AA_Nguy%E1%BB%85n_Thi%C3%AAn_Nga_and_NVIDIA_Founder_and_CEO_Jensen_Huang.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "It came days"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "Shares fell more",
+   "kicker": "Premarket Thursday",
+   "value": 11,
+   "prefix": "-",
+   "suffix": "%",
+   "sub": "Nvidia shares before the opening bell",
+   "source": "TechCrunch"
+  },
+  {
+   "type": "video",
+   "src": "https://www.kptv.com/2026/11/09/nvidia-investigates-whether-ceo-jensen-huang-was-targeted-by-chinese-spy-with-whom-he-had-an-affair/",
+   "in": 15.0,
+   "credit": "CNN",
+   "at": "Nvidia's chips run"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_024.png",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "That includes Chat"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "Next Tuesday, Nvidia",
+   "kicker": "Next test",
+   "text": "Earnings on *Tuesday*",
+   "sub": "Nov 17 · first report without Huang"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Who should lead",
+   "kicker": "Your take",
+   "text": "Who should *lead* Nvidia next?",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily US & Europe news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "after thirty-three years",
+   "kicker": "AI · Nvidia",
+   "text": "Jensen Huang *resigns* as CEO"
+  },
+  {
+   "style": "label",
+   "at": "The A I chip maker",
+   "dur": 3.0,
+   "kicker": "Nvidia filing",
+   "text": "Effective *immediately*"
+  },
+  {
+   "style": "label",
+   "at": "Finance chief Colette",
+   "dur": 3.3,
+   "kicker": "Interim CEO",
+   "text": "*Colette Kress*, Nvidia's CFO"
+  },
+  {
+   "style": "label",
+   "at": "It came days",
+   "dur": 3.3,
+   "kicker": "Board probe",
+   "text": "Investigation opened *Sunday*"
+  },
+  {
+   "style": "label",
+   "at": "Nvidia's chips run",
+   "dur": 2.2,
+   "kicker": "Why it matters",
+   "text": "Chips that run *AI models*"
+  }
+ ]
+}
