@@ -1,0 +1,151 @@
+{
+ "id": "2026-11-13-microsoft-outage",
+ "voice": {
+  "tts": "kokoro",
+  "voice": "af_bella",
+  "speed": 1.05
+ },
+ "script": "Microsoft's outage hit Outlook and Teams for over eighteen hours. Roughly one hundred thirty thousand users reported problems, the A P said. Governments in Japan and Singapore were hit too. Microsoft says it wasn't a cyberattack. But it hasn't named the cause. Service is now recovering, the company said. It's still clearing a backlog of delayed emails. Which app did you miss most? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "eighteen hours",
+   "text": "18 hours",
+   "em": true
+  },
+  {
+   "match": "one hundred thirty thousand",
+   "text": "130,000",
+   "em": true
+  },
+  {
+   "match": "A P",
+   "text": "AP"
+  }
+ ],
+ "emphasis": [
+  "Outlook",
+  "cyberattack",
+  "recovering",
+  "delayed",
+  "Singapore"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Microsoft_sign_closeup.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fit": "fill",
+   "focus": 0.5
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "Roughly one hundred",
+   "kicker": "Downdetector",
+   "value": 130000,
+   "sub": "users reported problems",
+   "source": "AP"
+  },
+  {
+   "type": "video",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Shibuya_crossing_time-lapse_2019-01-05.webm",
+   "in": 3,
+   "at": "Governments in Japan"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Data_centers_in_Ashburn.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Microsoft says it"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Microsoft_Teams_Web_View_2_React.png",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "But it hasn't"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/Microsoft_Outlook-Logo.wine.png",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Service is now"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Text_predictions_in_Microsoft_Outlook_-_Android_%28August_2020%29_01.png",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "It's still clearing"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Which app did",
+   "kicker": "Your take",
+   "text": "Which app did you *miss* most?",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily AI, tech & US news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "over eighteen hours",
+   "kicker": "Tech · Microsoft",
+   "text": "Outlook and Teams down *18+ hours*"
+  },
+  {
+   "style": "label",
+   "at": "Governments in Japan",
+   "dur": 2.8,
+   "kicker": "Worldwide",
+   "text": "Japan and *Singapore* hit"
+  },
+  {
+   "style": "label",
+   "at": "Microsoft says it",
+   "dur": 2.4,
+   "kicker": "Microsoft",
+   "text": "Not a *cyberattack*"
+  },
+  {
+   "style": "label",
+   "at": "But it hasn't",
+   "dur": 2.4,
+   "kicker": "Cause",
+   "text": "Not named *yet*"
+  },
+  {
+   "style": "label",
+   "at": "Service is now",
+   "dur": 2.6,
+   "kicker": "Status",
+   "text": "Service *recovering*"
+  },
+  {
+   "style": "label",
+   "at": "It's still clearing",
+   "dur": 2.8,
+   "kicker": "Email",
+   "text": "Backlog of *delayed emails*"
+  }
+ ]
+}
