@@ -1,0 +1,34 @@
+{
+ "id": "2026-11-14-ai-shopping-risky-sites",
+ "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "script": "A I chatbots sent shoppers to risky sites, a new test found. Podkey checked six thousand seven hundred ninety-five answers, The Verge reported. Perplexity included risky links in fifteen percent of them. Chat G P T was at eight percent, and Gemini at four percent. Smaller brands were hit hardest. Here's what it means before Black Friday. Podkey says check the source before entering card details. Which chatbot do you trust for shopping? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "display": [
+  {"match": "A I", "text": "AI"},
+  {"match": "Podkey", "text": "Podqi"},
+  {"match": "six thousand seven hundred ninety-five", "text": "6,795", "em": true},
+  {"match": "fifteen percent", "text": "15%", "em": true},
+  {"match": "Chat G P T", "text": "ChatGPT"},
+  {"match": "eight percent", "text": "8%", "em": true},
+  {"match": "four percent", "text": "4%", "em": true}
+ ],
+ "emphasis": ["risky", "Perplexity", "Gemini", "Black", "card"],
+ "scenes": [
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Woman_shops_online_with_a_small_shopping_cart_and_cash_in_a_modern_office_setting_during_the_afternoon.jpg", "zoom": [1.0, 1.1], "fit": "fill", "focus": 0.5},
+  {"type": "card", "card": "stat", "at": "Podkey checked", "kicker": "The test", "value": 6795, "sub": "AI answers checked", "source": "Podqi via The Verge"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Person_works_on_laptop_while_holding_smartphone_in_living_room.jpg", "zoom": [1.0, 1.1], "fit": "fill", "focus": 0.5, "at": "Perplexity included"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/ChatGPT.png", "zoom": [1.0, 1.1], "at": "Chat G P T was"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/CBP_Officers_Seize_Counterfeit_Goods_%2848536232982%29.jpg", "zoom": [1.0, 1.1], "fit": "fill", "focus": 0.5, "at": "Smaller brands"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Mini_shopping_cart_placed_on_a_table_next_to_a_laptop_in_a_modern_office_setting.jpg", "zoom": [1.0, 1.1], "fit": "fill", "focus": 0.5, "at": "Here's what"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Person_holding_a_smartphone_while_counting_cash_near_a_window_in_a_light_space.jpg", "zoom": [1.0, 1.1], "at": "Podkey says"},
+  {"type": "card", "card": "end", "at": "Which chatbot", "kicker": "Your take", "text": "Which chatbot do you *trust* for shopping?", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "test found", "kicker": "AI · Shopping", "text": "AI chatbots sent shoppers to *risky sites*"},
+  {"style": "label", "at": "Perplexity included", "dur": 2.8, "kicker": "Perplexity", "text": "*15%* of answers had risky links"},
+  {"style": "label", "at": "Chat G P T was", "dur": 2.8, "kicker": "ChatGPT · Gemini", "text": "*8%* and *4%*"},
+  {"style": "label", "at": "Smaller brands", "dur": 2.4, "kicker": "Most at risk", "text": "*Smaller* brands"},
+  {"style": "label", "at": "Here's what", "dur": 2.4, "kicker": "Shopping season", "text": "Before *Black Friday*"},
+  {"style": "label", "at": "Podkey says", "dur": 2.8, "kicker": "Tip", "text": "Check the site *before you pay*"}
+ ]
+}
