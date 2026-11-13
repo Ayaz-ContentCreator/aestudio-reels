@@ -147,5 +147,337 @@
    "kicker": "Email",
    "text": "Backlog of *delayed emails*"
   }
+ ],
+ "words": [
+  {
+   "text": "Microsoft's",
+   "start": 0.0,
+   "end": 0.72
+  },
+  {
+   "text": "outage",
+   "start": 0.72,
+   "end": 1.02
+  },
+  {
+   "text": "hit",
+   "start": 1.02,
+   "end": 1.34
+  },
+  {
+   "text": "Outlook",
+   "start": 1.34,
+   "end": 1.62
+  },
+  {
+   "text": "and",
+   "start": 1.62,
+   "end": 1.86
+  },
+  {
+   "text": "Teams",
+   "start": 1.86,
+   "end": 2.18
+  },
+  {
+   "text": "for",
+   "start": 2.18,
+   "end": 2.46
+  },
+  {
+   "text": "over",
+   "start": 2.46,
+   "end": 2.64
+  },
+  {
+   "text": "eighteen",
+   "start": 2.64,
+   "end": 2.98
+  },
+  {
+   "text": "hours.",
+   "start": 2.98,
+   "end": 3.4
+  },
+  {
+   "text": "Roughly",
+   "start": 4.08,
+   "end": 4.3
+  },
+  {
+   "text": "one",
+   "start": 4.3,
+   "end": 4.46
+  },
+  {
+   "text": "hundred",
+   "start": 4.46,
+   "end": 4.92
+  },
+  {
+   "text": "thirty",
+   "start": 4.92,
+   "end": 5.16
+  },
+  {
+   "text": "thousand",
+   "start": 5.16,
+   "end": 5.44
+  },
+  {
+   "text": "users",
+   "start": 5.44,
+   "end": 5.76
+  },
+  {
+   "text": "reported",
+   "start": 5.76,
+   "end": 6.2
+  },
+  {
+   "text": "problems,",
+   "start": 6.2,
+   "end": 6.8
+  },
+  {
+   "text": "the",
+   "start": 7.0,
+   "end": 7.08
+  },
+  {
+   "text": "A",
+   "start": 7.08,
+   "end": 7.18
+  },
+  {
+   "text": "P",
+   "start": 7.18,
+   "end": 7.28
+  },
+  {
+   "text": "said.",
+   "start": 7.28,
+   "end": 7.66
+  },
+  {
+   "text": "Governments",
+   "start": 8.26,
+   "end": 8.54
+  },
+  {
+   "text": "in",
+   "start": 8.54,
+   "end": 8.9
+  },
+  {
+   "text": "Japan",
+   "start": 8.9,
+   "end": 9.18
+  },
+  {
+   "text": "and",
+   "start": 9.18,
+   "end": 9.46
+  },
+  {
+   "text": "Singapore",
+   "start": 9.46,
+   "end": 9.82
+  },
+  {
+   "text": "were",
+   "start": 9.82,
+   "end": 10.14
+  },
+  {
+   "text": "hit",
+   "start": 10.14,
+   "end": 10.32
+  },
+  {
+   "text": "too.",
+   "start": 10.32,
+   "end": 10.62
+  },
+  {
+   "text": "Microsoft",
+   "start": 11.22,
+   "end": 11.62
+  },
+  {
+   "text": "says",
+   "start": 11.62,
+   "end": 11.92
+  },
+  {
+   "text": "it",
+   "start": 11.92,
+   "end": 12.08
+  },
+  {
+   "text": "wasn't",
+   "start": 12.08,
+   "end": 12.28
+  },
+  {
+   "text": "a",
+   "start": 12.28,
+   "end": 12.44
+  },
+  {
+   "text": "cyberattack.",
+   "start": 12.44,
+   "end": 13.02
+  },
+  {
+   "text": "But",
+   "start": 13.46,
+   "end": 13.66
+  },
+  {
+   "text": "it",
+   "start": 13.66,
+   "end": 13.76
+  },
+  {
+   "text": "hasn't",
+   "start": 13.76,
+   "end": 14.04
+  },
+  {
+   "text": "named",
+   "start": 14.04,
+   "end": 14.24
+  },
+  {
+   "text": "the",
+   "start": 14.24,
+   "end": 14.42
+  },
+  {
+   "text": "cause.",
+   "start": 14.42,
+   "end": 14.8
+  },
+  {
+   "text": "Service",
+   "start": 15.48,
+   "end": 15.7
+  },
+  {
+   "text": "is",
+   "start": 15.7,
+   "end": 15.94
+  },
+  {
+   "text": "now",
+   "start": 15.94,
+   "end": 16.18
+  },
+  {
+   "text": "recovering,",
+   "start": 16.18,
+   "end": 16.72
+  },
+  {
+   "text": "the",
+   "start": 16.88,
+   "end": 17.0
+  },
+  {
+   "text": "company",
+   "start": 17.0,
+   "end": 17.3
+  },
+  {
+   "text": "said.",
+   "start": 17.3,
+   "end": 17.7
+  },
+  {
+   "text": "It's",
+   "start": 18.1,
+   "end": 18.34
+  },
+  {
+   "text": "still",
+   "start": 18.34,
+   "end": 18.54
+  },
+  {
+   "text": "clearing",
+   "start": 18.54,
+   "end": 18.9
+  },
+  {
+   "text": "a",
+   "start": 18.9,
+   "end": 19.04
+  },
+  {
+   "text": "backlog",
+   "start": 19.04,
+   "end": 19.34
+  },
+  {
+   "text": "of",
+   "start": 19.34,
+   "end": 19.66
+  },
+  {
+   "text": "delayed",
+   "start": 19.66,
+   "end": 19.96
+  },
+  {
+   "text": "emails.",
+   "start": 19.96,
+   "end": 20.38
+  },
+  {
+   "text": "Which",
+   "start": 21.02,
+   "end": 21.16
+  },
+  {
+   "text": "app",
+   "start": 21.16,
+   "end": 21.36
+  },
+  {
+   "text": "did",
+   "start": 21.36,
+   "end": 21.52
+  },
+  {
+   "text": "you",
+   "start": 21.52,
+   "end": 21.64
+  },
+  {
+   "text": "miss",
+   "start": 21.64,
+   "end": 21.78
+  },
+  {
+   "text": "most?",
+   "start": 21.78,
+   "end": 22.16
+  },
+  {
+   "text": "Tell",
+   "start": 22.56,
+   "end": 22.7
+  },
+  {
+   "text": "us",
+   "start": 22.7,
+   "end": 22.9
+  },
+  {
+   "text": "below.",
+   "start": 22.9,
+   "end": 23.2
+  }
  ]
 }
