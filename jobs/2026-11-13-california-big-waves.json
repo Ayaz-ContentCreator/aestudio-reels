@@ -1,0 +1,31 @@
+{
+ "id": "2026-11-13-california-big-waves",
+ "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "script": "California's coast could see fifty-foot waves this weekend. The National Weather Service issued a high surf warning. Breaking waves could reach thirty-five feet. At Mavericks, some could hit fifty. But sneaker waves can also reach people on the beach. Here's what it means for you. Stay off rocks, jetties and piers. No selfie is worth your life, forecasters said. What's the biggest wave you've ever seen? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "display": [
+  {"match": "fifty-foot", "text": "50-foot", "em": true},
+  {"match": "thirty-five feet", "text": "35 feet", "em": true},
+  {"match": "hit fifty", "text": "hit 50", "em": true}
+ ],
+ "emphasis": ["Mavericks", "sneaker", "selfie", "warning"],
+ "scenes": [
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mavericks_Surf_Contest_2010.jpg", "zoom": [1.0, 1.1], "allow_sa": true},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ocean_and_waves_%28Unsplash%29.jpg", "zoom": [1.0, 1.1], "at": "The National Weather"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/d/d1/2010_mavericks_competition_edit1.jpg", "zoom": [1.0, 1.1], "at": "Breaking waves could", "allow_sa": true},
+  {"type": "card", "card": "stat", "at": "At Mavericks, some", "kicker": "Mavericks", "value": 50, "suffix": " ft", "sub": "occasional waves at the famous surf break", "source": "National Weather Service"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/California_Stormy_Weather_%28199096177%29.jpeg", "zoom": [1.0, 1.1], "at": "But sneaker waves"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/2006_Mavericks_sitting_precariously_on_the_cliff.jpg", "zoom": [1.0, 1.1], "at": "Here's what it means"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/4/43/Pier_Busters_%28199363717%29.jpeg", "zoom": [1.0, 1.1], "at": "Stay off rocks"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/2006_Mavericks.jpg", "zoom": [1.0, 1.1], "at": "No selfie is"},
+  {"type": "card", "card": "end", "at": "What's the biggest", "kicker": "Your take", "text": "What's the biggest *wave* you've ever seen?", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "waves this weekend", "kicker": "US · Weather", "text": "*50-foot* waves could hit California"},
+  {"style": "label", "at": "The National Weather", "dur": 2.8, "kicker": "NWS warning", "text": "High surf: *Fri 6 PM–Sun 4 AM*"},
+  {"style": "label", "at": "Breaking waves could", "dur": 2.4, "kicker": "Forecast", "text": "Breaking waves up to *35 ft*"},
+  {"style": "label", "at": "But sneaker waves", "dur": 2.8, "kicker": "Sneaker waves", "text": "Danger *on the beach* too"},
+  {"style": "label", "at": "Stay off rocks", "dur": 2.4, "kicker": "Stay away", "text": "Rocks, jetties and *piers*"},
+  {"style": "label", "at": "No selfie is", "dur": 2.8, "kicker": "NWS", "text": "No selfie is *worth your life*"}
+ ]
+}
