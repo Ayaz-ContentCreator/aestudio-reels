@@ -38,9 +38,9 @@
   {
    "type": "video",
    "src": "https://images-assets.nasa.gov/video/GSFC_20170526_ElNino_m12601_3D/GSFC_20170526_ElNino_m12601_3D~medium.mp4",
-   "in": 23.0,
+   "in": 26.0,
    "fit": "fill",
-   "focus": 0.55,
+   "focus": 0.75,
    "zoom": [
     1.0,
     1.1
@@ -94,7 +94,8 @@
     1.0,
     1.1
    ],
-   "at": "Southern California"
+   "at": "Southern California",
+   "credit": "GOES imagery: CSU/CIRA & NOAA (2024 file)"
   },
   {
    "type": "photo",
