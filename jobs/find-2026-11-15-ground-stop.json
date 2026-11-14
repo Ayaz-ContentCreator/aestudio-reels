@@ -1,0 +1,11 @@
+{"id": "find-2026-11-15-ground-stop", "find": [
+  {"commons": "airport departures board cancelled", "kind": "image"},
+  {"commons": "flight information display airport", "kind": "image"},
+  {"commons": "airport terminal travelers", "kind": "video"},
+  {"commons": "airplane taxiing airport", "kind": "video"},
+  {"commons": "Sean Duffy Secretary of Transportation", "kind": "image"},
+  {"commons": "air traffic control tower", "kind": "image"},
+  {"commons": "air traffic controllers radar room", "kind": "image"},
+  {"commons": "planes parked at gates airport", "kind": "image"},
+  {"probe": "https://foxweather.com/watch/play-6252f5efb0010ce", "in": 0, "sheet": true}
+]}
