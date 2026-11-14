@@ -1,0 +1,9 @@
+{"id": "find-2026-11-14-cybercab", "find": [
+  {"commons": "Tesla Cybercab", "kind": "image"},
+  {"commons": "Cybercab", "kind": "video"},
+  {"commons": "Tesla Robotaxi Austin", "kind": "image"},
+  {"commons": "Elon Musk", "kind": "image"},
+  {"probe": "https://www.fox5ny.com/video/fmc-t2qb4eahsp18ut35", "in": 0, "sheet": true},
+  {"probe": "https://foxla.com/video/1530710", "in": 0, "sheet": true},
+  {"probe": "https://www.fox7austin.com/video/1531130", "in": 0, "sheet": true}
+]}
