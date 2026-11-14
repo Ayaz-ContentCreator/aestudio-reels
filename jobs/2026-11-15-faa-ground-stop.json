@@ -1,0 +1,29 @@
+{
+ "id": "2026-11-15-faa-ground-stop",
+ "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "script": "A nationwide ground stop froze U.S. departures for over four hours. The F A A ordered it Friday, A B C News reported. Secretary Sean Duffy blamed old routers overloaded with data. Officials see no sign of a cyberattack. The F A A expected up to five thousand Saturday cancellations. If yours was canceled, airlines owe you a refund or free rebooking. What's your longest airport wait? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "display": [
+  {"match": "F A A", "text": "FAA"},
+  {"match": "A B C", "text": "ABC"},
+  {"match": "four hours", "text": "4 hours", "em": true},
+  {"match": "five thousand", "text": "5,000", "em": true}
+ ],
+ "emphasis": ["ground", "routers", "cyberattack", "refund", "rebooking"],
+ "scenes": [
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/America_250_flight_information_National_Airport_DCA_2026-09-12_12-28-02.jpg", "fit": "fill", "focus": 0.3, "zoom": [1.0, 1.1]},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/The_FAA_air_traffic_control_tower_at_Philadelphia_International_Airport.jpg", "zoom": [1.0, 1.1], "at": "The F A A ordered"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Secretary_of_Transportation_Sean_Duffy_Official_Portrait_%28cropped%29.jpg", "zoom": [1.0, 1.1], "at": "Secretary Sean"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Marine_Corps_Air_Facility%2C_Quantico%E2%80%99s_eye_in_the_sky_130731-M-NI439-178.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Officials see"},
+  {"type": "card", "card": "stat", "at": "The F A A expected", "kicker": "Saturday", "value": 5000, "prefix": "Up to ", "sub": "flight cancellations expected", "source": "FAA chief Bryan Bedford, via AP"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/American_Eagle_Embraer_170_N855RW_pushback_at_Boston_January_2026.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "If yours"},
+  {"type": "card", "card": "end", "at": "What's your", "kicker": "Your take", "text": "What's your longest airport *wait?*", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "four hours", "kicker": "US · Air travel", "text": "U.S. flights *frozen 4+ hours*"},
+  {"style": "label", "at": "The F A A ordered", "dur": 2.8, "kicker": "Friday", "text": "*FAA* halted departures"},
+  {"style": "label", "at": "Secretary Sean", "dur": 2.8, "kicker": "The cause", "text": "Old routers *overloaded*"},
+  {"style": "label", "at": "Officials see", "dur": 2.4, "kicker": "Not a hack", "text": "*No sign* of a cyberattack"},
+  {"style": "label", "at": "If yours", "dur": 2.8, "kicker": "Your rights", "text": "*Refund* or free rebooking"}
+ ]
+}
