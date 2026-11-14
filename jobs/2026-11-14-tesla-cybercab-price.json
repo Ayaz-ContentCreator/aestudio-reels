@@ -1,0 +1,30 @@
+{
+ "id": "2026-11-14-tesla-cybercab-price",
+ "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "script": "Tesla's Cybercab costs twenty-nine thousand, nine hundred ninety dollars. But it won't drive without a two hundred ninety-nine dollar monthly fee. Tesla invited select buyers on Friday, Electrek reported. It has no steering wheel and only drives in Robotaxi zones. Here's what it means for you. Five years of fees adds nearly eighteen thousand dollars. Elon Musk says that fee is too high. What monthly fee would you pay? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "display": [
+  {"match": "twenty-nine thousand, nine hundred ninety dollars", "text": "$29,990", "em": true},
+  {"match": "two hundred ninety-nine dollar", "text": "$299", "em": true},
+  {"match": "nearly eighteen thousand dollars", "text": "nearly $18,000", "em": true}
+ ],
+ "emphasis": ["Cybercab", "steering", "Robotaxi", "Musk", "high"],
+ "scenes": [
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Tesla_Cybercab_on_Interstate_280_near_Palo_Alto_dllu.jpg", "allow_sa": true, "zoom": [1.0, 1.1], "fit": "fill", "focus": 0.45},
+  {"type": "card", "card": "stat", "at": "But it won't", "kicker": "Required fee", "value": 299, "prefix": "$", "suffix": "/mo", "sub": "Autonomy Subscription to operate", "source": "Tesla order page via Electrek"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Tesla_Cybercab_001.jpg", "zoom": [1.0, 1.1], "fit": "fill", "focus": 0.5, "at": "Tesla invited"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Tesla_Cybercab_at_Santana_Row_interior_dllu.jpg", "allow_sa": true, "zoom": [1.0, 1.1], "fit": "fill", "focus": 0.5, "at": "It has no"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/Tesla_Cybercab_004.jpg", "zoom": [1.0, 1.1], "fit": "fill", "focus": 0.5, "at": "Here's what"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Tesla_Cybercab_005.jpg", "zoom": [1.0, 1.1], "fit": "fill", "focus": 0.5, "at": "Five years"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/Elon_Musk_Colorado_2022_%28cropped2%29.jpg", "zoom": [1.0, 1.1], "at": "Elon Musk says"},
+  {"type": "card", "card": "end", "at": "What monthly", "kicker": "Your take", "text": "What *monthly fee* would you pay?", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "ninety dollars", "kicker": "Tech · Tesla", "text": "Tesla's Cybercab costs *$29,990*"},
+  {"style": "label", "at": "Tesla invited", "dur": 2.8, "kicker": "Invite only", "text": "Orders open for *select buyers*"},
+  {"style": "label", "at": "It has no", "dur": 2.8, "kicker": "No wheel · no pedals", "text": "Only drives in *Robotaxi zones*"},
+  {"style": "label", "at": "Here's what", "dur": 2.4, "kicker": "For buyers", "text": "The *real* cost"},
+  {"style": "label", "at": "Five years", "dur": 2.8, "kicker": "5 years of fees", "text": "Nearly *$18,000* extra"},
+  {"style": "label", "at": "Elon Musk says", "dur": 2.8, "kicker": "Elon Musk", "text": "The fee is *too high*"}
+ ]
+}
