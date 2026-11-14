@@ -1,0 +1,156 @@
+{
+ "id": "2026-11-14-el-nino-record",
+ "voice": {
+  "tts": "kokoro",
+  "voice": "af_bella",
+  "speed": 1.05
+ },
+ "script": "El Niño could be the strongest since nineteen fifty. NOAA put the odds at sixty percent on Thursday. Pacific waters run four and a half degrees Fahrenheit above normal. Here's what it means for you. Much of the U.S. should run warmer this winter. Southern California could get more rain, but the Northwest less. Both coasts face higher flood risk. Rain, snow or sun where you live? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "sixty percent",
+   "text": "60%",
+   "em": true
+  },
+  {
+   "match": "nineteen fifty",
+   "text": "1950",
+   "em": true
+  },
+  {
+   "match": "four and a half degrees Fahrenheit",
+   "text": "4.5°F",
+   "em": true
+  }
+ ],
+ "emphasis": [
+  "El Niño",
+  "record",
+  "warmer",
+  "rain",
+  "flood"
+ ],
+ "scenes": [
+  {
+   "type": "video",
+   "src": "https://images-assets.nasa.gov/video/GSFC_20170526_ElNino_m12601_3D/GSFC_20170526_ElNino_m12601_3D~medium.mp4",
+   "in": 23.0,
+   "fit": "fill",
+   "focus": 0.55,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "credit": "NASA SVS · 2015 El Niño visualization"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "NOAA put",
+   "kicker": "Record odds",
+   "value": 60,
+   "suffix": "%",
+   "sub": "chance of a record El Niño",
+   "source": "NOAA Climate Prediction Center, Nov 12"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/2026%E2%80%9327_El_Ni%C3%B1o_capture_2026-11-10.png",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Pacific waters"
+  },
+  {
+   "type": "video",
+   "src": "https://images-assets.nasa.gov/video/GSFC_20170526_ElNino_m12601_3D/GSFC_20170526_ElNino_m12601_3D~medium.mp4",
+   "in": 63.0,
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "credit": "NASA SVS · 2015 El Niño visualization",
+   "at": "Here's what"
+  },
+  {
+   "type": "card",
+   "card": "headline",
+   "at": "Much of the",
+   "kicker": "NOAA winter outlook",
+   "text": "*Warmer* than normal",
+   "sub": "across much of the U.S."
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/71/Tropics_Fed_Atmospheric_River_Pounds_Southern_California_%28CIRA_2024-02-05%29.png",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Southern California"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Miami_tidal_flooding_with_rain_at_high_tide_during_king_tides_02.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fit": "fill",
+   "focus": 0.5,
+   "at": "Both coasts"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Rain, snow",
+   "kicker": "Your take",
+   "text": "Rain, snow or *sun* where you live?",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily AI, tech & US news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "nineteen fifty",
+   "kicker": "US · Weather",
+   "text": "El Niño could be the *strongest since 1950*"
+  },
+  {
+   "style": "label",
+   "at": "Pacific waters",
+   "dur": 2.8,
+   "kicker": "Pacific Ocean",
+   "text": "*+4.5°F* above normal"
+  },
+  {
+   "style": "label",
+   "at": "Here's what",
+   "dur": 2.2,
+   "kicker": "This winter",
+   "text": "What it means *for you*"
+  },
+  {
+   "style": "label",
+   "at": "Southern California",
+   "dur": 2.8,
+   "kicker": "Rain shift",
+   "text": "SoCal *wetter*, Northwest drier"
+  },
+  {
+   "style": "label",
+   "at": "Both coasts",
+   "dur": 2.4,
+   "kicker": "Coasts",
+   "text": "Higher *flood* risk"
+  }
+ ]
+}
