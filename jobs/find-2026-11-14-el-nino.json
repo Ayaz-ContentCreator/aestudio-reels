@@ -1,0 +1,11 @@
+{"id": "find-2026-11-14-el-nino", "find": [
+  {"nasa": "El Nino", "kind": "video"},
+  {"nasa": "El Nino sea surface", "kind": "image"},
+  {"commons": "El Niño sea surface temperature", "kind": "image"},
+  {"commons": "Pacific Ocean waves", "kind": "video"},
+  {"commons": "California storm rain flooding", "kind": "image"},
+  {"commons": "Atmospheric river California", "kind": "image"},
+  {"commons": "King tide flooding", "kind": "image"},
+  {"probe": "https://www.clickorlando.com/video/weather-news/2026/11/12/chances-grow-for-historic-el-nino/", "in": 0, "sheet": true},
+  {"probe": "https://www.fox9.com/video/fmc-njdov992x85md705", "in": 0, "sheet": true}
+]}
