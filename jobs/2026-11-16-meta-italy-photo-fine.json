@@ -9,7 +9,7 @@
  "emphasis": ["Meta", "Facebook", "default", "agreed", "photos"],
  "scenes": [
   {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Mark_Zuckerberg_F8_2018_Keynote_%28cropped%29.jpg",
-   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "credit": "FILE PHOTO: Meta CEO Mark Zuckerberg / Anthony Quintano / CC BY 2.0"},
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "credit": "FILE PHOTO: Anthony Quintano / CC BY 2.0"},
   {"type": "card", "card": "stat", "at": "The country's privacy", "kicker": "Italy · Privacy",
    "value": 805, "prefix": "€", "suffix": "M", "sub": "fine on Meta over Facebook photo access", "source": "Garante / Reuters"},
   {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/Facebook_App_on_Mobile_Phone_%2846848249812%29.jpg",
