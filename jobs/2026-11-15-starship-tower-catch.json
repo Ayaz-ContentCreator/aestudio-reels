@@ -1,29 +1,533 @@
 {
  "id": "2026-11-15-starship-tower-catch",
- "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "voice": {
+  "tts": "kokoro",
+  "voice": "af_bella",
+  "speed": 1.05
+ },
  "script": "SpaceX caught Starship after fourteen laps around Earth. It spent about twenty-two hours in orbit, the Associated Press reported. Then the tower's arms grabbed it in South Texas. It's a first for a ship back from orbit. But the Super Heavy booster missed its catch and exploded. Here's why it matters. SpaceX says Starship can be fully reused. NASA picked it to land astronauts on the Moon. Moon or Mars first? Tell us below.",
- "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
  "display": [
-  {"match": "fourteen", "text": "14", "em": true},
-  {"match": "twenty-two", "text": "22", "em": true}
+  {
+   "match": "fourteen",
+   "text": "14",
+   "em": true
+  },
+  {
+   "match": "twenty-two",
+   "text": "22",
+   "em": true
+  }
  ],
- "emphasis": ["Starship", "orbit", "exploded", "reused", "Moon"],
+ "emphasis": [
+  "Starship",
+  "orbit",
+  "exploded",
+  "reused",
+  "Moon"
+ ],
  "scenes": [
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/SpaceX_Starship_ignition_during_IFT-5.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "credit": "FILE PHOTO: Steve Jurvetson / CC BY 2.0"},
-  {"type": "card", "card": "stat", "at": "It spent about", "kicker": "Flight 15", "value": 22, "prefix": "About ", "suffix": " hours", "sub": "in orbit, 14 laps around Earth", "source": "AP"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Starship_Booster_Return_on_Final_Approach_%2854063904149%29.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Then the tower's", "credit": "FILE PHOTO: Steve Jurvetson / CC BY 2.0"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/SpaceX_Starship_before_IFT-5.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "It's a first", "credit": "FILE PHOTO: Steve Jurvetson / CC BY 2.0"},
-  {"type": "video", "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Starship_Sixth_Flight_Test_From_SpaceX_%28CIRA_2024-11-19_-_nolabels_portrait%29.webm", "in": 0, "at": "But the Super", "credit": "FILE: GOES imagery, CSU/CIRA & NOAA"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/SpaceX_Starbase_Launch_Site_Early_2026.jpg", "zoom": [1.0, 1.1], "at": "Here's why", "credit": "PHOTO: NOAA / Wikimedia Commons"},
-  {"type": "photo", "src": "https://images-assets.nasa.gov/image/11%2003%2024%20artemis%203%20on%20surface/11%2003%2024%20artemis%203%20on%20surface~large.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "NASA picked", "credit": "ILLUSTRATION: NASA"},
-  {"type": "card", "card": "end", "at": "Moon or Mars", "kicker": "Your take", "text": "*Moon* or Mars first?", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/SpaceX_Starship_ignition_during_IFT-5.jpg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "credit": "FILE PHOTO: Steve Jurvetson / CC BY 2.0"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "It spent about",
+   "kicker": "Flight 15",
+   "value": 22,
+   "prefix": "About ",
+   "suffix": " hours",
+   "sub": "in orbit, 14 laps around Earth",
+   "source": "AP"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Starship_Booster_Return_on_Final_Approach_%2854063904149%29.jpg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Then the tower's",
+   "credit": "FILE PHOTO: Steve Jurvetson / CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/SpaceX_Starship_before_IFT-5.jpg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "It's a first",
+   "credit": "FILE PHOTO: Steve Jurvetson / CC BY 2.0"
+  },
+  {
+   "type": "video",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Starship_Sixth_Flight_Test_From_SpaceX_%28CIRA_2024-11-19_-_nolabels_portrait%29.webm",
+   "in": 0,
+   "at": "But the Super",
+   "credit": "FILE: GOES imagery, CSU/CIRA & NOAA"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/SpaceX_Starbase_Launch_Site_Early_2026.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Here's why",
+   "credit": "PHOTO: NOAA / Wikimedia Commons"
+  },
+  {
+   "type": "photo",
+   "src": "https://images-assets.nasa.gov/image/11%2003%2024%20artemis%203%20on%20surface/11%2003%2024%20artemis%203%20on%20surface~large.jpg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "NASA picked",
+   "credit": "ILLUSTRATION: NASA"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Moon or Mars",
+   "kicker": "Your take",
+   "text": "*Moon* or Mars first?",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily AI, tech & US news"
+  }
  ],
  "titles": [
-  {"style": "hook", "until": "around Earth", "kicker": "Tech · SpaceX", "text": "Starship caught after *14 laps* of Earth"},
-  {"style": "label", "at": "Then the tower's", "dur": 2.8, "kicker": "South Texas", "text": "Tower arms *grabbed* the ship"},
-  {"style": "label", "at": "It's a first", "dur": 2.6, "kicker": "A first", "text": "Ship caught *back from orbit*"},
-  {"style": "label", "at": "But the Super", "dur": 2.8, "kicker": "The miss", "text": "Super Heavy booster *exploded*"},
-  {"style": "label", "at": "Here's why", "dur": 3.0, "kicker": "Why it matters", "text": "*Fully reusable*, SpaceX says"},
-  {"style": "label", "at": "NASA picked", "dur": 2.8, "kicker": "Artemis", "text": "NASA's pick for *Moon landings*"}
+  {
+   "style": "hook",
+   "until": "around Earth",
+   "kicker": "Tech · SpaceX",
+   "text": "Starship caught after *14 laps* of Earth"
+  },
+  {
+   "style": "label",
+   "at": "Then the tower's",
+   "dur": 2.8,
+   "kicker": "South Texas",
+   "text": "Tower arms *grabbed* the ship"
+  },
+  {
+   "style": "label",
+   "at": "It's a first",
+   "dur": 2.6,
+   "kicker": "A first",
+   "text": "Ship caught *back from orbit*"
+  },
+  {
+   "style": "label",
+   "at": "But the Super",
+   "dur": 2.8,
+   "kicker": "The miss",
+   "text": "Super Heavy booster *exploded*"
+  },
+  {
+   "style": "label",
+   "at": "Here's why",
+   "dur": 3.0,
+   "kicker": "Why it matters",
+   "text": "*Fully reusable*, SpaceX says"
+  },
+  {
+   "style": "label",
+   "at": "NASA picked",
+   "dur": 2.8,
+   "kicker": "Artemis",
+   "text": "NASA's pick for *Moon landings*"
+  }
+ ],
+ "words": [
+  {
+   "text": "SpaceX",
+   "start": 0.0,
+   "end": 0.42
+  },
+  {
+   "text": "caught",
+   "start": 0.42,
+   "end": 0.78
+  },
+  {
+   "text": "Starship",
+   "start": 0.78,
+   "end": 1.18
+  },
+  {
+   "text": "after",
+   "start": 1.18,
+   "end": 1.5
+  },
+  {
+   "text": "fourteen",
+   "start": 1.5,
+   "end": 1.9
+  },
+  {
+   "text": "laps",
+   "start": 1.9,
+   "end": 2.18
+  },
+  {
+   "text": "around",
+   "start": 2.18,
+   "end": 2.44
+  },
+  {
+   "text": "Earth.",
+   "start": 2.44,
+   "end": 2.74
+  },
+  {
+   "text": "It",
+   "start": 3.3,
+   "end": 3.38
+  },
+  {
+   "text": "spent",
+   "start": 3.38,
+   "end": 3.54
+  },
+  {
+   "text": "about",
+   "start": 3.54,
+   "end": 3.76
+  },
+  {
+   "text": "twenty-two",
+   "start": 3.76,
+   "end": 4.2
+  },
+  {
+   "text": "hours",
+   "start": 4.2,
+   "end": 4.52
+  },
+  {
+   "text": "in",
+   "start": 4.52,
+   "end": 4.72
+  },
+  {
+   "text": "orbit,",
+   "start": 4.72,
+   "end": 5.0
+  },
+  {
+   "text": "the",
+   "start": 5.2,
+   "end": 5.26
+  },
+  {
+   "text": "Associated",
+   "start": 5.26,
+   "end": 5.78
+  },
+  {
+   "text": "Press",
+   "start": 5.78,
+   "end": 6.16
+  },
+  {
+   "text": "reported.",
+   "start": 6.16,
+   "end": 6.64
+  },
+  {
+   "text": "Then",
+   "start": 7.22,
+   "end": 7.4
+  },
+  {
+   "text": "the",
+   "start": 7.4,
+   "end": 7.54
+  },
+  {
+   "text": "tower's",
+   "start": 7.54,
+   "end": 7.94
+  },
+  {
+   "text": "arms",
+   "start": 7.94,
+   "end": 8.18
+  },
+  {
+   "text": "grabbed",
+   "start": 8.18,
+   "end": 8.54
+  },
+  {
+   "text": "it",
+   "start": 8.54,
+   "end": 8.72
+  },
+  {
+   "text": "in",
+   "start": 8.72,
+   "end": 8.88
+  },
+  {
+   "text": "South",
+   "start": 8.88,
+   "end": 9.12
+  },
+  {
+   "text": "Texas.",
+   "start": 9.12,
+   "end": 9.56
+  },
+  {
+   "text": "It's",
+   "start": 10.16,
+   "end": 10.3
+  },
+  {
+   "text": "a",
+   "start": 10.3,
+   "end": 10.38
+  },
+  {
+   "text": "first",
+   "start": 10.38,
+   "end": 10.54
+  },
+  {
+   "text": "for",
+   "start": 10.54,
+   "end": 10.76
+  },
+  {
+   "text": "a",
+   "start": 10.76,
+   "end": 10.9
+  },
+  {
+   "text": "ship",
+   "start": 10.9,
+   "end": 11.04
+  },
+  {
+   "text": "back",
+   "start": 11.04,
+   "end": 11.34
+  },
+  {
+   "text": "from",
+   "start": 11.34,
+   "end": 11.56
+  },
+  {
+   "text": "orbit.",
+   "start": 11.56,
+   "end": 11.9
+  },
+  {
+   "text": "But",
+   "start": 12.38,
+   "end": 12.54
+  },
+  {
+   "text": "the",
+   "start": 12.54,
+   "end": 12.68
+  },
+  {
+   "text": "Super",
+   "start": 12.68,
+   "end": 12.94
+  },
+  {
+   "text": "Heavy",
+   "start": 12.94,
+   "end": 13.14
+  },
+  {
+   "text": "booster",
+   "start": 13.14,
+   "end": 13.6
+  },
+  {
+   "text": "missed",
+   "start": 13.6,
+   "end": 13.86
+  },
+  {
+   "text": "its",
+   "start": 13.86,
+   "end": 14.06
+  },
+  {
+   "text": "catch",
+   "start": 14.06,
+   "end": 14.32
+  },
+  {
+   "text": "and",
+   "start": 14.32,
+   "end": 14.52
+  },
+  {
+   "text": "exploded.",
+   "start": 14.52,
+   "end": 14.94
+  },
+  {
+   "text": "Here's",
+   "start": 15.58,
+   "end": 15.78
+  },
+  {
+   "text": "why",
+   "start": 15.78,
+   "end": 15.92
+  },
+  {
+   "text": "it",
+   "start": 15.92,
+   "end": 16.04
+  },
+  {
+   "text": "matters.",
+   "start": 16.04,
+   "end": 16.4
+  },
+  {
+   "text": "SpaceX",
+   "start": 17.0,
+   "end": 17.4
+  },
+  {
+   "text": "says",
+   "start": 17.4,
+   "end": 17.68
+  },
+  {
+   "text": "Starship",
+   "start": 17.68,
+   "end": 18.1
+  },
+  {
+   "text": "can",
+   "start": 18.1,
+   "end": 18.32
+  },
+  {
+   "text": "be",
+   "start": 18.32,
+   "end": 18.46
+  },
+  {
+   "text": "fully",
+   "start": 18.46,
+   "end": 18.68
+  },
+  {
+   "text": "reused.",
+   "start": 18.68,
+   "end": 19.18
+  },
+  {
+   "text": "NASA",
+   "start": 19.9,
+   "end": 20.06
+  },
+  {
+   "text": "picked",
+   "start": 20.06,
+   "end": 20.3
+  },
+  {
+   "text": "it",
+   "start": 20.3,
+   "end": 20.46
+  },
+  {
+   "text": "to",
+   "start": 20.46,
+   "end": 20.58
+  },
+  {
+   "text": "land",
+   "start": 20.58,
+   "end": 20.84
+  },
+  {
+   "text": "astronauts",
+   "start": 20.84,
+   "end": 21.38
+  },
+  {
+   "text": "on",
+   "start": 21.38,
+   "end": 21.7
+  },
+  {
+   "text": "the",
+   "start": 21.7,
+   "end": 21.8
+  },
+  {
+   "text": "Moon.",
+   "start": 21.8,
+   "end": 22.04
+  },
+  {
+   "text": "Moon",
+   "start": 22.48,
+   "end": 22.78
+  },
+  {
+   "text": "or",
+   "start": 22.78,
+   "end": 23.02
+  },
+  {
+   "text": "Mars",
+   "start": 23.02,
+   "end": 23.32
+  },
+  {
+   "text": "first?",
+   "start": 23.32,
+   "end": 23.74
+  },
+  {
+   "text": "Tell",
+   "start": 24.06,
+   "end": 24.26
+  },
+  {
+   "text": "us",
+   "start": 24.26,
+   "end": 24.46
+  },
+  {
+   "text": "below.",
+   "start": 24.46,
+   "end": 24.74
+  }
  ]
 }
