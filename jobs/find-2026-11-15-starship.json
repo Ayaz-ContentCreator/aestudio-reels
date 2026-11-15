@@ -1,0 +1,8 @@
+{"id": "find-2026-11-15-starship", "find": [
+  {"probe": "https://www.cnn.com/2026/11/14/science/video/watch-spacex-starship-nail-historic-ship-catch-digvid-vrtc", "in": 0, "sheet": true},
+  {"commons": "SpaceX Starship launch", "kind": "image"},
+  {"commons": "Starbase launch tower chopsticks", "kind": "image"},
+  {"commons": "Starship Super Heavy catch", "kind": "video"},
+  {"commons": "Starship flight test", "kind": "video"},
+  {"nasa": "Starship HLS", "kind": "image"}
+]}
