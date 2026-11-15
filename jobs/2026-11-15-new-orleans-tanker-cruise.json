@@ -17,7 +17,7 @@
   {"type": "card", "card": "stat", "at": "Thirty-two went", "kicker": "Injured", "value": 32, "sub": "people taken to hospitals", "source": "LCMC Health, via WDSU"},
   {"type": "video", "src": "https://www.dvidshub.net/video/1008603/sail250-new-orleans-security-operations", "in": 2, "credit": "U.S. Coast Guard / DVIDS (file)", "fit": "fill", "focus": 0.65, "at": "Investigators are"},
   {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/US_Navy_050207-C-3721C-393_A_boat_crew_assigned_to_Coast_Guard_Station_New_Orleans%2C_La.%2C_patrols_the_Mississippi_River_during_Lundi_Gras_festivities.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Here's the final"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Tanker_IVER_SPRING_on_Mississippi_River_in_New_Orleans.jpeg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Salvage could"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Comet_Tugboat_at_Mississippi_River%2C_New_Orleans%3B_September_2019.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Salvage could"},
   {"type": "card", "card": "end", "at": "Miracle or", "kicker": "Your take", "text": "Miracle or skilled crew: what *saved* them?", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
  ],
  "titles": [
@@ -26,6 +26,6 @@
   {"style": "label", "at": "The mayor said", "dur": 2.8, "kicker": "Mayor Moreno", "text": "*About 100* pulled from water"},
   {"style": "label", "at": "Investigators are", "dur": 2.8, "kicker": "The cause", "text": "Possible *steering* problem"},
   {"style": "label", "at": "Here's the final", "dur": 2.8, "kicker": "Final count", "text": "*Everyone* on board survived"},
-  {"style": "label", "at": "Salvage could", "dur": 1.8, "kicker": "Next", "text": "Salvage could take *weeks*"}
+  {"style": "label", "at": "Salvage could", "dur": 2.0, "kicker": "Next", "text": "Salvage could take *weeks*"}
  ]
 }
