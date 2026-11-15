@@ -1,0 +1,12 @@
+{"id": "find-2026-11-15-nola-collision", "find": [
+  {"probe": "https://www.foxnews.com/video/6408352941112", "in": 0, "sheet": true},
+  {"probe": "https://www.foxnews.com/video/6408350601112", "in": 0, "sheet": true},
+  {"probe": "https://www.foxnews.com/video/6408385523112", "in": 0, "sheet": true},
+  {"probe": "https://www.wdsu.com/article/new-orleans-cruise-ship-struck-tanker-river-video/74426522", "in": 0, "sheet": true},
+  {"commons": "American Heritage American Cruise Lines", "kind": "image"},
+  {"commons": "American Cruise Lines riverboat", "kind": "image"},
+  {"commons": "Mississippi River New Orleans ship", "kind": "image"},
+  {"commons": "tanker Mississippi River New Orleans", "kind": "image"},
+  {"commons": "Mississippi River New Orleans", "kind": "video"},
+  {"commons": "Coast Guard boat New Orleans", "kind": "image"}
+]}
