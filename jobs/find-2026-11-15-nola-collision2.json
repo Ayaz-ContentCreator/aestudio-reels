@@ -1,0 +1,9 @@
+{"id": "find-2026-11-15-nola-collision2", "find": [
+  {"probe": "https://www.foxnews.com/video/6408380635112", "in": 0, "sheet": true},
+  {"probe": "https://www.foxnews.com/video/6408365276112", "in": 0, "sheet": true},
+  {"probe": "https://www.foxnews.com/video/6408351758112", "in": 0, "sheet": true},
+  {"probe": "https://www.foxnews.com/video/6408357582112", "in": 0, "sheet": true},
+  {"probe": "https://www.dvidshub.net/video/1008603/sail250-new-orleans-security-operations", "in": 0, "sheet": true},
+  {"commons": "river cruise boat Mississippi", "kind": "image"},
+  {"commons": "paddlewheeler New Orleans riverfront", "kind": "image"}
+]}
