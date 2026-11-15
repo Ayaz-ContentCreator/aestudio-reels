@@ -1,0 +1,31 @@
+{
+ "id": "2026-11-15-new-orleans-tanker-cruise",
+ "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "script": "A tanker hit a New Orleans cruise ship, and it capsized. It happened Friday on the Mississippi, Fox News reported. The mayor said about one hundred people were pulled from the water. Thirty-two went to the hospital. Investigators are checking a possible steering problem on the tanker. Here's the final count. Everyone on board survived. Salvage could take weeks. Miracle or skilled crew: what saved them? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "display": [
+  {"match": "one hundred", "text": "100", "em": true},
+  {"match": "Thirty-two", "text": "32", "em": true}
+ ],
+ "emphasis": ["capsized", "steering", "survived", "weeks"],
+ "scenes": [
+  {"type": "video", "src": "https://www.foxnews.com/video/6408357582112", "in": 2, "credit": "Fox News", "fit": "fill", "focus": 0.55},
+  {"type": "video", "src": "https://www.foxnews.com/video/6408357582112", "in": 30, "credit": "Fox News", "fit": "fill", "focus": 0.3, "at": "and it capsized"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/CMA_CGM_ship_on_the_Mississippi_River%2C_New_Orleans_2023.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "It happened Friday"},
+  {"type": "video", "src": "https://www.foxnews.com/video/6408385523112", "in": 10, "credit": "Fox News", "fit": "fill", "focus": 0.45, "at": "The mayor said"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/b/b4/U.S._Coast_Guard_Station_New_Orleans_rescue_boats_at_the_ready.jpg", "zoom": [1.0, 1.1], "at": "pulled from the water"},
+  {"type": "card", "card": "stat", "at": "Thirty-two went", "kicker": "Injured", "value": 32, "sub": "people taken to hospitals", "source": "LCMC Health, via WDSU"},
+  {"type": "video", "src": "https://www.dvidshub.net/video/1008603/sail250-new-orleans-security-operations", "in": 2, "credit": "U.S. Coast Guard / DVIDS (file)", "fit": "fill", "focus": 0.65, "at": "Investigators are"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/US_Navy_050207-C-3721C-393_A_boat_crew_assigned_to_Coast_Guard_Station_New_Orleans%2C_La.%2C_patrols_the_Mississippi_River_during_Lundi_Gras_festivities.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Here's the final"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Tanker_IVER_SPRING_on_Mississippi_River_in_New_Orleans.jpeg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Salvage could"},
+  {"type": "card", "card": "end", "at": "Miracle or", "kicker": "Your take", "text": "Miracle or skilled crew: what *saved* them?", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "it capsized", "kicker": "US · New Orleans", "text": "Tanker hits cruise ship. *It capsized.*"},
+  {"style": "label", "at": "It happened Friday", "dur": 2.8, "kicker": "Friday", "text": "Mississippi River, *New Orleans*"},
+  {"style": "label", "at": "The mayor said", "dur": 2.8, "kicker": "Mayor Moreno", "text": "*About 100* pulled from water"},
+  {"style": "label", "at": "Investigators are", "dur": 2.8, "kicker": "The cause", "text": "Possible *steering* problem"},
+  {"style": "label", "at": "Here's the final", "dur": 2.8, "kicker": "Final count", "text": "*Everyone* on board survived"},
+  {"style": "label", "at": "Salvage could", "dur": 1.8, "kicker": "Next", "text": "Salvage could take *weeks*"}
+ ]
+}
