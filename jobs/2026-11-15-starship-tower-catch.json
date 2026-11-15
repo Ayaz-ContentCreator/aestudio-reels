@@ -67,8 +67,6 @@
   {
    "type": "photo",
    "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/SpaceX_Starship_before_IFT-5.jpg",
-   "fit": "fill",
-   "focus": 0.5,
    "zoom": [
     1.0,
     1.1
@@ -148,7 +146,7 @@
    "at": "Here's why",
    "dur": 3.0,
    "kicker": "Why it matters",
-   "text": "*Fully reusable*, SpaceX says"
+   "text": "*Fully reusable*, says SpaceX"
   },
   {
    "style": "label",
