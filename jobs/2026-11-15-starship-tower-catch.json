@@ -1,0 +1,29 @@
+{
+ "id": "2026-11-15-starship-tower-catch",
+ "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "script": "SpaceX caught Starship after fourteen laps around Earth. It spent about twenty-two hours in orbit, the Associated Press reported. Then the tower's arms grabbed it in South Texas. It's a first for a ship back from orbit. But the Super Heavy booster missed its catch and exploded. Here's why it matters. SpaceX says Starship can be fully reused. NASA picked it to land astronauts on the Moon. Moon or Mars first? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "display": [
+  {"match": "fourteen", "text": "14", "em": true},
+  {"match": "twenty-two", "text": "22", "em": true}
+ ],
+ "emphasis": ["Starship", "orbit", "exploded", "reused", "Moon"],
+ "scenes": [
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/SpaceX_Starship_ignition_during_IFT-5.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "credit": "FILE PHOTO: Steve Jurvetson / CC BY 2.0"},
+  {"type": "card", "card": "stat", "at": "It spent about", "kicker": "Flight 15", "value": 22, "prefix": "About ", "suffix": " hours", "sub": "in orbit, 14 laps around Earth", "source": "AP"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Starship_Booster_Return_on_Final_Approach_%2854063904149%29.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Then the tower's", "credit": "FILE PHOTO: Steve Jurvetson / CC BY 2.0"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/SpaceX_Starship_before_IFT-5.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "It's the first", "credit": "FILE PHOTO: Steve Jurvetson / CC BY 2.0"},
+  {"type": "video", "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Starship_Sixth_Flight_Test_From_SpaceX_%28CIRA_2024-11-19_-_nolabels_portrait%29.webm", "in": 0, "at": "But the Super", "credit": "FILE: GOES imagery, CSU/CIRA & NOAA"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/SpaceX_Starbase_Launch_Site_Early_2026.jpg", "zoom": [1.0, 1.1], "at": "Here's why", "credit": "PHOTO: NOAA / Wikimedia Commons"},
+  {"type": "photo", "src": "https://images-assets.nasa.gov/image/11%2003%2024%20artemis%203%20on%20surface/11%2003%2024%20artemis%203%20on%20surface~large.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "NASA picked", "credit": "ILLUSTRATION: NASA"},
+  {"type": "card", "card": "end", "at": "Moon or Mars", "kicker": "Your take", "text": "*Moon* or Mars first?", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "around Earth", "kicker": "Tech · SpaceX", "text": "Starship caught after *14 laps* of Earth"},
+  {"style": "label", "at": "Then the tower's", "dur": 2.8, "kicker": "South Texas", "text": "Tower arms *grabbed* the ship"},
+  {"style": "label", "at": "It's the first", "dur": 2.6, "kicker": "A first", "text": "Ship caught *back from orbit*"},
+  {"style": "label", "at": "But the Super", "dur": 2.8, "kicker": "The miss", "text": "Super Heavy booster *exploded*"},
+  {"style": "label", "at": "Here's why", "dur": 3.0, "kicker": "Why it matters", "text": "*Fully reusable*, SpaceX says"},
+  {"style": "label", "at": "NASA picked", "dur": 2.8, "kicker": "Artemis", "text": "NASA's pick for *Moon landings*"}
+ ]
+}
