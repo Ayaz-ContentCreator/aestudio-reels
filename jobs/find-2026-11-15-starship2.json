@@ -1,0 +1,7 @@
+{"id": "find-2026-11-15-starship2", "find": [
+  {"probe": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html", "in": 0, "sheet": true},
+  {"probe": "https://www.cnbc.com/2026/11/13/spacex-launches-starship-in-key-test-flight-of-massive-rocket.html", "in": 0, "sheet": true},
+  {"probe": "https://mblip.com/live-spacexs-starship-flight-15-plans-to-return-to-earth-after-space-launch-nbc-news/", "in": 0, "sheet": true},
+  {"commons": "Starship flight 15", "kind": "image"},
+  {"commons": "Starship Mechazilla", "kind": "image"}
+]}
