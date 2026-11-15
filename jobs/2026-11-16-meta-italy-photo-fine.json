@@ -1,0 +1,36 @@
+{
+ "id": "2026-11-16-meta-italy-photo-fine",
+ "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "script": "Italy fined Meta eight hundred five million euros over photos. The country's privacy watchdog ruled, Reuters reported. Facebook's Android app suggested photos from phone galleries. It was on by default. But regulators say users never clearly agreed. Here's what changes. Meta must ask first and keep it off by default. Meta says users can turn it off in settings. Which app do you trust least with photos? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "display": [
+  {"match": "eight hundred five million euros", "text": "€805 million", "em": true}
+ ],
+ "emphasis": ["Meta", "Facebook", "default", "agreed", "photos"],
+ "scenes": [
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Mark_Zuckerberg_F8_2018_Keynote_%28cropped%29.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "credit": "FILE PHOTO: Meta CEO Mark Zuckerberg / Anthony Quintano / CC BY 2.0"},
+  {"type": "card", "card": "stat", "at": "The country's privacy", "kicker": "Italy · Privacy",
+   "value": 805, "prefix": "€", "suffix": "M", "sub": "fine on Meta over Facebook photo access", "source": "Garante / Reuters"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/Facebook_App_on_Mobile_Phone_%2846848249812%29.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Facebook's Android app", "credit": "FILE PHOTO: Tony Webster / CC BY 2.0"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Black_smartphone_in_hand_%28Unsplash%29.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "It was on", "credit": "PHOTO: Dennis Cortés / Unsplash (CC0)"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Smartphone_photographer_%28Unsplash%29.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "But regulators say", "credit": "PHOTO: James Sutton / Unsplash (CC0)"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Meta_Platforms_Headquarters_Menlo_Park_California.jpg",
+   "zoom": [1.0, 1.1], "at": "Here's what changes", "credit": "PHOTO: LPS.1 / Wikimedia Commons (CC0)"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Facebook_app_icon_on_smartphone_screen_%28perspective_render%29_%2849896915791%29.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Meta says users", "credit": "IMAGE: Yuri Samoilov / CC BY 2.0"},
+  {"type": "card", "card": "end", "at": "Which app do", "kicker": "Your take",
+   "text": "Which app do you trust least with *photos?*", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "over photos", "kicker": "Tech · Meta", "text": "Italy fines Meta *€805M* over photos"},
+  {"style": "label", "at": "Facebook's Android app", "dur": 2.8, "kicker": "The feature", "text": "Gallery tips while *scrolling*"},
+  {"style": "label", "at": "It was on", "dur": 2.0, "kicker": "Android", "text": "Switched on *by default*"},
+  {"style": "label", "at": "But regulators say", "dur": 2.6, "kicker": "The ruling", "text": "No clear *consent*"},
+  {"style": "label", "at": "Here's what changes", "dur": 3.4, "kicker": "Within 60 days", "text": "Ask first, *off by default*"},
+  {"style": "label", "at": "Meta says users", "dur": 2.8, "kicker": "Meta's side", "text": "Users can *turn it off*"}
+ ]
+}
