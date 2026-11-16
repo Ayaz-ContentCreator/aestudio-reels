@@ -1,31 +1,170 @@
 {
  "id": "2026-11-16-vulcan-amazon-satellites",
- "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
- "script": "Amazon just lost forty internet satellites in one rocket failure. United Launch Alliance said its Vulcan rocket failed ten minutes into Sunday's flight. It's the company's first failed mission since two thousand six. Amazon Leo rivals Starlink, but has only around three hundred ninety satellites in orbit. Here's what it means for you. Amazon's satellite internet rollout could now face delays. Starlink, Amazon or cable: which would you pick? Tell us below.",
- "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "voice": {
+  "tts": "kokoro",
+  "voice": "af_bella",
+  "speed": 1.05
+ },
+ "script": "Amazon lost forty internet satellites in one rocket failure. United Launch Alliance said its Vulcan rocket failed ten minutes into Sunday's flight. It's the company's first failure since two thousand six. Amazon Leo is built to rival Starlink. But it has only around three hundred ninety satellites in orbit. Here's what it means. Amazon's satellite internet rollout could now face delays. Starlink, Amazon or cable: which would you pick? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
  "display": [
-  {"match": "forty", "text": "40", "em": true},
-  {"match": "ten", "text": "10", "em": true},
-  {"match": "two thousand six", "text": "2006", "em": true},
-  {"match": "three hundred ninety", "text": "390", "em": true}
+  {
+   "match": "forty",
+   "text": "40",
+   "em": true
+  },
+  {
+   "match": "ten",
+   "text": "10",
+   "em": true
+  },
+  {
+   "match": "two thousand six",
+   "text": "2006",
+   "em": true
+  },
+  {
+   "match": "three hundred ninety",
+   "text": "390",
+   "em": true
+  }
  ],
- "emphasis": ["Amazon", "failed", "Starlink", "delays"],
+ "emphasis": [
+  "Amazon",
+  "failed",
+  "Starlink",
+  "delays"
+ ],
  "scenes": [
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Vulcan_Cert_2_Launch_%288699035%29.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "credit": "FILE PHOTO: U.S. Space Force / Public domain"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/ULA%27s_Vulcan_VC2S_rocket_launch_%288192710%29.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "United Launch Alliance", "credit": "FILE PHOTO: U.S. Space Force / Public domain"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Vulcan_Centaur_rollout_%28Peregrine%29_%28cropped%29.jpg", "zoom": [1.0, 1.1], "at": "It's the company's", "credit": "FILE PHOTO: NASA / Ben Smegelsky"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Starlink_Satellites_Overhead.jpg", "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Amazon Leo rivals", "credit": "PHOTO: M. Lewinsky / CC BY 4.0"},
-  {"type": "card", "card": "stat", "at": "but has only", "kicker": "Amazon Leo", "value": 390, "prefix": "About ", "sub": "satellites in orbit so far", "source": "Engadget"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kuiper_3_Launches_from_Cape_Canaveral_Space_Force_Station_%289339797%29.jpg", "zoom": [1.0, 1.1], "at": "Here's what", "credit": "FILE PHOTO: 2025 Amazon launch, U.S. Space Force"},
-  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Kuiper_3_Launches_from_Cape_Canaveral_Space_Force_Station_%289339796%29.jpg", "zoom": [1.0, 1.1], "at": "Amazon's satellite", "credit": "FILE PHOTO: 2025 Amazon launch, U.S. Space Force"},
-  {"type": "card", "card": "end", "at": "Starlink, Amazon or", "kicker": "Your take", "text": "Starlink, Amazon or cable: which would you *pick?*", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Vulcan_Cert_2_Launch_%288699035%29.jpg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "credit": "FILE PHOTO: U.S. Space Force / Public domain"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/ULA%27s_Vulcan_VC2S_rocket_launch_%288192710%29.jpg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "United Launch Alliance",
+   "credit": "FILE PHOTO: U.S. Space Force / Public domain"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Vulcan_Centaur_rollout_%28Peregrine%29_%28cropped%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "It's the company's",
+   "credit": "FILE PHOTO: NASA / Ben Smegelsky"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Starlink_Satellites_Overhead.jpg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Amazon Leo is",
+   "credit": "PHOTO: M. Lewinsky / CC BY 4.0"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "But it has",
+   "kicker": "Amazon Leo",
+   "value": 390,
+   "prefix": "About ",
+   "sub": "satellites in orbit so far",
+   "source": "Engadget"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kuiper_3_Launches_from_Cape_Canaveral_Space_Force_Station_%289339797%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Here's what",
+   "credit": "FILE PHOTO: 2025 Amazon launch, U.S. Space Force"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Kuiper_3_Launches_from_Cape_Canaveral_Space_Force_Station_%289339796%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Amazon's satellite",
+   "credit": "FILE PHOTO: 2025 Amazon launch, U.S. Space Force"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Starlink, Amazon or",
+   "kicker": "Your take",
+   "text": "Starlink, Amazon or cable: which would you *pick?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily AI, tech & US news"
+  }
  ],
  "titles": [
-  {"style": "hook", "until": "rocket failure", "kicker": "Tech · Amazon", "text": "Amazon loses *40 satellites* in one launch"},
-  {"style": "label", "at": "United Launch Alliance", "dur": 2.8, "kicker": "Sunday · Florida", "text": "Vulcan failed *10 minutes* in"},
-  {"style": "label", "at": "It's the company's", "dur": 2.8, "kicker": "ULA", "text": "First failed mission *since 2006*"},
-  {"style": "label", "at": "Amazon Leo rivals", "dur": 2.0, "kicker": "The rival", "text": "Built to take on *Starlink*"},
-  {"style": "label", "at": "Here's what", "dur": 2.4, "kicker": "What it means", "text": "Amazon's next launches"},
-  {"style": "label", "at": "Amazon's satellite", "dur": 2.8, "kicker": "For you", "text": "Home internet rollout *could slip*"}
+  {
+   "style": "hook",
+   "until": "rocket failure",
+   "kicker": "Tech · Amazon",
+   "text": "Amazon loses *40 satellites* in one launch"
+  },
+  {
+   "style": "label",
+   "at": "United Launch Alliance",
+   "dur": 2.8,
+   "kicker": "Sunday · Florida",
+   "text": "Vulcan failed *10 minutes* in"
+  },
+  {
+   "style": "label",
+   "at": "It's the company's",
+   "dur": 2.8,
+   "kicker": "ULA",
+   "text": "First failure *since 2006*"
+  },
+  {
+   "style": "label",
+   "at": "Amazon Leo is",
+   "dur": 2.4,
+   "kicker": "The rival",
+   "text": "Built to take on *Starlink*"
+  },
+  {
+   "style": "label",
+   "at": "Here's what",
+   "dur": 1.6,
+   "kicker": "What it means",
+   "text": "Amazon's next launches"
+  },
+  {
+   "style": "label",
+   "at": "Amazon's satellite",
+   "dur": 2.8,
+   "kicker": "For you",
+   "text": "Home internet rollout *could slip*"
+  }
  ]
 }
