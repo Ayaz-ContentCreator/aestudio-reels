@@ -1,0 +1,37 @@
+{
+ "id": "2026-11-16-xi-trump-putin-summit",
+ "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "script": "Trump, Xi and Putin hold their first three-way summit Thursday. China confirmed it Monday, A F P reported. They'll meet in Shenzhen, at an Asia-Pacific summit. Here's what's at stake. Trump wants to talk about cutting nuclear arsenals. But China has long said America and Russia must cut theirs first. U S officials don't expect talks on Ukraine. What should they agree on first? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "display": [
+  {"match": "A F P", "text": "AFP"},
+  {"match": "U S", "text": "US"}
+ ],
+ "emphasis": ["Putin", "first", "Shenzhen", "nuclear", "Ukraine"],
+ "scenes": [
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/President_Donald_Trump_greets_Chinese_President_Xi_Jinping_before_a_bilateral_meeting_at_the_Gimhae_International_Airport_terminal_%2854890669668%29.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "credit": "FILE PHOTO: The White House (public domain)"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/2025_Xi_Jinping_%28cropped%29.jpg",
+   "zoom": [1.0, 1.1], "at": "China confirmed it", "credit": "FILE PHOTO: The White House (public domain)"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Shenzhen_Skyline_At_Night_%28214551663%29.jpeg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "They'll meet in", "credit": "PHOTO: Andreas Bunen / CC BY 3.0"},
+  {"type": "card", "card": "stat", "at": "Here's what's at", "kicker": "Thursday · Nov 19",
+   "value": 3, "sub": "leaders in their first three-way summit", "source": "China foreign ministry / AFP"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Trump%2C_Putin_Alaska_Arrival_%289260672%29.jpg",
+   "zoom": [1.0, 1.1], "at": "Trump wants to", "credit": "FILE PHOTO: Benjamin D. Applebaum / US DoD (public domain)"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vladimir_Putin_and_Xi_Jinping_%282025%29.jpg",
+   "zoom": [1.0, 1.1], "at": "But China has", "credit": "FILE PHOTO: Kremlin.ru / CC BY 4.0"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/2025_Russia%E2%80%93United_States_summit_with_Vladimir_Putin_in_Alaska_on_August_15%2C_2025.jpg",
+   "zoom": [1.0, 1.1], "at": "U S officials", "credit": "FILE PHOTO: The White House (public domain)"},
+  {"type": "card", "card": "end", "at": "What should they", "kicker": "Your take",
+   "text": "What should they agree on *first?*", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "summit Thursday", "kicker": "US · World", "text": "Trump, Xi, Putin: *first* three-way summit"},
+  {"style": "label", "at": "China confirmed it", "dur": 2.6, "kicker": "Beijing", "text": "China *confirms* Nov 19 meeting"},
+  {"style": "label", "at": "They'll meet in", "dur": 2.8, "kicker": "Shenzhen, China", "text": "On the sidelines of *APEC*"},
+  {"style": "label", "at": "Trump wants to", "dur": 2.6, "kicker": "Trump's goal", "text": "Cut *nuclear arsenals*"},
+  {"style": "label", "at": "But China has", "dur": 3.0, "kicker": "China's line", "text": "US and Russia *cut first*"},
+  {"style": "label", "at": "U S officials", "dur": 2.6, "kicker": "Off the agenda", "text": "*Ukraine* not expected"}
+ ]
+}
