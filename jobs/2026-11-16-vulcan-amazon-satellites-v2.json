@@ -1,0 +1,530 @@
+{
+ "id": "2026-11-16-vulcan-amazon-satellites-v2",
+ "voice": {
+  "url": "https://github.com/Ayaz-ContentCreator/aestudio-reels/releases/download/2026-11-16-vulcan-amazon-satellites/2026-11-16-vulcan-amazon-satellites-voice.mp3"
+ },
+ "script": "Amazon lost forty internet satellites in one rocket failure. United Launch Alliance said its Vulcan rocket failed ten minutes into Sunday's flight. It's the company's first failure since two thousand six. Amazon Leo is built to rival Starlink. But it has only around three hundred ninety satellites in orbit. Here's what it means. Amazon's satellite internet rollout could now face delays. Starlink, Amazon or cable: which would you pick? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "forty",
+   "text": "40",
+   "em": true
+  },
+  {
+   "match": "ten",
+   "text": "10",
+   "em": true
+  },
+  {
+   "match": "two thousand six",
+   "text": "2006",
+   "em": true
+  },
+  {
+   "match": "three hundred ninety",
+   "text": "390",
+   "em": true
+  }
+ ],
+ "emphasis": [
+  "Amazon",
+  "failed",
+  "Starlink",
+  "delays"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Vulcan_Cert_2_Launch_%288699035%29.jpg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "credit": "FILE PHOTO: U.S. Space Force / Public domain"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/ULA%27s_Vulcan_VC2S_rocket_launch_%288192710%29.jpg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "United Launch Alliance",
+   "credit": "FILE PHOTO: U.S. Space Force / Public domain"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Vulcan_Centaur_rollout_%28Peregrine%29_%28cropped%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "It's the company's",
+   "credit": "FILE PHOTO: NASA / Ben Smegelsky"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Starlink_Satellites_Overhead.jpg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Amazon Leo is",
+   "credit": "PHOTO: M. Lewinsky / CC BY 4.0"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "But it has",
+   "kicker": "Amazon Leo",
+   "value": 390,
+   "prefix": "About ",
+   "sub": "satellites in orbit so far",
+   "source": "Engadget"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kuiper_3_Launches_from_Cape_Canaveral_Space_Force_Station_%289339797%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Here's what",
+   "credit": "FILE PHOTO: 2025 Amazon launch, U.S. Space Force"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Kuiper_3_Launches_from_Cape_Canaveral_Space_Force_Station_%289339796%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Amazon's satellite",
+   "credit": "FILE PHOTO: 2025 Amazon launch, U.S. Space Force"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "Starlink, Amazon or",
+   "kicker": "Your take",
+   "text": "Starlink, Amazon or cable: which would you *pick?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily AI, tech & US news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "rocket failure",
+   "kicker": "Tech · Amazon",
+   "text": "Amazon loses *40 satellites* in one launch"
+  },
+  {
+   "style": "label",
+   "at": "United Launch Alliance",
+   "dur": 2.8,
+   "kicker": "Sunday · Florida",
+   "text": "Vulcan failed *10 minutes* in"
+  },
+  {
+   "style": "label",
+   "at": "It's the company's",
+   "dur": 2.8,
+   "kicker": "ULA",
+   "text": "First failure *since 2006*"
+  },
+  {
+   "style": "label",
+   "at": "Amazon Leo is",
+   "dur": 2.4,
+   "kicker": "The rival",
+   "text": "Built to take on *Starlink*"
+  },
+  {
+   "style": "label",
+   "at": "Here's what",
+   "dur": 1.6,
+   "kicker": "What it means",
+   "text": "Amazon's next launches"
+  },
+  {
+   "style": "label",
+   "at": "Amazon's satellite",
+   "dur": 2.8,
+   "kicker": "For you",
+   "text": "Home internet rollout *could slip*"
+  }
+ ],
+ "words": [
+  {
+   "text": "Amazon",
+   "start": 0.05,
+   "end": 0.41
+  },
+  {
+   "text": "lost",
+   "start": 0.43,
+   "end": 0.7
+  },
+  {
+   "text": "forty",
+   "start": 0.72,
+   "end": 1.03
+  },
+  {
+   "text": "internet",
+   "start": 1.05,
+   "end": 1.52
+  },
+  {
+   "text": "satellites",
+   "start": 1.54,
+   "end": 2.11
+  },
+  {
+   "text": "in",
+   "start": 2.13,
+   "end": 2.29
+  },
+  {
+   "text": "one",
+   "start": 2.31,
+   "end": 2.52
+  },
+  {
+   "text": "rocket",
+   "start": 2.54,
+   "end": 2.9
+  },
+  {
+   "text": "failure.",
+   "start": 2.92,
+   "end": 3.34
+  },
+  {
+   "text": "United",
+   "start": 3.91,
+   "end": 4.22
+  },
+  {
+   "text": "Launch",
+   "start": 4.24,
+   "end": 4.55
+  },
+  {
+   "text": "Alliance",
+   "start": 4.57,
+   "end": 4.97
+  },
+  {
+   "text": "said",
+   "start": 4.99,
+   "end": 5.21
+  },
+  {
+   "text": "its",
+   "start": 5.23,
+   "end": 5.41
+  },
+  {
+   "text": "Vulcan",
+   "start": 5.43,
+   "end": 5.74
+  },
+  {
+   "text": "rocket",
+   "start": 5.76,
+   "end": 6.07
+  },
+  {
+   "text": "failed",
+   "start": 6.09,
+   "end": 6.4
+  },
+  {
+   "text": "ten",
+   "start": 6.42,
+   "end": 6.6
+  },
+  {
+   "text": "minutes",
+   "start": 6.62,
+   "end": 6.97
+  },
+  {
+   "text": "into",
+   "start": 6.99,
+   "end": 7.22
+  },
+  {
+   "text": "Sunday's",
+   "start": 7.24,
+   "end": 7.59
+  },
+  {
+   "text": "flight.",
+   "start": 7.61,
+   "end": 7.92
+  },
+  {
+   "text": "It's",
+   "start": 8.39,
+   "end": 8.56
+  },
+  {
+   "text": "the",
+   "start": 8.58,
+   "end": 8.76
+  },
+  {
+   "text": "company's",
+   "start": 8.78,
+   "end": 9.17
+  },
+  {
+   "text": "first",
+   "start": 9.19,
+   "end": 9.45
+  },
+  {
+   "text": "failure",
+   "start": 9.47,
+   "end": 9.82
+  },
+  {
+   "text": "since",
+   "start": 9.84,
+   "end": 10.1
+  },
+  {
+   "text": "two",
+   "start": 10.12,
+   "end": 10.29
+  },
+  {
+   "text": "thousand",
+   "start": 10.31,
+   "end": 10.71
+  },
+  {
+   "text": "six.",
+   "start": 10.73,
+   "end": 10.9
+  },
+  {
+   "text": "Amazon",
+   "start": 11.46,
+   "end": 11.84
+  },
+  {
+   "text": "Leo",
+   "start": 11.86,
+   "end": 12.08
+  },
+  {
+   "text": "is",
+   "start": 12.1,
+   "end": 12.26
+  },
+  {
+   "text": "built",
+   "start": 12.28,
+   "end": 12.61
+  },
+  {
+   "text": "to",
+   "start": 12.63,
+   "end": 12.79
+  },
+  {
+   "text": "rival",
+   "start": 12.81,
+   "end": 13.14
+  },
+  {
+   "text": "Starlink.",
+   "start": 13.16,
+   "end": 13.64
+  },
+  {
+   "text": "But",
+   "start": 14.08,
+   "end": 14.23
+  },
+  {
+   "text": "it",
+   "start": 14.25,
+   "end": 14.37
+  },
+  {
+   "text": "has",
+   "start": 14.39,
+   "end": 14.54
+  },
+  {
+   "text": "only",
+   "start": 14.56,
+   "end": 14.75
+  },
+  {
+   "text": "around",
+   "start": 14.77,
+   "end": 15.04
+  },
+  {
+   "text": "three",
+   "start": 15.06,
+   "end": 15.28
+  },
+  {
+   "text": "hundred",
+   "start": 15.3,
+   "end": 15.61
+  },
+  {
+   "text": "ninety",
+   "start": 15.63,
+   "end": 15.9
+  },
+  {
+   "text": "satellites",
+   "start": 15.92,
+   "end": 16.34
+  },
+  {
+   "text": "in",
+   "start": 16.36,
+   "end": 16.47
+  },
+  {
+   "text": "orbit.",
+   "start": 16.49,
+   "end": 16.72
+  },
+  {
+   "text": "Here's",
+   "start": 17.19,
+   "end": 17.41
+  },
+  {
+   "text": "what",
+   "start": 17.43,
+   "end": 17.61
+  },
+  {
+   "text": "it",
+   "start": 17.63,
+   "end": 17.74
+  },
+  {
+   "text": "means.",
+   "start": 17.76,
+   "end": 17.98
+  },
+  {
+   "text": "Amazon's",
+   "start": 18.46,
+   "end": 18.87
+  },
+  {
+   "text": "satellite",
+   "start": 18.89,
+   "end": 19.39
+  },
+  {
+   "text": "internet",
+   "start": 19.41,
+   "end": 19.87
+  },
+  {
+   "text": "rollout",
+   "start": 19.89,
+   "end": 20.3
+  },
+  {
+   "text": "could",
+   "start": 20.32,
+   "end": 20.62
+  },
+  {
+   "text": "now",
+   "start": 20.64,
+   "end": 20.85
+  },
+  {
+   "text": "face",
+   "start": 20.87,
+   "end": 21.12
+  },
+  {
+   "text": "delays.",
+   "start": 21.14,
+   "end": 21.5
+  },
+  {
+   "text": "Starlink,",
+   "start": 22.02,
+   "end": 22.65
+  },
+  {
+   "text": "Amazon",
+   "start": 22.67,
+   "end": 23.17
+  },
+  {
+   "text": "or",
+   "start": 23.19,
+   "end": 23.41
+  },
+  {
+   "text": "cable:",
+   "start": 23.43,
+   "end": 23.86
+  },
+  {
+   "text": "which",
+   "start": 24.15,
+   "end": 24.32
+  },
+  {
+   "text": "would",
+   "start": 24.34,
+   "end": 24.51
+  },
+  {
+   "text": "you",
+   "start": 24.53,
+   "end": 24.64
+  },
+  {
+   "text": "pick?",
+   "start": 24.66,
+   "end": 24.8
+  },
+  {
+   "text": "Tell",
+   "start": 25.23,
+   "end": 25.47
+  },
+  {
+   "text": "us",
+   "start": 25.49,
+   "end": 25.63
+  },
+  {
+   "text": "below.",
+   "start": 25.65,
+   "end": 25.93
+  }
+ ]
+}
