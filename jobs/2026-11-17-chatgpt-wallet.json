@@ -1,0 +1,36 @@
+{
+ "id": "2026-11-17-chatgpt-wallet",
+ "voice": {"tts": "kokoro", "voice": "af_bella", "speed": 1.05},
+ "script": "Chat G P T can now shop for you, with your fingerprint. OpenAI said Friday it's rolling out Chat G P T Wallet. Its agents can pay at checkout for you. But every purchase needs Face ID or a fingerprint. Stores get a stand-in card number, not your real one. Here's the catch. It's only for U S Pro subscribers for now. What would you let A I buy first? Tell us below.",
+ "music": {"url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav", "gain_db": -13},
+ "display": [
+  {"match": "Chat G P T can", "text": "ChatGPT can"},
+  {"match": "Chat G P T Wallet", "text": "ChatGPT Wallet", "em": true},
+  {"match": "U S", "text": "US"},
+  {"match": "A I", "text": "AI"}
+ ],
+ "emphasis": ["fingerprint", "Face", "real", "Pro"],
+ "scenes": [
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Hand_holding_smartphone_with_ChatGPT_and_OpenAI_text_%2852917312010%29.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "credit": "PHOTO: Jernej Furman / CC BY 2.0"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sam_Altman_speaking_at_TED_%28cropped%29.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "OpenAI said Friday", "credit": "FILE PHOTO: Steve Jurvetson / CC BY 2.0"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Mini_shopping_cart_placed_on_a_table_next_to_a_laptop_in_a_modern_office_setting.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Its agents can", "credit": "PHOTO: Shixart1985 / CC BY 2.0"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Person_using_a_credit_card_to_make_an_online_purchase_on_a_laptop_at_home.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "But every purchase", "credit": "PHOTO: Shixart1985 / CC BY 2.0"},
+  {"type": "photo", "src": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Three_credit_cards-_Visa%2C_Mastercard_and_American_Express_%28close-up_on_logos%29.jpg",
+   "fit": "fill", "focus": 0.5, "zoom": [1.0, 1.1], "at": "Stores get a", "credit": "PHOTO: Petr Kratochvil / CC0"},
+  {"type": "card", "card": "stat", "at": "Here's the catch", "kicker": "Who gets it",
+   "value": 18, "suffix": "+", "sub": "US ChatGPT Pro subscribers only, for now", "source": "OpenAI via 9to5Mac"},
+  {"type": "card", "card": "end", "at": "What would you", "kicker": "Your take",
+   "text": "What would you let AI buy *first?*", "cta": "Tell us below ↓", "follow": "Follow for daily AI, tech & US news"}
+ ],
+ "titles": [
+  {"style": "hook", "until": "your fingerprint", "kicker": "AI · OpenAI", "text": "ChatGPT can now *shop for you*"},
+  {"style": "label", "at": "OpenAI said Friday", "dur": 2.8, "kicker": "New · Nov 13", "text": "Meet *ChatGPT Wallet*"},
+  {"style": "label", "at": "Its agents can", "dur": 2.4, "kicker": "Agents", "text": "AI that *checks out*"},
+  {"style": "label", "at": "But every purchase", "dur": 2.8, "kicker": "Every purchase", "text": "Face ID or *fingerprint*"},
+  {"style": "label", "at": "Stores get a", "dur": 2.8, "kicker": "Visa · Mastercard · Amex", "text": "Your real card *stays hidden*"}
+ ]
+}
