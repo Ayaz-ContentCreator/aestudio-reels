@@ -1,0 +1,491 @@
+{
+ "id": "2026-11-16-xi-trump-putin-summit-v2",
+ "voice": {
+  "url": "https://github.com/Ayaz-ContentCreator/aestudio-reels/releases/download/2026-11-16-xi-trump-putin-summit/2026-11-16-xi-trump-putin-summit-voice.mp3"
+ },
+ "script": "Trump, Xi and Putin hold their first three-way summit Thursday. China confirmed it Monday, A F P reported. They'll meet in Shenzhen, at an Asia-Pacific summit. Here's what's at stake. Trump wants to talk about cutting nuclear arsenals. But China has long said America and Russia must cut theirs first. U S officials don't expect talks on Ukraine. What should they agree on first? Tell us below.",
+ "music": {
+  "url": "https://ai-music-tracks.s3.us-east-1.amazonaws.com/7f7c5ed2-4928-4831-bb76-73ec6dd24b1e/0813a358-dc47-4566-9322-df59310a2f63.wav",
+  "gain_db": -13
+ },
+ "display": [
+  {
+   "match": "A F P",
+   "text": "AFP"
+  },
+  {
+   "match": "U S",
+   "text": "US"
+  }
+ ],
+ "emphasis": [
+  "Putin",
+  "first",
+  "Shenzhen",
+  "nuclear",
+  "Ukraine"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/2025_Xi_Jinping_%28cropped%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "credit": "FILE PHOTO: The White House (public domain)",
+   "fit": "fill",
+   "focus": 0.5
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/President_Donald_Trump_greets_Chinese_President_Xi_Jinping_before_a_bilateral_meeting_at_the_Gimhae_International_Airport_terminal_%2854890669668%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "credit": "FILE PHOTO: The White House (public domain)",
+   "at": "China confirmed it"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Shenzhen_Skyline_At_Night_%28214551663%29.jpeg",
+   "fit": "fill",
+   "focus": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "They'll meet in",
+   "credit": "PHOTO: Andreas Bunen / CC BY 3.0"
+  },
+  {
+   "type": "card",
+   "card": "stat",
+   "at": "Here's what's at",
+   "kicker": "Thursday · Nov 19",
+   "value": 3,
+   "sub": "leaders in their first three-way summit",
+   "source": "China foreign ministry / AFP"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Trump%2C_Putin_Alaska_Arrival_%289260672%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "Trump wants to",
+   "credit": "FILE PHOTO: Benjamin D. Applebaum / US DoD (public domain)"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vladimir_Putin_and_Xi_Jinping_%282025%29.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "But China has",
+   "credit": "FILE PHOTO: Kremlin.ru / CC BY 4.0"
+  },
+  {
+   "type": "photo",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/2025_Russia%E2%80%93United_States_summit_with_Vladimir_Putin_in_Alaska_on_August_15%2C_2025.jpg",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "at": "U S officials",
+   "credit": "FILE PHOTO: The White House (public domain)"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "at": "What should they",
+   "kicker": "Your take",
+   "text": "What should they agree on *first?*",
+   "cta": "Tell us below ↓",
+   "follow": "Follow for daily AI, tech & US news"
+  }
+ ],
+ "titles": [
+  {
+   "style": "hook",
+   "until": "summit Thursday",
+   "kicker": "US · World",
+   "text": "Trump, Xi, Putin: *first* three-way summit"
+  },
+  {
+   "style": "label",
+   "at": "China confirmed it",
+   "dur": 2.6,
+   "kicker": "Beijing",
+   "text": "China *confirms* Nov 19 meeting"
+  },
+  {
+   "style": "label",
+   "at": "They'll meet in",
+   "dur": 2.8,
+   "kicker": "Shenzhen, China",
+   "text": "On the sidelines of *APEC*"
+  },
+  {
+   "style": "label",
+   "at": "Trump wants to",
+   "dur": 2.6,
+   "kicker": "Trump's goal",
+   "text": "Cut *nuclear arsenals*"
+  },
+  {
+   "style": "label",
+   "at": "But China has",
+   "dur": 3.0,
+   "kicker": "China's line",
+   "text": "US and Russia *cut first*"
+  },
+  {
+   "style": "label",
+   "at": "U S officials",
+   "dur": 2.6,
+   "kicker": "Off the agenda",
+   "text": "*Ukraine* not expected"
+  }
+ ],
+ "words": [
+  {
+   "text": "Trump,",
+   "start": 0.0,
+   "end": 0.28
+  },
+  {
+   "text": "Xi",
+   "start": 0.66,
+   "end": 0.66
+  },
+  {
+   "text": "and",
+   "start": 0.82,
+   "end": 0.88
+  },
+  {
+   "text": "Putin",
+   "start": 0.88,
+   "end": 1.14
+  },
+  {
+   "text": "hold",
+   "start": 1.14,
+   "end": 1.44
+  },
+  {
+   "text": "their",
+   "start": 1.44,
+   "end": 1.64
+  },
+  {
+   "text": "first",
+   "start": 1.64,
+   "end": 1.94
+  },
+  {
+   "text": "three-way",
+   "start": 1.94,
+   "end": 2.4
+  },
+  {
+   "text": "summit",
+   "start": 2.4,
+   "end": 2.7
+  },
+  {
+   "text": "Thursday.",
+   "start": 2.7,
+   "end": 3.1
+  },
+  {
+   "text": "China",
+   "start": 3.92,
+   "end": 4.1
+  },
+  {
+   "text": "confirmed",
+   "start": 4.1,
+   "end": 4.46
+  },
+  {
+   "text": "it",
+   "start": 4.46,
+   "end": 4.66
+  },
+  {
+   "text": "Monday,",
+   "start": 4.66,
+   "end": 4.98
+  },
+  {
+   "text": "A",
+   "start": 5.32,
+   "end": 5.32
+  },
+  {
+   "text": "F",
+   "start": 5.32,
+   "end": 5.47
+  },
+  {
+   "text": "P",
+   "start": 5.47,
+   "end": 5.62
+  },
+  {
+   "text": "reported.",
+   "start": 5.62,
+   "end": 6.2
+  },
+  {
+   "text": "They'll",
+   "start": 6.7,
+   "end": 6.92
+  },
+  {
+   "text": "meet",
+   "start": 6.92,
+   "end": 7.06
+  },
+  {
+   "text": "in",
+   "start": 7.06,
+   "end": 7.28
+  },
+  {
+   "text": "Shenzhen,",
+   "start": 7.28,
+   "end": 7.66
+  },
+  {
+   "text": "at",
+   "start": 7.66,
+   "end": 7.88
+  },
+  {
+   "text": "an",
+   "start": 7.88,
+   "end": 8.04
+  },
+  {
+   "text": "Asia-Pacific",
+   "start": 8.04,
+   "end": 8.54
+  },
+  {
+   "text": "summit.",
+   "start": 8.54,
+   "end": 8.98
+  },
+  {
+   "text": "Here's",
+   "start": 9.4,
+   "end": 9.6
+  },
+  {
+   "text": "what's",
+   "start": 9.6,
+   "end": 9.74
+  },
+  {
+   "text": "at",
+   "start": 9.74,
+   "end": 9.84
+  },
+  {
+   "text": "stake.",
+   "start": 9.84,
+   "end": 10.14
+  },
+  {
+   "text": "Trump",
+   "start": 10.78,
+   "end": 10.94
+  },
+  {
+   "text": "wants",
+   "start": 10.94,
+   "end": 11.14
+  },
+  {
+   "text": "to",
+   "start": 11.14,
+   "end": 11.3
+  },
+  {
+   "text": "talk",
+   "start": 11.3,
+   "end": 11.5
+  },
+  {
+   "text": "about",
+   "start": 11.5,
+   "end": 11.74
+  },
+  {
+   "text": "cutting",
+   "start": 11.74,
+   "end": 12.06
+  },
+  {
+   "text": "nuclear",
+   "start": 12.06,
+   "end": 12.5
+  },
+  {
+   "text": "arsenals.",
+   "start": 12.5,
+   "end": 13.12
+  },
+  {
+   "text": "But",
+   "start": 13.44,
+   "end": 13.62
+  },
+  {
+   "text": "China",
+   "start": 13.62,
+   "end": 13.96
+  },
+  {
+   "text": "has",
+   "start": 13.96,
+   "end": 14.18
+  },
+  {
+   "text": "long",
+   "start": 14.18,
+   "end": 14.46
+  },
+  {
+   "text": "said",
+   "start": 14.46,
+   "end": 14.76
+  },
+  {
+   "text": "America",
+   "start": 14.76,
+   "end": 15.16
+  },
+  {
+   "text": "and",
+   "start": 15.16,
+   "end": 15.44
+  },
+  {
+   "text": "Russia",
+   "start": 15.44,
+   "end": 15.76
+  },
+  {
+   "text": "must",
+   "start": 15.76,
+   "end": 16.0
+  },
+  {
+   "text": "cut",
+   "start": 16.0,
+   "end": 16.3
+  },
+  {
+   "text": "theirs",
+   "start": 16.3,
+   "end": 16.54
+  },
+  {
+   "text": "first.",
+   "start": 16.54,
+   "end": 16.98
+  },
+  {
+   "text": "U",
+   "start": 17.5,
+   "end": 17.58
+  },
+  {
+   "text": "S",
+   "start": 17.58,
+   "end": 17.74
+  },
+  {
+   "text": "officials",
+   "start": 18.0,
+   "end": 18.12
+  },
+  {
+   "text": "don't",
+   "start": 18.12,
+   "end": 18.52
+  },
+  {
+   "text": "expect",
+   "start": 18.52,
+   "end": 18.86
+  },
+  {
+   "text": "talks",
+   "start": 18.86,
+   "end": 19.22
+  },
+  {
+   "text": "on",
+   "start": 19.22,
+   "end": 19.44
+  },
+  {
+   "text": "Ukraine.",
+   "start": 19.44,
+   "end": 19.8
+  },
+  {
+   "text": "What",
+   "start": 20.36,
+   "end": 20.48
+  },
+  {
+   "text": "should",
+   "start": 20.48,
+   "end": 20.62
+  },
+  {
+   "text": "they",
+   "start": 20.62,
+   "end": 20.74
+  },
+  {
+   "text": "agree",
+   "start": 20.74,
+   "end": 20.96
+  },
+  {
+   "text": "on",
+   "start": 20.96,
+   "end": 21.16
+  },
+  {
+   "text": "first?",
+   "start": 21.16,
+   "end": 21.46
+  },
+  {
+   "text": "Tell",
+   "start": 21.92,
+   "end": 22.04
+  },
+  {
+   "text": "us",
+   "start": 22.04,
+   "end": 22.24
+  },
+  {
+   "text": "below.",
+   "start": 22.24,
+   "end": 22.56
+  }
+ ]
+}
