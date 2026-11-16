@@ -1,0 +1,10 @@
+{"id": "find-2026-11-16-vulcan-amazon", "find": [
+  {"commons": "Vulcan Centaur launch", "kind": "image"},
+  {"commons": "Vulcan Centaur", "kind": "video"},
+  {"nasa": "Vulcan Centaur", "kind": "video"},
+  {"commons": "Project Kuiper satellite", "kind": "image"},
+  {"commons": "Amazon Kuiper prototype", "kind": "image"},
+  {"commons": "Starlink satellites", "kind": "image"},
+  {"commons": "Space Launch Complex 41", "kind": "image"},
+  {"probe": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch", "in": 0, "sheet": true}
+]}
